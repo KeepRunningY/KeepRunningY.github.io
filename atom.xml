@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>yang Blog</title>
   
-  
+  <subtitle>code life -subtitle</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://KeepRunningY.github.io/"/>

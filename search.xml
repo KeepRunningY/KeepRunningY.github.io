@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Redis-xxx]]></title>
+    <url>%2FRedis-xxx%2F</url>
+    <content type="text"><![CDATA[Redis-一篇搞定]]></content>
+      <categories>
+        <category>点滴积累-Redis</category>
+      </categories>
+      <tags>
+        <tag>Redis数据类型</tag>
+        <tag>redis xxx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Spring-xxx]]></title>
+    <url>%2FSpring-xxx%2F</url>
+    <content type="text"><![CDATA[hexo new “Spring-入门”hexo new “SpringMVC-xxx”hexo new “SpringBoot-xxx”基本概念 etc. (知识总结提取要点)]]></content>
+      <categories>
+        <category>点滴积累-Spring</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+        <tag>IOC AOP DI</tag>
+        <tag>Spring 事务管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MyBatis-xxx]]></title>
+    <url>%2FMyBatis-xxx%2F</url>
+    <content type="text"><![CDATA[hexo new “MyBatis-generator”分页插件generatormybatis-plus]]></content>
+      <categories>
+        <category>点滴积累-MyBatis</category>
+      </categories>
+      <tags>
+        <tag>分页插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git]]></title>
+    <url>%2FGit%2F</url>
+    <content type="text"><![CDATA[Git使用]]></content>
+      <categories>
+        <category>点滴积累-项目版本管理</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo搭建博客]]></title>
     <url>%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F</url>
     <content type="text"><![CDATA[Hexo搭建博客1$ npm install hexo-cli]]></content>

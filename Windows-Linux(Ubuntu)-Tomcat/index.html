@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Linux,Tomcat,">
 
 
 
@@ -88,16 +88,21 @@
 
 
 
-<meta name="description" content="越努力越幸运！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="yang Blog">
-<meta property="og:url" content="http://yangzhichu.github.io/archives/2019/05/index.html">
+<meta name="description" content="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。 1.IP配置在VMware Workstation中依次点击“编辑”-&amp;gt;”虚拟网络编辑器”-&amp;gt;”窗体顶部的VMnet8”-&amp;gt;”窗体中部按钮NAT模式”，查看VMnet8网络的子网IP">
+<meta name="keywords" content="Linux,Tomcat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat">
+<meta property="og:url" content="http://yangzhichu.github.io/Windows-Linux(Ubuntu)-Tomcat/index.html">
 <meta property="og:site_name" content="yang Blog">
-<meta property="og:description" content="越努力越幸运！">
+<meta property="og:description" content="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。 1.IP配置在VMware Workstation中依次点击“编辑”-&amp;gt;”虚拟网络编辑器”-&amp;gt;”窗体顶部的VMnet8”-&amp;gt;”窗体中部按钮NAT模式”，查看VMnet8网络的子网IP">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yangzhichu.github.io/images/NAT.png">
+<meta property="og:image" content="http://yangzhichu.github.io/images/Tomcat9080.png">
+<meta property="og:updated_time" content="2019-07-12T04:50:21.383Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yang Blog">
-<meta name="twitter:description" content="越努力越幸运！">
+<meta name="twitter:title" content="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat">
+<meta name="twitter:description" content="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。 1.IP配置在VMware Workstation中依次点击“编辑”-&amp;gt;”虚拟网络编辑器”-&amp;gt;”窗体顶部的VMnet8”-&amp;gt;”窗体中部按钮NAT模式”，查看VMnet8网络的子网IP">
+<meta name="twitter:image" content="http://yangzhichu.github.io/images/NAT.png">
 
 
 
@@ -127,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://yangzhichu.github.io/archives/2019/05/">
+  <link rel="canonical" href="http://yangzhichu.github.io/Windows-Linux(Ubuntu)-Tomcat/">
 
 
 
 
 
-  <title>归档 | yang Blog</title>
+  <title>Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat | yang Blog</title>
   
 
 
@@ -152,7 +157,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -288,177 +293,302 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yangzhichu.github.io/Windows-Linux(Ubuntu)-Tomcat/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/head.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yang Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-12T12:40:07+08:00">
+                2019-07-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 7 篇日志。 继续努力。
-      </span>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/点滴积累-Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">点滴积累-Linux</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Windows-Linux(Ubuntu)-Tomcat/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/Windows-Linux(Ubuntu)-Tomcat/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/Windows-Linux(Ubuntu)-Tomcat/" class="leancloud_visitors" data-flag-title="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Redis-xxx/" itemprop="url">
+          
+
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">Redis-xxx</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  735
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-01T15:21:16+08:00" content="2019-05-01">
-          05-01
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Spring-xxx/" itemprop="url">
-              
-                <span itemprop="name">Spring-xxx</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-01T15:12:10+08:00" content="2019-05-01">
-          05-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/MyBatis-xxx/" itemprop="url">
-              
-                <span itemprop="name">MyBatis-xxx</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-01T15:09:48+08:00" content="2019-05-01">
-          05-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h2 id="Windows主机无法访问Linux虚拟机-Ubuntu-上的Tomcat"><a href="#Windows主机无法访问Linux虚拟机-Ubuntu-上的Tomcat" class="headerlink" title="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat"></a>Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat</h2><h4 id="我的配置过程（Ubuntu14-04-LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。"><a href="#我的配置过程（Ubuntu14-04-LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。" class="headerlink" title="我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。"></a>我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。</h4><hr>
+<h4 id="1-IP配置"><a href="#1-IP配置" class="headerlink" title="1.IP配置"></a>1.IP配置</h4><p>在VMware Workstation中依次点击“编辑”-&gt;”虚拟网络编辑器”-&gt;”窗体顶部的VMnet8”-&gt;”窗体中部按钮NAT模式”，查看VMnet8网络的子网IP和网关IP。</p>
+<p>在主机网络和共享中心中更改适配器配置，找到“VMware Virtual Ethernet Adapter for VMnet8“，根据上述查看的VMnet8网络子网IP和网关IP修改IPv4属性，确保主机能够ping通虚拟机IP（查看虚拟机IP命令：# ifconfig)，此时主机应能ping通虚拟机。</p>
+<hr>
+<h4 id="2-虚拟机firewall和端口配置"><a href="#2-虚拟机firewall和端口配置" class="headerlink" title="2.虚拟机firewall和端口配置"></a>2.虚拟机firewall和端口配置</h4><p>有文章说要把防火墙关闭，那就关闭防火墙试下。关闭防火墙时，尝试了搜索到的两种方法。</p>
+<p>1.# ufw disable</p>
+<p>2.# service iptables stop</p>
+<p>(命令2好像不太好使，大致了解下好像是ufw是一个简化版的iptables，基于iptables，配置比iptables简单。centos7版本使用firewalld对防火墙进行加强，不再使用原来的iptables。在我的Ubuntu中ufw和firewalld均可使用，只不过firewalld需要安装一下:# apt-get install firewalld)</p>
+<p>防火墙关闭之后再访问Tomcat，好像还是访问失败，于是接着尝试配置端口（使用的是firewalld，在解决问题后了解ufw命令用法时，ufw命令：# ufw allow proto tcp IP1 port xxx to IP2 port xxx，和后面所述成功解决问题的方法好像类似，不过自己未尝试）。</p>
+<p>1.安装firewalld：# apt-get install firewalld</p>
+<p>2.开放端口（这里开放了3306端口）：# firewall-cmd –zone=public –add-port=3306/tcp</p>
+<p>   查看端口状态：# netstat -an|grep 3306</p>
+<p>3.# iptables-save</p>
+<p>很不幸，还是没能成功访问。</p>
+<p>注：有些命令可能需要root权限。</p>
+<hr>
+<h4 id="3-成功解决问题"><a href="#3-成功解决问题" class="headerlink" title="3.成功解决问题"></a>3.成功解决问题</h4><p><img src="/images/NAT.png"></p>
+<p>配置很简单，在VMware Workstation中进入”虚拟网络编辑器”，点击”更改设置”，进入”NAT设置“。</p>
+<p>主机端口：在主机上访问虚拟机服务器时的访问端口，我设置的9080（在主机访问 <a href="http://localhost:9080/" target="_blank" rel="noopener">http://localhost:9080/</a> 就可访问到虚拟机上的Tomcat）</p>
+<p>虚拟机端口：Linux上Tomcat访问端口（默认8080）</p>
+<p><img src="/images/Tomcat9080.png"></p>
+<p>注：每次打开虚拟机前需执行 # service firewalld stop(尝试解决中…)</p>
+<p>由于我是按照文章一步一步配置的，所以此处解决问题是否与前面的配置有关自己未验证。遇到同样问题的小伙伴可以按照从后向前的顺序进行配置，如果能够尽快解决问题当然最好不过了。</p>
+<blockquote>
+<p>参考文章：<a href="https://blog.csdn.net/zswjob126/article/details/49498217" target="_blank" rel="noopener">https://blog.csdn.net/zswjob126/article/details/49498217</a></p>
+</blockquote>
+<hr>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><p>有必要好好学习Linux，掌握原理及常用命令（本次学到的命令：iptables，ufw，firewalld）</p>
+</li>
+<li><p>要多了解网络相关知识，如VMware中的NAT模式，桥接模式，仅主机模式的工作原理</p>
+</li>
+</ul>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/Git/" itemprop="url">
-              
-                <span itemprop="name">Git</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-01T15:05:07+08:00" content="2019-05-01">
-          05-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="yang 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="yang 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    yang
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yangzhichu.github.io/Windows-Linux(Ubuntu)-Tomcat/" title="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat">http://yangzhichu.github.io/Windows-Linux(Ubuntu)-Tomcat/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"><i class="fa fa-tag"></i>Linux</a>
+          
+            <a href="/tags/Tomcat/" rel="tag"><i class="fa fa-tag"></i>Tomcat</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Redis-xxx/" rel="next" title="Redis-xxx">
+                <i class="fa fa-chevron-left"></i> Redis-xxx
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -466,6 +596,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -486,8 +623,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -624,6 +770,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Windows主机无法访问Linux虚拟机-Ubuntu-上的Tomcat"><span class="nav-number">1.</span> <span class="nav-text">Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#我的配置过程（Ubuntu14-04-LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。"><span class="nav-number">1.0.1.</span> <span class="nav-text">我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-IP配置"><span class="nav-number">1.0.2.</span> <span class="nav-text">1.IP配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-虚拟机firewall和端口配置"><span class="nav-number">1.0.3.</span> <span class="nav-text">2.虚拟机firewall和端口配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-成功解决问题"><span class="nav-number">1.0.4.</span> <span class="nav-text">3.成功解决问题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">1.1.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -793,6 +955,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

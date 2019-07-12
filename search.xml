@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat]]></title>
+    <url>%2FWindows-Linux(Ubuntu)-Tomcat%2F</url>
+    <content type="text"><![CDATA[Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。 1.IP配置在VMware Workstation中依次点击“编辑”-&gt;”虚拟网络编辑器”-&gt;”窗体顶部的VMnet8”-&gt;”窗体中部按钮NAT模式”，查看VMnet8网络的子网IP和网关IP。 在主机网络和共享中心中更改适配器配置，找到“VMware Virtual Ethernet Adapter for VMnet8“，根据上述查看的VMnet8网络子网IP和网关IP修改IPv4属性，确保主机能够ping通虚拟机IP（查看虚拟机IP命令：# ifconfig)，此时主机应能ping通虚拟机。 2.虚拟机firewall和端口配置有文章说要把防火墙关闭，那就关闭防火墙试下。关闭防火墙时，尝试了搜索到的两种方法。 1.# ufw disable 2.# service iptables stop (命令2好像不太好使，大致了解下好像是ufw是一个简化版的iptables，基于iptables，配置比iptables简单。centos7版本使用firewalld对防火墙进行加强，不再使用原来的iptables。在我的Ubuntu中ufw和firewalld均可使用，只不过firewalld需要安装一下:# apt-get install firewalld) 防火墙关闭之后再访问Tomcat，好像还是访问失败，于是接着尝试配置端口（使用的是firewalld，在解决问题后了解ufw命令用法时，ufw命令：# ufw allow proto tcp IP1 port xxx to IP2 port xxx，和后面所述成功解决问题的方法好像类似，不过自己未尝试）。 1.安装firewalld：# apt-get install firewalld 2.开放端口（这里开放了3306端口）：# firewall-cmd –zone=public –add-port=3306/tcp 查看端口状态：# netstat -an|grep 3306 3.# iptables-save 很不幸，还是没能成功访问。 注：有些命令可能需要root权限。 3.成功解决问题 配置很简单，在VMware Workstation中进入”虚拟网络编辑器”，点击”更改设置”，进入”NAT设置“。 主机端口：在主机上访问虚拟机服务器时的访问端口，我设置的9080（在主机访问 http://localhost:9080/ 就可访问到虚拟机上的Tomcat） 虚拟机端口：Linux上Tomcat访问端口（默认8080） 注：每次打开虚拟机前需执行 # service firewalld stop(尝试解决中…) 由于我是按照文章一步一步配置的，所以此处解决问题是否与前面的配置有关自己未验证。遇到同样问题的小伙伴可以按照从后向前的顺序进行配置，如果能够尽快解决问题当然最好不过了。 参考文章：https://blog.csdn.net/zswjob126/article/details/49498217 总结 有必要好好学习Linux，掌握原理及常用命令（本次学到的命令：iptables，ufw，firewalld） 要多了解网络相关知识，如VMware中的NAT模式，桥接模式，仅主机模式的工作原理]]></content>
+      <categories>
+        <category>点滴积累-Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Redis-xxx]]></title>
     <url>%2FRedis-xxx%2F</url>
     <content type="text"><![CDATA[Redis-一篇搞定]]></content>

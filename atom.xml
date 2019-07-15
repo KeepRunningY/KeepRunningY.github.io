@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangzhichu.github.io/"/>
-  <updated>2019-07-15T11:21:48.585Z</updated>
+  <updated>2019-07-15T13:23:06.337Z</updated>
   <id>http://yangzhichu.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>categories一览</title>
+    <link href="http://yangzhichu.github.io/categories%E7%BB%B4%E6%8A%A4/"/>
+    <id>http://yangzhichu.github.io/categories维护/</id>
+    <published>2019-07-15T12:05:00.000Z</published>
+    <updated>2019-07-15T13:23:06.337Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="分类维护"><a href="#分类维护" class="headerlink" title="分类维护"></a>分类维护</h1><blockquote><p>categories</p></blockquote><ul><li>点滴积累-Java基础</li><li>点滴积累-工具使用</li><li>点滴积累-框架</li><li>点滴积累-数据库</li><li>点滴积累-Linux</li><li>点滴积累-算法</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;分类维护&quot;&gt;&lt;a href=&quot;#分类维护&quot; class=&quot;headerlink&quot; title=&quot;分类维护&quot;&gt;&lt;/a&gt;分类维护&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;categories&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;点滴积累-Java基础
+      
+    
+    </summary>
+    
+      <category term="所有文章分类汇总" scheme="http://yangzhichu.github.io/categories/%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB/"/>
+    
+    
+      <category term="all categories" scheme="http://yangzhichu.github.io/tags/all-categories/"/>
+    
+  </entry>
   
   <entry>
     <title>postman使用</title>
@@ -76,7 +105,7 @@
     <link href="http://yangzhichu.github.io/Redis-xxx/"/>
     <id>http://yangzhichu.github.io/Redis-xxx/</id>
     <published>2019-05-01T07:21:16.000Z</published>
-    <updated>2019-05-01T07:22:39.734Z</updated>
+    <updated>2019-07-15T11:41:32.424Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Redis-一篇搞定"><a href="#Redis-一篇搞定" class="headerlink" title="Redis-一篇搞定"></a>Redis-一篇搞定</h2>]]></content>
     
@@ -89,12 +118,14 @@
     
     </summary>
     
-      <category term="点滴积累-Redis" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-Redis/"/>
+      <category term="点滴积累-数据库" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
+    
+      <category term="数据库" scheme="http://yangzhichu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="Redis数据类型" scheme="http://yangzhichu.github.io/tags/Redis%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
     
-      <category term="redis xxx" scheme="http://yangzhichu.github.io/tags/redis-xxx/"/>
+      <category term="redis" scheme="http://yangzhichu.github.io/tags/redis/"/>
     
   </entry>
   
@@ -103,7 +134,7 @@
     <link href="http://yangzhichu.github.io/Spring-xxx/"/>
     <id>http://yangzhichu.github.io/Spring-xxx/</id>
     <published>2019-05-01T07:12:10.000Z</published>
-    <updated>2019-05-01T07:20:44.137Z</updated>
+    <updated>2019-07-15T11:41:31.158Z</updated>
     
     <content type="html"><![CDATA[<h2 id="hexo-new-“Spring-入门”"><a href="#hexo-new-“Spring-入门”" class="headerlink" title="hexo new “Spring-入门”"></a>hexo new “Spring-入门”</h2><h2 id="hexo-new-“SpringMVC-xxx”"><a href="#hexo-new-“SpringMVC-xxx”" class="headerlink" title="hexo new “SpringMVC-xxx”"></a>hexo new “SpringMVC-xxx”</h2><h2 id="hexo-new-“SpringBoot-xxx”"><a href="#hexo-new-“SpringBoot-xxx”" class="headerlink" title="hexo new “SpringBoot-xxx”"></a>hexo new “SpringBoot-xxx”</h2><h2 id="基本概念-etc-知识总结提取要点"><a href="#基本概念-etc-知识总结提取要点" class="headerlink" title="基本概念 etc. (知识总结提取要点)"></a>基本概念 etc. (知识总结提取要点)</h2>]]></content>
     
@@ -116,7 +147,7 @@
     
     </summary>
     
-      <category term="点滴积累-Spring" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-Spring/"/>
+      <category term="点滴积累-框架" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E6%A1%86%E6%9E%B6/"/>
     
     
       <category term="Spring" scheme="http://yangzhichu.github.io/tags/Spring/"/>
@@ -132,7 +163,7 @@
     <link href="http://yangzhichu.github.io/MyBatis-xxx/"/>
     <id>http://yangzhichu.github.io/MyBatis-xxx/</id>
     <published>2019-05-01T07:09:48.000Z</published>
-    <updated>2019-05-01T07:15:15.402Z</updated>
+    <updated>2019-07-15T11:41:34.001Z</updated>
     
     <content type="html"><![CDATA[<h2 id="hexo-new-“MyBatis-generator”"><a href="#hexo-new-“MyBatis-generator”" class="headerlink" title="hexo new “MyBatis-generator”"></a>hexo new “MyBatis-generator”</h2><h2 id="分页插件"><a href="#分页插件" class="headerlink" title="分页插件"></a>分页插件</h2><h2 id="generator"><a href="#generator" class="headerlink" title="generator"></a>generator</h2><h2 id="mybatis-plus"><a href="#mybatis-plus" class="headerlink" title="mybatis-plus"></a>mybatis-plus</h2>]]></content>
     
@@ -145,8 +176,10 @@
     
     </summary>
     
-      <category term="点滴积累-MyBatis" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-MyBatis/"/>
+      <category term="点滴积累-框架" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E6%A1%86%E6%9E%B6/"/>
     
+    
+      <category term="MyBatis" scheme="http://yangzhichu.github.io/tags/MyBatis/"/>
     
       <category term="分页插件" scheme="http://yangzhichu.github.io/tags/%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6/"/>
     

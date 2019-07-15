@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangzhichu.github.io/"/>
-  <updated>2019-07-12T04:50:21.383Z</updated>
+  <updated>2019-07-15T11:21:48.585Z</updated>
   <id>http://yangzhichu.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>postman使用</title>
+    <link href="http://yangzhichu.github.io/postman%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yangzhichu.github.io/postman使用/</id>
+    <published>2019-07-15T11:17:07.000Z</published>
+    <updated>2019-07-15T11:21:48.585Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>参考文章：<a href="https://blog.csdn.net/fxbin123/article/details/80428216" target="_blank" rel="noopener">https://blog.csdn.net/fxbin123/article/details/80428216</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;参考文章：&lt;a href=&quot;https://blog.csdn.net/fxbin123/article/details/80428216&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/
+      
+    
+    </summary>
+    
+      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="postman" scheme="http://yangzhichu.github.io/tags/postman/"/>
+    
+      <category term="接口测试" scheme="http://yangzhichu.github.io/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat</title>

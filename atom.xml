@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangzhichu.github.io/"/>
-  <updated>2019-07-16T12:01:20.128Z</updated>
+  <updated>2019-07-20T10:51:39.613Z</updated>
   <id>http://yangzhichu.github.io/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python</title>
+    <link href="http://yangzhichu.github.io/Python/"/>
+    <id>http://yangzhichu.github.io/Python/</id>
+    <published>2019-07-20T10:50:09.000Z</published>
+    <updated>2019-07-20T10:51:39.613Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="环境及使用"><a href="#环境及使用" class="headerlink" title="环境及使用"></a>环境及使用</h3><blockquote><p>PyCharm</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;环境及使用&quot;&gt;&lt;a href=&quot;#环境及使用&quot; class=&quot;headerlink&quot; title=&quot;环境及使用&quot;&gt;&lt;/a&gt;环境及使用&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;PyCharm&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      
+    
+    </summary>
+    
+      <category term="点滴积累-Future" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-Future/"/>
+    
+    
+      <category term="Python" scheme="http://yangzhichu.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Go</title>
+    <link href="http://yangzhichu.github.io/Go/"/>
+    <id>http://yangzhichu.github.io/Go/</id>
+    <published>2019-07-20T10:49:09.000Z</published>
+    <updated>2019-07-20T10:51:41.316Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="环境及使用"><a href="#环境及使用" class="headerlink" title="环境及使用"></a>环境及使用</h3><blockquote><p>LiteIDE</p></blockquote><blockquote><p>Golang</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;环境及使用&quot;&gt;&lt;a href=&quot;#环境及使用&quot; class=&quot;headerlink&quot; title=&quot;环境及使用&quot;&gt;&lt;/a&gt;环境及使用&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;LiteIDE&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Gol
+      
+    
+    </summary>
+    
+      <category term="点滴积累-Future" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-Future/"/>
+    
+    
+      <category term="Go" scheme="http://yangzhichu.github.io/tags/Go/"/>
+    
+  </entry>
   
   <entry>
     <title>Http</title>
@@ -158,6 +215,38 @@
   </entry>
   
   <entry>
+    <title>SVN相关</title>
+    <link href="http://yangzhichu.github.io/SVN/"/>
+    <id>http://yangzhichu.github.io/SVN/</id>
+    <published>2019-07-16T11:40:07.000Z</published>
+    <updated>2019-07-16T11:47:09.265Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件<br>1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；<br>2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；<br>3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？<br>它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。<br>总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件&lt;br&gt;1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提
+      
+    
+    </summary>
+    
+      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="SVN" scheme="http://yangzhichu.github.io/tags/SVN/"/>
+    
+      <category term="VisualSVN-Server" scheme="http://yangzhichu.github.io/tags/VisualSVN-Server/"/>
+    
+      <category term="Subversion" scheme="http://yangzhichu.github.io/tags/Subversion/"/>
+    
+      <category term="TortoiseSVN" scheme="http://yangzhichu.github.io/tags/TortoiseSVN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Eclipse项目相关踩坑</title>
     <link href="http://yangzhichu.github.io/Eclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91/"/>
     <id>http://yangzhichu.github.io/Eclipse项目相关踩坑/</id>
@@ -188,38 +277,6 @@
       <category term="maven Pagehelper" scheme="http://yangzhichu.github.io/tags/maven-Pagehelper/"/>
     
       <category term="war打包错误" scheme="http://yangzhichu.github.io/tags/war%E6%89%93%E5%8C%85%E9%94%99%E8%AF%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVN相关</title>
-    <link href="http://yangzhichu.github.io/SVN/"/>
-    <id>http://yangzhichu.github.io/SVN/</id>
-    <published>2019-07-16T11:40:07.000Z</published>
-    <updated>2019-07-16T11:47:09.265Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件<br>1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；<br>2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；<br>3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？<br>它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。<br>总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件&lt;br&gt;1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提
-      
-    
-    </summary>
-    
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="SVN" scheme="http://yangzhichu.github.io/tags/SVN/"/>
-    
-      <category term="VisualSVN-Server" scheme="http://yangzhichu.github.io/tags/VisualSVN-Server/"/>
-    
-      <category term="Subversion" scheme="http://yangzhichu.github.io/tags/Subversion/"/>
-    
-      <category term="TortoiseSVN" scheme="http://yangzhichu.github.io/tags/TortoiseSVN/"/>
     
   </entry>
   
@@ -278,6 +335,32 @@
   </entry>
   
   <entry>
+    <title>IDEA导入项目(Maven Gradle)</title>
+    <link href="http://yangzhichu.github.io/IDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)/"/>
+    <id>http://yangzhichu.github.io/IDEA导入项目(Maven Gradle)/</id>
+    <published>2019-07-16T11:16:07.000Z</published>
+    <updated>2019-07-16T11:26:24.772Z</updated>
+    
+    <content type="html"><![CDATA[<p>gradle：offline！！！关闭！！！<br>WIFI网络-&gt;手机热点网络切换</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;gradle：offline！！！关闭！！！&lt;br&gt;WIFI网络-&amp;gt;手机热点网络切换&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="IDEA项目导入" scheme="http://yangzhichu.github.io/tags/IDEA%E9%A1%B9%E7%9B%AE%E5%AF%BC%E5%85%A5/"/>
+    
+  </entry>
+  
+  <entry>
     <title>IDEA安装及使用</title>
     <link href="http://yangzhichu.github.io/IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
     <id>http://yangzhichu.github.io/IDEA安装及使用/</id>
@@ -308,39 +391,13 @@
   </entry>
   
   <entry>
-    <title>IDEA导入项目(Maven Gradle)</title>
-    <link href="http://yangzhichu.github.io/IDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)/"/>
-    <id>http://yangzhichu.github.io/IDEA导入项目(Maven Gradle)/</id>
-    <published>2019-07-16T11:16:07.000Z</published>
-    <updated>2019-07-16T11:26:24.772Z</updated>
-    
-    <content type="html"><![CDATA[<p>gradle：offline！！！关闭！！！<br>WIFI网络-&gt;手机热点网络切换</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;gradle：offline！！！关闭！！！&lt;br&gt;WIFI网络-&amp;gt;手机热点网络切换&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="IDEA项目导入" scheme="http://yangzhichu.github.io/tags/IDEA%E9%A1%B9%E7%9B%AE%E5%AF%BC%E5%85%A5/"/>
-    
-  </entry>
-  
-  <entry>
     <title>categories一览</title>
     <link href="http://yangzhichu.github.io/categories%E7%BB%B4%E6%8A%A4/"/>
     <id>http://yangzhichu.github.io/categories维护/</id>
     <published>2019-07-15T12:05:00.000Z</published>
-    <updated>2019-07-16T12:04:01.019Z</updated>
+    <updated>2019-07-20T10:48:09.467Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="分类维护"><a href="#分类维护" class="headerlink" title="分类维护"></a>分类维护</h1><blockquote><p>categories</p></blockquote><ul><li>点滴积累-Java基础</li><li>点滴积累-工具使用</li><li>点滴积累-框架(Spring …)</li><li>点滴积累-安全认证(OAuth …)</li><li>点滴积累-加密(MD5 SHA SRA …)</li><li>点滴积累-网络 协议…</li><li>点滴积累-数据库</li><li>点滴积累-服务器(Tomcat Nginx …)</li><li>点滴积累-Linux</li><li>点滴积累-算法</li><li>点滴积累-进阶(开发模式 架构 …)</li><li>点滴积累-常用配置文件(.xml .properties…)</li><li>点滴积累-常用小工具(my)</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="分类维护"><a href="#分类维护" class="headerlink" title="分类维护"></a>分类维护</h1><blockquote><p>categories</p></blockquote><ul><li>点滴积累-Java基础</li><li>点滴积累-工具使用</li><li>点滴积累-框架(Spring …)</li><li>点滴积累-安全认证(OAuth …)</li><li>点滴积累-加密(MD5 SHA SRA …)</li><li>点滴积累-网络 协议…</li><li>点滴积累-数据库</li><li>点滴积累-服务器(Tomcat Nginx …)</li><li>点滴积累-Linux</li><li>点滴积累-算法</li><li>点滴积累-进阶(开发模式 架构 …)</li><li>点滴积累-常用配置文件(.xml .properties…)</li><li>点滴积累-常用小工具(my)</li><li>点滴积累-Future(Python Go AI etc…)</li></ul>]]></content>
     
     <summary type="html">
     
@@ -524,52 +581,6 @@
     
     
       <category term="Git" scheme="http://yangzhichu.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo搭建博客</title>
-    <link href="http://yangzhichu.github.io/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yangzhichu.github.io/Hexo搭建博客/</id>
-    <published>2019-04-07T09:23:06.000Z</published>
-    <updated>2019-04-07T13:25:19.528Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Hexo搭建博客"><a href="#Hexo搭建博客" class="headerlink" title="Hexo搭建博客"></a>Hexo搭建博客</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Hexo搭建博客&quot;&gt;&lt;a href=&quot;#Hexo搭建博客&quot; class=&quot;headerlink&quot; title=&quot;Hexo搭建博客&quot;&gt;&lt;/a&gt;Hexo搭建博客&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl
-      
-    
-    </summary>
-    
-      <category term="category1" scheme="http://yangzhichu.github.io/categories/category1/"/>
-    
-    
-      <category term="tag1" scheme="http://yangzhichu.github.io/tags/tag1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yangzhichu.github.io/hello-world/"/>
-    <id>http://yangzhichu.github.io/hello-world/</id>
-    <published>2019-03-06T00:21:07.000Z</published>
-    <updated>2019-05-01T06:50:34.352Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
     
   </entry>
   

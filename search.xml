@@ -260,7 +260,7 @@
   <entry>
     <title><![CDATA[搭建博客-Hexo]]></title>
     <url>%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"><![CDATA[Hexo搭建博客123$ npm install hexo-cli... 参考官方文档吧 :D 哈哈 哈 嗝~！]]></content>
+    <content type="text"><![CDATA[Hexo搭建博客12$ npm install hexo-cli... 参考官方文档吧 :D 哈哈 哈 嗝~！]]></content>
       <categories>
         <category>博客搭建</category>
       </categories>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangzhichu.github.io/"/>
-  <updated>2019-07-20T10:51:39.613Z</updated>
+  <updated>2019-07-21T09:56:04.885Z</updated>
   <id>http://yangzhichu.github.io/</id>
   
   <author>
@@ -17,13 +17,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ffmpeg</title>
+    <link href="http://yangzhichu.github.io/ffmpeg/"/>
+    <id>http://yangzhichu.github.io/ffmpeg/</id>
+    <published>2019-07-21T05:50:09.000Z</published>
+    <updated>2019-07-21T09:56:04.885Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载Build压缩包，解压</li><li>设置环境变量<blockquote><p>参考文章：<a href="https://www.jianshu.com/p/ddafe46827b7" target="_blank" rel="noopener">https://www.jianshu.com/p/ddafe46827b7</a></p></blockquote></li></ul><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;下载Build压缩包，解压&lt;/li&gt;
+&lt;li&gt;设置环境变量&lt;blockquote&gt;
+&lt;p&gt;参考文章：&lt;a href=&quot;https
+      
+    
+    </summary>
+    
+      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="ffmpeg" scheme="http://yangzhichu.github.io/tags/ffmpeg/"/>
+    
+      <category term="视频格式转换" scheme="http://yangzhichu.github.io/tags/%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
+    
+      <category term="音视频分离" scheme="http://yangzhichu.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%88%86%E7%A6%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Python</title>
     <link href="http://yangzhichu.github.io/Python/"/>
     <id>http://yangzhichu.github.io/Python/</id>
     <published>2019-07-20T10:50:09.000Z</published>
-    <updated>2019-07-20T10:51:39.613Z</updated>
+    <updated>2019-07-21T10:11:52.827Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="环境及使用"><a href="#环境及使用" class="headerlink" title="环境及使用"></a>环境及使用</h3><blockquote><p>PyCharm</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h3 id="环境及使用"><a href="#环境及使用" class="headerlink" title="环境及使用"></a>环境及使用</h3><blockquote><p>PyCharm</p></blockquote><blockquote><p>密钥(截至2020.06)</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">K6IXATEF43-eyJsaWNlbnNlSWQiOiJLNklYQVRFRjQzIiwibGljZW5zZWVOYW1lIjoi5o6I5p2D5Luj55CG5ZWGOiBodHRwOi8vaWRlYS5oay5jbiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9XSwiaGFzaCI6IjEzMjkyMzI4LzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-KUaQi549fH96M/qU7jTvuMeq2GuedA+WppV3irI0JHlfDuhJlidK2m3yoRxitGNmimPFVUA8Dk38OzXnP29I39QDXH5VAF8VjOP0XrqdfrpaZUKpdhRaYz8r1NAwID75U4LqYCvFbazka1dCMJBFqJ2wum1+CSQhJ1O7CSchAJAbjcCRQjbU2sXOofAA2sPLi7nlJw2wrjOHzH9cOczUn11n24PE9BQ/oYGITHkzsu94i4Q90Z1jQysMtXLgM/HoLSHY2T9rKULLoh+tdMwBp9+m0VLF/R5gdkVDV/dlorrA9OEZIsSOaG+oWSen/AulKH6OXllZJoR+b/T6YYfGWg==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn/72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN/lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D/cXmgpOyW/1SmBz3XjVIi/zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV/bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit/pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow==</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -32,7 +64,8 @@
         &lt;h3 id=&quot;环境及使用&quot;&gt;&lt;a href=&quot;#环境及使用&quot; class=&quot;headerlink&quot; title=&quot;环境及使用&quot;&gt;&lt;/a&gt;环境及使用&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;PyCharm&lt;/p&gt;
 &lt;/blockquote&gt;
-
+&lt;blockquote&gt;
+&lt;p&gt;密钥(
       
     
     </summary>
@@ -49,19 +82,15 @@
     <link href="http://yangzhichu.github.io/Go/"/>
     <id>http://yangzhichu.github.io/Go/</id>
     <published>2019-07-20T10:49:09.000Z</published>
-    <updated>2019-07-20T10:51:41.316Z</updated>
+    <updated>2019-07-21T10:12:22.934Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="环境及使用"><a href="#环境及使用" class="headerlink" title="环境及使用"></a>环境及使用</h3><blockquote><p>LiteIDE</p></blockquote><blockquote><p>Golang</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h3 id="环境-win10-x64-msi-无需配置PATH"><a href="#环境-win10-x64-msi-无需配置PATH" class="headerlink" title="环境(win10_x64 .msi 无需配置PATH)"></a>环境(win10_x64 .msi 无需配置PATH)</h3><blockquote><p>Download Go: <a href="https://golang.google.cn/dl/" target="_blank" rel="noopener">https://golang.google.cn/dl/</a></p></blockquote><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><ol><li>LiteIDE</li></ol><ul><li>安装MinGW</li><li>环境配置参考(win64)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">工具-&gt;编辑当前环境</span><br><span class="line"></span><br><span class="line"># native compiler windows amd64</span><br><span class="line"></span><br><span class="line">GOROOT=D:\Future\Go</span><br><span class="line">#GOBIN=</span><br><span class="line">GOARCH=amd64</span><br><span class="line">GOOS=windows</span><br><span class="line">CGO_ENABLED=1</span><br><span class="line"></span><br><span class="line">PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%</span><br><span class="line"></span><br><span class="line">#D:\Future\liteide\bin</span><br><span class="line">LITEIDE_GDB=gdb64</span><br><span class="line"></span><br><span class="line">#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin</span><br><span class="line">LITEIDE_MAKE=mingw32-make</span><br><span class="line"></span><br><span class="line">LITEIDE_TERM=%COMSPEC%</span><br><span class="line">LITEIDE_TERMARGS=</span><br><span class="line">LITEIDE_EXEC=%COMSPEC%</span><br><span class="line">LITEIDE_EXECOPT=/C</span><br></pre></td></tr></table></figure></li></ul><ol start="2"><li>Golang（集成环境，无需配置）</li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h3 id=&quot;环境及使用&quot;&gt;&lt;a href=&quot;#环境及使用&quot; class=&quot;headerlink&quot; title=&quot;环境及使用&quot;&gt;&lt;/a&gt;环境及使用&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;LiteIDE&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Gol
+        &lt;h3 id=&quot;环境-win10-x64-msi-无需配置PATH&quot;&gt;&lt;a href=&quot;#环境-win10-x64-msi-无需配置PATH&quot; class=&quot;headerlink&quot; title=&quot;环境(win10_x64 .msi 无需配置PATH)&quot;&gt;&lt;/a&gt;环境(win10_
       
     
     </summary>
@@ -70,6 +99,10 @@
     
     
       <category term="Go" scheme="http://yangzhichu.github.io/tags/Go/"/>
+    
+      <category term="Go 环境" scheme="http://yangzhichu.github.io/tags/Go-%E7%8E%AF%E5%A2%83/"/>
+    
+      <category term="Go IDE" scheme="http://yangzhichu.github.io/tags/Go-IDE/"/>
     
   </entry>
   
@@ -395,9 +428,9 @@
     <link href="http://yangzhichu.github.io/categories%E7%BB%B4%E6%8A%A4/"/>
     <id>http://yangzhichu.github.io/categories维护/</id>
     <published>2019-07-15T12:05:00.000Z</published>
-    <updated>2019-07-20T10:48:09.467Z</updated>
+    <updated>2019-07-21T05:48:34.013Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="分类维护"><a href="#分类维护" class="headerlink" title="分类维护"></a>分类维护</h1><blockquote><p>categories</p></blockquote><ul><li>点滴积累-Java基础</li><li>点滴积累-工具使用</li><li>点滴积累-框架(Spring …)</li><li>点滴积累-安全认证(OAuth …)</li><li>点滴积累-加密(MD5 SHA SRA …)</li><li>点滴积累-网络 协议…</li><li>点滴积累-数据库</li><li>点滴积累-服务器(Tomcat Nginx …)</li><li>点滴积累-Linux</li><li>点滴积累-算法</li><li>点滴积累-进阶(开发模式 架构 …)</li><li>点滴积累-常用配置文件(.xml .properties…)</li><li>点滴积累-常用小工具(my)</li><li>点滴积累-Future(Python Go AI etc…)</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="分类维护"><a href="#分类维护" class="headerlink" title="分类维护"></a>分类维护</h1><blockquote><p>categories</p></blockquote><ul><li>点滴积累-Java基础</li><li>点滴积累-工具使用(ffmpeg)</li><li>点滴积累-框架(Spring …)</li><li>点滴积累-安全认证(OAuth …)</li><li>点滴积累-加密(MD5 SHA SRA …)</li><li>点滴积累-网络 协议…</li><li>点滴积累-数据库</li><li>点滴积累-服务器(Tomcat Nginx …)</li><li>点滴积累-Linux</li><li>点滴积累-算法</li><li>点滴积累-进阶(开发模式 架构 …)</li><li>点滴积累-常用配置文件(.xml .properties…)</li><li>点滴积累-常用小工具(my)</li><li>点滴积累-Future(Python Go AI etc…)</li></ul>]]></content>
     
     <summary type="html">
     
@@ -556,31 +589,6 @@
       <category term="MyBatis" scheme="http://yangzhichu.github.io/tags/MyBatis/"/>
     
       <category term="分页插件" scheme="http://yangzhichu.github.io/tags/%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git</title>
-    <link href="http://yangzhichu.github.io/Git/"/>
-    <id>http://yangzhichu.github.io/Git/</id>
-    <published>2019-05-01T07:05:07.000Z</published>
-    <updated>2019-05-01T07:23:01.557Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Git使用"><a href="#Git使用" class="headerlink" title="Git使用"></a>Git使用</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Git使用&quot;&gt;&lt;a href=&quot;#Git使用&quot; class=&quot;headerlink&quot; title=&quot;Git使用&quot;&gt;&lt;/a&gt;Git使用&lt;/h2&gt;
-      
-    
-    </summary>
-    
-      <category term="点滴积累-项目版本管理" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E9%A1%B9%E7%9B%AE%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
-    
-    
-      <category term="Git" scheme="http://yangzhichu.github.io/tags/Git/"/>
     
   </entry>
   

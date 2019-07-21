@@ -27,7 +27,7 @@
   <entry>
     <title><![CDATA[Go]]></title>
     <url>%2FGo%2F</url>
-    <content type="text"><![CDATA[环境(win10_x64 .msi 无需配置PATH) Download Go: https://golang.google.cn/dl/ IDE LiteIDE 安装MinGW 环境配置参考(win64)12345678910111213141516171819202122工具-&gt;编辑当前环境# native compiler windows amd64GOROOT=D:\Future\Go#GOBIN=GOARCH=amd64GOOS=windowsCGO_ENABLED=1PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%#D:\Future\liteide\binLITEIDE_GDB=gdb64#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\binLITEIDE_MAKE=mingw32-makeLITEIDE_TERM=%COMSPEC%LITEIDE_TERMARGS=LITEIDE_EXEC=%COMSPEC%LITEIDE_EXECOPT=/C Golang（集成环境，无需配置）]]></content>
+    <content type="text"><![CDATA[环境(win10_x64 .msi 无需配置PATH) Download Go: https://golang.google.cn/dl/ IDE LiteIDE 安装MinGW 环境配置参考(win64) 12345678910111213141516171819202122工具-&gt;编辑当前环境# native compiler windows amd64GOROOT=D:\Future\Go#GOBIN=GOARCH=amd64GOOS=windowsCGO_ENABLED=1PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%#D:\Future\liteide\binLITEIDE_GDB=gdb64#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\binLITEIDE_MAKE=mingw32-makeLITEIDE_TERM=%COMSPEC%LITEIDE_TERMARGS=LITEIDE_EXEC=%COMSPEC%LITEIDE_EXECOPT=/C Golang（集成环境，无需配置）]]></content>
       <categories>
         <category>点滴积累-Future</category>
       </categories>

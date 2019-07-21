@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangzhichu.github.io/"/>
-  <updated>2019-07-21T09:56:04.885Z</updated>
+  <updated>2019-07-21T10:16:07.225Z</updated>
   <id>http://yangzhichu.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yangzhichu.github.io/ffmpeg/"/>
     <id>http://yangzhichu.github.io/ffmpeg/</id>
     <published>2019-07-21T05:50:09.000Z</published>
-    <updated>2019-07-21T09:56:04.885Z</updated>
+    <updated>2019-07-21T10:16:07.225Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载Build压缩包，解压</li><li>设置环境变量<blockquote><p>参考文章：<a href="https://www.jianshu.com/p/ddafe46827b7" target="_blank" rel="noopener">https://www.jianshu.com/p/ddafe46827b7</a></p></blockquote></li></ul><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3>]]></content>
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载Build压缩包，解压</li><li>设置环境变量</li></ul><blockquote><p>参考文章：<a href="https://www.jianshu.com/p/ddafe46827b7" target="_blank" rel="noopener">https://www.jianshu.com/p/ddafe46827b7</a></p></blockquote><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3>]]></content>
     
     <summary type="html">
     
@@ -31,8 +31,10 @@
       
         &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;下载Build压缩包，解压&lt;/li&gt;
-&lt;li&gt;设置环境变量&lt;blockquote&gt;
-&lt;p&gt;参考文章：&lt;a href=&quot;https
+&lt;li&gt;设置环境变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考文章：&lt;a
       
     
     </summary>
@@ -82,9 +84,9 @@
     <link href="http://yangzhichu.github.io/Go/"/>
     <id>http://yangzhichu.github.io/Go/</id>
     <published>2019-07-20T10:49:09.000Z</published>
-    <updated>2019-07-21T10:12:22.934Z</updated>
+    <updated>2019-07-21T10:16:57.581Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="环境-win10-x64-msi-无需配置PATH"><a href="#环境-win10-x64-msi-无需配置PATH" class="headerlink" title="环境(win10_x64 .msi 无需配置PATH)"></a>环境(win10_x64 .msi 无需配置PATH)</h3><blockquote><p>Download Go: <a href="https://golang.google.cn/dl/" target="_blank" rel="noopener">https://golang.google.cn/dl/</a></p></blockquote><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><ol><li>LiteIDE</li></ol><ul><li>安装MinGW</li><li>环境配置参考(win64)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">工具-&gt;编辑当前环境</span><br><span class="line"></span><br><span class="line"># native compiler windows amd64</span><br><span class="line"></span><br><span class="line">GOROOT=D:\Future\Go</span><br><span class="line">#GOBIN=</span><br><span class="line">GOARCH=amd64</span><br><span class="line">GOOS=windows</span><br><span class="line">CGO_ENABLED=1</span><br><span class="line"></span><br><span class="line">PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%</span><br><span class="line"></span><br><span class="line">#D:\Future\liteide\bin</span><br><span class="line">LITEIDE_GDB=gdb64</span><br><span class="line"></span><br><span class="line">#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin</span><br><span class="line">LITEIDE_MAKE=mingw32-make</span><br><span class="line"></span><br><span class="line">LITEIDE_TERM=%COMSPEC%</span><br><span class="line">LITEIDE_TERMARGS=</span><br><span class="line">LITEIDE_EXEC=%COMSPEC%</span><br><span class="line">LITEIDE_EXECOPT=/C</span><br></pre></td></tr></table></figure></li></ul><ol start="2"><li>Golang（集成环境，无需配置）</li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="环境-win10-x64-msi-无需配置PATH"><a href="#环境-win10-x64-msi-无需配置PATH" class="headerlink" title="环境(win10_x64 .msi 无需配置PATH)"></a>环境(win10_x64 .msi 无需配置PATH)</h3><blockquote><p>Download Go: <a href="https://golang.google.cn/dl/" target="_blank" rel="noopener">https://golang.google.cn/dl/</a></p></blockquote><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><ol><li>LiteIDE</li></ol><ul><li>安装MinGW</li><li>环境配置参考(win64)</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">工具-&gt;编辑当前环境</span><br><span class="line"></span><br><span class="line"># native compiler windows amd64</span><br><span class="line"></span><br><span class="line">GOROOT=D:\Future\Go</span><br><span class="line">#GOBIN=</span><br><span class="line">GOARCH=amd64</span><br><span class="line">GOOS=windows</span><br><span class="line">CGO_ENABLED=1</span><br><span class="line"></span><br><span class="line">PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%</span><br><span class="line"></span><br><span class="line">#D:\Future\liteide\bin</span><br><span class="line">LITEIDE_GDB=gdb64</span><br><span class="line"></span><br><span class="line">#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin</span><br><span class="line">LITEIDE_MAKE=mingw32-make</span><br><span class="line"></span><br><span class="line">LITEIDE_TERM=%COMSPEC%</span><br><span class="line">LITEIDE_TERMARGS=</span><br><span class="line">LITEIDE_EXEC=%COMSPEC%</span><br><span class="line">LITEIDE_EXECOPT=/C</span><br></pre></td></tr></table></figure><ol start="2"><li>Golang（集成环境，无需配置）</li></ol>]]></content>
     
     <summary type="html">
     

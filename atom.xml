@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangzhichu.github.io/"/>
-  <updated>2019-07-21T10:16:07.225Z</updated>
+  <updated>2019-07-25T11:03:40.904Z</updated>
   <id>http://yangzhichu.github.io/</id>
   
   <author>
@@ -17,13 +17,93 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Eclipse查看JDK源码设置</title>
+    <link href="http://yangzhichu.github.io/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yangzhichu.github.io/Eclipse查看JDK源码设置/</id>
+    <published>2019-07-25T00:55:21.000Z</published>
+    <updated>2019-07-25T11:03:40.904Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="在Eclipse中查看JDK类库的源代码："><a href="#在Eclipse中查看JDK类库的源代码：" class="headerlink" title="在Eclipse中查看JDK类库的源代码："></a>在Eclipse中查看JDK类库的源代码：</h3><ol><li>点 “window”-&gt; “Preferences” -&gt; “Java” -&gt; “Installed JRES”</li><li>此时”Installed JRES”右边是列表窗格，列出了系统中的 JRE 环境，选择你的JRE，然后点边上的 “Edit…”， 会出现一个窗口(Edit JRE)</li><li>选中rt.jar文件的这一项：“c:\program files\java\jre_1.5.0_06\lib\rt.jar”<br>点 左边的“+” 号展开它</li><li>展开后，可以看到“Source Attachment:(none)”，点这一项，点右边的按钮“Source Attachment…”, 选择你的JDK目录下的 “src.zip”文件</li><li>一路点”ok”,结束<br>dt.jar是关于运行环境的类库,主要是swing的包<br>tools.jar是关于一些工具的类库<br>rt.jar包含了jdk的基础类库，也就是你在Java doc里面看到的所有的类的class文件</li></ol><blockquote><p>参考文章 <a href="https://www.cnblogs.com/lxmyhappy/p/7084097.html" target="_blank" rel="noopener">https://www.cnblogs.com/lxmyhappy/p/7084097.html</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;在Eclipse中查看JDK类库的源代码：&quot;&gt;&lt;a href=&quot;#在Eclipse中查看JDK类库的源代码：&quot; class=&quot;headerlink&quot; title=&quot;在Eclipse中查看JDK类库的源代码：&quot;&gt;&lt;/a&gt;在Eclipse中查看JDK类库的源代码：&lt;/
+      
+    
+    </summary>
+    
+      <category term="之初-常用配置文件及方法" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%B9%E6%B3%95/"/>
+    
+    
+      <category term="Eclipse查看JDK源码" scheme="http://yangzhichu.github.io/tags/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科大讯飞-语音转写</title>
+    <link href="http://yangzhichu.github.io/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E-%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
+    <id>http://yangzhichu.github.io/科大讯飞-语音转写/</id>
+    <published>2019-07-25T00:32:00.000Z</published>
+    <updated>2019-07-25T11:03:30.547Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>demo: <a href="https://github.yangzhichu.xxx" target="_blank" rel="noopener">https://github.yangzhichu.xxx</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;demo: &lt;a href=&quot;https://github.yangzhichu.xxx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.yangzhichu.xxx&lt;/a&gt;&lt;/p&gt;
+&lt;/blockqu
+      
+    
+    </summary>
+    
+      <category term="之初-小工具" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="科大讯飞" scheme="http://yangzhichu.github.io/tags/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E/"/>
+    
+      <category term="语音转写" scheme="http://yangzhichu.github.io/tags/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java执行cmd命令</title>
+    <link href="http://yangzhichu.github.io/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yangzhichu.github.io/Java执行cmd命令/</id>
+    <published>2019-07-25T00:29:00.000Z</published>
+    <updated>2019-07-25T11:03:10.802Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>使用方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 调用命令脚本语言来实现功能</span><br><span class="line"></span><br><span class="line">// 1.错误的使用方式 </span><br><span class="line">Runtime.getRuntime().exec(&quot;xxx&quot;);</span><br><span class="line"></span><br><span class="line">// 2.正确的使用方式:需要指定参数(命令位置;-c表示先执行第一个参数;命令)</span><br><span class="line">Runtime.getRuntime().exec(new String[]&#123;&quot;/bin/sh&quot;,&quot;c&quot;,&quot;xxx&quot;&#125;);</span><br></pre></td></tr></table></figure></p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">String tempCmd = &quot;dexp &quot; + userName + &quot;/&quot; + password + &quot;@&quot; + hostIP + &quot;:&quot; + port + </span><br><span class="line">&quot; FILE=&quot; + fileName + &quot; DIRECTORY=&quot; + filePath + &quot; FULL=Y&quot;;</span><br><span class="line">String[] cmds = &#123; &quot;cmd&quot;, &quot;/c&quot;, tempCmd &#125;;</span><br><span class="line"></span><br><span class="line">if (!System.getProperties().getProperty(&quot;os.name&quot;)</span><br><span class="line">.toString().toUpperCase().contains(&quot;WIN&quot;)) &#123;</span><br><span class="line">System.out.println(&quot;not windows&quot;);</span><br><span class="line">cmds = new String[] &#123; &quot;/bin/sh&quot;, &quot;-c&quot;, tempCmd &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">System.out.println(tempCmd);</span><br><span class="line">Process process = Runtime.getRuntime().exec(cmds);</span><br><span class="line">BufferedReader reader = new BufferedReader(newInputStreamReader(process.getInputStream()));</span><br><span class="line">String line;</span><br><span class="line">while ((line = reader.readLine()) != null) &#123;</span><br><span class="line">System.out.println(line);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;使用方法&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;
+      
+    
+    </summary>
+    
+      <category term="之初-小工具" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="Java执行cmd命令" scheme="http://yangzhichu.github.io/tags/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ffmpeg</title>
     <link href="http://yangzhichu.github.io/ffmpeg/"/>
     <id>http://yangzhichu.github.io/ffmpeg/</id>
     <published>2019-07-21T05:50:09.000Z</published>
-    <updated>2019-07-21T10:16:07.225Z</updated>
+    <updated>2019-07-25T11:05:17.054Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载Build压缩包，解压</li><li>设置环境变量</li></ul><blockquote><p>参考文章：<a href="https://www.jianshu.com/p/ddafe46827b7" target="_blank" rel="noopener">https://www.jianshu.com/p/ddafe46827b7</a></p></blockquote><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3>]]></content>
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载Build压缩包，解压</li><li>设置环境变量</li></ul><blockquote><p>参考文章：<a href="https://www.jianshu.com/p/ddafe46827b7" target="_blank" rel="noopener">https://www.jianshu.com/p/ddafe46827b7</a></p></blockquote><h3 id="项目导入问题"><a href="#项目导入问题" class="headerlink" title="项目导入问题"></a>项目导入问题</h3><ol><li>26105/26100错误<br>better重建项目</li><li>config.properties<br>store_path(ex：D:/temp/test/)</li><li>src .java中音频文件位置<br>default(“./resource/audio/xxx.wav”)<br>local_file(“D:\path\xxx.m4a”)</li></ol><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3>]]></content>
     
     <summary type="html">
     
@@ -39,7 +119,7 @@
     
     </summary>
     
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="ffmpeg" scheme="http://yangzhichu.github.io/tags/ffmpeg/"/>
@@ -55,7 +135,7 @@
     <link href="http://yangzhichu.github.io/Python/"/>
     <id>http://yangzhichu.github.io/Python/</id>
     <published>2019-07-20T10:50:09.000Z</published>
-    <updated>2019-07-21T10:11:52.827Z</updated>
+    <updated>2019-07-25T11:06:41.081Z</updated>
     
     <content type="html"><![CDATA[<h3 id="环境及使用"><a href="#环境及使用" class="headerlink" title="环境及使用"></a>环境及使用</h3><blockquote><p>PyCharm</p></blockquote><blockquote><p>密钥(截至2020.06)</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">K6IXATEF43-eyJsaWNlbnNlSWQiOiJLNklYQVRFRjQzIiwibGljZW5zZWVOYW1lIjoi5o6I5p2D5Luj55CG5ZWGOiBodHRwOi8vaWRlYS5oay5jbiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9XSwiaGFzaCI6IjEzMjkyMzI4LzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-KUaQi549fH96M/qU7jTvuMeq2GuedA+WppV3irI0JHlfDuhJlidK2m3yoRxitGNmimPFVUA8Dk38OzXnP29I39QDXH5VAF8VjOP0XrqdfrpaZUKpdhRaYz8r1NAwID75U4LqYCvFbazka1dCMJBFqJ2wum1+CSQhJ1O7CSchAJAbjcCRQjbU2sXOofAA2sPLi7nlJw2wrjOHzH9cOczUn11n24PE9BQ/oYGITHkzsu94i4Q90Z1jQysMtXLgM/HoLSHY2T9rKULLoh+tdMwBp9+m0VLF/R5gdkVDV/dlorrA9OEZIsSOaG+oWSen/AulKH6OXllZJoR+b/T6YYfGWg==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn/72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN/lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D/cXmgpOyW/1SmBz3XjVIi/zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV/bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit/pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow==</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -72,7 +152,7 @@
     
     </summary>
     
-      <category term="点滴积累-Future" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-Future/"/>
+      <category term="之初-Future" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
       <category term="Python" scheme="http://yangzhichu.github.io/tags/Python/"/>
@@ -84,7 +164,7 @@
     <link href="http://yangzhichu.github.io/Go/"/>
     <id>http://yangzhichu.github.io/Go/</id>
     <published>2019-07-20T10:49:09.000Z</published>
-    <updated>2019-07-21T10:16:57.581Z</updated>
+    <updated>2019-07-25T11:05:27.114Z</updated>
     
     <content type="html"><![CDATA[<h3 id="环境-win10-x64-msi-无需配置PATH"><a href="#环境-win10-x64-msi-无需配置PATH" class="headerlink" title="环境(win10_x64 .msi 无需配置PATH)"></a>环境(win10_x64 .msi 无需配置PATH)</h3><blockquote><p>Download Go: <a href="https://golang.google.cn/dl/" target="_blank" rel="noopener">https://golang.google.cn/dl/</a></p></blockquote><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><ol><li>LiteIDE</li></ol><ul><li>安装MinGW</li><li>环境配置参考(win64)</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">工具-&gt;编辑当前环境</span><br><span class="line"></span><br><span class="line"># native compiler windows amd64</span><br><span class="line"></span><br><span class="line">GOROOT=D:\Future\Go</span><br><span class="line">#GOBIN=</span><br><span class="line">GOARCH=amd64</span><br><span class="line">GOOS=windows</span><br><span class="line">CGO_ENABLED=1</span><br><span class="line"></span><br><span class="line">PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%</span><br><span class="line"></span><br><span class="line">#D:\Future\liteide\bin</span><br><span class="line">LITEIDE_GDB=gdb64</span><br><span class="line"></span><br><span class="line">#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin</span><br><span class="line">LITEIDE_MAKE=mingw32-make</span><br><span class="line"></span><br><span class="line">LITEIDE_TERM=%COMSPEC%</span><br><span class="line">LITEIDE_TERMARGS=</span><br><span class="line">LITEIDE_EXEC=%COMSPEC%</span><br><span class="line">LITEIDE_EXECOPT=/C</span><br></pre></td></tr></table></figure><ol start="2"><li>Golang（集成环境，无需配置）</li></ol>]]></content>
     
@@ -97,7 +177,7 @@
     
     </summary>
     
-      <category term="点滴积累-Future" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-Future/"/>
+      <category term="之初-Future" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
       <category term="Go" scheme="http://yangzhichu.github.io/tags/Go/"/>
@@ -113,7 +193,7 @@
     <link href="http://yangzhichu.github.io/Http/"/>
     <id>http://yangzhichu.github.io/Http/</id>
     <published>2019-07-16T12:01:07.000Z</published>
-    <updated>2019-07-16T12:01:20.128Z</updated>
+    <updated>2019-07-25T11:05:39.626Z</updated>
     
     <content type="html"><![CDATA[<h3 id="Http请求"><a href="#Http请求" class="headerlink" title="Http请求"></a>Http请求</h3>]]></content>
     
@@ -126,7 +206,7 @@
     
     </summary>
     
-      <category term="点滴积累-网络 协议..." scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E7%BD%91%E7%BB%9C-%E5%8D%8F%E8%AE%AE/"/>
+      <category term="之初-网络 协议..." scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E7%BD%91%E7%BB%9C-%E5%8D%8F%E8%AE%AE/"/>
     
     
       <category term="Http" scheme="http://yangzhichu.github.io/tags/Http/"/>
@@ -142,7 +222,7 @@
     <link href="http://yangzhichu.github.io/Eclipse%E4%B8%ADTomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
     <id>http://yangzhichu.github.io/Eclipse中Tomcat启动Run配置/</id>
     <published>2019-07-16T12:00:07.000Z</published>
-    <updated>2019-07-16T11:57:16.545Z</updated>
+    <updated>2019-07-25T11:04:56.699Z</updated>
     
     <content type="html"><![CDATA[<p>clean tomcat7：run 报错<br>Tomcat====服务===手动启动<br>设置Install JRE时候选中JDK的目录，因为jdk下面也有一个jre。<br>为什么这个可以是因为maven的eclipse插件一些功能需要使用JDK，所以使用jdk目录可以解决这个问题。<br><a href="https://blog.csdn.net/u011734144/article/details/51894942" target="_blank" rel="noopener">https://blog.csdn.net/u011734144/article/details/51894942</a><br><a href="https://blog.csdn.net/JQ_AK47/article/details/56675411" target="_blank" rel="noopener">https://blog.csdn.net/JQ_AK47/article/details/56675411</a></p>]]></content>
     
@@ -155,7 +235,7 @@
     
     </summary>
     
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="Eclipse" scheme="http://yangzhichu.github.io/tags/Eclipse/"/>
@@ -165,11 +245,39 @@
   </entry>
   
   <entry>
+    <title>mybatis逆向生成</title>
+    <link href="http://yangzhichu.github.io/MyBatis-Generator/"/>
+    <id>http://yangzhichu.github.io/MyBatis-Generator/</id>
+    <published>2019-07-16T11:56:07.000Z</published>
+    <updated>2019-07-25T11:03:51.683Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><blockquote><p>mybatis-generator-core：<a href="https://blog.csdn.net/qq_33811662/article/details/80532721" target="_blank" rel="noopener">https://blog.csdn.net/qq_33811662/article/details/80532721</a></p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- a对实体 &quot;serverTimezone&quot; 的引用必须以 &apos;;&apos; 分隔符结尾。 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;jdbcConnection driverClass=&quot;com.mysql.cj.jdbc.Driver&quot; connectionURL=&quot;jdbc:mysql://localhost:3306/e3mall?useSSL=false&amp;amp;serverTimezone=UTC&quot; userId=&quot;root&quot; password=&quot;root_wy&quot; /&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;mybatis-generator-core：&lt;a href=&quot;https://blog.csdn.net/qq_
+      
+    
+    </summary>
+    
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="mybatis" scheme="http://yangzhichu.github.io/tags/mybatis/"/>
+    
+      <category term="mybatis-generator" scheme="http://yangzhichu.github.io/tags/mybatis-generator/"/>
+    
+  </entry>
+  
+  <entry>
     <title>OAuth认证</title>
     <link href="http://yangzhichu.github.io/OAuth%E8%AE%A4%E8%AF%81/"/>
     <id>http://yangzhichu.github.io/OAuth认证/</id>
     <published>2019-07-16T11:56:07.000Z</published>
-    <updated>2019-07-16T12:05:38.027Z</updated>
+    <updated>2019-07-25T11:06:41.049Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>参考文章：http://</p></blockquote>]]></content>
     
@@ -185,38 +293,10 @@
     
     </summary>
     
-      <category term="点滴积累-安全认证" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
+      <category term="之初-安全认证" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
     
     
       <category term="OAuth认证" scheme="http://yangzhichu.github.io/tags/OAuth%E8%AE%A4%E8%AF%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mybatis逆向生成</title>
-    <link href="http://yangzhichu.github.io/MyBatis-Generator/"/>
-    <id>http://yangzhichu.github.io/MyBatis-Generator/</id>
-    <published>2019-07-16T11:56:07.000Z</published>
-    <updated>2019-07-16T11:53:45.360Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><blockquote><p>mybatis-generator-core：<a href="https://blog.csdn.net/qq_33811662/article/details/80532721" target="_blank" rel="noopener">https://blog.csdn.net/qq_33811662/article/details/80532721</a></p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- a对实体 &quot;serverTimezone&quot; 的引用必须以 &apos;;&apos; 分隔符结尾。 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;jdbcConnection driverClass=&quot;com.mysql.cj.jdbc.Driver&quot; connectionURL=&quot;jdbc:mysql://localhost:3306/e3mall?useSSL=false&amp;amp;serverTimezone=UTC&quot; userId=&quot;root&quot; password=&quot;root_wy&quot; /&gt;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;使用&quot;&gt;&lt;a href=&quot;#使用&quot; class=&quot;headerlink&quot; title=&quot;使用&quot;&gt;&lt;/a&gt;使用&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;mybatis-generator-core：&lt;a href=&quot;https://blog.csdn.net/qq_
-      
-    
-    </summary>
-    
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="mybatis" scheme="http://yangzhichu.github.io/tags/mybatis/"/>
-    
-      <category term="mybatis-generator" scheme="http://yangzhichu.github.io/tags/mybatis-generator/"/>
     
   </entry>
   
@@ -225,7 +305,7 @@
     <link href="http://yangzhichu.github.io/MySQL8/"/>
     <id>http://yangzhichu.github.io/MySQL8/</id>
     <published>2019-07-16T11:46:07.000Z</published>
-    <updated>2019-07-16T11:44:25.006Z</updated>
+    <updated>2019-07-25T11:06:41.049Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);</span><br><span class="line">conn = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/test_demo?useSSL=false&amp;serverTimezone=UTC&quot;,&quot;root&quot;,&quot;password&quot;);</span><br><span class="line"></span><br><span class="line">/Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span><br><span class="line">//conn = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/test_demo&quot;,&quot;root&quot;,&quot;password&quot;);</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -238,7 +318,7 @@
     
     </summary>
     
-      <category term="点滴积累-数据库" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="之初-数据库" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
       <category term="MySQL" scheme="http://yangzhichu.github.io/tags/MySQL/"/>
@@ -250,43 +330,11 @@
   </entry>
   
   <entry>
-    <title>SVN相关</title>
-    <link href="http://yangzhichu.github.io/SVN/"/>
-    <id>http://yangzhichu.github.io/SVN/</id>
-    <published>2019-07-16T11:40:07.000Z</published>
-    <updated>2019-07-16T11:47:09.265Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件<br>1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；<br>2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；<br>3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？<br>它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。<br>总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件&lt;br&gt;1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提
-      
-    
-    </summary>
-    
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="SVN" scheme="http://yangzhichu.github.io/tags/SVN/"/>
-    
-      <category term="VisualSVN-Server" scheme="http://yangzhichu.github.io/tags/VisualSVN-Server/"/>
-    
-      <category term="Subversion" scheme="http://yangzhichu.github.io/tags/Subversion/"/>
-    
-      <category term="TortoiseSVN" scheme="http://yangzhichu.github.io/tags/TortoiseSVN/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Eclipse项目相关踩坑</title>
     <link href="http://yangzhichu.github.io/Eclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91/"/>
     <id>http://yangzhichu.github.io/Eclipse项目相关踩坑/</id>
     <published>2019-07-16T11:40:07.000Z</published>
-    <updated>2019-07-16T11:38:28.230Z</updated>
+    <updated>2019-07-25T11:05:11.430Z</updated>
     
     <content type="html"><![CDATA[<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><blockquote><p>Ctrl+1 回车=&gt;自动补全返回类型</p></blockquote><h3 id="maven-Pagehelper"><a href="#maven-Pagehelper" class="headerlink" title="maven Pagehelper"></a>maven Pagehelper</h3><blockquote><p>maven Pagehelper版本问题：<a href="https://blog.csdn.net/qq_36004521/article/details/78578075" target="_blank" rel="noopener">https://blog.csdn.net/qq_36004521/article/details/78578075</a> </p></blockquote><h3 id="war打包错误"><a href="#war打包错误" class="headerlink" title="war打包错误"></a>war打包错误</h3><blockquote><p>war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub</p></blockquote>]]></content>
     
@@ -302,7 +350,7 @@
     
     </summary>
     
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="Eclipse" scheme="http://yangzhichu.github.io/tags/Eclipse/"/>
@@ -316,11 +364,43 @@
   </entry>
   
   <entry>
+    <title>SVN相关</title>
+    <link href="http://yangzhichu.github.io/SVN/"/>
+    <id>http://yangzhichu.github.io/SVN/</id>
+    <published>2019-07-16T11:40:07.000Z</published>
+    <updated>2019-07-25T11:06:41.096Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件<br>1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；<br>2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；<br>3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？<br>它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。<br>总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件&lt;br&gt;1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提
+      
+    
+    </summary>
+    
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="SVN" scheme="http://yangzhichu.github.io/tags/SVN/"/>
+    
+      <category term="VisualSVN-Server" scheme="http://yangzhichu.github.io/tags/VisualSVN-Server/"/>
+    
+      <category term="Subversion" scheme="http://yangzhichu.github.io/tags/Subversion/"/>
+    
+      <category term="TortoiseSVN" scheme="http://yangzhichu.github.io/tags/TortoiseSVN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>敏捷开发</title>
     <link href="http://yangzhichu.github.io/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
     <id>http://yangzhichu.github.io/敏捷开发/</id>
     <published>2019-07-16T11:29:07.000Z</published>
-    <updated>2019-07-16T11:31:29.628Z</updated>
+    <updated>2019-07-25T11:04:46.030Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>敏捷开发 CodeSheep:<a href="https://www.bilibili.com/video/av57269492" target="_blank" rel="noopener">https://www.bilibili.com/video/av57269492</a></p></blockquote><blockquote><p>认识总结： </p></blockquote>]]></content>
     
@@ -334,7 +414,7 @@
     
     </summary>
     
-      <category term="点滴积累-进阶" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E8%BF%9B%E9%98%B6/"/>
+      <category term="之初-进阶" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E8%BF%9B%E9%98%B6/"/>
     
     
       <category term="敏捷开发" scheme="http://yangzhichu.github.io/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
@@ -346,7 +426,7 @@
     <link href="http://yangzhichu.github.io/Tomcat-server.xml/"/>
     <id>http://yangzhichu.github.io/Tomcat-server.xml/</id>
     <published>2019-07-16T11:20:07.000Z</published>
-    <updated>2019-07-16T11:23:44.317Z</updated>
+    <updated>2019-07-25T11:06:41.112Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Tomcat server.xml <a href="https://www.cnblogs.com/kismetv/p/7228274.html" target="_blank" rel="noopener">https://www.cnblogs.com/kismetv/p/7228274.html</a></p></blockquote>]]></content>
     
@@ -360,7 +440,7 @@
     
     </summary>
     
-      <category term="点滴积累-服务器" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="之初-服务器" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
       <category term="Tomcat" scheme="http://yangzhichu.github.io/tags/Tomcat/"/>
@@ -374,7 +454,7 @@
     <link href="http://yangzhichu.github.io/IDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)/"/>
     <id>http://yangzhichu.github.io/IDEA导入项目(Maven Gradle)/</id>
     <published>2019-07-16T11:16:07.000Z</published>
-    <updated>2019-07-16T11:26:24.772Z</updated>
+    <updated>2019-07-25T11:05:48.921Z</updated>
     
     <content type="html"><![CDATA[<p>gradle：offline！！！关闭！！！<br>WIFI网络-&gt;手机热点网络切换</p>]]></content>
     
@@ -388,7 +468,7 @@
     
     </summary>
     
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="IDEA项目导入" scheme="http://yangzhichu.github.io/tags/IDEA%E9%A1%B9%E7%9B%AE%E5%AF%BC%E5%85%A5/"/>
@@ -400,7 +480,7 @@
     <link href="http://yangzhichu.github.io/IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
     <id>http://yangzhichu.github.io/IDEA安装及使用/</id>
     <published>2019-07-16T11:16:07.000Z</published>
-    <updated>2019-07-16T11:36:47.581Z</updated>
+    <updated>2019-07-25T11:05:44.485Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>IDEA 注册码：<a href="https://blog.csdn.net/mobiusstrip/article/details/89841038" target="_blank" rel="noopener">https://blog.csdn.net/mobiusstrip/article/details/89841038</a></p></blockquote><blockquote><p>快捷键<br>  Ctrl+Alt+L 格式化代码</p></blockquote>]]></content>
     
@@ -414,7 +494,7 @@
     
     </summary>
     
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="IDEA安装及使用" scheme="http://yangzhichu.github.io/tags/IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
@@ -430,9 +510,9 @@
     <link href="http://yangzhichu.github.io/categories%E7%BB%B4%E6%8A%A4/"/>
     <id>http://yangzhichu.github.io/categories维护/</id>
     <published>2019-07-15T12:05:00.000Z</published>
-    <updated>2019-07-21T05:48:34.013Z</updated>
+    <updated>2019-07-25T11:04:36.704Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="分类维护"><a href="#分类维护" class="headerlink" title="分类维护"></a>分类维护</h1><blockquote><p>categories</p></blockquote><ul><li>点滴积累-Java基础</li><li>点滴积累-工具使用(ffmpeg)</li><li>点滴积累-框架(Spring …)</li><li>点滴积累-安全认证(OAuth …)</li><li>点滴积累-加密(MD5 SHA SRA …)</li><li>点滴积累-网络 协议…</li><li>点滴积累-数据库</li><li>点滴积累-服务器(Tomcat Nginx …)</li><li>点滴积累-Linux</li><li>点滴积累-算法</li><li>点滴积累-进阶(开发模式 架构 …)</li><li>点滴积累-常用配置文件(.xml .properties…)</li><li>点滴积累-常用小工具(my)</li><li>点滴积累-Future(Python Go AI etc…)</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="分类维护"><a href="#分类维护" class="headerlink" title="分类维护"></a>分类维护</h1><blockquote><p>categories</p></blockquote><ul><li>之初-Java基础</li><li>之初-工具使用(ffmpeg)</li><li>之初-框架(Spring …)</li><li>之初-安全认证(OAuth …)</li><li>之初-加密(MD5 SHA SRA …)</li><li>之初-网络 协议…</li><li>之初-数据库</li><li>之初-服务器(Tomcat Nginx …)</li><li>之初-Linux</li><li>之初-算法</li><li>之初-进阶(开发模式 架构 …)</li><li>之初-常用配置文件及方法(.xml .properties…)</li><li>之初-小工具(语音转写 java执行cmd)</li><li>之初-Future(Python Go AI etc…)</li></ul>]]></content>
     
     <summary type="html">
     
@@ -442,7 +522,7 @@
 &lt;p&gt;categories&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;点滴积累-Java基础
+&lt;li&gt;之初-Java基础&lt;/
       
     
     </summary>
@@ -459,7 +539,7 @@
     <link href="http://yangzhichu.github.io/postman%E4%BD%BF%E7%94%A8/"/>
     <id>http://yangzhichu.github.io/postman使用/</id>
     <published>2019-07-15T11:17:07.000Z</published>
-    <updated>2019-07-15T11:21:48.585Z</updated>
+    <updated>2019-07-25T11:06:41.065Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>参考文章：<a href="https://blog.csdn.net/fxbin123/article/details/80428216" target="_blank" rel="noopener">https://blog.csdn.net/fxbin123/article/details/80428216</a></p></blockquote>]]></content>
     
@@ -473,7 +553,7 @@
     
     </summary>
     
-      <category term="点滴积累-工具使用" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
       <category term="postman" scheme="http://yangzhichu.github.io/tags/postman/"/>
@@ -487,7 +567,7 @@
     <link href="http://yangzhichu.github.io/Windows-Linux(Ubuntu)-Tomcat/"/>
     <id>http://yangzhichu.github.io/Windows-Linux(Ubuntu)-Tomcat/</id>
     <published>2019-07-12T04:40:07.000Z</published>
-    <updated>2019-07-12T04:50:21.383Z</updated>
+    <updated>2019-07-25T11:06:41.112Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Windows主机无法访问Linux虚拟机-Ubuntu-上的Tomcat"><a href="#Windows主机无法访问Linux虚拟机-Ubuntu-上的Tomcat" class="headerlink" title="Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat"></a>Windows主机无法访问Linux虚拟机(Ubuntu)上的Tomcat</h2><h4 id="我的配置过程（Ubuntu14-04-LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。"><a href="#我的配置过程（Ubuntu14-04-LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。" class="headerlink" title="我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。"></a>我的配置过程（Ubuntu14.04 LTS）首先，经过一番搜索多数文章给出的配置内容包括IP配置，虚拟机防火墙和端口配置。</h4><hr><h4 id="1-IP配置"><a href="#1-IP配置" class="headerlink" title="1.IP配置"></a>1.IP配置</h4><p>在VMware Workstation中依次点击“编辑”-&gt;”虚拟网络编辑器”-&gt;”窗体顶部的VMnet8”-&gt;”窗体中部按钮NAT模式”，查看VMnet8网络的子网IP和网关IP。</p><p>在主机网络和共享中心中更改适配器配置，找到“VMware Virtual Ethernet Adapter for VMnet8“，根据上述查看的VMnet8网络子网IP和网关IP修改IPv4属性，确保主机能够ping通虚拟机IP（查看虚拟机IP命令：# ifconfig)，此时主机应能ping通虚拟机。</p><hr><h4 id="2-虚拟机firewall和端口配置"><a href="#2-虚拟机firewall和端口配置" class="headerlink" title="2.虚拟机firewall和端口配置"></a>2.虚拟机firewall和端口配置</h4><p>有文章说要把防火墙关闭，那就关闭防火墙试下。关闭防火墙时，尝试了搜索到的两种方法。</p><p>1.# ufw disable</p><p>2.# service iptables stop</p><p>(命令2好像不太好使，大致了解下好像是ufw是一个简化版的iptables，基于iptables，配置比iptables简单。centos7版本使用firewalld对防火墙进行加强，不再使用原来的iptables。在我的Ubuntu中ufw和firewalld均可使用，只不过firewalld需要安装一下:# apt-get install firewalld)</p><p>防火墙关闭之后再访问Tomcat，好像还是访问失败，于是接着尝试配置端口（使用的是firewalld，在解决问题后了解ufw命令用法时，ufw命令：# ufw allow proto tcp IP1 port xxx to IP2 port xxx，和后面所述成功解决问题的方法好像类似，不过自己未尝试）。</p><p>1.安装firewalld：# apt-get install firewalld</p><p>2.开放端口（这里开放了3306端口）：# firewall-cmd –zone=public –add-port=3306/tcp</p><p>   查看端口状态：# netstat -an|grep 3306</p><p>3.# iptables-save</p><p>很不幸，还是没能成功访问。</p><p>注：有些命令可能需要root权限。</p><hr><h4 id="3-成功解决问题"><a href="#3-成功解决问题" class="headerlink" title="3.成功解决问题"></a>3.成功解决问题</h4><p><img src="/images/NAT.png"></p><p>配置很简单，在VMware Workstation中进入”虚拟网络编辑器”，点击”更改设置”，进入”NAT设置“。</p><p>主机端口：在主机上访问虚拟机服务器时的访问端口，我设置的9080（在主机访问 <a href="http://localhost:9080/" target="_blank" rel="noopener">http://localhost:9080/</a> 就可访问到虚拟机上的Tomcat）</p><p>虚拟机端口：Linux上Tomcat访问端口（默认8080）</p><p><img src="/images/Tomcat9080.png"></p><p>注：每次打开虚拟机前需执行 # service firewalld stop(尝试解决中…)</p><p>由于我是按照文章一步一步配置的，所以此处解决问题是否与前面的配置有关自己未验证。遇到同样问题的小伙伴可以按照从后向前的顺序进行配置，如果能够尽快解决问题当然最好不过了。</p><blockquote><p>参考文章：<a href="https://blog.csdn.net/zswjob126/article/details/49498217" target="_blank" rel="noopener">https://blog.csdn.net/zswjob126/article/details/49498217</a></p></blockquote><hr><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul><li><p>有必要好好学习Linux，掌握原理及常用命令（本次学到的命令：iptables，ufw，firewalld）</p></li><li><p>要多了解网络相关知识，如VMware中的NAT模式，桥接模式，仅主机模式的工作原理</p></li></ul>]]></content>
     
@@ -500,97 +580,12 @@
     
     </summary>
     
-      <category term="点滴积累-Linux" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-Linux/"/>
+      <category term="之初-Linux" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-Linux/"/>
     
     
       <category term="Linux" scheme="http://yangzhichu.github.io/tags/Linux/"/>
     
       <category term="Tomcat" scheme="http://yangzhichu.github.io/tags/Tomcat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis-xxx</title>
-    <link href="http://yangzhichu.github.io/Redis-xxx/"/>
-    <id>http://yangzhichu.github.io/Redis-xxx/</id>
-    <published>2019-05-01T07:21:16.000Z</published>
-    <updated>2019-07-15T11:41:32.424Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Redis-一篇搞定"><a href="#Redis-一篇搞定" class="headerlink" title="Redis-一篇搞定"></a>Redis-一篇搞定</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Redis-一篇搞定&quot;&gt;&lt;a href=&quot;#Redis-一篇搞定&quot; class=&quot;headerlink&quot; title=&quot;Redis-一篇搞定&quot;&gt;&lt;/a&gt;Redis-一篇搞定&lt;/h2&gt;
-      
-    
-    </summary>
-    
-      <category term="点滴积累-数据库" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="数据库" scheme="http://yangzhichu.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-      <category term="Redis数据类型" scheme="http://yangzhichu.github.io/tags/Redis%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-      <category term="redis" scheme="http://yangzhichu.github.io/tags/redis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring-xxx</title>
-    <link href="http://yangzhichu.github.io/Spring-xxx/"/>
-    <id>http://yangzhichu.github.io/Spring-xxx/</id>
-    <published>2019-05-01T07:12:10.000Z</published>
-    <updated>2019-07-15T11:41:31.158Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="hexo-new-“Spring-入门”"><a href="#hexo-new-“Spring-入门”" class="headerlink" title="hexo new “Spring-入门”"></a>hexo new “Spring-入门”</h2><h2 id="hexo-new-“SpringMVC-xxx”"><a href="#hexo-new-“SpringMVC-xxx”" class="headerlink" title="hexo new “SpringMVC-xxx”"></a>hexo new “SpringMVC-xxx”</h2><h2 id="hexo-new-“SpringBoot-xxx”"><a href="#hexo-new-“SpringBoot-xxx”" class="headerlink" title="hexo new “SpringBoot-xxx”"></a>hexo new “SpringBoot-xxx”</h2><h2 id="基本概念-etc-知识总结提取要点"><a href="#基本概念-etc-知识总结提取要点" class="headerlink" title="基本概念 etc. (知识总结提取要点)"></a>基本概念 etc. (知识总结提取要点)</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;hexo-new-“Spring-入门”&quot;&gt;&lt;a href=&quot;#hexo-new-“Spring-入门”&quot; class=&quot;headerlink&quot; title=&quot;hexo new “Spring-入门”&quot;&gt;&lt;/a&gt;hexo new “Spring-入门”&lt;/h2&gt;&lt;
-      
-    
-    </summary>
-    
-      <category term="点滴积累-框架" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E6%A1%86%E6%9E%B6/"/>
-    
-    
-      <category term="Spring" scheme="http://yangzhichu.github.io/tags/Spring/"/>
-    
-      <category term="IOC AOP DI" scheme="http://yangzhichu.github.io/tags/IOC-AOP-DI/"/>
-    
-      <category term="Spring 事务管理" scheme="http://yangzhichu.github.io/tags/Spring-%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MyBatis-xxx</title>
-    <link href="http://yangzhichu.github.io/MyBatis-xxx/"/>
-    <id>http://yangzhichu.github.io/MyBatis-xxx/</id>
-    <published>2019-05-01T07:09:48.000Z</published>
-    <updated>2019-07-15T11:41:34.001Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="hexo-new-“MyBatis-generator”"><a href="#hexo-new-“MyBatis-generator”" class="headerlink" title="hexo new “MyBatis-generator”"></a>hexo new “MyBatis-generator”</h2><h2 id="分页插件"><a href="#分页插件" class="headerlink" title="分页插件"></a>分页插件</h2><h2 id="generator"><a href="#generator" class="headerlink" title="generator"></a>generator</h2><h2 id="mybatis-plus"><a href="#mybatis-plus" class="headerlink" title="mybatis-plus"></a>mybatis-plus</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;hexo-new-“MyBatis-generator”&quot;&gt;&lt;a href=&quot;#hexo-new-“MyBatis-generator”&quot; class=&quot;headerlink&quot; title=&quot;hexo new “MyBatis-generator”&quot;&gt;&lt;/a&gt;he
-      
-    
-    </summary>
-    
-      <category term="点滴积累-框架" scheme="http://yangzhichu.github.io/categories/%E7%82%B9%E6%BB%B4%E7%A7%AF%E7%B4%AF-%E6%A1%86%E6%9E%B6/"/>
-    
-    
-      <category term="MyBatis" scheme="http://yangzhichu.github.io/tags/MyBatis/"/>
-    
-      <category term="分页插件" scheme="http://yangzhichu.github.io/tags/%E5%88%86%E9%A1%B5%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   

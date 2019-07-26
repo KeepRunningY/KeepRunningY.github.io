@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[阿里支付]]></title>
+    <url>%2F%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98%2F</url>
+    <content type="text"><![CDATA[return-notify]]></content>
+      <categories>
+        <category>之初-Future</category>
+      </categories>
+      <tags>
+        <tag>阿里支付</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[机器学习]]></title>
+    <url>%2F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%2F</url>
+    <content type="text"><![CDATA[损失函数决策树信息增益（比）信息熵/决策树生成&amp;剪枝ID3 C4.5]]></content>
+      <categories>
+        <category>之初-Future</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Eclipse查看JDK源码设置]]></title>
     <url>%2FEclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81%E8%AE%BE%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[在Eclipse中查看JDK类库的源代码： 点 “window”-&gt; “Preferences” -&gt; “Java” -&gt; “Installed JRES” 此时”Installed JRES”右边是列表窗格，列出了系统中的 JRE 环境，选择你的JRE，然后点边上的 “Edit…”， 会出现一个窗口(Edit JRE) 选中rt.jar文件的这一项：“c:\program files\java\jre_1.5.0_06\lib\rt.jar”点 左边的“+” 号展开它 展开后，可以看到“Source Attachment:(none)”，点这一项，点右边的按钮“Source Attachment…”, 选择你的JDK目录下的 “src.zip”文件 一路点”ok”,结束dt.jar是关于运行环境的类库,主要是swing的包tools.jar是关于一些工具的类库rt.jar包含了jdk的基础类库，也就是你在Java doc里面看到的所有的类的class文件 参考文章 https://www.cnblogs.com/lxmyhappy/p/7084097.html]]></content>
@@ -74,7 +96,7 @@
   <entry>
     <title><![CDATA[Http]]></title>
     <url>%2FHttp%2F</url>
-    <content type="text"><![CDATA[Http请求]]></content>
+    <content type="text"><![CDATA[Http请求GET - 从指定的资源请求数据。POST - 向指定的资源提交要被处理的数据 GET 方法请注意，查询字符串（名称/值对）是在 GET 请求的 URL 中发送的： /test/demo_form.asp?name1=value1&amp;name2=value2有关 GET 请求的其他一些注释： GET 请求可被缓存GET 请求保留在浏览器历史记录中GET 请求可被收藏为书签GET 请求不应在处理敏感数据时使用GET 请求有长度限制GET 请求只应当用于取回数据 POST 方法 请注意，查询字符串（名称/值对）是在 POST 请求的 HTTP 消息主体中发送的： POST /test/demo_form.asp HTTP/1.1Host: w3schools.comname1=value1&amp;name2=value2 有关 POST 请求的其他一些注释： POST 请求不会被缓存POST 请求不会保留在浏览器历史记录中POST 不能被收藏为书签POST 请求对数据长度没有要求 o_0 GET POST 后退按钮/刷新 无害 数据会被重新提交（浏览器应该告知用户数据会被重新提交） 书签 可收藏为书签 不可收藏为书签 缓存 能被缓存 不能缓存 编码类型 application/x-www-form-urlencoded application/x-www-form-urlencoded 或 multipart/form-data。为二进制数据使用多重编码 历史 参数保留在浏览器历史中 参数不会保存在浏览器历史中 数据长度限制 当发送数据时，GET 方法向 URL 添加数据；URL 的长度是受限制的（URL 的最大长度是 2048 个字符） 无限制 数据类型限制 只允许 ASCII 字符 没有限制，也允许二进制数据 安全性 与 POST 相比，GET 的安全性较差，因为所发送的数据是 URL 的一部分。在发送密码或其他敏感信息时绝不要使用 GET ！ POST 比 GET 更安全，因为参数不会被保存在浏览器历史或 web 服务器日志中 可见性 数据在 URL 中对所有人都是可见的 数据不会显示在 URL 中]]></content>
       <categories>
         <category>之初-网络 协议...</category>
       </categories>
@@ -97,6 +119,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[OAuth认证]]></title>
+    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
+    <content type="text"><![CDATA[参考文章：http://]]></content>
+      <categories>
+        <category>之初-安全认证</category>
+      </categories>
+      <tags>
+        <tag>OAuth认证</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mybatis逆向生成]]></title>
     <url>%2FMyBatis-Generator%2F</url>
     <content type="text"><![CDATA[使用 mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/80532721 123&lt;!-- a对实体 &quot;serverTimezone&quot; 的引用必须以 &apos;;&apos; 分隔符结尾。 --&gt;&lt;jdbcConnection driverClass=&quot;com.mysql.cj.jdbc.Driver&quot; connectionURL=&quot;jdbc:mysql://localhost:3306/e3mall?useSSL=false&amp;amp;serverTimezone=UTC&quot; userId=&quot;root&quot; password=&quot;root_wy&quot; /&gt;]]></content>
@@ -106,17 +139,6 @@
       <tags>
         <tag>mybatis</tag>
         <tag>mybatis-generator</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[OAuth认证]]></title>
-    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
-    <content type="text"><![CDATA[参考文章：http://]]></content>
-      <categories>
-        <category>之初-安全认证</category>
-      </categories>
-      <tags>
-        <tag>OAuth认证</tag>
       </tags>
   </entry>
   <entry>
@@ -184,17 +206,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
-    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
-    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>IDEA项目导入</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[IDEA安装及使用]]></title>
     <url>%2FIDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[IDEA 注册码：https://blog.csdn.net/mobiusstrip/article/details/89841038 快捷键 Ctrl+Alt+L 格式化代码]]></content>
@@ -205,6 +216,17 @@
         <tag>IDEA安装及使用</tag>
         <tag>IDEA密钥</tag>
         <tag>IDEA快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
+    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
+    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>IDEA项目导入</tag>
       </tags>
   </entry>
   <entry>

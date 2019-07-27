@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangzhichu.github.io/"/>
-  <updated>2019-07-26T06:12:41.290Z</updated>
+  <updated>2019-07-27T09:49:48.489Z</updated>
   <id>http://yangzhichu.github.io/</id>
   
   <author>
@@ -15,6 +15,115 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>bat脚本编写</title>
+    <link href="http://yangzhichu.github.io/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    <id>http://yangzhichu.github.io/bat脚本编写/</id>
+    <published>2019-07-27T09:25:16.000Z</published>
+    <updated>2019-07-27T09:49:48.489Z</updated>
+    
+    <content type="html"><![CDATA[<p>cd D:/hexo/Blog<br>java -version<br>gcc -v</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;cd D:/hexo/Blog&lt;br&gt;java -version&lt;br&gt;gcc -v&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="之初-Others" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-Others/"/>
+    
+    
+      <category term="bat脚本编写" scheme="http://yangzhichu.github.io/tags/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java I/O流</title>
+    <link href="http://yangzhichu.github.io/Java%20IO%E6%B5%81/"/>
+    <id>http://yangzhichu.github.io/Java IO流/</id>
+    <published>2019-07-27T05:29:37.000Z</published>
+    <updated>2019-07-27T05:30:02.277Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>参考 <a href="https://www.cnblogs.com/furaywww/p/8849850.html" target="_blank" rel="noopener">https://www.cnblogs.com/furaywww/p/8849850.html</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;参考 &lt;a href=&quot;https://www.cnblogs.com/furaywww/p/8849850.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblogs.com/furaywww
+      
+    
+    </summary>
+    
+      <category term="之初-Java基础" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-Java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Java I/O流" scheme="http://yangzhichu.github.io/tags/Java-I-O%E6%B5%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>邮件协议</title>
+    <link href="http://yangzhichu.github.io/%E9%82%AE%E4%BB%B6%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://yangzhichu.github.io/邮件协议/</id>
+    <published>2019-07-26T07:27:02.000Z</published>
+    <updated>2019-07-26T07:32:24.194Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="POP3"><a href="#POP3" class="headerlink" title="POP3"></a>POP3</h3><blockquote><p>POP3是Post Office Protocol 3的简称，即邮局协议的第3个版本,它规定怎样将个人计算机连接到Internet的邮件服务器和下载电子邮件的电子协议。它是因特网电子邮件的第一个离线协议标准,POP3允许用户从服务器上把邮件存储到本地主机（即自己的计算机）上,同时删除保存在邮件服务器上的邮件，而POP3服务器则是遵循POP3协议的接收邮件服务器，用来接收电子邮件的。</p></blockquote><h3 id="SMTP"><a href="#SMTP" class="headerlink" title="SMTP"></a>SMTP</h3><blockquote><p>SMTP的全称是“Simple Mail Transfer Protocol”，即简单邮件传输协议。它是一组用于从源地址到目的地址传输邮件的规范，通过它来控制邮件的中转方式。SMTP 协议属于 TCP/IP协议簇，它帮助每台计算机在发送或中转信件时找到下一个目的地。SMTP服务器就是遵循SMTP协议的发送邮件服务器。SMTP认证，简单地说就是要求必须在提供了账户名和密码之后才可以登录 SMTP 服务器，这就使得那些垃圾邮件的散播者无可乘之机。增加SMTP认证的目的是为了使用户避免受到垃圾邮件的侵扰。</p></blockquote><h3 id="IMAP"><a href="#IMAP" class="headerlink" title="IMAP"></a>IMAP</h3><blockquote><p>IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议，它是跟POP3类似邮件访问标准协议之一。不同的是，开启了IMAP后，您在电子邮件客户端收取的邮件仍然保留在服务器上，同时在客户端上的操作都会反馈到服务器上，如：删除邮件，标记已读等，服务器上的邮件也会做相应的动作。所以无论从浏览器登录邮箱或者客户端软件登录邮箱，看到的邮件以及状态都是一致的。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;POP3&quot;&gt;&lt;a href=&quot;#POP3&quot; class=&quot;headerlink&quot; title=&quot;POP3&quot;&gt;&lt;/a&gt;POP3&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;POP3是Post Office Protocol 3的简称，即邮局协议的第3个版本,它规定怎样将
+      
+    
+    </summary>
+    
+      <category term="之初-Others积累" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-Others%E7%A7%AF%E7%B4%AF/"/>
+    
+    
+      <category term="POP3" scheme="http://yangzhichu.github.io/tags/POP3/"/>
+    
+      <category term="SMTP" scheme="http://yangzhichu.github.io/tags/SMTP/"/>
+    
+      <category term="IMAP" scheme="http://yangzhichu.github.io/tags/IMAP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python爬虫</title>
+    <link href="http://yangzhichu.github.io/%E7%88%AC%E8%99%AB/"/>
+    <id>http://yangzhichu.github.io/爬虫/</id>
+    <published>2019-07-26T06:16:20.000Z</published>
+    <updated>2019-07-26T06:17:59.824Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="爬虫-scrapy"><a href="#爬虫-scrapy" class="headerlink" title="爬虫  scrapy"></a>爬虫  scrapy</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;爬虫-scrapy&quot;&gt;&lt;a href=&quot;#爬虫-scrapy&quot; class=&quot;headerlink&quot; title=&quot;爬虫  scrapy&quot;&gt;&lt;/a&gt;爬虫  scrapy&lt;/h3&gt;
+      
+    
+    </summary>
+    
+      <category term="之初-Future" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+    
+    
+      <category term="Python" scheme="http://yangzhichu.github.io/tags/Python/"/>
+    
+      <category term="爬虫" scheme="http://yangzhichu.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>阿里支付</title>
@@ -125,16 +234,19 @@
     <link href="http://yangzhichu.github.io/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
     <id>http://yangzhichu.github.io/Java执行cmd命令/</id>
     <published>2019-07-25T00:29:00.000Z</published>
-    <updated>2019-07-25T11:03:10.802Z</updated>
+    <updated>2019-07-27T13:29:30.322Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>使用方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// 调用命令脚本语言来实现功能</span><br><span class="line"></span><br><span class="line">// 1.错误的使用方式 </span><br><span class="line">Runtime.getRuntime().exec(&quot;xxx&quot;);</span><br><span class="line"></span><br><span class="line">// 2.正确的使用方式:需要指定参数(命令位置;-c表示先执行第一个参数;命令)</span><br><span class="line">Runtime.getRuntime().exec(new String[]&#123;&quot;/bin/sh&quot;,&quot;c&quot;,&quot;xxx&quot;&#125;);</span><br></pre></td></tr></table></figure></p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">String tempCmd = &quot;dexp &quot; + userName + &quot;/&quot; + password + &quot;@&quot; + hostIP + &quot;:&quot; + port + </span><br><span class="line">&quot; FILE=&quot; + fileName + &quot; DIRECTORY=&quot; + filePath + &quot; FULL=Y&quot;;</span><br><span class="line">String[] cmds = &#123; &quot;cmd&quot;, &quot;/c&quot;, tempCmd &#125;;</span><br><span class="line"></span><br><span class="line">if (!System.getProperties().getProperty(&quot;os.name&quot;)</span><br><span class="line">.toString().toUpperCase().contains(&quot;WIN&quot;)) &#123;</span><br><span class="line">System.out.println(&quot;not windows&quot;);</span><br><span class="line">cmds = new String[] &#123; &quot;/bin/sh&quot;, &quot;-c&quot;, tempCmd &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">System.out.println(tempCmd);</span><br><span class="line">Process process = Runtime.getRuntime().exec(cmds);</span><br><span class="line">BufferedReader reader = new BufferedReader(newInputStreamReader(process.getInputStream()));</span><br><span class="line">String line;</span><br><span class="line">while ((line = reader.readLine()) != null) &#123;</span><br><span class="line">System.out.println(line);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<ul><li>Process的输出流和错误流处理(阻塞问题)</li></ul><blockquote><p><a href="https://blog.csdn.net/Dancen/article/details/7969328" target="_blank" rel="noopener">https://blog.csdn.net/Dancen/article/details/7969328</a></p></blockquote><blockquote><p><a href="https://blog.csdn.net/stormych/article/details/62037579" target="_blank" rel="noopener">https://blog.csdn.net/stormych/article/details/62037579</a></p></blockquote><blockquote><p><a href="https://blog.csdn.net/mengxingyuanlove/article/details/50707746" target="_blank" rel="noopener">https://blog.csdn.net/mengxingyuanlove/article/details/50707746</a></p></blockquote><blockquote><p>简单使用方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">// 调用命令脚本语言来实现功能</span><br><span class="line"></span><br><span class="line">// 1.错误的使用方式 </span><br><span class="line">Runtime.getRuntime().exec(&quot;xxx&quot;);</span><br><span class="line"></span><br><span class="line">// 2.正确的使用方式:需要指定参数(命令位置;-c表示先执行第一个参数;命令)</span><br><span class="line">Runtime.getRuntime().exec(new String[]&#123;&quot;/bin/sh&quot;,&quot;c&quot;,&quot;xxx&quot;&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">String tempCmd = &quot;dexp &quot; + userName + &quot;/&quot; + password + &quot;@&quot; + hostIP + &quot;:&quot; + port + </span><br><span class="line">&quot; FILE=&quot; + fileName + &quot; DIRECTORY=&quot; + filePath + &quot; FULL=Y&quot;;</span><br><span class="line">String[] cmds = &#123; &quot;cmd&quot;, &quot;/c&quot;, tempCmd &#125;;</span><br><span class="line"></span><br><span class="line">if (!System.getProperties().getProperty(&quot;os.name&quot;)</span><br><span class="line">.toString().toUpperCase().contains(&quot;WIN&quot;)) &#123;</span><br><span class="line">System.out.println(&quot;not windows&quot;);</span><br><span class="line">cmds = new String[] &#123; &quot;/bin/sh&quot;, &quot;-c&quot;, tempCmd &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">System.out.println(tempCmd);</span><br><span class="line">Process process = Runtime.getRuntime().exec(cmds);</span><br><span class="line">BufferedReader reader = new BufferedReader(newInputStreamReader(process.getInputStream()));</span><br><span class="line">String line;</span><br><span class="line">while ((line = reader.readLine()) != null) &#123;</span><br><span class="line">System.out.println(line);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p></blockquote><hr><blockquote><p>具体原因未知，嗝~</p></blockquote><font color="#aa0000">java -version, gcc -v等命令通过getErrorStream()读出</font><br><font color="#aa0000">如：hexo -help 则通过getInputStream()读出</font><p>hexo s ！不可测试，无cmd命令窗口，无法关闭server！</p><p>cmd /c dir 是执行完dir命令后关闭命令窗口<br>cmd /k dir 是执行完dir命令后不关闭命令窗口<br>cmd /c start dir 会打开一个新窗口后执行dir指令，原窗口会关闭<br>cmd /k start dir 会打开一个新窗口后执行dir指令，原窗口不会关闭</p><blockquote><p><a href="https://blog.csdn.net/halaoda/article/details/78778477" target="_blank" rel="noopener">https://blog.csdn.net/halaoda/article/details/78778477</a></p></blockquote><blockquote><p>demo(单条命令, bat, 重定向)</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br></pre></td><td class="code"><pre><span class="line">package com.yang.test;</span><br><span class="line"></span><br><span class="line">import java.io.BufferedReader;</span><br><span class="line">import java.io.File;</span><br><span class="line">import java.io.IOException;</span><br><span class="line">import java.io.InputStream;</span><br><span class="line">import java.io.InputStreamReader;</span><br><span class="line">import java.io.UnsupportedEncodingException;</span><br><span class="line"></span><br><span class="line">//===================并发处理===============================</span><br><span class="line">class StreamManage extends Thread &#123;</span><br><span class="line">InputStream is;</span><br><span class="line">String type;</span><br><span class="line"></span><br><span class="line">public StreamManage(InputStream is, String type) &#123;</span><br><span class="line">this.is = is;</span><br><span class="line">this.type = type;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void run() &#123;</span><br><span class="line">InputStreamReader isr = null;</span><br><span class="line">try &#123;</span><br><span class="line">isr = new InputStreamReader(is, &quot;gbk&quot;);</span><br><span class="line">&#125; catch (UnsupportedEncodingException uee) &#123;</span><br><span class="line">uee.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">BufferedReader br = new BufferedReader(isr);</span><br><span class="line">String line = null;</span><br><span class="line">try &#123;</span><br><span class="line">while ((line = br.readLine()) != null) &#123;</span><br><span class="line">if (type.equals(&quot;Error&quot;)) &#123;</span><br><span class="line">System.out.println(&quot;Error &gt; &quot; + line);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">System.out.println(&quot;INFO &gt; &quot; + line);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125; catch (IOException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125; finally &#123;</span><br><span class="line">try &#123;</span><br><span class="line">is.close();</span><br><span class="line">&#125; catch (IOException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class CmdTest &#123;</span><br><span class="line"></span><br><span class="line">public static void main(String[] args) throws IOException &#123;</span><br><span class="line"></span><br><span class="line">//String path = &quot;mspaint&quot;;</span><br><span class="line">//Runtime run = Runtime.getRuntime();</span><br><span class="line">//try &#123;</span><br><span class="line">//Process process = run.exec(&quot;cmd.exe /k start &quot; + path);</span><br><span class="line">//InputStream in = process.getInputStream();</span><br><span class="line">//while (in.read() != -1) &#123;</span><br><span class="line">//System.out.println(in.read());</span><br><span class="line">//&#125;</span><br><span class="line">//in.close();</span><br><span class="line">//process.waitFor();</span><br><span class="line">//&#125; catch (Exception e) &#123;</span><br><span class="line">//e.printStackTrace();</span><br><span class="line">//&#125;</span><br><span class="line"></span><br><span class="line">// String cmd = &quot;gcc -v&quot;;</span><br><span class="line">// String[] cmdarray = &#123; &quot;cmd&quot;, &quot;/C&quot;, cmd &#125;;</span><br><span class="line">// executeCMDfile(cmdarray, &quot;D:/hexo/Blog&quot;, &quot;D:/a.txt&quot;);</span><br><span class="line"></span><br><span class="line">try &#123;</span><br><span class="line">startMailServer();</span><br><span class="line">&#125; catch (InterruptedException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 执行 .bat 文件</span><br><span class="line">private static void startMailServer() throws InterruptedException &#123;</span><br><span class="line">Runtime rt = Runtime.getRuntime(); // 运行时系统获取</span><br><span class="line">try &#123;</span><br><span class="line">File filePath = new File(&quot;resource\\runStart.bat&quot;);</span><br><span class="line">Process proc = rt.exec(new String[] &#123; &quot;cmd&quot;, &quot;/K&quot;, filePath.toString() &#125;);</span><br><span class="line">StreamManage errorStream = new StreamManage(proc.getErrorStream(), &quot;Error&quot;);</span><br><span class="line">StreamManage outputStream = new StreamManage(proc.getInputStream(), &quot;INFO&quot;);</span><br><span class="line">errorStream.start();</span><br><span class="line">outputStream.start();</span><br><span class="line">proc.waitFor();</span><br><span class="line"></span><br><span class="line">proc.destroy();</span><br><span class="line">&#125; catch (IOException e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 在指定路径下执行命令，并将执行结果信息重定向到某一文件中</span><br><span class="line">public static String executeCMDfile(String[] cmds, String dirTodoCMD, String logToFile) throws IOException &#123;</span><br><span class="line">try &#123;</span><br><span class="line">ProcessBuilder builder = new ProcessBuilder(cmds);</span><br><span class="line">if (dirTodoCMD != null)</span><br><span class="line">builder.directory(new File(dirTodoCMD));</span><br><span class="line">builder.redirectErrorStream(true);</span><br><span class="line">builder.redirectOutput(new File(logToFile));</span><br><span class="line">Process p = builder.start();</span><br><span class="line">p.waitFor();</span><br><span class="line"></span><br><span class="line">InputStream is = p.getInputStream();</span><br><span class="line">BufferedReader buffer = new BufferedReader(new InputStreamReader(is));</span><br><span class="line">String line = null;</span><br><span class="line">StringBuffer sb = new StringBuffer();</span><br><span class="line">while ((line = buffer.readLine()) != null) &#123;</span><br><span class="line">sb.append(line);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">is.close();</span><br><span class="line">return sb.toString();</span><br><span class="line">&#125; catch (Exception e) &#123;</span><br><span class="line">e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">return null;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//================================================================================</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">package com.yang.test;</span><br><span class="line"></span><br><span class="line">import java.io.*;</span><br><span class="line"></span><br><span class="line">public class CmdTest2 &#123;</span><br><span class="line"></span><br><span class="line">public static void main(String args[]) throws IOException, InterruptedException &#123;</span><br><span class="line">f2();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public static void f2() throws IOException, InterruptedException &#123;</span><br><span class="line">int rs = 0;</span><br><span class="line">String[] cmds = new String[3];</span><br><span class="line">cmds[0] = &quot;cmd&quot;;</span><br><span class="line">cmds[1] = &quot;/C&quot;;</span><br><span class="line">cmds[2] = &quot;java -version&quot;;</span><br><span class="line"></span><br><span class="line">ProcessBuilder builder = new ProcessBuilder(cmds);</span><br><span class="line">builder.redirectErrorStream(true);</span><br><span class="line">Process process = builder.start();</span><br><span class="line"></span><br><span class="line">BufferedReader br;</span><br><span class="line">br = new BufferedReader(new InputStreamReader(process.getInputStream(), &quot;gbk&quot;));</span><br><span class="line"></span><br><span class="line">PrintWriter pw = null;</span><br><span class="line">FileOutputStream os = null;</span><br><span class="line">os = new FileOutputStream(&quot;D:\\a.txt&quot;);</span><br><span class="line">if (os != null)</span><br><span class="line">pw = new PrintWriter(os);</span><br><span class="line"></span><br><span class="line">String line = null;</span><br><span class="line">while (null != (line = br.readLine())) &#123;</span><br><span class="line">pw.println(line);</span><br><span class="line">System.out.println(line);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (pw != null)</span><br><span class="line">pw.flush();</span><br><span class="line">rs = process.waitFor();</span><br><span class="line"></span><br><span class="line">System.out.println(rs);</span><br><span class="line">pw.close();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public static void f() throws IOException, InterruptedException &#123;</span><br><span class="line">FileOutputStream fos = new FileOutputStream(&quot;D:/a.txt&quot;);</span><br><span class="line">Runtime rt = Runtime.getRuntime();</span><br><span class="line">String[] cmds = new String[3];</span><br><span class="line">cmds[0] = &quot;cmd&quot;;</span><br><span class="line">cmds[1] = &quot;/C&quot;;</span><br><span class="line">//cmds[2] = &quot;java -version&quot;;</span><br><span class="line">cmds[2] = &quot;hexo s&quot;;</span><br><span class="line"></span><br><span class="line">Process proc = rt.exec(cmds);</span><br><span class="line"></span><br><span class="line">StreamGobbler outputGobbler = new StreamGobbler(proc.getInputStream(), &quot;INFO&quot;, fos);</span><br><span class="line">StreamGobbler errorGobbler = new StreamGobbler(proc.getErrorStream(), &quot;Error&quot;);</span><br><span class="line"></span><br><span class="line">outputGobbler.start();</span><br><span class="line">errorGobbler.start();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//outputGobbler.join();</span><br><span class="line">//errorGobbler.join();</span><br><span class="line">int exitVal = proc.waitFor();</span><br><span class="line">System.out.println(&quot;ExitValue: &quot; + exitVal);</span><br><span class="line">fos.flush();</span><br><span class="line">fos.close();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class StreamGobbler extends Thread &#123;</span><br><span class="line">InputStream is;</span><br><span class="line">String type;</span><br><span class="line">OutputStream os;</span><br><span class="line"></span><br><span class="line">StreamGobbler(InputStream is, String type) &#123;</span><br><span class="line">this(is, type, null);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">StreamGobbler(InputStream is, String type, OutputStream redirect) &#123;</span><br><span class="line">this.is = is;</span><br><span class="line">this.type = type;</span><br><span class="line">this.os = redirect;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public void run() &#123;</span><br><span class="line">try &#123;</span><br><span class="line">PrintWriter pw = null;</span><br><span class="line">if (os != null)</span><br><span class="line">pw = new PrintWriter(os);</span><br><span class="line">InputStreamReader isr = new InputStreamReader(is, &quot;gbk&quot;);</span><br><span class="line">BufferedReader br = new BufferedReader(isr);</span><br><span class="line">String line = null;</span><br><span class="line">while ((line = br.readLine()) != null) &#123;</span><br><span class="line">if (pw != null)</span><br><span class="line">pw.println(line);</span><br><span class="line">System.out.println(type + &quot;&gt;&quot; + line);</span><br><span class="line">&#125;</span><br><span class="line">if (pw != null)</span><br><span class="line">pw.flush();</span><br><span class="line">&#125; catch (IOException ioe) &#123;</span><br><span class="line">ioe.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">// https://blog.csdn.net/Dancen/article/details/7969328</span><br><span class="line"></span><br><span class="line">//并发获取Process的输出流和错误流。通过启动两个线程来并发地读取和处理输出流和错误流</span><br><span class="line">//Bug : getErrorStream OK  &amp;&amp;  getInputStream = null ???</span><br><span class="line"></span><br><span class="line">//用ProcessBuilder的redirectErrorStream()方法合并输出流和错误流</span><br><span class="line"></span><br><span class="line">public static void main(String args[]) throws InterruptedException, IOException &#123;</span><br><span class="line">int rs = 0;</span><br><span class="line"></span><br><span class="line">String[] cmds = new String[3];</span><br><span class="line">cmds[0] = &quot;cmd&quot;;</span><br><span class="line">cmds[1] = &quot;/C&quot;;</span><br><span class="line">cmds[2] = &quot;java -version&quot;;</span><br><span class="line"></span><br><span class="line">ProcessBuilder builder = new ProcessBuilder(cmds);</span><br><span class="line">builder.redirectErrorStream(true);</span><br><span class="line">Process process = null;</span><br><span class="line">process = builder.start();</span><br><span class="line"></span><br><span class="line">BufferedReader br = null;</span><br><span class="line">br = new BufferedReader(new InputStreamReader(process.getInputStream(), &quot;gbk&quot;));</span><br><span class="line"></span><br><span class="line">PrintWriter pw = null;</span><br><span class="line">FileOutputStream os = null;</span><br><span class="line">os = new FileOutputStream(&quot;D:\\a.txt&quot;);</span><br><span class="line">if (os != null)</span><br><span class="line">pw = new PrintWriter(os);</span><br><span class="line"></span><br><span class="line">String line = null;</span><br><span class="line">while (null != (line = br.readLine())) &#123;</span><br><span class="line">pw.println(line);</span><br><span class="line">System.out.println(line);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (pw != null)</span><br><span class="line">pw.flush();</span><br><span class="line"></span><br><span class="line">rs = process.waitFor();</span><br><span class="line"></span><br><span class="line">System.out.println(rs);</span><br><span class="line"></span><br><span class="line">pw.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;blockquote&gt;
-&lt;p&gt;使用方法&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;
+        &lt;ul&gt;
+&lt;li&gt;Process的输出流和错误流处理(阻塞问题)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/Dancen/article/details/7969328&quot; target=&quot;_blank&quot; r
       
     
     </summary>
@@ -144,6 +256,8 @@
     
       <category term="Java执行cmd命令" scheme="http://yangzhichu.github.io/tags/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
     
+      <category term="Java执行bat脚本" scheme="http://yangzhichu.github.io/tags/Java%E6%89%A7%E8%A1%8Cbat%E8%84%9A%E6%9C%AC/"/>
+    
   </entry>
   
   <entry>
@@ -151,9 +265,9 @@
     <link href="http://yangzhichu.github.io/ffmpeg/"/>
     <id>http://yangzhichu.github.io/ffmpeg/</id>
     <published>2019-07-21T05:50:09.000Z</published>
-    <updated>2019-07-25T11:05:17.054Z</updated>
+    <updated>2019-07-27T13:33:37.605Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载Build压缩包，解压</li><li>设置环境变量</li></ul><blockquote><p>参考文章：<a href="https://www.jianshu.com/p/ddafe46827b7" target="_blank" rel="noopener">https://www.jianshu.com/p/ddafe46827b7</a></p></blockquote><h3 id="项目导入问题"><a href="#项目导入问题" class="headerlink" title="项目导入问题"></a>项目导入问题</h3><ol><li>26105/26100错误<br>better重建项目</li><li>config.properties<br>store_path(ex：D:/temp/test/)</li><li>src .java中音频文件位置<br>default(“./resource/audio/xxx.wav”)<br>local_file(“D:\path\xxx.m4a”)</li></ol><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3>]]></content>
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载Build压缩包，解压</li><li>设置环境变量</li></ul><blockquote><p>参考文章：<a href="https://www.jianshu.com/p/ddafe46827b7" target="_blank" rel="noopener">https://www.jianshu.com/p/ddafe46827b7</a></p></blockquote><h3 id="项目导入问题"><a href="#项目导入问题" class="headerlink" title="项目导入问题"></a>项目导入问题</h3><ol><li>26105/26100错误<br>better重建项目</li><li>config.properties<br>store_path(ex：D:/temp/test/)</li><li>src .java中音频文件位置<br>default(“./resource/audio/xxx.wav”)<br>local_file(“D:\path\xxx.m4a”)</li></ol><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p>ffmpeg -i xxx.mp4 -acodec copy -vn output.aac</p>]]></content>
     
     <summary type="html">
     
@@ -297,34 +411,6 @@
   </entry>
   
   <entry>
-    <title>OAuth认证</title>
-    <link href="http://yangzhichu.github.io/OAuth%E8%AE%A4%E8%AF%81/"/>
-    <id>http://yangzhichu.github.io/OAuth认证/</id>
-    <published>2019-07-16T11:56:07.000Z</published>
-    <updated>2019-07-25T11:06:41.049Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>参考文章：http://</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;参考文章：http://&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      
-    
-    </summary>
-    
-      <category term="之初-安全认证" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
-    
-    
-      <category term="OAuth认证" scheme="http://yangzhichu.github.io/tags/OAuth%E8%AE%A4%E8%AF%81/"/>
-    
-  </entry>
-  
-  <entry>
     <title>mybatis逆向生成</title>
     <link href="http://yangzhichu.github.io/MyBatis-Generator/"/>
     <id>http://yangzhichu.github.io/MyBatis-Generator/</id>
@@ -349,6 +435,34 @@
       <category term="mybatis" scheme="http://yangzhichu.github.io/tags/mybatis/"/>
     
       <category term="mybatis-generator" scheme="http://yangzhichu.github.io/tags/mybatis-generator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OAuth认证</title>
+    <link href="http://yangzhichu.github.io/OAuth%E8%AE%A4%E8%AF%81/"/>
+    <id>http://yangzhichu.github.io/OAuth认证/</id>
+    <published>2019-07-16T11:56:07.000Z</published>
+    <updated>2019-07-25T11:06:41.049Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>参考文章：http://</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;参考文章：http://&lt;/p&gt;
+&lt;/blockquote&gt;
+
+      
+    
+    </summary>
+    
+      <category term="之初-安全认证" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
+    
+    
+      <category term="OAuth认证" scheme="http://yangzhichu.github.io/tags/OAuth%E8%AE%A4%E8%AF%81/"/>
     
   </entry>
   
@@ -378,6 +492,38 @@
       <category term="MySQL 8.0 Driver" scheme="http://yangzhichu.github.io/tags/MySQL-8-0-Driver/"/>
     
       <category term="MySQL 8.0 Connection" scheme="http://yangzhichu.github.io/tags/MySQL-8-0-Connection/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SVN相关</title>
+    <link href="http://yangzhichu.github.io/SVN/"/>
+    <id>http://yangzhichu.github.io/SVN/</id>
+    <published>2019-07-16T11:40:07.000Z</published>
+    <updated>2019-07-25T11:06:41.096Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件<br>1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；<br>2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；<br>3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？<br>它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。<br>总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件&lt;br&gt;1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提
+      
+    
+    </summary>
+    
+      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="SVN" scheme="http://yangzhichu.github.io/tags/SVN/"/>
+    
+      <category term="VisualSVN-Server" scheme="http://yangzhichu.github.io/tags/VisualSVN-Server/"/>
+    
+      <category term="Subversion" scheme="http://yangzhichu.github.io/tags/Subversion/"/>
+    
+      <category term="TortoiseSVN" scheme="http://yangzhichu.github.io/tags/TortoiseSVN/"/>
     
   </entry>
   
@@ -416,38 +562,6 @@
   </entry>
   
   <entry>
-    <title>SVN相关</title>
-    <link href="http://yangzhichu.github.io/SVN/"/>
-    <id>http://yangzhichu.github.io/SVN/</id>
-    <published>2019-07-16T11:40:07.000Z</published>
-    <updated>2019-07-25T11:06:41.096Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件<br>1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；<br>2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；<br>3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？<br>它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。<br>总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件&lt;br&gt;1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提
-      
-    
-    </summary>
-    
-      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="SVN" scheme="http://yangzhichu.github.io/tags/SVN/"/>
-    
-      <category term="VisualSVN-Server" scheme="http://yangzhichu.github.io/tags/VisualSVN-Server/"/>
-    
-      <category term="Subversion" scheme="http://yangzhichu.github.io/tags/Subversion/"/>
-    
-      <category term="TortoiseSVN" scheme="http://yangzhichu.github.io/tags/TortoiseSVN/"/>
-    
-  </entry>
-  
-  <entry>
     <title>敏捷开发</title>
     <link href="http://yangzhichu.github.io/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
     <id>http://yangzhichu.github.io/敏捷开发/</id>
@@ -470,119 +584,6 @@
     
     
       <category term="敏捷开发" scheme="http://yangzhichu.github.io/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tomcat server.xml 配置详解</title>
-    <link href="http://yangzhichu.github.io/Tomcat-server.xml/"/>
-    <id>http://yangzhichu.github.io/Tomcat-server.xml/</id>
-    <published>2019-07-16T11:20:07.000Z</published>
-    <updated>2019-07-25T11:06:41.112Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Tomcat server.xml <a href="https://www.cnblogs.com/kismetv/p/7228274.html" target="_blank" rel="noopener">https://www.cnblogs.com/kismetv/p/7228274.html</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;Tomcat server.xml &lt;a href=&quot;https://www.cnblogs.com/kismetv/p/7228274.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.cnblog
-      
-    
-    </summary>
-    
-      <category term="之初-服务器" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    
-      <category term="Tomcat" scheme="http://yangzhichu.github.io/tags/Tomcat/"/>
-    
-      <category term="server.xml" scheme="http://yangzhichu.github.io/tags/server-xml/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA安装及使用</title>
-    <link href="http://yangzhichu.github.io/IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yangzhichu.github.io/IDEA安装及使用/</id>
-    <published>2019-07-16T11:16:07.000Z</published>
-    <updated>2019-07-25T11:05:44.485Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>IDEA 注册码：<a href="https://blog.csdn.net/mobiusstrip/article/details/89841038" target="_blank" rel="noopener">https://blog.csdn.net/mobiusstrip/article/details/89841038</a></p></blockquote><blockquote><p>快捷键<br>  Ctrl+Alt+L 格式化代码</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;IDEA 注册码：&lt;a href=&quot;https://blog.csdn.net/mobiusstrip/article/details/89841038&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.cs
-      
-    
-    </summary>
-    
-      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="IDEA安装及使用" scheme="http://yangzhichu.github.io/tags/IDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
-    
-      <category term="IDEA密钥" scheme="http://yangzhichu.github.io/tags/IDEA%E5%AF%86%E9%92%A5/"/>
-    
-      <category term="IDEA快捷键" scheme="http://yangzhichu.github.io/tags/IDEA%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IDEA导入项目(Maven Gradle)</title>
-    <link href="http://yangzhichu.github.io/IDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)/"/>
-    <id>http://yangzhichu.github.io/IDEA导入项目(Maven Gradle)/</id>
-    <published>2019-07-16T11:16:07.000Z</published>
-    <updated>2019-07-25T11:05:48.921Z</updated>
-    
-    <content type="html"><![CDATA[<p>gradle：offline！！！关闭！！！<br>WIFI网络-&gt;手机热点网络切换</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;gradle：offline！！！关闭！！！&lt;br&gt;WIFI网络-&amp;gt;手机热点网络切换&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="之初-工具使用" scheme="http://yangzhichu.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="IDEA项目导入" scheme="http://yangzhichu.github.io/tags/IDEA%E9%A1%B9%E7%9B%AE%E5%AF%BC%E5%85%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>categories一览</title>
-    <link href="http://yangzhichu.github.io/categories%E7%BB%B4%E6%8A%A4/"/>
-    <id>http://yangzhichu.github.io/categories维护/</id>
-    <published>2019-07-15T12:05:00.000Z</published>
-    <updated>2019-07-25T11:04:36.704Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="分类维护"><a href="#分类维护" class="headerlink" title="分类维护"></a>分类维护</h1><blockquote><p>categories</p></blockquote><ul><li>之初-Java基础</li><li>之初-工具使用(ffmpeg)</li><li>之初-框架(Spring …)</li><li>之初-安全认证(OAuth …)</li><li>之初-加密(MD5 SHA SRA …)</li><li>之初-网络 协议…</li><li>之初-数据库</li><li>之初-服务器(Tomcat Nginx …)</li><li>之初-Linux</li><li>之初-算法</li><li>之初-进阶(开发模式 架构 …)</li><li>之初-常用配置文件及方法(.xml .properties…)</li><li>之初-小工具(语音转写 java执行cmd)</li><li>之初-Future(Python Go AI etc…)</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;分类维护&quot;&gt;&lt;a href=&quot;#分类维护&quot; class=&quot;headerlink&quot; title=&quot;分类维护&quot;&gt;&lt;/a&gt;分类维护&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;categories&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;之初-Java基础&lt;/
-      
-    
-    </summary>
-    
-      <category term="所有文章分类汇总" scheme="http://yangzhichu.github.io/categories/%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB/"/>
-    
-    
-      <category term="all categories" scheme="http://yangzhichu.github.io/tags/all-categories/"/>
     
   </entry>
   

@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[bat脚本编写]]></title>
+    <url>%2Fbat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%2F</url>
+    <content type="text"><![CDATA[cd D:/hexo/Blogjava -versiongcc -v]]></content>
+      <categories>
+        <category>之初-Others</category>
+      </categories>
+      <tags>
+        <tag>bat脚本编写</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java I/O流]]></title>
+    <url>%2FJava%20IO%E6%B5%81%2F</url>
+    <content type="text"><![CDATA[参考 https://www.cnblogs.com/furaywww/p/8849850.html]]></content>
+      <categories>
+        <category>之初-Java基础</category>
+      </categories>
+      <tags>
+        <tag>Java I/O流</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[邮件协议]]></title>
+    <url>%2F%E9%82%AE%E4%BB%B6%E5%8D%8F%E8%AE%AE%2F</url>
+    <content type="text"><![CDATA[POP3 POP3是Post Office Protocol 3的简称，即邮局协议的第3个版本,它规定怎样将个人计算机连接到Internet的邮件服务器和下载电子邮件的电子协议。它是因特网电子邮件的第一个离线协议标准,POP3允许用户从服务器上把邮件存储到本地主机（即自己的计算机）上,同时删除保存在邮件服务器上的邮件，而POP3服务器则是遵循POP3协议的接收邮件服务器，用来接收电子邮件的。 SMTP SMTP的全称是“Simple Mail Transfer Protocol”，即简单邮件传输协议。它是一组用于从源地址到目的地址传输邮件的规范，通过它来控制邮件的中转方式。SMTP 协议属于 TCP/IP协议簇，它帮助每台计算机在发送或中转信件时找到下一个目的地。SMTP服务器就是遵循SMTP协议的发送邮件服务器。SMTP认证，简单地说就是要求必须在提供了账户名和密码之后才可以登录 SMTP 服务器，这就使得那些垃圾邮件的散播者无可乘之机。增加SMTP认证的目的是为了使用户避免受到垃圾邮件的侵扰。 IMAP IMAP全称是Internet Mail Access Protocol，即交互式邮件存取协议，它是跟POP3类似邮件访问标准协议之一。不同的是，开启了IMAP后，您在电子邮件客户端收取的邮件仍然保留在服务器上，同时在客户端上的操作都会反馈到服务器上，如：删除邮件，标记已读等，服务器上的邮件也会做相应的动作。所以无论从浏览器登录邮箱或者客户端软件登录邮箱，看到的邮件以及状态都是一致的。]]></content>
+      <categories>
+        <category>之初-Others积累</category>
+      </categories>
+      <tags>
+        <tag>POP3</tag>
+        <tag>SMTP</tag>
+        <tag>IMAP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python爬虫]]></title>
+    <url>%2F%E7%88%AC%E8%99%AB%2F</url>
+    <content type="text"><![CDATA[爬虫 scrapy]]></content>
+      <categories>
+        <category>之初-Future</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>爬虫</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[阿里支付]]></title>
     <url>%2F%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98%2F</url>
     <content type="text"><![CDATA[return-notify]]></content>
@@ -48,18 +95,19 @@
   <entry>
     <title><![CDATA[Java执行cmd命令]]></title>
     <url>%2FJava%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[使用方法1234567// 调用命令脚本语言来实现功能// 1.错误的使用方式 Runtime.getRuntime().exec(&quot;xxx&quot;);// 2.正确的使用方式:需要指定参数(命令位置;-c表示先执行第一个参数;命令) Runtime.getRuntime().exec(new String[]&#123;&quot;/bin/sh&quot;,&quot;c&quot;,&quot;xxx&quot;&#125;); 1234567891011121314151617String tempCmd = &quot;dexp &quot; + userName + &quot;/&quot; + password + &quot;@&quot; + hostIP + &quot;:&quot; + port + &quot; FILE=&quot; + fileName + &quot; DIRECTORY=&quot; + filePath + &quot; FULL=Y&quot;;String[] cmds = &#123; &quot;cmd&quot;, &quot;/c&quot;, tempCmd &#125;;if (!System.getProperties().getProperty(&quot;os.name&quot;) .toString().toUpperCase().contains(&quot;WIN&quot;)) &#123; System.out.println(&quot;not windows&quot;); cmds = new String[] &#123; &quot;/bin/sh&quot;, &quot;-c&quot;, tempCmd &#125;;&#125;System.out.println(tempCmd);Process process = Runtime.getRuntime().exec(cmds);BufferedReader reader = new BufferedReader(newInputStreamReader(process.getInputStream()));String line;while ((line = reader.readLine()) != null) &#123; System.out.println(line);&#125;]]></content>
+    <content type="text"><![CDATA[Process的输出流和错误流处理(阻塞问题) https://blog.csdn.net/Dancen/article/details/7969328 https://blog.csdn.net/stormych/article/details/62037579 https://blog.csdn.net/mengxingyuanlove/article/details/50707746 简单使用方法1234567891011121314151617181920212223242526// 调用命令脚本语言来实现功能// 1.错误的使用方式 Runtime.getRuntime().exec(&quot;xxx&quot;);// 2.正确的使用方式:需要指定参数(命令位置;-c表示先执行第一个参数;命令) Runtime.getRuntime().exec(new String[]&#123;&quot;/bin/sh&quot;,&quot;c&quot;,&quot;xxx&quot;&#125;); String tempCmd = &quot;dexp &quot; + userName + &quot;/&quot; + password + &quot;@&quot; + hostIP + &quot;:&quot; + port + &quot; FILE=&quot; + fileName + &quot; DIRECTORY=&quot; + filePath + &quot; FULL=Y&quot;; String[] cmds = &#123; &quot;cmd&quot;, &quot;/c&quot;, tempCmd &#125;; if (!System.getProperties().getProperty(&quot;os.name&quot;) .toString().toUpperCase().contains(&quot;WIN&quot;)) &#123; System.out.println(&quot;not windows&quot;); cmds = new String[] &#123; &quot;/bin/sh&quot;, &quot;-c&quot;, tempCmd &#125;; &#125; System.out.println(tempCmd); Process process = Runtime.getRuntime().exec(cmds); BufferedReader reader = new BufferedReader(newInputStreamReader(process.getInputStream())); String line; while ((line = reader.readLine()) != null) &#123; System.out.println(line); &#125; 具体原因未知，嗝~ java -version, gcc -v等命令通过getErrorStream()读出如：hexo -help 则通过getInputStream()读出 hexo s ！不可测试，无cmd命令窗口，无法关闭server！ cmd /c dir 是执行完dir命令后关闭命令窗口cmd /k dir 是执行完dir命令后不关闭命令窗口cmd /c start dir 会打开一个新窗口后执行dir指令，原窗口会关闭cmd /k start dir 会打开一个新窗口后执行dir指令，原窗口不会关闭 https://blog.csdn.net/halaoda/article/details/78778477 demo(单条命令, bat, 重定向) 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180181182183184185186187188189190191192193194195196197198199200201202203204205206207208209210211212213214215216217218219220221222223224225226227228229230231232233234235package com.yang.test;import java.io.BufferedReader;import java.io.File;import java.io.IOException;import java.io.InputStream;import java.io.InputStreamReader;import java.io.UnsupportedEncodingException;//===================并发处理===============================class StreamManage extends Thread &#123; InputStream is; String type; public StreamManage(InputStream is, String type) &#123; this.is = is; this.type = type; &#125; public void run() &#123; InputStreamReader isr = null; try &#123; isr = new InputStreamReader(is, &quot;gbk&quot;); &#125; catch (UnsupportedEncodingException uee) &#123; uee.printStackTrace(); &#125; BufferedReader br = new BufferedReader(isr); String line = null; try &#123; while ((line = br.readLine()) != null) &#123; if (type.equals(&quot;Error&quot;)) &#123; System.out.println(&quot;Error &gt; &quot; + line); &#125; else &#123; System.out.println(&quot;INFO &gt; &quot; + line); &#125; &#125; &#125; catch (IOException e) &#123; e.printStackTrace(); &#125; finally &#123; try &#123; is.close(); &#125; catch (IOException e) &#123; e.printStackTrace(); &#125; &#125; &#125;&#125;public class CmdTest &#123; public static void main(String[] args) throws IOException &#123;// String path = &quot;mspaint&quot;;// Runtime run = Runtime.getRuntime();// try &#123;// Process process = run.exec(&quot;cmd.exe /k start &quot; + path);// InputStream in = process.getInputStream();// while (in.read() != -1) &#123;// System.out.println(in.read());// &#125;// in.close();// process.waitFor();// &#125; catch (Exception e) &#123;// e.printStackTrace();// &#125; // String cmd = &quot;gcc -v&quot;; // String[] cmdarray = &#123; &quot;cmd&quot;, &quot;/C&quot;, cmd &#125;; // executeCMDfile(cmdarray, &quot;D:/hexo/Blog&quot;, &quot;D:/a.txt&quot;); try &#123; startMailServer(); &#125; catch (InterruptedException e) &#123; e.printStackTrace(); &#125; &#125; // 执行 .bat 文件 private static void startMailServer() throws InterruptedException &#123; Runtime rt = Runtime.getRuntime(); // 运行时系统获取 try &#123; File filePath = new File(&quot;resource\\runStart.bat&quot;); Process proc = rt.exec(new String[] &#123; &quot;cmd&quot;, &quot;/K&quot;, filePath.toString() &#125;); StreamManage errorStream = new StreamManage(proc.getErrorStream(), &quot;Error&quot;); StreamManage outputStream = new StreamManage(proc.getInputStream(), &quot;INFO&quot;); errorStream.start(); outputStream.start(); proc.waitFor(); proc.destroy(); &#125; catch (IOException e) &#123; e.printStackTrace(); &#125; &#125; // 在指定路径下执行命令，并将执行结果信息重定向到某一文件中 public static String executeCMDfile(String[] cmds, String dirTodoCMD, String logToFile) throws IOException &#123; try &#123; ProcessBuilder builder = new ProcessBuilder(cmds); if (dirTodoCMD != null) builder.directory(new File(dirTodoCMD)); builder.redirectErrorStream(true); builder.redirectOutput(new File(logToFile)); Process p = builder.start(); p.waitFor(); InputStream is = p.getInputStream(); BufferedReader buffer = new BufferedReader(new InputStreamReader(is)); String line = null; StringBuffer sb = new StringBuffer(); while ((line = buffer.readLine()) != null) &#123; sb.append(line); &#125; is.close(); return sb.toString(); &#125; catch (Exception e) &#123; e.printStackTrace(); &#125; return null; &#125;&#125;//================================================================================package com.yang.test;import java.io.*;public class CmdTest2 &#123; public static void main(String args[]) throws IOException, InterruptedException &#123; f2(); &#125; public static void f2() throws IOException, InterruptedException &#123; int rs = 0; String[] cmds = new String[3]; cmds[0] = &quot;cmd&quot;; cmds[1] = &quot;/C&quot;; cmds[2] = &quot;java -version&quot;; ProcessBuilder builder = new ProcessBuilder(cmds); builder.redirectErrorStream(true); Process process = builder.start(); BufferedReader br; br = new BufferedReader(new InputStreamReader(process.getInputStream(), &quot;gbk&quot;)); PrintWriter pw = null; FileOutputStream os = null; os = new FileOutputStream(&quot;D:\\a.txt&quot;); if (os != null) pw = new PrintWriter(os); String line = null; while (null != (line = br.readLine())) &#123; pw.println(line); System.out.println(line); &#125; if (pw != null) pw.flush(); rs = process.waitFor(); System.out.println(rs); pw.close(); &#125; public static void f() throws IOException, InterruptedException &#123; FileOutputStream fos = new FileOutputStream(&quot;D:/a.txt&quot;); Runtime rt = Runtime.getRuntime(); String[] cmds = new String[3]; cmds[0] = &quot;cmd&quot;; cmds[1] = &quot;/C&quot;; //cmds[2] = &quot;java -version&quot;; cmds[2] = &quot;hexo s&quot;; Process proc = rt.exec(cmds); StreamGobbler outputGobbler = new StreamGobbler(proc.getInputStream(), &quot;INFO&quot;, fos); StreamGobbler errorGobbler = new StreamGobbler(proc.getErrorStream(), &quot;Error&quot;); outputGobbler.start(); errorGobbler.start(); // outputGobbler.join();// errorGobbler.join(); int exitVal = proc.waitFor(); System.out.println(&quot;ExitValue: &quot; + exitVal); fos.flush(); fos.close(); &#125;&#125;class StreamGobbler extends Thread &#123; InputStream is; String type; OutputStream os; StreamGobbler(InputStream is, String type) &#123; this(is, type, null); &#125; StreamGobbler(InputStream is, String type, OutputStream redirect) &#123; this.is = is; this.type = type; this.os = redirect; &#125; public void run() &#123; try &#123; PrintWriter pw = null; if (os != null) pw = new PrintWriter(os); InputStreamReader isr = new InputStreamReader(is, &quot;gbk&quot;); BufferedReader br = new BufferedReader(isr); String line = null; while ((line = br.readLine()) != null) &#123; if (pw != null) pw.println(line); System.out.println(type + &quot;&gt;&quot; + line); &#125; if (pw != null) pw.flush(); &#125; catch (IOException ioe) &#123; ioe.printStackTrace(); &#125; &#125;&#125; 1234567891011121314151617181920212223242526272829303132333435363738394041424344// https://blog.csdn.net/Dancen/article/details/7969328//并发获取Process的输出流和错误流。通过启动两个线程来并发地读取和处理输出流和错误流//Bug : getErrorStream OK &amp;&amp; getInputStream = null ???//用ProcessBuilder的redirectErrorStream()方法合并输出流和错误流public static void main(String args[]) throws InterruptedException, IOException &#123; int rs = 0; String[] cmds = new String[3]; cmds[0] = &quot;cmd&quot;; cmds[1] = &quot;/C&quot;; cmds[2] = &quot;java -version&quot;; ProcessBuilder builder = new ProcessBuilder(cmds); builder.redirectErrorStream(true); Process process = null; process = builder.start(); BufferedReader br = null; br = new BufferedReader(new InputStreamReader(process.getInputStream(), &quot;gbk&quot;)); PrintWriter pw = null; FileOutputStream os = null; os = new FileOutputStream(&quot;D:\\a.txt&quot;); if (os != null) pw = new PrintWriter(os); String line = null; while (null != (line = br.readLine())) &#123; pw.println(line); System.out.println(line); &#125; if (pw != null) pw.flush(); rs = process.waitFor(); System.out.println(rs); pw.close();&#125;]]></content>
       <categories>
         <category>之初-小工具</category>
       </categories>
       <tags>
         <tag>Java执行cmd命令</tag>
+        <tag>Java执行bat脚本</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[ffmpeg]]></title>
     <url>%2Fffmpeg%2F</url>
-    <content type="text"><![CDATA[安装 下载Build压缩包，解压 设置环境变量 参考文章：https://www.jianshu.com/p/ddafe46827b7 项目导入问题 26105/26100错误better重建项目 config.propertiesstore_path(ex：D:/temp/test/) src .java中音频文件位置default(“./resource/audio/xxx.wav”)local_file(“D:\path\xxx.m4a”) 常用命令]]></content>
+    <content type="text"><![CDATA[安装 下载Build压缩包，解压 设置环境变量 参考文章：https://www.jianshu.com/p/ddafe46827b7 项目导入问题 26105/26100错误better重建项目 config.propertiesstore_path(ex：D:/temp/test/) src .java中音频文件位置default(“./resource/audio/xxx.wav”)local_file(“D:\path\xxx.m4a”) 常用命令ffmpeg -i xxx.mp4 -acodec copy -vn output.aac]]></content>
       <categories>
         <category>之初-工具使用</category>
       </categories>
@@ -119,17 +167,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[OAuth认证]]></title>
-    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
-    <content type="text"><![CDATA[参考文章：http://]]></content>
-      <categories>
-        <category>之初-安全认证</category>
-      </categories>
-      <tags>
-        <tag>OAuth认证</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[mybatis逆向生成]]></title>
     <url>%2FMyBatis-Generator%2F</url>
     <content type="text"><![CDATA[使用 mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/80532721 123&lt;!-- a对实体 &quot;serverTimezone&quot; 的引用必须以 &apos;;&apos; 分隔符结尾。 --&gt;&lt;jdbcConnection driverClass=&quot;com.mysql.cj.jdbc.Driver&quot; connectionURL=&quot;jdbc:mysql://localhost:3306/e3mall?useSSL=false&amp;amp;serverTimezone=UTC&quot; userId=&quot;root&quot; password=&quot;root_wy&quot; /&gt;]]></content>
@@ -139,6 +176,17 @@
       <tags>
         <tag>mybatis</tag>
         <tag>mybatis-generator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[OAuth认证]]></title>
+    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
+    <content type="text"><![CDATA[参考文章：http://]]></content>
+      <categories>
+        <category>之初-安全认证</category>
+      </categories>
+      <tags>
+        <tag>OAuth认证</tag>
       </tags>
   </entry>
   <entry>
@@ -155,20 +203,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Eclipse项目相关踩坑]]></title>
-    <url>%2FEclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91%2F</url>
-    <content type="text"><![CDATA[快捷键 Ctrl+1 回车=&gt;自动补全返回类型 maven Pagehelper maven Pagehelper版本问题：https://blog.csdn.net/qq_36004521/article/details/78578075 war打包错误 war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>Eclipse</tag>
-        <tag>快捷键</tag>
-        <tag>maven Pagehelper</tag>
-        <tag>war打包错误</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[SVN相关]]></title>
     <url>%2FSVN%2F</url>
     <content type="text"><![CDATA[这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的]]></content>
@@ -180,6 +214,20 @@
         <tag>VisualSVN-Server</tag>
         <tag>Subversion</tag>
         <tag>TortoiseSVN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Eclipse项目相关踩坑]]></title>
+    <url>%2FEclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91%2F</url>
+    <content type="text"><![CDATA[快捷键 Ctrl+1 回车=&gt;自动补全返回类型 maven Pagehelper maven Pagehelper版本问题：https://blog.csdn.net/qq_36004521/article/details/78578075 war打包错误 war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>Eclipse</tag>
+        <tag>快捷键</tag>
+        <tag>maven Pagehelper</tag>
+        <tag>war打包错误</tag>
       </tags>
   </entry>
   <entry>
@@ -232,7 +280,7 @@
   <entry>
     <title><![CDATA[categories一览]]></title>
     <url>%2Fcategories%E7%BB%B4%E6%8A%A4%2F</url>
-    <content type="text"><![CDATA[分类维护 categories 之初-Java基础 之初-工具使用(ffmpeg) 之初-框架(Spring …) 之初-安全认证(OAuth …) 之初-加密(MD5 SHA SRA …) 之初-网络 协议… 之初-数据库 之初-服务器(Tomcat Nginx …) 之初-Linux 之初-算法 之初-进阶(开发模式 架构 …) 之初-常用配置文件及方法(.xml .properties…) 之初-小工具(语音转写 java执行cmd) 之初-Future(Python Go AI etc…)]]></content>
+    <content type="text"><![CDATA[分类维护 categories 之初-Java基础 之初-工具使用(ffmpeg) 之初-框架(Spring …) 之初-安全认证(OAuth …) 之初-加密(MD5 SHA SRA …) 之初-网络 协议… 之初-数据库 之初-服务器(Tomcat Nginx …) 之初-Linux 之初-算法 之初-进阶(开发模式 架构 …) 之初-常用配置文件及方法(.xml .properties…) 之初-小工具(语音转写 java执行cmd) 之初-Future(Python Go AI etc…) 之初-Others积累]]></content>
       <categories>
         <category>所有文章分类汇总</category>
       </categories>

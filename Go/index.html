@@ -240,6 +240,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-friends">
+          <a href="/friends/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-mortar-board"></i> <br>
+            
+            友链
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
@@ -383,6 +393,7 @@
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
+                  评论数：
                 </span>
                 <a href="/Go/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count valine-comment-count" data-xid="/Go/" itemprop="commentCount"></span>
@@ -418,7 +429,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  87
+                  87 字
                 </span>
               
 
@@ -434,7 +445,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  1 分钟
                 </span>
               
             </div>
@@ -465,7 +476,7 @@
 <li>安装MinGW</li>
 <li>环境配置参考(win64)</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">工具-&gt;编辑当前环境</span><br><span class="line"></span><br><span class="line"># native compiler windows amd64</span><br><span class="line"></span><br><span class="line">GOROOT=D:\Future\Go</span><br><span class="line">#GOBIN=</span><br><span class="line">GOARCH=amd64</span><br><span class="line">GOOS=windows</span><br><span class="line">CGO_ENABLED=1</span><br><span class="line"></span><br><span class="line">PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%</span><br><span class="line"></span><br><span class="line">#D:\Future\liteide\bin</span><br><span class="line">LITEIDE_GDB=gdb64</span><br><span class="line"></span><br><span class="line">#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin</span><br><span class="line">LITEIDE_MAKE=mingw32-make</span><br><span class="line"></span><br><span class="line">LITEIDE_TERM=%COMSPEC%</span><br><span class="line">LITEIDE_TERMARGS=</span><br><span class="line">LITEIDE_EXEC=%COMSPEC%</span><br><span class="line">LITEIDE_EXECOPT=/C</span><br></pre></td></tr></table></figure>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">工具-&gt;编辑当前环境</span><br><span class="line"></span><br><span class="line"><span class="comment"># native compiler windows amd64</span></span><br><span class="line"></span><br><span class="line">GOROOT=D:\Future\Go</span><br><span class="line"><span class="comment">#GOBIN=</span></span><br><span class="line">GOARCH=amd64</span><br><span class="line">GOOS=windows</span><br><span class="line">CGO_ENABLED=1</span><br><span class="line"></span><br><span class="line">PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%</span><br><span class="line"></span><br><span class="line"><span class="comment">#D:\Future\liteide\bin</span></span><br><span class="line">LITEIDE_GDB=gdb64</span><br><span class="line"></span><br><span class="line"><span class="comment">#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin</span></span><br><span class="line">LITEIDE_MAKE=mingw32-make</span><br><span class="line"></span><br><span class="line">LITEIDE_TERM=%COMSPEC%</span><br><span class="line">LITEIDE_TERMARGS=</span><br><span class="line">LITEIDE_EXEC=%COMSPEC%</span><br><span class="line">LITEIDE_EXECOPT=/C</span><br></pre></td></tr></table></figure>
 <ol start="2">
 <li>Golang（集成环境，无需配置）</li>
 </ol>
@@ -901,8 +912,6 @@ show_date_time();
   
 
 
-  
-
 
 
 
@@ -941,11 +950,6 @@ show_date_time();
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -1478,6 +1482,9 @@ show_date_time();
   
 
   
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
 
   
 

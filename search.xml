@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[all categories]]></title>
+    <url>%2Fall%20categories%2F</url>
+    <content type="text"><![CDATA[摘要 categories维护 categories 之初-Java基础 之初-工具使用(ffmpeg) 之初-框架(Spring …) 之初-安全认证(OAuth …) 之初-加密(MD5 SHA SRA …) 之初-网络 协议… 之初-数据库 之初-服务器(Tomcat Nginx …) 之初-Linux 之初-算法 之初-进阶(开发模式 架构 …) 之初-常用配置文件及方法(.xml .properties…) 之初-小工具(语音转写 java执行cmd) 之初-Future(Python Go AI etc…) 之初-Others积累]]></content>
+      <categories>
+        <category>所有文章分类汇总</category>
+      </categories>
+      <tags>
+        <tag>all categories</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[bat脚本编写]]></title>
     <url>%2Fbat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99%2F</url>
     <content type="text"><![CDATA[cd D:/hexo/Blogjava -versiongcc -v 代码高亮12345678910111213141516171819202122package com.yang;import java.io.*;public class Demo &#123; public static void main(String[] args) &#123; System.out.println(line); &#125;/* [language] [title] [url] [link-text] [language] 是代码语言的名称，用来设置代码块颜色高亮，非必须； [title] 是顶部左边的说明，非必须； [url] 是顶部右边的超链接地址，非必须； [link text] 如它的字面意思，超链接的名称，非必须； 亲测这4项应该是根据空格来分隔，而不是[]，故请不要加[]， 除非如果你想写后面两个，但不想写前面两个，那么就必须加[]了， 要这样写：[] [] [url] [link text]。/* &#125;]]></content>
@@ -167,17 +178,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[OAuth认证]]></title>
-    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
-    <content type="text"><![CDATA[参考文章：http://]]></content>
-      <categories>
-        <category>之初-安全认证</category>
-      </categories>
-      <tags>
-        <tag>OAuth认证</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[mybatis逆向生成]]></title>
     <url>%2FMyBatis-Generator%2F</url>
     <content type="text"><![CDATA[使用 mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/80532721 123&lt;!-- a对实体 "serverTimezone" 的引用必须以 ';' 分隔符结尾。 --&gt;&lt;jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/e3mall?useSSL=false&amp;amp;serverTimezone=UTC" userId="root" password="root_wy" /&gt;]]></content>
@@ -187,6 +187,17 @@
       <tags>
         <tag>mybatis</tag>
         <tag>mybatis-generator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[OAuth认证]]></title>
+    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
+    <content type="text"><![CDATA[参考文章：http://]]></content>
+      <categories>
+        <category>之初-安全认证</category>
+      </categories>
+      <tags>
+        <tag>OAuth认证</tag>
       </tags>
   </entry>
   <entry>
@@ -203,20 +214,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[SVN相关]]></title>
-    <url>%2FSVN%2F</url>
-    <content type="text"><![CDATA[这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>SVN</tag>
-        <tag>VisualSVN-Server</tag>
-        <tag>Subversion</tag>
-        <tag>TortoiseSVN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Eclipse项目相关踩坑]]></title>
     <url>%2FEclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91%2F</url>
     <content type="text"><![CDATA[快捷键 Ctrl+1 回车=&gt;自动补全返回类型 maven Pagehelper maven Pagehelper版本问题：https://blog.csdn.net/qq_36004521/article/details/78578075 war打包错误 war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub]]></content>
@@ -228,6 +225,20 @@
         <tag>快捷键</tag>
         <tag>maven Pagehelper</tag>
         <tag>war打包错误</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SVN相关]]></title>
+    <url>%2FSVN%2F</url>
+    <content type="text"><![CDATA[这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>SVN</tag>
+        <tag>VisualSVN-Server</tag>
+        <tag>Subversion</tag>
+        <tag>TortoiseSVN</tag>
       </tags>
   </entry>
   <entry>
@@ -254,17 +265,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
-    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
-    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>IDEA项目导入</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[IDEA安装及使用]]></title>
     <url>%2FIDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[IDEA 注册码：https://blog.csdn.net/mobiusstrip/article/details/89841038 快捷键 Ctrl+Alt+L 格式化代码]]></content>
@@ -275,6 +275,17 @@
         <tag>IDEA安装及使用</tag>
         <tag>IDEA密钥</tag>
         <tag>IDEA快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
+    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
+    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>IDEA项目导入</tag>
       </tags>
   </entry>
   <entry>
@@ -359,17 +370,6 @@
       </categories>
       <tags>
         <tag>Hexo搭建</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[categories一览]]></title>
-    <url>%2Fcategories%E7%BB%B4%E6%8A%A4%2F</url>
-    <content type="text"><![CDATA[分类维护 categories 之初-Java基础 之初-工具使用(ffmpeg) 之初-框架(Spring …) 之初-安全认证(OAuth …) 之初-加密(MD5 SHA SRA …) 之初-网络 协议… 之初-数据库 之初-服务器(Tomcat Nginx …) 之初-Linux 之初-算法 之初-进阶(开发模式 架构 …) 之初-常用配置文件及方法(.xml .properties…) 之初-小工具(语音转写 java执行cmd) 之初-Future(Python Go AI etc…) 之初-Others积累]]></content>
-      <categories>
-        <category>所有文章分类汇总</category>
-      </categories>
-      <tags>
-        <tag>all categories</tag>
       </tags>
   </entry>
   <entry>

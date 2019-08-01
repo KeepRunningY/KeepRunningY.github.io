@@ -189,6 +189,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[OAuth认证]]></title>
+    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
+    <content type="text"><![CDATA[参考文章：http://]]></content>
+      <categories>
+        <category>之初-安全认证</category>
+      </categories>
+      <tags>
+        <tag>OAuth认证</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mybatis逆向生成]]></title>
     <url>%2FMyBatis-Generator%2F</url>
     <content type="text"><![CDATA[使用 mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/80532721 123&lt;!-- a对实体 "serverTimezone" 的引用必须以 ';' 分隔符结尾。 --&gt;&lt;jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/e3mall?useSSL=false&amp;amp;serverTimezone=UTC" userId="root" password="root_wy" /&gt;]]></content>
@@ -198,17 +209,6 @@
       <tags>
         <tag>mybatis</tag>
         <tag>mybatis-generator</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[OAuth认证]]></title>
-    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
-    <content type="text"><![CDATA[参考文章：http://]]></content>
-      <categories>
-        <category>之初-安全认证</category>
-      </categories>
-      <tags>
-        <tag>OAuth认证</tag>
       </tags>
   </entry>
   <entry>

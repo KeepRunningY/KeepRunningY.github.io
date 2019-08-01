@@ -5,9 +5,9 @@
   <subtitle>The harder, the more fortunate</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://zhichuwy.github.io/"/>
-  <updated>2019-08-01T03:03:44.389Z</updated>
-  <id>http://zhichuwy.github.io/</id>
+  <link href="http://zhichuwy.cn/"/>
+  <updated>2019-08-01T13:25:27.358Z</updated>
+  <id>http://zhichuwy.cn/</id>
   
   <author>
     <name>之初</name>
@@ -17,9 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CSS入门</title>
+    <link href="http://zhichuwy.cn/CSS%E5%85%A5%E9%97%A8/"/>
+    <id>http://zhichuwy.cn/CSS入门/</id>
+    <published>2019-08-01T10:34:29.000Z</published>
+    <updated>2019-08-01T13:25:27.358Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>外边距 margin :邻接(非包含关系)元素位置关系<br>  内边距 padding:内外元素边距</p></blockquote><blockquote><p><span> 标签被用来组合文档中的行内元素。</span></p></blockquote> <a id="more"></a><blockquote><p>外边距 margin :邻接(非包含关系)元素位置关系<br>  内边距 padding:内外元素边距</p></blockquote><blockquote><p><span> 标签被用来组合文档中的行内元素。</span></p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 左侧图片，右侧上下文字 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: left; width: 4%; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://Dxoca.cn/image/headPortrait.jpg"</span> <span class="attr">width</span>=<span class="string">"64px"</span> <span class="attr">height</span>=<span class="string">"64px"</span> <span class="attr">alt</span>=<span class="string">"fail"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: right; width: 96%; "</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"padding-left: 5px; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://Dxoca.cn"</span>&gt;</span>Dxoca's blog xxxxx<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>yyyyyy<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;外边距 margin :邻接(非包含关系)元素位置关系&lt;br&gt;  内边距 padding:内外元素边距&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span&gt; 标签被用来组合文档中的行内元素。&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+    
+    
+      <category term="CSS" scheme="http://zhichuwy.cn/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>all categories</title>
-    <link href="http://zhichuwy.github.io/all%20categories/"/>
-    <id>http://zhichuwy.github.io/all categories/</id>
+    <link href="http://zhichuwy.cn/all%20categories/"/>
+    <id>http://zhichuwy.cn/all categories/</id>
     <published>2019-07-31T22:13:07.000Z</published>
     <updated>2019-08-01T03:03:44.389Z</updated>
     
@@ -31,17 +58,17 @@
     
     </summary>
     
-      <category term="所有文章分类汇总" scheme="http://zhichuwy.github.io/categories/%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB/"/>
+      <category term="所有文章分类汇总" scheme="http://zhichuwy.cn/categories/%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB/"/>
     
     
-      <category term="all categories" scheme="http://zhichuwy.github.io/tags/all-categories/"/>
+      <category term="all categories" scheme="http://zhichuwy.cn/tags/all-categories/"/>
     
   </entry>
   
   <entry>
     <title>bat脚本编写</title>
-    <link href="http://zhichuwy.github.io/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
-    <id>http://zhichuwy.github.io/bat脚本编写/</id>
+    <link href="http://zhichuwy.cn/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    <id>http://zhichuwy.cn/bat脚本编写/</id>
     <published>2019-07-27T09:25:16.000Z</published>
     <updated>2019-08-01T02:48:34.294Z</updated>
     
@@ -54,17 +81,17 @@
     
     </summary>
     
-      <category term="之初-Others" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-Others/"/>
+      <category term="之初-Others" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Others/"/>
     
     
-      <category term="bat脚本编写" scheme="http://zhichuwy.github.io/tags/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+      <category term="bat脚本编写" scheme="http://zhichuwy.cn/tags/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
     
   </entry>
   
   <entry>
     <title>Java I/O流</title>
-    <link href="http://zhichuwy.github.io/Java%20IO%E6%B5%81/"/>
-    <id>http://zhichuwy.github.io/Java IO流/</id>
+    <link href="http://zhichuwy.cn/Java%20IO%E6%B5%81/"/>
+    <id>http://zhichuwy.cn/Java IO流/</id>
     <published>2019-07-27T05:29:37.000Z</published>
     <updated>2019-07-27T05:30:02.277Z</updated>
     
@@ -80,17 +107,17 @@
     
     </summary>
     
-      <category term="之初-Java基础" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-Java%E5%9F%BA%E7%A1%80/"/>
+      <category term="之初-Java基础" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Java%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="Java I/O流" scheme="http://zhichuwy.github.io/tags/Java-I-O%E6%B5%81/"/>
+      <category term="Java I/O流" scheme="http://zhichuwy.cn/tags/Java-I-O%E6%B5%81/"/>
     
   </entry>
   
   <entry>
     <title>邮件协议</title>
-    <link href="http://zhichuwy.github.io/%E9%82%AE%E4%BB%B6%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://zhichuwy.github.io/邮件协议/</id>
+    <link href="http://zhichuwy.cn/%E9%82%AE%E4%BB%B6%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://zhichuwy.cn/邮件协议/</id>
     <published>2019-07-26T07:27:02.000Z</published>
     <updated>2019-07-26T07:32:24.194Z</updated>
     
@@ -106,21 +133,21 @@
     
     </summary>
     
-      <category term="之初-Others积累" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-Others%E7%A7%AF%E7%B4%AF/"/>
+      <category term="之初-Others积累" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Others%E7%A7%AF%E7%B4%AF/"/>
     
     
-      <category term="POP3" scheme="http://zhichuwy.github.io/tags/POP3/"/>
+      <category term="POP3" scheme="http://zhichuwy.cn/tags/POP3/"/>
     
-      <category term="SMTP" scheme="http://zhichuwy.github.io/tags/SMTP/"/>
+      <category term="SMTP" scheme="http://zhichuwy.cn/tags/SMTP/"/>
     
-      <category term="IMAP" scheme="http://zhichuwy.github.io/tags/IMAP/"/>
+      <category term="IMAP" scheme="http://zhichuwy.cn/tags/IMAP/"/>
     
   </entry>
   
   <entry>
     <title>Python爬虫</title>
-    <link href="http://zhichuwy.github.io/%E7%88%AC%E8%99%AB/"/>
-    <id>http://zhichuwy.github.io/爬虫/</id>
+    <link href="http://zhichuwy.cn/%E7%88%AC%E8%99%AB/"/>
+    <id>http://zhichuwy.cn/爬虫/</id>
     <published>2019-07-26T06:16:20.000Z</published>
     <updated>2019-07-26T06:17:59.824Z</updated>
     
@@ -135,19 +162,19 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="Python" scheme="http://zhichuwy.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://zhichuwy.cn/tags/Python/"/>
     
-      <category term="爬虫" scheme="http://zhichuwy.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="http://zhichuwy.cn/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>阿里支付</title>
-    <link href="http://zhichuwy.github.io/%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98/"/>
-    <id>http://zhichuwy.github.io/阿里支付/</id>
+    <link href="http://zhichuwy.cn/%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98/"/>
+    <id>http://zhichuwy.cn/阿里支付/</id>
     <published>2019-07-26T06:12:37.000Z</published>
     <updated>2019-07-26T06:12:41.290Z</updated>
     
@@ -162,17 +189,17 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="阿里支付" scheme="http://zhichuwy.github.io/tags/%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98/"/>
+      <category term="阿里支付" scheme="http://zhichuwy.cn/tags/%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98/"/>
     
   </entry>
   
   <entry>
     <title>机器学习</title>
-    <link href="http://zhichuwy.github.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://zhichuwy.github.io/机器学习/</id>
+    <link href="http://zhichuwy.cn/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://zhichuwy.cn/机器学习/</id>
     <published>2019-07-26T06:11:27.000Z</published>
     <updated>2019-07-26T06:11:55.244Z</updated>
     
@@ -187,17 +214,17 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="机器学习" scheme="http://zhichuwy.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://zhichuwy.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>Eclipse查看JDK源码设置</title>
-    <link href="http://zhichuwy.github.io/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81%E8%AE%BE%E7%BD%AE/"/>
-    <id>http://zhichuwy.github.io/Eclipse查看JDK源码设置/</id>
+    <link href="http://zhichuwy.cn/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://zhichuwy.cn/Eclipse查看JDK源码设置/</id>
     <published>2019-07-25T00:55:21.000Z</published>
     <updated>2019-07-25T11:03:40.904Z</updated>
     
@@ -212,17 +239,17 @@
     
     </summary>
     
-      <category term="之初-常用配置文件及方法" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%B9%E6%B3%95/"/>
+      <category term="之初-常用配置文件及方法" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%B9%E6%B3%95/"/>
     
     
-      <category term="Eclipse查看JDK源码" scheme="http://zhichuwy.github.io/tags/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81/"/>
+      <category term="Eclipse查看JDK源码" scheme="http://zhichuwy.cn/tags/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81/"/>
     
   </entry>
   
   <entry>
     <title>科大讯飞-语音转写</title>
-    <link href="http://zhichuwy.github.io/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E-%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
-    <id>http://zhichuwy.github.io/科大讯飞-语音转写/</id>
+    <link href="http://zhichuwy.cn/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E-%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
+    <id>http://zhichuwy.cn/科大讯飞-语音转写/</id>
     <published>2019-07-25T00:32:00.000Z</published>
     <updated>2019-07-25T11:03:30.547Z</updated>
     
@@ -239,19 +266,19 @@
     
     </summary>
     
-      <category term="之初-小工具" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+      <category term="之初-小工具" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="科大讯飞" scheme="http://zhichuwy.github.io/tags/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E/"/>
+      <category term="科大讯飞" scheme="http://zhichuwy.cn/tags/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E/"/>
     
-      <category term="语音转写" scheme="http://zhichuwy.github.io/tags/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
+      <category term="语音转写" scheme="http://zhichuwy.cn/tags/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
     
   </entry>
   
   <entry>
     <title>Java执行cmd命令</title>
-    <link href="http://zhichuwy.github.io/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
-    <id>http://zhichuwy.github.io/Java执行cmd命令/</id>
+    <link href="http://zhichuwy.cn/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
+    <id>http://zhichuwy.cn/Java执行cmd命令/</id>
     <published>2019-07-25T00:29:00.000Z</published>
     <updated>2019-08-01T01:41:33.576Z</updated>
     
@@ -270,19 +297,19 @@
     
     </summary>
     
-      <category term="之初-小工具" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+      <category term="之初-小工具" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Java执行cmd命令" scheme="http://zhichuwy.github.io/tags/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
+      <category term="Java执行cmd命令" scheme="http://zhichuwy.cn/tags/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
     
-      <category term="Java执行bat脚本" scheme="http://zhichuwy.github.io/tags/Java%E6%89%A7%E8%A1%8Cbat%E8%84%9A%E6%9C%AC/"/>
+      <category term="Java执行bat脚本" scheme="http://zhichuwy.cn/tags/Java%E6%89%A7%E8%A1%8Cbat%E8%84%9A%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>ffmpeg</title>
-    <link href="http://zhichuwy.github.io/ffmpeg/"/>
-    <id>http://zhichuwy.github.io/ffmpeg/</id>
+    <link href="http://zhichuwy.cn/ffmpeg/"/>
+    <id>http://zhichuwy.cn/ffmpeg/</id>
     <published>2019-07-21T05:50:09.000Z</published>
     <updated>2019-07-27T13:33:37.605Z</updated>
     
@@ -302,21 +329,21 @@
     
     </summary>
     
-      <category term="之初-工具使用" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="ffmpeg" scheme="http://zhichuwy.github.io/tags/ffmpeg/"/>
+      <category term="ffmpeg" scheme="http://zhichuwy.cn/tags/ffmpeg/"/>
     
-      <category term="视频格式转换" scheme="http://zhichuwy.github.io/tags/%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
+      <category term="视频格式转换" scheme="http://zhichuwy.cn/tags/%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
     
-      <category term="音视频分离" scheme="http://zhichuwy.github.io/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%88%86%E7%A6%BB/"/>
+      <category term="音视频分离" scheme="http://zhichuwy.cn/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%88%86%E7%A6%BB/"/>
     
   </entry>
   
   <entry>
     <title>Python</title>
-    <link href="http://zhichuwy.github.io/Python/"/>
-    <id>http://zhichuwy.github.io/Python/</id>
+    <link href="http://zhichuwy.cn/Python/"/>
+    <id>http://zhichuwy.cn/Python/</id>
     <published>2019-07-20T10:50:09.000Z</published>
     <updated>2019-07-25T11:06:41.081Z</updated>
     
@@ -335,17 +362,17 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="Python" scheme="http://zhichuwy.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://zhichuwy.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Go</title>
-    <link href="http://zhichuwy.github.io/Go/"/>
-    <id>http://zhichuwy.github.io/Go/</id>
+    <link href="http://zhichuwy.cn/Go/"/>
+    <id>http://zhichuwy.cn/Go/</id>
     <published>2019-07-20T10:49:09.000Z</published>
     <updated>2019-07-25T11:05:27.114Z</updated>
     
@@ -360,21 +387,21 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="Go" scheme="http://zhichuwy.github.io/tags/Go/"/>
+      <category term="Go" scheme="http://zhichuwy.cn/tags/Go/"/>
     
-      <category term="Go 环境" scheme="http://zhichuwy.github.io/tags/Go-%E7%8E%AF%E5%A2%83/"/>
+      <category term="Go 环境" scheme="http://zhichuwy.cn/tags/Go-%E7%8E%AF%E5%A2%83/"/>
     
-      <category term="Go IDE" scheme="http://zhichuwy.github.io/tags/Go-IDE/"/>
+      <category term="Go IDE" scheme="http://zhichuwy.cn/tags/Go-IDE/"/>
     
   </entry>
   
   <entry>
     <title>Http</title>
-    <link href="http://zhichuwy.github.io/Http/"/>
-    <id>http://zhichuwy.github.io/Http/</id>
+    <link href="http://zhichuwy.cn/Http/"/>
+    <id>http://zhichuwy.cn/Http/</id>
     <published>2019-07-16T12:01:07.000Z</published>
     <updated>2019-08-01T00:21:52.093Z</updated>
     
@@ -391,21 +418,21 @@
     
     </summary>
     
-      <category term="之初-网络 协议..." scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E7%BD%91%E7%BB%9C-%E5%8D%8F%E8%AE%AE/"/>
+      <category term="之初-网络 协议..." scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%BD%91%E7%BB%9C-%E5%8D%8F%E8%AE%AE/"/>
     
     
-      <category term="Http" scheme="http://zhichuwy.github.io/tags/Http/"/>
+      <category term="Http" scheme="http://zhichuwy.cn/tags/Http/"/>
     
-      <category term="GET" scheme="http://zhichuwy.github.io/tags/GET/"/>
+      <category term="GET" scheme="http://zhichuwy.cn/tags/GET/"/>
     
-      <category term="POST" scheme="http://zhichuwy.github.io/tags/POST/"/>
+      <category term="POST" scheme="http://zhichuwy.cn/tags/POST/"/>
     
   </entry>
   
   <entry>
     <title>Eclipse中Tomcat启动Run配置</title>
-    <link href="http://zhichuwy.github.io/Eclipse%E4%B8%ADTomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
-    <id>http://zhichuwy.github.io/Eclipse中Tomcat启动Run配置/</id>
+    <link href="http://zhichuwy.cn/Eclipse%E4%B8%ADTomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
+    <id>http://zhichuwy.cn/Eclipse中Tomcat启动Run配置/</id>
     <published>2019-07-16T12:00:07.000Z</published>
     <updated>2019-07-25T11:04:56.699Z</updated>
     
@@ -420,19 +447,19 @@
     
     </summary>
     
-      <category term="之初-工具使用" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="Eclipse" scheme="http://zhichuwy.github.io/tags/Eclipse/"/>
+      <category term="Eclipse" scheme="http://zhichuwy.cn/tags/Eclipse/"/>
     
-      <category term="Tomcat启动Run配置" scheme="http://zhichuwy.github.io/tags/Tomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
+      <category term="Tomcat启动Run配置" scheme="http://zhichuwy.cn/tags/Tomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>mybatis逆向生成</title>
-    <link href="http://zhichuwy.github.io/MyBatis-Generator/"/>
-    <id>http://zhichuwy.github.io/MyBatis-Generator/</id>
+    <link href="http://zhichuwy.cn/MyBatis-Generator/"/>
+    <id>http://zhichuwy.cn/MyBatis-Generator/</id>
     <published>2019-07-16T11:56:07.000Z</published>
     <updated>2019-07-25T11:03:51.683Z</updated>
     
@@ -448,19 +475,19 @@
     
     </summary>
     
-      <category term="之初-工具使用" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="mybatis" scheme="http://zhichuwy.github.io/tags/mybatis/"/>
+      <category term="mybatis" scheme="http://zhichuwy.cn/tags/mybatis/"/>
     
-      <category term="mybatis-generator" scheme="http://zhichuwy.github.io/tags/mybatis-generator/"/>
+      <category term="mybatis-generator" scheme="http://zhichuwy.cn/tags/mybatis-generator/"/>
     
   </entry>
   
   <entry>
     <title>OAuth认证</title>
-    <link href="http://zhichuwy.github.io/OAuth%E8%AE%A4%E8%AF%81/"/>
-    <id>http://zhichuwy.github.io/OAuth认证/</id>
+    <link href="http://zhichuwy.cn/OAuth%E8%AE%A4%E8%AF%81/"/>
+    <id>http://zhichuwy.cn/OAuth认证/</id>
     <published>2019-07-16T11:56:07.000Z</published>
     <updated>2019-07-25T11:06:41.049Z</updated>
     
@@ -478,17 +505,17 @@
     
     </summary>
     
-      <category term="之初-安全认证" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
+      <category term="之初-安全认证" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
     
     
-      <category term="OAuth认证" scheme="http://zhichuwy.github.io/tags/OAuth%E8%AE%A4%E8%AF%81/"/>
+      <category term="OAuth认证" scheme="http://zhichuwy.cn/tags/OAuth%E8%AE%A4%E8%AF%81/"/>
     
   </entry>
   
   <entry>
     <title>MySQL 8.0</title>
-    <link href="http://zhichuwy.github.io/MySQL8/"/>
-    <id>http://zhichuwy.github.io/MySQL8/</id>
+    <link href="http://zhichuwy.cn/MySQL8/"/>
+    <id>http://zhichuwy.cn/MySQL8/</id>
     <published>2019-07-16T11:46:07.000Z</published>
     <updated>2019-07-25T11:06:41.049Z</updated>
     
@@ -503,21 +530,21 @@
     
     </summary>
     
-      <category term="之初-数据库" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="之初-数据库" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="MySQL" scheme="http://zhichuwy.github.io/tags/MySQL/"/>
+      <category term="MySQL" scheme="http://zhichuwy.cn/tags/MySQL/"/>
     
-      <category term="MySQL 8.0 Driver" scheme="http://zhichuwy.github.io/tags/MySQL-8-0-Driver/"/>
+      <category term="MySQL 8.0 Driver" scheme="http://zhichuwy.cn/tags/MySQL-8-0-Driver/"/>
     
-      <category term="MySQL 8.0 Connection" scheme="http://zhichuwy.github.io/tags/MySQL-8-0-Connection/"/>
+      <category term="MySQL 8.0 Connection" scheme="http://zhichuwy.cn/tags/MySQL-8-0-Connection/"/>
     
   </entry>
   
   <entry>
     <title>Eclipse项目相关踩坑</title>
-    <link href="http://zhichuwy.github.io/Eclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91/"/>
-    <id>http://zhichuwy.github.io/Eclipse项目相关踩坑/</id>
+    <link href="http://zhichuwy.cn/Eclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91/"/>
+    <id>http://zhichuwy.cn/Eclipse项目相关踩坑/</id>
     <published>2019-07-16T11:40:07.000Z</published>
     <updated>2019-07-25T11:05:11.430Z</updated>
     
@@ -535,48 +562,16 @@
     
     </summary>
     
-      <category term="之初-工具使用" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="Eclipse" scheme="http://zhichuwy.github.io/tags/Eclipse/"/>
+      <category term="Eclipse" scheme="http://zhichuwy.cn/tags/Eclipse/"/>
     
-      <category term="快捷键" scheme="http://zhichuwy.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <category term="快捷键" scheme="http://zhichuwy.cn/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
-      <category term="maven Pagehelper" scheme="http://zhichuwy.github.io/tags/maven-Pagehelper/"/>
+      <category term="maven Pagehelper" scheme="http://zhichuwy.cn/tags/maven-Pagehelper/"/>
     
-      <category term="war打包错误" scheme="http://zhichuwy.github.io/tags/war%E6%89%93%E5%8C%85%E9%94%99%E8%AF%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SVN相关</title>
-    <link href="http://zhichuwy.github.io/SVN/"/>
-    <id>http://zhichuwy.github.io/SVN/</id>
-    <published>2019-07-16T11:40:07.000Z</published>
-    <updated>2019-07-25T11:06:41.096Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件<br>1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；<br>2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；<br>3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？<br>它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。<br>总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件&lt;br&gt;1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提
-      
-    
-    </summary>
-    
-      <category term="之初-工具使用" scheme="http://zhichuwy.github.io/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="SVN" scheme="http://zhichuwy.github.io/tags/SVN/"/>
-    
-      <category term="VisualSVN-Server" scheme="http://zhichuwy.github.io/tags/VisualSVN-Server/"/>
-    
-      <category term="Subversion" scheme="http://zhichuwy.github.io/tags/Subversion/"/>
-    
-      <category term="TortoiseSVN" scheme="http://zhichuwy.github.io/tags/TortoiseSVN/"/>
+      <category term="war打包错误" scheme="http://zhichuwy.cn/tags/war%E6%89%93%E5%8C%85%E9%94%99%E8%AF%AF/"/>
     
   </entry>
   

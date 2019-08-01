@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CSS入门]]></title>
+    <url>%2FCSS%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[外边距 margin :邻接(非包含关系)元素位置关系 内边距 padding:内外元素边距 标签被用来组合文档中的行内元素。 外边距 margin :邻接(非包含关系)元素位置关系 内边距 padding:内外元素边距 标签被用来组合文档中的行内元素。 123456789101112131415161718&lt;!-- 左侧图片，右侧上下文字 --&gt;&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;body&gt; &lt;div&gt; &lt;div style="float: left; width: 4%; "&gt; &lt;img src="https://Dxoca.cn/image/headPortrait.jpg" width="64px" height="64px" alt="fail" /&gt; &lt;/div&gt; &lt;div style="float: right; width: 96%; " &gt; &lt;div style="padding-left: 5px; "&gt; &lt;a href="https://Dxoca.cn"&gt;Dxoca's blog xxxxx&lt;/a&gt; &lt;/div&gt; &lt;p&gt;yyyyyy&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>之初-Future</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[all categories]]></title>
     <url>%2Fall%20categories%2F</url>
     <content type="text"><![CDATA[摘要 categories维护 categories 之初-Java基础 之初-工具使用(ffmpeg) 之初-框架(Spring …) 之初-安全认证(OAuth …) 之初-加密(MD5 SHA SRA …) 之初-网络 协议… 之初-数据库 之初-服务器(Tomcat Nginx …) 之初-Linux 之初-算法 之初-进阶(开发模式 架构 …) 之初-常用配置文件及方法(.xml .properties…) 之初-小工具(语音转写 java执行cmd) 之初-Future(Python Go AI etc…) 之初-Others积累]]></content>
@@ -265,6 +276,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
+    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
+    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>IDEA项目导入</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[IDEA安装及使用]]></title>
     <url>%2FIDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[IDEA 注册码：https://blog.csdn.net/mobiusstrip/article/details/89841038 快捷键 Ctrl+Alt+L 格式化代码]]></content>
@@ -275,17 +297,6 @@
         <tag>IDEA安装及使用</tag>
         <tag>IDEA密钥</tag>
         <tag>IDEA快捷键</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
-    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
-    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>IDEA项目导入</tag>
       </tags>
   </entry>
   <entry>

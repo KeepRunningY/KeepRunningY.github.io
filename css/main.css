@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a1f5e7;
+  background: #7dd093;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3261,6 +3261,46 @@ pre .javascript .function {
     margin: 8px 0 0;
   }
 }
+.myblockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  position: relative;
+  margin: 40px 0;
+  padding: 0;
+  border-left: none;
+  text-align: center;
+}
+.myblockquote:before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 24px;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: 0 -6px;
+  background-size: 22px 22px;
+  top: -20px;
+  background-image: url("../images/quote-l.svg");
+  border-top: 1px solid #ccc;
+}
+.myblockquote:after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 24px;
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: 100% 8px;
+  background-size: 22px 22px;
+  bottom: -20px;
+  background-image: url("../images/quote-r.svg");
+  border-bottom: 1px solid #ccc;
+}
 .highlight {
   position: relative;
 }
@@ -3298,8 +3338,9 @@ pre .javascript .function {
 #days {
   display: block;
   color: #00cd66;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 15px;
+  margin-left: 33px;
 }
 #heart {
   animation: heartAnimate 1.33s ease-in-out infinite;

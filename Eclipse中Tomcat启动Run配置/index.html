@@ -92,7 +92,7 @@
 <meta name="keywords" content="Eclipse,Tomcat启动Run配置">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Eclipse中Tomcat启动Run配置">
-<meta property="og:url" content="http://zhichuwy.cn/Eclipse中Tomcat启动Run配置/index.html">
+<meta property="og:url" content="https://zhichuwy.cn/Eclipse中Tomcat启动Run配置/index.html">
 <meta property="og:site_name" content="之初 Blog">
 <meta property="og:description" content="clean tomcat7：run 报错Tomcat====服务===手动启动设置Install JRE时候选中JDK的目录，因为jdk下面也有一个jre。为什么这个可以是因为maven的eclipse插件一些功能需要使用JDK，所以使用jdk目录可以解决这个问题。https://blog.csdn.net/u011734144/article/details/51894942https://bl">
 <meta property="og:locale" content="zh-Hans">
@@ -129,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="http://zhichuwy.cn/Eclipse中Tomcat启动Run配置/">
+  <link rel="canonical" href="https://zhichuwy.cn/Eclipse中Tomcat启动Run配置/">
 
 
 
@@ -324,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhichuwy.cn/Eclipse中Tomcat启动Run配置/">
+    <link itemprop="mainEntityOfPage" href="https://zhichuwy.cn/Eclipse中Tomcat启动Run配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="之初">
@@ -481,7 +481,7 @@
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
   <div></div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
+    <span>Donate</span>
   </button>
   <div id="QR" style="display: none;">
 
@@ -516,7 +516,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://zhichuwy.cn/Eclipse中Tomcat启动Run配置/" title="Eclipse中Tomcat启动Run配置">http://zhichuwy.cn/Eclipse中Tomcat启动Run配置/</a>
+    <a href="https://zhichuwy.cn/Eclipse中Tomcat启动Run配置/" title="Eclipse中Tomcat启动Run配置">https://zhichuwy.cn/Eclipse中Tomcat启动Run配置/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -642,7 +642,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -653,7 +653,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">60</span>
+                  <span class="site-state-item-count">63</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -692,15 +692,15 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://blog.csdn.net/" target="_blank" title="CSDN">
-                      
-                        <i class="fa fa-fw fa-crosshairs"></i>CSDN</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
                     <a href="mailto:wyang97@163.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://music.163.com/#/user/home?id=407931218" target="_blank" title="我的网易云音乐,haha">
+                      
+                        <i class="fa fa-fw fa-music"></i>我的网易云音乐,haha</a>
                   </span>
                 
             </div>
@@ -749,21 +749,29 @@
           <div id="days"></div>
 <script>
 function show_date_time(){
-    window.setTimeout("show_date_time()", 1000);
-    BirthDay=new Date("03/30/2019 18:13:14");
+    window.setTimeout("show_date_time()", 1000*3600); 
+    BirthDay=new Date("03/06/2019 08:21:07");
     today=new Date();
     timeold=(today.getTime()-BirthDay.getTime());
+
     sectimeold=timeold/1000
     secondsold=Math.floor(sectimeold);
     msPerDay=24*60*60*1000
+
     e_daysold=timeold/msPerDay
     daysold=Math.floor(e_daysold);
+
     e_hrsold=(e_daysold-daysold)*24;
     hrsold=setzero(Math.floor(e_hrsold));
-    e_minsold=(e_hrsold-hrsold)*60;
-    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
-    seconds=setzero(Math.floor((e_minsold-minsold)*60));
-    document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+
+    document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时";
+
+    
+    
+
+    
+
+    
 }
 function setzero(i) {
     if (i<10) {
@@ -1440,6 +1448,8 @@ show_date_time();
   
 
   
+  
+
 
   
   <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>

@@ -5,9 +5,9 @@
   <subtitle>The harder, the more fortunate</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://zhichuwy.cn/"/>
-  <updated>2019-08-01T13:25:27.358Z</updated>
-  <id>http://zhichuwy.cn/</id>
+  <link href="https://zhichuwy.cn/"/>
+  <updated>2019-08-02T12:01:01.860Z</updated>
+  <id>https://zhichuwy.cn/</id>
   
   <author>
     <name>之初</name>
@@ -17,36 +17,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>CSS入门</title>
-    <link href="http://zhichuwy.cn/CSS%E5%85%A5%E9%97%A8/"/>
-    <id>http://zhichuwy.cn/CSS入门/</id>
+    <title>Hexo博客历程</title>
+    <link href="https://zhichuwy.cn/Hexo+Next/"/>
+    <id>https://zhichuwy.cn/Hexo+Next/</id>
     <published>2019-08-01T10:34:29.000Z</published>
-    <updated>2019-08-01T13:25:27.358Z</updated>
+    <updated>2019-08-02T12:01:01.860Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>外边距 margin :邻接(非包含关系)元素位置关系<br>  内边距 padding:内外元素边距</p></blockquote><blockquote><p><span> 标签被用来组合文档中的行内元素。</span></p></blockquote> <a id="more"></a><blockquote><p>外边距 margin :邻接(非包含关系)元素位置关系<br>  内边距 padding:内外元素边距</p></blockquote><blockquote><p><span> 标签被用来组合文档中的行内元素。</span></p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 左侧图片，右侧上下文字 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: left; width: 4%; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://Dxoca.cn/image/headPortrait.jpg"</span> <span class="attr">width</span>=<span class="string">"64px"</span> <span class="attr">height</span>=<span class="string">"64px"</span> <span class="attr">alt</span>=<span class="string">"fail"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: right; width: 96%; "</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"padding-left: 5px; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://Dxoca.cn"</span>&gt;</span>Dxoca's blog xxxxx<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>yyyyyy<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p><img src="../images/1.jpg" alt="alt"></p><a id="more"></a><h3 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h3><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-<span class="keyword">cli</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure><blockquote><p>参考官方文档吧 :D 哈哈 哈 嗝~！</p></blockquote><h3 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h3><blockquote><p>引用样式主要用于文章摘要(图片&amp;文字)<br>引用样式美化方案1</p></blockquote><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type="text/css"&gt;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.myblockquote</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">"\f10d"</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1rem</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>:-<span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#233</span>;</span><br><span class="line">    <span class="attribute">font-family</span>: FontAwesome;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.myblockquote</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">'\f10e'</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1rem</span>;</span><br><span class="line">    <span class="attribute">float</span>: right;</span><br><span class="line">    <span class="attribute">top</span>: -<span class="number">1rem</span>;</span><br><span class="line">    <span class="attribute">margin-right</span>:-<span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#233</span>;</span><br><span class="line">    <span class="attribute">font-family</span>: FontAwesome;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure><blockquote><p>引用样式美化方案2</p></blockquote><figure class="highlight css"><figcaption><span>.css可放至 ~ next/css/_custom/_custom.styl 图片位置放在</span><a href="/source/images目录下即可">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type="text/css"&gt;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.myblockquote</span> &#123;</span><br><span class="line"><span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">margin-block-start</span>: <span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">margin-block-end</span>: <span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">margin-inline-start</span>: <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">margin-inline-end</span>: <span class="number">40px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    margin: 40px 0; //距离标题大小</span><br><span class="line">    <span class="selector-tag">padding</span>: 0;</span><br><span class="line">    border-left: none;  //原始引用样式左边 竖线边框</span><br><span class="line">    <span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.myblockquote</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line"><span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">' '</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.2</span>;</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-position</span>: <span class="number">0</span> -<span class="number">6px</span>;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">22px</span> <span class="number">22px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">top</span>: -<span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(../images/quote-l.svg);</span><br><span class="line">    <span class="attribute">border-top</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.myblockquote</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">' '</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.2</span>;</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    background-position: 100% 8px; // 横向|纵向 调整</span><br><span class="line">    <span class="selector-tag">background-size</span>: 22<span class="selector-tag">px</span> 22<span class="selector-tag">px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">bottom</span>: <span class="selector-tag">-20px</span>;</span><br><span class="line">    background-image: url(../images/quote-r.svg);</span><br><span class="line">    <span class="selector-tag">border-bottom</span>: 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span> <span class="selector-id">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;!<span class="selector-tag">--</span> 两种样式互不影响 <span class="selector-tag">--</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class="myblockquote"&gt;</span><br><span class="line">自定义引用样式</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&gt; 原始引用样式</span><br></pre></td></tr></table></figure><h3 id="功能添加"><a href="#功能添加" class="headerlink" title="功能添加"></a>功能添加</h3>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;外边距 margin :邻接(非包含关系)元素位置关系&lt;br&gt;  内边距 padding:内外元素边距&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span&gt; 标签被用来组合文档中的行内元素。&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;p&gt;&lt;img src=&quot;../images/1.jpg&quot; alt=&quot;alt&quot;&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-进阶" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E8%BF%9B%E9%98%B6/"/>
     
     
-      <category term="CSS" scheme="http://zhichuwy.cn/tags/CSS/"/>
+      <category term="Hexo" scheme="https://zhichuwy.cn/tags/Hexo/"/>
+    
+      <category term="Next" scheme="https://zhichuwy.cn/tags/Next/"/>
+    
+      <category term="美化" scheme="https://zhichuwy.cn/tags/%E7%BE%8E%E5%8C%96/"/>
+    
+      <category term="功能增强" scheme="https://zhichuwy.cn/tags/%E5%8A%9F%E8%83%BD%E5%A2%9E%E5%BC%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS入门</title>
+    <link href="https://zhichuwy.cn/CSS%E5%85%A5%E9%97%A8/"/>
+    <id>https://zhichuwy.cn/CSS入门/</id>
+    <published>2019-08-01T10:34:29.000Z</published>
+    <updated>2019-08-02T11:49:12.937Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote">外边距 margin :邻接(非包含关系)元素位置关系<br>内边距 padding:内外元素边距<br>span标签 被用来组合文档中的行内元素</div> <a id="more"></a><blockquote><p>原始引用样式</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 左侧图片，右侧上下文字 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: left; width: 4%; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://Dxoca.cn/image/headPortrait.jpg"</span> <span class="attr">width</span>=<span class="string">"64px"</span> <span class="attr">height</span>=<span class="string">"64px"</span> <span class="attr">alt</span>=<span class="string">"fail"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: right; width: 96%; "</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"padding-left: 5px; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://Dxoca.cn"</span>&gt;</span>Dxoca's blog xxxxx<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>yyyyyy<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;外边距 margin :邻接(非包含关系)元素位置关系&lt;br&gt;内边距 padding:内外元素边距&lt;br&gt;span标签 被用来组合文档中的行内元素&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+    
+    
+      <category term="CSS" scheme="https://zhichuwy.cn/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>all categories</title>
-    <link href="http://zhichuwy.cn/all%20categories/"/>
-    <id>http://zhichuwy.cn/all categories/</id>
+    <link href="https://zhichuwy.cn/all%20categories/"/>
+    <id>https://zhichuwy.cn/all categories/</id>
     <published>2019-07-31T22:13:07.000Z</published>
     <updated>2019-08-01T03:03:44.389Z</updated>
     
@@ -58,17 +81,17 @@
     
     </summary>
     
-      <category term="所有文章分类汇总" scheme="http://zhichuwy.cn/categories/%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB/"/>
+      <category term="所有文章分类汇总" scheme="https://zhichuwy.cn/categories/%E6%89%80%E6%9C%89%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB/"/>
     
     
-      <category term="all categories" scheme="http://zhichuwy.cn/tags/all-categories/"/>
+      <category term="all categories" scheme="https://zhichuwy.cn/tags/all-categories/"/>
     
   </entry>
   
   <entry>
     <title>bat脚本编写</title>
-    <link href="http://zhichuwy.cn/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
-    <id>http://zhichuwy.cn/bat脚本编写/</id>
+    <link href="https://zhichuwy.cn/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+    <id>https://zhichuwy.cn/bat脚本编写/</id>
     <published>2019-07-27T09:25:16.000Z</published>
     <updated>2019-08-01T02:48:34.294Z</updated>
     
@@ -81,17 +104,17 @@
     
     </summary>
     
-      <category term="之初-Others" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Others/"/>
+      <category term="之初-Others" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Others/"/>
     
     
-      <category term="bat脚本编写" scheme="http://zhichuwy.cn/tags/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
+      <category term="bat脚本编写" scheme="https://zhichuwy.cn/tags/bat%E8%84%9A%E6%9C%AC%E7%BC%96%E5%86%99/"/>
     
   </entry>
   
   <entry>
     <title>Java I/O流</title>
-    <link href="http://zhichuwy.cn/Java%20IO%E6%B5%81/"/>
-    <id>http://zhichuwy.cn/Java IO流/</id>
+    <link href="https://zhichuwy.cn/Java%20IO%E6%B5%81/"/>
+    <id>https://zhichuwy.cn/Java IO流/</id>
     <published>2019-07-27T05:29:37.000Z</published>
     <updated>2019-07-27T05:30:02.277Z</updated>
     
@@ -107,17 +130,17 @@
     
     </summary>
     
-      <category term="之初-Java基础" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Java%E5%9F%BA%E7%A1%80/"/>
+      <category term="之初-Java基础" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Java%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="Java I/O流" scheme="http://zhichuwy.cn/tags/Java-I-O%E6%B5%81/"/>
+      <category term="Java I/O流" scheme="https://zhichuwy.cn/tags/Java-I-O%E6%B5%81/"/>
     
   </entry>
   
   <entry>
     <title>邮件协议</title>
-    <link href="http://zhichuwy.cn/%E9%82%AE%E4%BB%B6%E5%8D%8F%E8%AE%AE/"/>
-    <id>http://zhichuwy.cn/邮件协议/</id>
+    <link href="https://zhichuwy.cn/%E9%82%AE%E4%BB%B6%E5%8D%8F%E8%AE%AE/"/>
+    <id>https://zhichuwy.cn/邮件协议/</id>
     <published>2019-07-26T07:27:02.000Z</published>
     <updated>2019-07-26T07:32:24.194Z</updated>
     
@@ -133,21 +156,21 @@
     
     </summary>
     
-      <category term="之初-Others积累" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Others%E7%A7%AF%E7%B4%AF/"/>
+      <category term="之初-Others积累" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Others%E7%A7%AF%E7%B4%AF/"/>
     
     
-      <category term="POP3" scheme="http://zhichuwy.cn/tags/POP3/"/>
+      <category term="POP3" scheme="https://zhichuwy.cn/tags/POP3/"/>
     
-      <category term="SMTP" scheme="http://zhichuwy.cn/tags/SMTP/"/>
+      <category term="SMTP" scheme="https://zhichuwy.cn/tags/SMTP/"/>
     
-      <category term="IMAP" scheme="http://zhichuwy.cn/tags/IMAP/"/>
+      <category term="IMAP" scheme="https://zhichuwy.cn/tags/IMAP/"/>
     
   </entry>
   
   <entry>
     <title>Python爬虫</title>
-    <link href="http://zhichuwy.cn/%E7%88%AC%E8%99%AB/"/>
-    <id>http://zhichuwy.cn/爬虫/</id>
+    <link href="https://zhichuwy.cn/%E7%88%AC%E8%99%AB/"/>
+    <id>https://zhichuwy.cn/爬虫/</id>
     <published>2019-07-26T06:16:20.000Z</published>
     <updated>2019-07-26T06:17:59.824Z</updated>
     
@@ -162,19 +185,19 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="Python" scheme="http://zhichuwy.cn/tags/Python/"/>
+      <category term="Python" scheme="https://zhichuwy.cn/tags/Python/"/>
     
-      <category term="爬虫" scheme="http://zhichuwy.cn/tags/%E7%88%AC%E8%99%AB/"/>
+      <category term="爬虫" scheme="https://zhichuwy.cn/tags/%E7%88%AC%E8%99%AB/"/>
     
   </entry>
   
   <entry>
     <title>阿里支付</title>
-    <link href="http://zhichuwy.cn/%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98/"/>
-    <id>http://zhichuwy.cn/阿里支付/</id>
+    <link href="https://zhichuwy.cn/%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98/"/>
+    <id>https://zhichuwy.cn/阿里支付/</id>
     <published>2019-07-26T06:12:37.000Z</published>
     <updated>2019-07-26T06:12:41.290Z</updated>
     
@@ -189,17 +212,17 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="阿里支付" scheme="http://zhichuwy.cn/tags/%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98/"/>
+      <category term="阿里支付" scheme="https://zhichuwy.cn/tags/%E9%98%BF%E9%87%8C%E6%94%AF%E4%BB%98/"/>
     
   </entry>
   
   <entry>
     <title>机器学习</title>
-    <link href="http://zhichuwy.cn/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://zhichuwy.cn/机器学习/</id>
+    <link href="https://zhichuwy.cn/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://zhichuwy.cn/机器学习/</id>
     <published>2019-07-26T06:11:27.000Z</published>
     <updated>2019-07-26T06:11:55.244Z</updated>
     
@@ -214,17 +237,17 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="机器学习" scheme="http://zhichuwy.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="https://zhichuwy.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
   <entry>
     <title>Eclipse查看JDK源码设置</title>
-    <link href="http://zhichuwy.cn/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81%E8%AE%BE%E7%BD%AE/"/>
-    <id>http://zhichuwy.cn/Eclipse查看JDK源码设置/</id>
+    <link href="https://zhichuwy.cn/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://zhichuwy.cn/Eclipse查看JDK源码设置/</id>
     <published>2019-07-25T00:55:21.000Z</published>
     <updated>2019-07-25T11:03:40.904Z</updated>
     
@@ -239,17 +262,17 @@
     
     </summary>
     
-      <category term="之初-常用配置文件及方法" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%B9%E6%B3%95/"/>
+      <category term="之初-常用配置文件及方法" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%8F%8A%E6%96%B9%E6%B3%95/"/>
     
     
-      <category term="Eclipse查看JDK源码" scheme="http://zhichuwy.cn/tags/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81/"/>
+      <category term="Eclipse查看JDK源码" scheme="https://zhichuwy.cn/tags/Eclipse%E6%9F%A5%E7%9C%8BJDK%E6%BA%90%E7%A0%81/"/>
     
   </entry>
   
   <entry>
     <title>科大讯飞-语音转写</title>
-    <link href="http://zhichuwy.cn/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E-%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
-    <id>http://zhichuwy.cn/科大讯飞-语音转写/</id>
+    <link href="https://zhichuwy.cn/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E-%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
+    <id>https://zhichuwy.cn/科大讯飞-语音转写/</id>
     <published>2019-07-25T00:32:00.000Z</published>
     <updated>2019-07-25T11:03:30.547Z</updated>
     
@@ -266,19 +289,19 @@
     
     </summary>
     
-      <category term="之初-小工具" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+      <category term="之初-小工具" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="科大讯飞" scheme="http://zhichuwy.cn/tags/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E/"/>
+      <category term="科大讯飞" scheme="https://zhichuwy.cn/tags/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E/"/>
     
-      <category term="语音转写" scheme="http://zhichuwy.cn/tags/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
+      <category term="语音转写" scheme="https://zhichuwy.cn/tags/%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
     
   </entry>
   
   <entry>
     <title>Java执行cmd命令</title>
-    <link href="http://zhichuwy.cn/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
-    <id>http://zhichuwy.cn/Java执行cmd命令/</id>
+    <link href="https://zhichuwy.cn/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
+    <id>https://zhichuwy.cn/Java执行cmd命令/</id>
     <published>2019-07-25T00:29:00.000Z</published>
     <updated>2019-08-01T01:41:33.576Z</updated>
     
@@ -297,19 +320,19 @@
     
     </summary>
     
-      <category term="之初-小工具" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+      <category term="之初-小工具" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="Java执行cmd命令" scheme="http://zhichuwy.cn/tags/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
+      <category term="Java执行cmd命令" scheme="https://zhichuwy.cn/tags/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
     
-      <category term="Java执行bat脚本" scheme="http://zhichuwy.cn/tags/Java%E6%89%A7%E8%A1%8Cbat%E8%84%9A%E6%9C%AC/"/>
+      <category term="Java执行bat脚本" scheme="https://zhichuwy.cn/tags/Java%E6%89%A7%E8%A1%8Cbat%E8%84%9A%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>ffmpeg</title>
-    <link href="http://zhichuwy.cn/ffmpeg/"/>
-    <id>http://zhichuwy.cn/ffmpeg/</id>
+    <link href="https://zhichuwy.cn/ffmpeg/"/>
+    <id>https://zhichuwy.cn/ffmpeg/</id>
     <published>2019-07-21T05:50:09.000Z</published>
     <updated>2019-07-27T13:33:37.605Z</updated>
     
@@ -329,21 +352,21 @@
     
     </summary>
     
-      <category term="之初-工具使用" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="ffmpeg" scheme="http://zhichuwy.cn/tags/ffmpeg/"/>
+      <category term="ffmpeg" scheme="https://zhichuwy.cn/tags/ffmpeg/"/>
     
-      <category term="视频格式转换" scheme="http://zhichuwy.cn/tags/%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
+      <category term="视频格式转换" scheme="https://zhichuwy.cn/tags/%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
     
-      <category term="音视频分离" scheme="http://zhichuwy.cn/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%88%86%E7%A6%BB/"/>
+      <category term="音视频分离" scheme="https://zhichuwy.cn/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%88%86%E7%A6%BB/"/>
     
   </entry>
   
   <entry>
     <title>Python</title>
-    <link href="http://zhichuwy.cn/Python/"/>
-    <id>http://zhichuwy.cn/Python/</id>
+    <link href="https://zhichuwy.cn/Python/"/>
+    <id>https://zhichuwy.cn/Python/</id>
     <published>2019-07-20T10:50:09.000Z</published>
     <updated>2019-07-25T11:06:41.081Z</updated>
     
@@ -362,17 +385,17 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="Python" scheme="http://zhichuwy.cn/tags/Python/"/>
+      <category term="Python" scheme="https://zhichuwy.cn/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>Go</title>
-    <link href="http://zhichuwy.cn/Go/"/>
-    <id>http://zhichuwy.cn/Go/</id>
+    <link href="https://zhichuwy.cn/Go/"/>
+    <id>https://zhichuwy.cn/Go/</id>
     <published>2019-07-20T10:49:09.000Z</published>
     <updated>2019-07-25T11:05:27.114Z</updated>
     
@@ -387,21 +410,21 @@
     
     </summary>
     
-      <category term="之初-Future" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
+      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
     
     
-      <category term="Go" scheme="http://zhichuwy.cn/tags/Go/"/>
+      <category term="Go" scheme="https://zhichuwy.cn/tags/Go/"/>
     
-      <category term="Go 环境" scheme="http://zhichuwy.cn/tags/Go-%E7%8E%AF%E5%A2%83/"/>
+      <category term="Go 环境" scheme="https://zhichuwy.cn/tags/Go-%E7%8E%AF%E5%A2%83/"/>
     
-      <category term="Go IDE" scheme="http://zhichuwy.cn/tags/Go-IDE/"/>
+      <category term="Go IDE" scheme="https://zhichuwy.cn/tags/Go-IDE/"/>
     
   </entry>
   
   <entry>
     <title>Http</title>
-    <link href="http://zhichuwy.cn/Http/"/>
-    <id>http://zhichuwy.cn/Http/</id>
+    <link href="https://zhichuwy.cn/Http/"/>
+    <id>https://zhichuwy.cn/Http/</id>
     <published>2019-07-16T12:01:07.000Z</published>
     <updated>2019-08-01T00:21:52.093Z</updated>
     
@@ -418,21 +441,21 @@
     
     </summary>
     
-      <category term="之初-网络 协议..." scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%BD%91%E7%BB%9C-%E5%8D%8F%E8%AE%AE/"/>
+      <category term="之初-网络 协议..." scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%BD%91%E7%BB%9C-%E5%8D%8F%E8%AE%AE/"/>
     
     
-      <category term="Http" scheme="http://zhichuwy.cn/tags/Http/"/>
+      <category term="Http" scheme="https://zhichuwy.cn/tags/Http/"/>
     
-      <category term="GET" scheme="http://zhichuwy.cn/tags/GET/"/>
+      <category term="GET" scheme="https://zhichuwy.cn/tags/GET/"/>
     
-      <category term="POST" scheme="http://zhichuwy.cn/tags/POST/"/>
+      <category term="POST" scheme="https://zhichuwy.cn/tags/POST/"/>
     
   </entry>
   
   <entry>
     <title>Eclipse中Tomcat启动Run配置</title>
-    <link href="http://zhichuwy.cn/Eclipse%E4%B8%ADTomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
-    <id>http://zhichuwy.cn/Eclipse中Tomcat启动Run配置/</id>
+    <link href="https://zhichuwy.cn/Eclipse%E4%B8%ADTomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
+    <id>https://zhichuwy.cn/Eclipse中Tomcat启动Run配置/</id>
     <published>2019-07-16T12:00:07.000Z</published>
     <updated>2019-07-25T11:04:56.699Z</updated>
     
@@ -447,19 +470,19 @@
     
     </summary>
     
-      <category term="之初-工具使用" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="Eclipse" scheme="http://zhichuwy.cn/tags/Eclipse/"/>
+      <category term="Eclipse" scheme="https://zhichuwy.cn/tags/Eclipse/"/>
     
-      <category term="Tomcat启动Run配置" scheme="http://zhichuwy.cn/tags/Tomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
+      <category term="Tomcat启动Run配置" scheme="https://zhichuwy.cn/tags/Tomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
   <entry>
     <title>OAuth认证</title>
-    <link href="http://zhichuwy.cn/OAuth%E8%AE%A4%E8%AF%81/"/>
-    <id>http://zhichuwy.cn/OAuth认证/</id>
+    <link href="https://zhichuwy.cn/OAuth%E8%AE%A4%E8%AF%81/"/>
+    <id>https://zhichuwy.cn/OAuth认证/</id>
     <published>2019-07-16T11:56:07.000Z</published>
     <updated>2019-07-25T11:06:41.049Z</updated>
     
@@ -477,17 +500,17 @@
     
     </summary>
     
-      <category term="之初-安全认证" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
+      <category term="之初-安全认证" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
     
     
-      <category term="OAuth认证" scheme="http://zhichuwy.cn/tags/OAuth%E8%AE%A4%E8%AF%81/"/>
+      <category term="OAuth认证" scheme="https://zhichuwy.cn/tags/OAuth%E8%AE%A4%E8%AF%81/"/>
     
   </entry>
   
   <entry>
     <title>mybatis逆向生成</title>
-    <link href="http://zhichuwy.cn/MyBatis-Generator/"/>
-    <id>http://zhichuwy.cn/MyBatis-Generator/</id>
+    <link href="https://zhichuwy.cn/MyBatis-Generator/"/>
+    <id>https://zhichuwy.cn/MyBatis-Generator/</id>
     <published>2019-07-16T11:56:07.000Z</published>
     <updated>2019-07-25T11:03:51.683Z</updated>
     
@@ -503,19 +526,19 @@
     
     </summary>
     
-      <category term="之初-工具使用" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="之初-工具使用" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="mybatis" scheme="http://zhichuwy.cn/tags/mybatis/"/>
+      <category term="mybatis" scheme="https://zhichuwy.cn/tags/mybatis/"/>
     
-      <category term="mybatis-generator" scheme="http://zhichuwy.cn/tags/mybatis-generator/"/>
+      <category term="mybatis-generator" scheme="https://zhichuwy.cn/tags/mybatis-generator/"/>
     
   </entry>
   
   <entry>
     <title>MySQL 8.0</title>
-    <link href="http://zhichuwy.cn/MySQL8/"/>
-    <id>http://zhichuwy.cn/MySQL8/</id>
+    <link href="https://zhichuwy.cn/MySQL8/"/>
+    <id>https://zhichuwy.cn/MySQL8/</id>
     <published>2019-07-16T11:46:07.000Z</published>
     <updated>2019-07-25T11:06:41.049Z</updated>
     
@@ -530,48 +553,14 @@
     
     </summary>
     
-      <category term="之初-数据库" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="之初-数据库" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
-      <category term="MySQL" scheme="http://zhichuwy.cn/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://zhichuwy.cn/tags/MySQL/"/>
     
-      <category term="MySQL 8.0 Driver" scheme="http://zhichuwy.cn/tags/MySQL-8-0-Driver/"/>
+      <category term="MySQL 8.0 Driver" scheme="https://zhichuwy.cn/tags/MySQL-8-0-Driver/"/>
     
-      <category term="MySQL 8.0 Connection" scheme="http://zhichuwy.cn/tags/MySQL-8-0-Connection/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Eclipse项目相关踩坑</title>
-    <link href="http://zhichuwy.cn/Eclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91/"/>
-    <id>http://zhichuwy.cn/Eclipse项目相关踩坑/</id>
-    <published>2019-07-16T11:40:07.000Z</published>
-    <updated>2019-07-25T11:05:11.430Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><blockquote><p>Ctrl+1 回车=&gt;自动补全返回类型</p></blockquote><h3 id="maven-Pagehelper"><a href="#maven-Pagehelper" class="headerlink" title="maven Pagehelper"></a>maven Pagehelper</h3><blockquote><p>maven Pagehelper版本问题：<a href="https://blog.csdn.net/qq_36004521/article/details/78578075" target="_blank" rel="noopener">https://blog.csdn.net/qq_36004521/article/details/78578075</a> </p></blockquote><h3 id="war打包错误"><a href="#war打包错误" class="headerlink" title="war打包错误"></a>war打包错误</h3><blockquote><p>war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;Ctrl+1 回车=&amp;gt;自动补全返回类型&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;mave
-      
-    
-    </summary>
-    
-      <category term="之初-工具使用" scheme="http://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="Eclipse" scheme="http://zhichuwy.cn/tags/Eclipse/"/>
-    
-      <category term="快捷键" scheme="http://zhichuwy.cn/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-      <category term="maven Pagehelper" scheme="http://zhichuwy.cn/tags/maven-Pagehelper/"/>
-    
-      <category term="war打包错误" scheme="http://zhichuwy.cn/tags/war%E6%89%93%E5%8C%85%E9%94%99%E8%AF%AF/"/>
+      <category term="MySQL 8.0 Connection" scheme="https://zhichuwy.cn/tags/MySQL-8-0-Connection/"/>
     
   </entry>
   

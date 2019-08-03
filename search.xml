@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[Hexo博客历程]]></title>
     <url>%2FHexo%2BNext%2F</url>
-    <content type="text"><![CDATA[Hexo博客搭建12$ npm install hexo-cli... 参考官方文档吧 :D 哈哈 哈 嗝~！ 美化 引用样式主要用于文章摘要(图片&amp;文字)引用样式美化方案1 1234567891011121314151617181920212223&lt;style type="text/css"&gt;.myblockquote:before &#123; position: relative; content: "\f10d" !important; font-size: 1rem; left: 0; margin-left:-1em; color: #233; font-family: FontAwesome; //fontello&#125;.myblockquote:after &#123; position: relative; content: '\f10e' !important; font-size: 1rem; float: right; top: -1rem; margin-right:-1em; color: #233; font-family: FontAwesome;&#125;&lt;/style&gt; 引用样式美化方案2 .css可放至 ~ next/css/_custom/_custom.styl 图片位置放在link1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&lt;style type="text/css"&gt;.myblockquote &#123; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 40px; margin-inline-end: 40px; position: relative; margin: 40px 0; //距离标题大小 padding: 0; border-left: none; //原始引用样式左边 竖线边框 text-align: center;&#125;.myblockquote:before &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 0 -6px; background-size: 22px 22px; top: -20px; background-image: url(../images/quote-l.svg); border-top: 1px solid #ccc;&#125;.myblockquote:after &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 100% 8px; // 横向|纵向 调整 background-size: 22px 22px; bottom: -20px; background-image: url(../images/quote-r.svg); border-bottom: 1px solid #ccc;&#125;&lt;/style&gt;&lt;!-- 两种样式互不影响 --&gt;&lt;div class="myblockquote"&gt; 自定义引用样式&lt;/div&gt;&gt; 原始引用样式 功能添加]]></content>
+    <content type="text"><![CDATA[Hexo博客搭建12$ npm install hexo-cli... 参考官方文档吧 :D 哈哈 哈 嗝~！ 美化 引用样式主要用于文章摘要(图片&amp;文字)引用样式美化方案1 1234567891011121314151617181920212223&lt;style type="text/css"&gt;.myblockquote:before &#123; position: relative; content: "\f10d" !important; font-size: 1rem; left: 0; margin-left:-1em; color: #233; font-family: FontAwesome; //fontello&#125;.myblockquote:after &#123; position: relative; content: '\f10e' !important; font-size: 1rem; float: right; top: -1rem; margin-right:-1em; color: #233; font-family: FontAwesome;&#125;&lt;/style&gt; 引用样式美化方案2 .css可放至 ~ next/css/_custom/_custom.styl 图片位置放在link1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&lt;style type="text/css"&gt;.myblockquote &#123; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 40px; margin-inline-end: 40px; position: relative; margin: 40px 0; //距离标题大小 padding: 0; border-left: none; //原始引用样式左边 竖线边框 text-align: center;&#125;.myblockquote:before &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 0 -6px; background-size: 22px 22px; top: -20px; background-image: url(../images/quote-l.svg); border-top: 1px solid #ccc;&#125;.myblockquote:after &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 100% 8px; // 横向|纵向 调整 background-size: 22px 22px; bottom: -20px; background-image: url(../images/quote-r.svg); border-bottom: 1px solid #ccc;&#125;&lt;/style&gt;&lt;!-- 两种样式互不影响 --&gt;&lt;div class="myblockquote"&gt; 自定义引用样式&lt;/div&gt;&gt; 原始引用样式 功能添加 网页标题崩溃搞怪特效 先创建一个js文件crash_cheat.js,然后把文件放到source文件夹的js文件夹的src里面; 在hexo\themes\next\layout文件路径找到_layout.swig文件,在或之间加入crash_cheat.js type=”text/javascript”-src=”/js/src/crash_cheat.js”&gt; 12345678910111213141516&lt;script&gt; var OriginTitle = document.title; var titleTime; document.addEventListener('visibilitychange', function () &#123; if (document.hidden) &#123; document.title = '╭(°A°`)╮ 页面崩溃啦 ~'; clearTimeout(titleTime); &#125; else &#123; document.title = '(ฅ&gt;ω&lt;*ฅ) 噫又好了~' + OriginTitle; titleTime = setTimeout(function () &#123; document.title = OriginTitle; &#125;, 2000); &#125; &#125;);&lt;/script&gt;]]></content>
       <categories>
         <category>之初-进阶</category>
       </categories>
@@ -203,6 +203,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[OAuth认证]]></title>
+    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
+    <content type="text"><![CDATA[参考文章：http://]]></content>
+      <categories>
+        <category>之初-安全认证</category>
+      </categories>
+      <tags>
+        <tag>OAuth认证</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mybatis逆向生成]]></title>
     <url>%2FMyBatis-Generator%2F</url>
     <content type="text"><![CDATA[使用 mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/80532721 123&lt;!-- a对实体 "serverTimezone" 的引用必须以 ';' 分隔符结尾。 --&gt;&lt;jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/e3mall?useSSL=false&amp;amp;serverTimezone=UTC" userId="root" password="root_wy" /&gt;]]></content>
@@ -212,17 +223,6 @@
       <tags>
         <tag>mybatis</tag>
         <tag>mybatis-generator</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[OAuth认证]]></title>
-    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
-    <content type="text"><![CDATA[参考文章：http://]]></content>
-      <categories>
-        <category>之初-安全认证</category>
-      </categories>
-      <tags>
-        <tag>OAuth认证</tag>
       </tags>
   </entry>
   <entry>
@@ -239,20 +239,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[SVN相关]]></title>
-    <url>%2FSVN%2F</url>
-    <content type="text"><![CDATA[这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>SVN</tag>
-        <tag>VisualSVN-Server</tag>
-        <tag>Subversion</tag>
-        <tag>TortoiseSVN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Eclipse项目相关踩坑]]></title>
     <url>%2FEclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91%2F</url>
     <content type="text"><![CDATA[快捷键 Ctrl+1 回车=&gt;自动补全返回类型 maven Pagehelper maven Pagehelper版本问题：https://blog.csdn.net/qq_36004521/article/details/78578075 war打包错误 war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub]]></content>
@@ -264,6 +250,20 @@
         <tag>快捷键</tag>
         <tag>maven Pagehelper</tag>
         <tag>war打包错误</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SVN相关]]></title>
+    <url>%2FSVN%2F</url>
+    <content type="text"><![CDATA[这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>SVN</tag>
+        <tag>VisualSVN-Server</tag>
+        <tag>Subversion</tag>
+        <tag>TortoiseSVN</tag>
       </tags>
   </entry>
   <entry>
@@ -290,6 +290,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
+    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
+    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>IDEA项目导入</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[IDEA安装及使用]]></title>
     <url>%2FIDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[IDEA 注册码：https://blog.csdn.net/mobiusstrip/article/details/89841038 快捷键 Ctrl+Alt+L 格式化代码]]></content>
@@ -300,17 +311,6 @@
         <tag>IDEA安装及使用</tag>
         <tag>IDEA密钥</tag>
         <tag>IDEA快捷键</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
-    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
-    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>IDEA项目导入</tag>
       </tags>
   </entry>
   <entry>

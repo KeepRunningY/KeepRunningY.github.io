@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[CSS入门]]></title>
-    <url>%2FCSS%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[外边距 margin :邻接(非包含关系)元素位置关系内边距 padding:内外元素边距span标签 被用来组合文档中的行内元素 原始引用样式 123456789101112131415161718&lt;!-- 左侧图片，右侧上下文字 --&gt;&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;body&gt; &lt;div&gt; &lt;div style="float: left; width: 4%; "&gt; &lt;img src="https://Dxoca.cn/image/headPortrait.jpg" width="64px" height="64px" alt="fail" /&gt; &lt;/div&gt; &lt;div style="float: right; width: 96%; " &gt; &lt;div style="padding-left: 5px; "&gt; &lt;a href="https://Dxoca.cn"&gt;Dxoca's blog xxxxx&lt;/a&gt; &lt;/div&gt; &lt;p&gt;yyyyyy&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt; `css CSS类型连用 .aclass .bclass{ color:red;} //将所有同时包含两个类的color定义为red `]]></content>
-      <categories>
-        <category>之初-Future</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hexo博客历程]]></title>
     <url>%2FHexo%2BNext%2F</url>
-    <content type="text"><![CDATA[Hexo博客搭建12$ npm install hexo-cli... 参考官方文档吧 :D 哈哈 哈 嗝~！ 美化 引用样式主要用于文章摘要(图片&amp;文字)引用样式美化方案1 1234567891011121314151617181920212223&lt;style type="text/css"&gt;.myblockquote:before &#123; position: relative; content: "\f10d" !important; font-size: 1rem; left: 0; margin-left:-1em; color: #233; font-family: FontAwesome; //fontello&#125;.myblockquote:after &#123; position: relative; content: '\f10e' !important; font-size: 1rem; float: right; top: -1rem; margin-right:-1em; color: #233; font-family: FontAwesome;&#125;&lt;/style&gt; 引用样式美化方案2 .css可放至 ~ next/css/_custom/_custom.styl 图片位置放在link1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&lt;style type="text/css"&gt;.myblockquote &#123; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 40px; margin-inline-end: 40px; position: relative; margin: 40px 0; //距离标题大小 padding: 0; border-left: none; //原始引用样式左边 竖线边框 text-align: center;&#125;.myblockquote:before &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 0 -6px; background-size: 22px 22px; top: -20px; background-image: url(../images/quote-l.svg); border-top: 1px solid #ccc;&#125;.myblockquote:after &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 100% 8px; // 横向|纵向 调整 background-size: 22px 22px; bottom: -20px; background-image: url(../images/quote-r.svg); border-bottom: 1px solid #ccc;&#125;&lt;/style&gt;&lt;!-- 两种样式互不影响 --&gt;&lt;div class="myblockquote"&gt; 自定义引用样式&lt;/div&gt;&gt; 原始引用样式 功能添加 网页标题崩溃搞怪特效 先创建一个js文件crash_cheat.js,然后把文件放到source文件夹的js文件夹的src里面; 在hexo\themes\next\layout文件路径找到_layout.swig文件,在或之间加入crash_cheat.js type=”text/javascript”-src=”/js/src/crash_cheat.js”&gt; 12345678910111213141516&lt;script&gt; var OriginTitle = document.title; var titleTime; document.addEventListener('visibilitychange', function () &#123; if (document.hidden) &#123; document.title = '╭(°A°`)╮ 页面崩溃啦 ~'; clearTimeout(titleTime); &#125; else &#123; document.title = '(ฅ&gt;ω&lt;*ฅ) 噫又好了~' + OriginTitle; titleTime = setTimeout(function () &#123; document.title = OriginTitle; &#125;, 2000); &#125; &#125;);&lt;/script&gt;]]></content>
+    <content type="text"><![CDATA[Hexo博客搭建12$ npm install hexo-cli... 参考官方文档吧 :D 哈哈 哈 嗝~！ 美化 引用样式主要用于文章摘要(图片&amp;文字)引用样式美化方案1 1234567891011121314151617181920212223&lt;style type="text/css"&gt;.myblockquote:before &#123; position: relative; content: "\f10d" !important; font-size: 1rem; left: 0; margin-left:-1em; color: #233; font-family: FontAwesome; //fontello&#125;.myblockquote:after &#123; position: relative; content: '\f10e' !important; font-size: 1rem; float: right; top: -1rem; margin-right:-1em; color: #233; font-family: FontAwesome;&#125;&lt;/style&gt; 引用样式美化方案2 .css可放至 ~ next/css/_custom/_custom.styl 图片位置放在link1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556&lt;style type="text/css"&gt;.myblockquote &#123; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 40px; margin-inline-end: 40px; position: relative; margin: 40px 0; //距离标题大小 padding: 0; border-left: none; //原始引用样式左边 竖线边框 text-align: center;&#125;.myblockquote:before &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 0 -6px; background-size: 22px 22px; top: -20px; background-image: url(../images/quote-l.svg); border-top: 1px solid #ccc;&#125;.myblockquote:after &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 100% 8px; // 横向|纵向 调整 background-size: 22px 22px; bottom: -20px; background-image: url(../images/quote-r.svg); border-bottom: 1px solid #ccc;&#125;&lt;/style&gt;&lt;!-- 两种样式互不影响 --&gt;&lt;div class="myblockquote"&gt; 自定义引用样式&lt;/div&gt;&gt; 原始引用样式 功能添加 网页标题崩溃搞怪特效 先创建一个js文件crash_cheat.js,然后把文件放到source文件夹的js文件夹的src里面; 在hexo\themes\next\layout文件路径找到_layout.swig文件,在或之间加入crash_cheat.js type=”text/javascript”-src=”/js/src/crash_cheat.js”&gt; 注意:js文件中不要加标签123456789101112131415&lt;script&gt; var OriginTitle = document.title; var titleTime; document.addEventListener('visibilitychange', function () &#123; if (document.hidden) &#123; document.title = '╭(°A°`)╮ 页面崩溃啦 ~'; clearTimeout(titleTime); &#125;else &#123; document.title = '(ฅ&gt;ω&lt;*ฅ) 噫又好了~' + OriginTitle; titleTime = setTimeout(function () &#123; document.title = OriginTitle; &#125;, 2000); &#125; &#125;);&lt;/script&gt;]]></content>
       <categories>
         <category>之初-进阶</category>
       </categories>
@@ -23,6 +12,17 @@
         <tag>Next</tag>
         <tag>美化</tag>
         <tag>功能增强</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CSS入门]]></title>
+    <url>%2FCSS%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[外边距 margin :邻接(非包含关系)元素位置关系内边距 padding:内外元素边距span标签 被用来组合文档中的行内元素 原始引用样式 123456789101112131415161718&lt;!-- 左侧图片，右侧上下文字 --&gt;&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;body&gt; &lt;div&gt; &lt;div style="float: left; width: 4%; "&gt; &lt;img src="https://Dxoca.cn/image/headPortrait.jpg" width="64px" height="64px" alt="fail" /&gt; &lt;/div&gt; &lt;div style="float: right; width: 96%; " &gt; &lt;div style="padding-left: 5px; "&gt; &lt;a href="https://Dxoca.cn"&gt;Dxoca's blog xxxxx&lt;/a&gt; &lt;/div&gt; &lt;p&gt;yyyyyy&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt; `css CSS类型连用 .aclass .bclass{ color:red;} //将所有同时包含两个类的color定义为red `]]></content>
+      <categories>
+        <category>之初-Future</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -203,17 +203,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[OAuth认证]]></title>
-    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
-    <content type="text"><![CDATA[参考文章：http://]]></content>
-      <categories>
-        <category>之初-安全认证</category>
-      </categories>
-      <tags>
-        <tag>OAuth认证</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[mybatis逆向生成]]></title>
     <url>%2FMyBatis-Generator%2F</url>
     <content type="text"><![CDATA[使用 mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/80532721 123&lt;!-- a对实体 "serverTimezone" 的引用必须以 ';' 分隔符结尾。 --&gt;&lt;jdbcConnection driverClass="com.mysql.cj.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/e3mall?useSSL=false&amp;amp;serverTimezone=UTC" userId="root" password="root_wy" /&gt;]]></content>
@@ -223,6 +212,17 @@
       <tags>
         <tag>mybatis</tag>
         <tag>mybatis-generator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[OAuth认证]]></title>
+    <url>%2FOAuth%E8%AE%A4%E8%AF%81%2F</url>
+    <content type="text"><![CDATA[参考文章：http://]]></content>
+      <categories>
+        <category>之初-安全认证</category>
+      </categories>
+      <tags>
+        <tag>OAuth认证</tag>
       </tags>
   </entry>
   <entry>

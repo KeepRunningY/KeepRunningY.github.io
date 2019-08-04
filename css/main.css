@@ -1966,7 +1966,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8aff;
+  background: #5dff11;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3266,6 +3266,13 @@ pre .javascript .function {
     margin: 8px 0 0;
   }
 }
+.myp {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 .myblockquote {
   display: block;
   margin-block-start: 1em;
@@ -3276,7 +3283,6 @@ pre .javascript .function {
   margin: 40px 0;
   padding: 0;
   border-left: none;
-  text-align: center;
 }
 .myblockquote:before {
   position: absolute;

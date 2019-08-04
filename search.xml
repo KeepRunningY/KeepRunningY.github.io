@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Alg-洗牌算法优化]]></title>
+    <url>%2FAlg-%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[数组 Card [n=53];随机函数产生下标范围[0..n=53] n– 缩小范围0 1 2 .. rand .. n ..每产生一张牌Card[rand] Card[n–]]]></content>
+      <categories>
+        <category>之初-算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>洗牌算法优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Nginx]]></title>
+    <url>%2FNginx%2F</url>
+    <content type="text"><![CDATA[Nginx配置 (待补充：e^3) 端口 IP 分布式 Nginx配置示例1234567891011121314151617181920212223242526272829303132333435363738394041/*worker_processes 1;events &#123; worker_connections 1024;&#125;http &#123; include mime.types; default_type application/octet-stream; sendfile on; keepalive_timeout 65; #gzip on; server &#123; listen 9090; server_name localhost; location / &#123; root html; index index.html index.htm; &#125; error_page 500 502 503 504 /50x.html; location = /50x.html &#123; root html; &#125; &#125; upstream jml&#123; server 192.168.139.1:8180; server 192.168.139.1:8280; server 192.168.139.1:8380; &#125; server &#123; listen 8080; server_name localhost; location / &#123; proxy_pass http://192.168.139.1:8180; index index.jsp index.html index.htm; &#125; &#125;&#125; */ 反射去除null字段123456789101112131415161718192021222324252627282930313233343536373839404142public class ReflectUtils &#123; /*获取类的字段*/ public static String getField(Object o) &#123; Field[] fields = o.getClass().getDeclaredFields(); StringBuffer sb = new StringBuffer(); for (Field f : fields ) &#123; //允许操作属性 f.setAccessible(true); sb.append(f.getName() + ","); &#125; return sb.substring(0,sb.length()-1); &#125; /*去除没有值的字段*/ public static Map filterEmptyValue(Object o)&#123; Map map = new HashMap(); Field[] fields = o.getClass().getDeclaredFields(); StringBuffer sb = new StringBuffer(); for (Field f : fields ) &#123; //允许操作属性 f.setAccessible(true); try &#123; if (f.get(o) != null)&#123; Object value = f.get(o); if (!StringUtils.isNullOrEmpty(value.toString()))&#123; map.put(f.getName(),value); &#125; &#125; &#125;catch (Exception e)&#123; e.printStackTrace(); &#125; &#125; return map; &#125; public static void main(String[] args) &#123; User user = new User(); user.setAge(18); System.out.println(ReflectUtils.getField(user)); System.out.println(ReflectUtils.filterEmptyValue(user)); &#125;&#125;]]></content>
+      <categories>
+        <category>之初-服务器</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[A-学习清单]]></title>
+    <url>%2FA-%E5%AD%A6%E4%B9%A0%E6%B8%85%E5%8D%95%2F</url>
+    <content type="text"><![CDATA[计划]]></content>
+      <categories>
+        <category>之初-进阶</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>清单</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Alg-Tree]]></title>
+    <url>%2FAlg-Tree%2F</url>
+    <content type="text"><![CDATA[Tree相关算法汇总 B+ B-树 二叉平衡树 红黑树 二叉排序树1.定义(动态) 2.搜索算法 2.1 return p=非空|null; 2.2return p=非空|f(父结点) 3.插入算法 4.删除算法( * p ) 4.1p为叶子结点：直接删除 4.2p只有一个孩子结点：上移 4.3p有两个孩子结点:a,b 遍历 非递归遍历二叉树 递归遍历二叉树 查找]]></content>
+      <categories>
+        <category>之初-算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>Tree</tag>
+        <tag>有道云笔记迁移</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Alg-排序]]></title>
+    <url>%2FAlg-%E6%8E%92%E5%BA%8F%2F</url>
+    <content type="text"><![CDATA[排序算法汇总 1.冒泡排序12345678910111213141516171819202122232425262728293031323334/*未优化(某一趟两两比较结束, 未发生元素移动,则r[0..i]为有序序列，终止程序)void BubbleSort(int[] r) &#123; // r[0..n-1] int n = r.length; // n-1 趟 // 1 . i . n-1 // 0 1 2 . . n-1 // 0 . j for(int i=n-1; i&gt;=1; i--) &#123; for(int j=0; j&lt;i; j++)&#123; if(r[j] &gt; r[j+1]) r[j] &lt;--&gt; r[j+1]; &#125; &#125;&#125;// 优化for (int i = n-1, change = true; i &gt;= 1 &amp;&amp; change; i--) &#123; change = false; for (int j = 0; j &lt; i; j++)&#123; if(r[j] &gt; r[j+1]) &#123; r[j] &lt;--&gt; r[j+1]; change = true; &#125; &#125;&#125;*/ 2.快速排序123456789101112131415161718192021222324252627282930313233/*void QSort (int[] r, int low, int high)&#123; if (low &lt; high) &#123; int pivotloc = Partition (r, low, high); QSort (r, low, pivotloc-1); QSort (r, pivotloc+1, high); &#125;&#125;int Partition (int[] r, int low, int high) &#123; r[0] = r[low]; // 1 3 2 #4# 5 6 4 // 4 1 3 2 4 6 4 // 1 3 2 #4# 4 6 4 !!! // 4 6 4 return low=high=1; // QSort(r,low=1,p-1)退出low=high // QSort(r,p+1,high=3) 6 4排序完成 while (low &lt; high) &#123; // low &lt; high ! while (low &lt; high &amp;&amp; r[high] &gt;= r[0]) high--; r[low] = r[high]; while (low &lt; high &amp;&amp; r[low] &lt;= r[0]) low++; r[high] = r[low]; &#125; r[low] = r[0]; return low;&#125;*/ 3.堆排序1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465/*以非递减排序为例：建立大顶堆,调整时堆顶-&gt;h[n--]数组h[1..n]-&gt;完全二叉树不同层间元素：整体有序同一层间元素：先后无序最后一个非终结结点 i=floor[n/2]新建堆：自底向上 h[1..i] i--(i&gt;0)调整堆：自上向下 h[1..j-1] j=n; (j&gt;1); j--; h[1]&lt;--&gt;h[j] HeapAdjust(h,1,j-1)void HeapAdjust(int[] h, int s, int m) &#123; rc = h[s]; // 调整 s,自上而下找出大元素 for (j = s*2; j &lt;= m; j*=2) &#123; // 求max(左孩子，右孩子) // 左右结点相等[!无影响!] // j &lt; m !!! if (j &lt; m &amp;&amp; h[j] &lt; h[j+1]) j++; // 堆顶 &amp; max 比较 // h[s]为最大元素,break; // 否则交换元素,下轮比较 if (h[s] &gt;= h[j]) break; // 处理方式一：互换元素 // h[s] &lt;--&gt; h[j]; // 处理方式二：rc暂存h[s] h[s] = h[j]; // 向下深一层 // 切换堆顶元素,后续比较 s = j; &#125; h[s] = rc;&#125;void HeapSort(int[] h) &#123; // 新建堆 // 每个非终端结点(层层向上) // max,即当前层&gt;=all下方元素 for (int i = h.length / 2; i &gt; 0; i--) &#123; HeapAdjust(h,i,h.length); &#125; // 调整堆 // 大堆顶移至尾部, // 尾部元素移至堆顶, // 调整堆找出次大元素 for (int j = h.length; j&gt;1; j--) &#123; h[1] &lt;--&gt; h[j]; HeapAdjust(h,1,j-1); &#125;&#125;*/ 4.直接插入排序1234567891011121314151617181920212223242526272829303132/*void insertSort(int[] r)&#123; // n-1 趟 for (int i = 2; i &lt;= r.length; i++)&#123; if (r[i] &lt; r[i-1])&#123; r[0] = r[i]; r[i] = r[i-1]; for (int j = i-2; r[0] &lt; r[j]; --j)&#123; r[j+1] = r[j]; &#125; r[j+1] = r[0]; &#125; &#125;&#125;时间复杂度分析(非递增排序)比较次数：[i=2..n]∑i (n+2)(n-1)/21次 ：r[i] &amp; r[i-1]i-1次：r[0] &amp; r[1..i-1]移动次数：[i=2..n]∑(i+1) (n+4)(n-1)/21次 ：r[i] -&gt; r[0]i-1次：r[1..i-1] 后移1次 ：r[0] -&gt; r[j+1]*/ 5.折半插入排序12345678910111213141516171819202122232425262728293031/*关于二分查找适用有序查找low high最终指向同一个元素至 high &lt; low 结束3 4 4 6 7 &amp; 44 4 5 6 74 5 6 74 6 7void BInsertSort(int[] r) &#123; for (i = 2; i &lt;= r.length; i++) &#123; r[0] = r[i]; low = 1; high = i-1; while (low &lt;= high) &#123; m = (low + high) / 2; // &lt; &amp; &lt;= &amp; r[high+1]=r[0]区别 if(r[0] &lt; r[m]) high = m-1; else low = m+1; &#125; /* * high=m-1 low ：r[0]&lt;r[m] * high low=m+1 ：r[0]&gt;=r[m] */ for (j = i-1; j &gt;= high+1; j--) r[j+1] = r[j]; r[high+1] = r[0]; &#125;&#125;*/ 6.归并排序(2-路归并)12345678910111213141516171819202122232425262728293031/*思路：SR[] TR[] 辅助空间void MSort(int s, int t) &#123; // s,m,t if (s == t) TR[s] = SR[t]; // 必须有else,s=t时后续不执行 else &#123; m = (s + t) / 2; MSort(s, m); MSort(m+1, t); Merge(s, m, t); &#125;&#125;void Merge(int i,int m,int n) &#123; // 类似链表合并 // k -&gt; TR[k] // i .. m m+1 .. t // j for (j = m + 1, k = i; i &lt;= m &amp;&amp; j &lt;= n; k++) &#123; if(SR[i] &lt;= TR[j]) TR[k] = SR[i++]; else TR[k] = SR[j++]; &#125; if(i&lt;=m) TR[k..n] = SR[i..m]; if(j&lt;=n) TR[k..n] = SR[j..n];&#125;*/ 选择排序123456/**/ 希尔排序123456/* 增量问题*/]]></content>
+      <categories>
+        <category>之初-算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>有道云笔记迁移</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CSS入门]]></title>
+    <url>%2FCSS%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[外边距 margin :邻接(非包含关系)元素位置关系内边距 padding:内外元素边距span标签 被用来组合文档中的行内元素 这是原始引用样式 1234567891011121314151617&lt;!-- 左侧图片，右侧上下文字 --&gt;&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;body&gt; &lt;div&gt; &lt;div style="float: left; width: 4%; "&gt; &lt;img src="https://Dxoca.cn/image/headPortrait.jpg" width="64px" height="64px" alt="fail" /&gt; &lt;/div&gt; &lt;div style="float: right; width: 96%; " &gt; &lt;div style="padding-left: 5px; "&gt; &lt;a href="https://Dxoca.cn"&gt;Dxoca's blog xxxxx&lt;/a&gt; &lt;/div&gt; &lt;p&gt;yyyyyy&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt; 12// css注释方法为 / *. . .* /// 不要加script标签 在css中类型连用123.aclass .bclass &#123; color: #0000ff;&#125; /*同时包含ab类型时c,olor被设置为#0000ff*/]]></content>
+      <categories>
+        <category>之初-前端</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[meta标签和referrer策略]]></title>
+    <url>%2Fmeta%E6%A0%87%E7%AD%BE%E5%92%8Creferrer%E7%AD%96%E7%95%A5%2F</url>
+    <content type="text"><![CDATA[HTML meta标签 and 图片加载问题 注意：引用&quot;&gt;&quot;,换行后内容仍在此引用内，结束引用需间隔一行 myblockquote使用时,所有内容必须(不能手动换行,否则html显示时会多出&lt;br&gt;) &lt;font size=&quot;12px&quot;&gt; &lt;p style=&quot;font-size: 13px;&quot;&gt; p标签内字体大小设置无效 图片加载问题12&lt;!-- 添加上图片加载正常，但是网站底部统计数据无法显示 --&gt;&lt;meta name="referrer" content="no-referrer" /&gt; meta标签使用 相关内容：referrer策略和meta标签的问题原文地址：https://segmentfault.com/a/1190000017896469参考文章：https://blog.csdn.net/ccfxue/article/details/53119936]]></content>
+      <categories>
+        <category>之初-前端</category>
+      </categories>
+      <tags>
+        <tag>meta</tag>
+        <tag>referrer</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Github更多功能]]></title>
     <url>%2FGithub%E6%9B%B4%E5%A4%9A%E5%8A%9F%E8%83%BD%2F</url>
     <content type="text"><![CDATA[Project项目管理(进度,bugs,待办事项优先级…) Wiki文档(某一仓库下使用,clone至本地后为.md文件)Home(Welcome/说明)Title(文档内容)Sidebar(侧边栏/目录)]]></content>
@@ -28,8 +112,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo博客历程]]></title>
-    <url>%2FHexo%2BNext%2F</url>
+    <title><![CDATA[Hexo+Next 博客历程]]></title>
+    <url>%2FHexo%2BNext%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[Hexo博客搭建12$ npm install hexo-cli... 参考官方文档吧 :D 哈哈 哈 嗝~！ 美化 引用样式主要用于文章摘要(图片&amp;文字)引用样式美化方案1 1234567891011121314151617181920.myblockquote:before &#123; position: relative; content: "\f10d" !important; font-size: 1rem; left: 0; margin-left:-1em; color: #233; font-family: FontAwesome; //fontello&#125;.myblockquote:after &#123; position: relative; content: '\f10e' !important; font-size: 1rem; float: right; top: -1rem; margin-right:-1em; color: #233; font-family: FontAwesome;&#125; 引用样式美化方案2 .css可放至 ~/next/css/_custom/_custom.styl 图片位置放在 ~/source/images目录下即可12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152.myblockquote &#123; display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 40px; margin-inline-end: 40px; position: relative; margin: 40px 0; /*距离标题大小*/ padding: 0; border-left: none; /*原始引用样式左边 竖线边框*/ text-align: center;&#125;.myblockquote:before &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 0 -6px; background-size: 22px 22px; top: -20px; background-image: url(../images/quote-l.svg); border-top: 1px solid #ccc;&#125;.myblockquote:after &#123; position: absolute; content: ' '; display: block; width: 100%; height: 24px; opacity: 0.2; background-repeat: no-repeat; background-position: 100% 8px; /*横向|纵向 调整*/ background-size: 22px 22px; bottom: -20px; background-image: url(../images/quote-r.svg); border-bottom: 1px solid #ccc;&#125;/* 两种样式互不影响 &lt;div class="myblockquote"&gt; 自定义引用样式 &lt;/div&gt; &gt;原始引用样式*/ 功能添加 网页标题崩溃搞怪特效 先创建一个js文件crash_cheat.js,然后把文件放到source文件夹的js文件夹的src里面 在~hexo\themes\next\layout文件路径找到_layout.swig文件,在body或head之间加入 ~/js/src/crash_cheat.js 1234//写作时,非代码部分注意路径书写,标签书写...//破坏格式(路径前加~, 标签不加&lt;&gt;, 否则会被错误解析成link和不完整的代码导致无法正常显示)//javascript注释方法为 / / / * * / 注意:js文件中不要加script标签 1234567891011121314151617181920212223242526272829303132var OriginTitle = document.title;var titleTime;document.addEventListener('visibilitychange', function () &#123; if (document.hidden) &#123; document.title = '╭(°A°`)╮ 页面崩溃啦 ~'; clearTimeout(titleTime); &#125;else &#123; document.title = '(ฅ&gt;ω&lt;*ฅ) 噫又好了~' + OriginTitle; titleTime = setTimeout(function () &#123; document.title = OriginTitle; &#125;, 2000); &#125;&#125;); &lt;!--崩溃欺骗(包含图标改变)--&gt; var OriginTitle = document.title; var titleTime; document.addEventListener('visibilitychange', function () &#123; if (document.hidden) &#123; $('[rel="icon"]').attr('href', "https://i.loli.net/2018/08/24/5b7fcb00ed9bf.png"); document.title = '怎么回事╭(°A°`)╮'; clearTimeout(titleTime); &#125; else &#123; $('[rel="icon"]').attr('href', "https://i.loli.net/2018/09/25/5baa4f21661e7.png"); document.title = '小老弟(ฅ&gt;ω&lt;*ฅ)'; titleTime = setTimeout(function () &#123; document.title = OriginTitle; $('[rel="icon"]').attr('href', "/images/favicon-32x32-next.png"); &#125;, 2000); &#125; &#125;); 错误处理 TypeError: Cannot set property ‘lastIndex’ of undefined at highlight (D:\hexo\Blog\node_modules\highlight.js\lib\highlight.js:577:35)解决：修改配置文件_config.yml(注意不是主题里面的配置文件！) 把auto_detect设置为false,即可解决]]></content>
       <categories>
         <category>之初-进阶</category>
@@ -42,20 +126,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[CSS入门]]></title>
-    <url>%2FCSS%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[外边距 margin :邻接(非包含关系)元素位置关系内边距 padding:内外元素边距span标签 被用来组合文档中的行内元素 这是原始引用样式 1234567891011121314151617&lt;!-- 左侧图片，右侧上下文字 --&gt;&lt;!DOCTYPE html&gt;&lt;html&gt; &lt;body&gt; &lt;div&gt; &lt;div style="float: left; width: 4%; "&gt; &lt;img src="https://Dxoca.cn/image/headPortrait.jpg" width="64px" height="64px" alt="fail" /&gt; &lt;/div&gt; &lt;div style="float: right; width: 96%; " &gt; &lt;div style="padding-left: 5px; "&gt; &lt;a href="https://Dxoca.cn"&gt;Dxoca's blog xxxxx&lt;/a&gt; &lt;/div&gt; &lt;p&gt;yyyyyy&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt; 12// css注释方法为 / *. . .* /// 不要加script标签 在css中类型连用123.aclass .bclass &#123; color: #0000ff;&#125; /*同时包含ab类型时c,olor被设置为#0000ff*/]]></content>
-      <categories>
-        <category>之初-Future</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[all categories]]></title>
     <url>%2Fall%20categories%2F</url>
-    <content type="text"><![CDATA[摘要 categories维护 categories 之初-Java基础 之初-工具使用(ffmpeg) 之初-框架(Spring …) 之初-安全认证(OAuth …) 之初-加密(MD5 SHA SRA …) 之初-网络 协议… 之初-数据库 之初-服务器(Tomcat Nginx …) 之初-Linux 之初-算法 之初-进阶(开发模式 架构 …) 之初-常用配置文件及方法(.xml .properties…) 之初-小工具(语音转写 java执行cmd) 之初-Future(Python Go AI etc…) 之初-Others积累 之初-友链 之初-随笔]]></content>
+    <content type="text"><![CDATA[摘要 categories维护 categories 之初-Java基础 之初-前端 之初-工具使用(ffmpeg) 之初-框架(Spring …) 之初-安全认证(OAuth …) 之初-加密(MD5 SHA SRA …) 之初-网络 协议… 之初-数据库 之初-服务器(Tomcat Nginx …) 之初-Linux 之初-算法 之初-进阶(开发模式 架构 …) 之初-常用配置文件及方法(.xml .properties…) 之初-小工具(语音转写 java执行cmd) 之初-Future(Python Go AI etc…) 之初-Others积累 之初-友链 之初-随笔]]></content>
       <categories>
         <category>所有文章分类汇总</category>
       </categories>
@@ -146,7 +219,7 @@
   <entry>
     <title><![CDATA[科大讯飞-语音转写]]></title>
     <url>%2F%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E-%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99%2F</url>
-    <content type="text"><![CDATA[demo: https://github.yangzhichu.xxx]]></content>
+    <content type="text"><![CDATA[demo: https://github.zhichuwy.xxx]]></content>
       <categories>
         <category>之初-小工具</category>
       </categories>
@@ -317,17 +390,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
-    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
-    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>IDEA项目导入</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[IDEA安装及使用]]></title>
     <url>%2FIDEA%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[IDEA 注册码：https://blog.csdn.net/mobiusstrip/article/details/89841038 快捷键 Ctrl+Alt+L 格式化代码]]></content>
@@ -338,6 +400,17 @@
         <tag>IDEA安装及使用</tag>
         <tag>IDEA密钥</tag>
         <tag>IDEA快捷键</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[IDEA导入项目(Maven Gradle)]]></title>
+    <url>%2FIDEA%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE(Maven%20Gradle)%2F</url>
+    <content type="text"><![CDATA[gradle：offline！！！关闭！！！WIFI网络-&gt;手机热点网络切换]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>IDEA项目导入</tag>
       </tags>
   </entry>
   <entry>

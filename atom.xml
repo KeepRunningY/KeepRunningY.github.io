@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhichuwy.cn/"/>
-  <updated>2019-08-03T13:48:46.270Z</updated>
+  <updated>2019-08-04T15:17:37.669Z</updated>
   <id>https://zhichuwy.cn/</id>
   
   <author>
@@ -15,6 +15,188 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Alg-洗牌算法优化</title>
+    <link href="https://zhichuwy.cn/Alg-%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96/"/>
+    <id>https://zhichuwy.cn/Alg-洗牌算法优化/</id>
+    <published>2019-08-04T23:26:41.000Z</published>
+    <updated>2019-08-04T15:17:37.669Z</updated>
+    
+    <content type="html"><![CDATA[<p>数组 Card [n=53];<br>随机函数产生下标<br>范围[0..n=53] n– 缩小范围<br>0 1 2 .. rand ..  n ..<br>每产生一张牌<br>Card[rand] <--> Card[n–]</--></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;数组 Card [n=53];&lt;br&gt;随机函数产生下标&lt;br&gt;范围[0..n=53] n– 缩小范围&lt;br&gt;0 1 2 .. rand ..  n ..&lt;br&gt;每产生一张牌&lt;br&gt;Card[rand] &lt;--&gt; Card[n–]&lt;/--&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="之初-算法" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://zhichuwy.cn/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="洗牌算法优化" scheme="https://zhichuwy.cn/tags/%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx</title>
+    <link href="https://zhichuwy.cn/Nginx/"/>
+    <id>https://zhichuwy.cn/Nginx/</id>
+    <published>2019-08-04T20:10:47.000Z</published>
+    <updated>2019-08-04T15:01:01.764Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Nginx配置 (待补充：e^3)</p></blockquote><ul><li>端口</li><li>IP</li><li>分布式</li></ul><a id="more"></a><figure class="highlight java"><figcaption><span>Nginx配置示例</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">worker_processes  1;</span></span><br><span class="line"><span class="comment">events &#123;</span></span><br><span class="line"><span class="comment">    worker_connections  1024;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">http &#123;</span></span><br><span class="line"><span class="comment">    include             mime.types;</span></span><br><span class="line"><span class="comment">    default_type        application/octet-stream;  </span></span><br><span class="line"><span class="comment">    sendfile            on;    </span></span><br><span class="line"><span class="comment">    keepalive_timeout   65;</span></span><br><span class="line"><span class="comment">    #gzip  on;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    server &#123;</span></span><br><span class="line"><span class="comment">        listen          9090;</span></span><br><span class="line"><span class="comment">        server_name     localhost;</span></span><br><span class="line"><span class="comment">        location / &#123;</span></span><br><span class="line"><span class="comment">            root        html;</span></span><br><span class="line"><span class="comment">            index       index.html index.htm;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        error_page      500 502 503 504  /50x.html;</span></span><br><span class="line"><span class="comment">        location = /50x.html &#123;</span></span><br><span class="line"><span class="comment">            root   html;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    upstream jml&#123;</span></span><br><span class="line"><span class="comment">        server 192.168.139.1:8180;</span></span><br><span class="line"><span class="comment">server 192.168.139.1:8280;</span></span><br><span class="line"><span class="comment">server 192.168.139.1:8380;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    server &#123;</span></span><br><span class="line"><span class="comment">        listen          8080;</span></span><br><span class="line"><span class="comment">        server_name     localhost;</span></span><br><span class="line"><span class="comment">        location / &#123;</span></span><br><span class="line"><span class="comment">            proxy_pass  http://192.168.139.1:8180;</span></span><br><span class="line"><span class="comment">            index       index.jsp index.html index.htm;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125; */</span></span><br></pre></td></tr></table></figure><figure class="highlight java"><figcaption><span>反射去除null字段</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReflectUtils</span> </span>&#123;</span><br><span class="line">    <span class="comment">/*获取类的字段*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getField</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">        Field[] fields = o.getClass().getDeclaredFields();</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        <span class="keyword">for</span> (Field f : fields ) &#123;</span><br><span class="line">            <span class="comment">//允许操作属性</span></span><br><span class="line">            f.setAccessible(<span class="keyword">true</span>);</span><br><span class="line">            sb.append(f.getName() + <span class="string">","</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sb.substring(<span class="number">0</span>,sb.length()-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*去除没有值的字段*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Map <span class="title">filterEmptyValue</span><span class="params">(Object o)</span></span>&#123;</span><br><span class="line">        Map map = <span class="keyword">new</span> HashMap();</span><br><span class="line">        Field[] fields = o.getClass().getDeclaredFields();</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        <span class="keyword">for</span> (Field f : fields ) &#123;</span><br><span class="line">            <span class="comment">//允许操作属性</span></span><br><span class="line">            f.setAccessible(<span class="keyword">true</span>);</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (f.get(o) != <span class="keyword">null</span>)&#123;</span><br><span class="line">                    Object value = f.get(o);</span><br><span class="line">                    <span class="keyword">if</span> (!StringUtils.isNullOrEmpty(value.toString()))&#123;</span><br><span class="line">                        map.put(f.getName(),value);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> map;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        User user = <span class="keyword">new</span> User();</span><br><span class="line">        user.setAge(<span class="number">18</span>);</span><br><span class="line">        System.out.println(ReflectUtils.getField(user));</span><br><span class="line">        System.out.println(ReflectUtils.filterEmptyValue(user));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Nginx配置 (待补充：e^3)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;端口&lt;/li&gt;
+&lt;li&gt;IP&lt;/li&gt;
+&lt;li&gt;分布式&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="之初-服务器" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="Nginx" scheme="https://zhichuwy.cn/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>A-学习清单</title>
+    <link href="https://zhichuwy.cn/A-%E5%AD%A6%E4%B9%A0%E6%B8%85%E5%8D%95/"/>
+    <id>https://zhichuwy.cn/A-学习清单/</id>
+    <published>2019-08-04T19:52:19.000Z</published>
+    <updated>2019-08-04T11:53:04.646Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;计划&quot;&gt;&lt;a href=&quot;#计划&quot; class=&quot;headerlink&quot; title=&quot;计划&quot;&gt;&lt;/a&gt;计划&lt;/h3&gt;
+      
+    
+    </summary>
+    
+      <category term="之初-进阶" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E8%BF%9B%E9%98%B6/"/>
+    
+    
+      <category term="Java" scheme="https://zhichuwy.cn/tags/Java/"/>
+    
+      <category term="清单" scheme="https://zhichuwy.cn/tags/%E6%B8%85%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Alg-Tree</title>
+    <link href="https://zhichuwy.cn/Alg-Tree/"/>
+    <id>https://zhichuwy.cn/Alg-Tree/</id>
+    <published>2019-08-04T19:40:37.000Z</published>
+    <updated>2019-08-04T15:25:59.058Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">Tree相关算法汇总</font></p></div><a id="more"></a><h3 id="B-B-树"><a href="#B-B-树" class="headerlink" title="B+ B-树"></a>B+ B-树</h3><hr><h3 id="二叉平衡树"><a href="#二叉平衡树" class="headerlink" title="二叉平衡树"></a>二叉平衡树</h3><hr><h3 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h3><hr><h3 id="二叉排序树"><a href="#二叉排序树" class="headerlink" title="二叉排序树"></a>二叉排序树</h3><p>1.定义(动态)</p><p>2.搜索算法<br>  2.1 return p=非空|null;<br>  2.2return p=非空|f(父结点)</p><p>3.插入算法</p><p>4.删除算法( * p )<br>  4.1p为叶子结点：直接删除<br>  4.2p只有一个孩子结点：上移<br>  4.3p有两个孩子结点:a,b</p><hr><h3 id="遍历"><a href="#遍历" class="headerlink" title="遍历"></a>遍历</h3><ol><li><p>非递归遍历二叉树</p></li><li><p>递归遍历二叉树</p></li></ol><h3 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;Tree相关算法汇总&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-算法" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://zhichuwy.cn/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="Tree" scheme="https://zhichuwy.cn/tags/Tree/"/>
+    
+      <category term="有道云笔记迁移" scheme="https://zhichuwy.cn/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Alg-排序</title>
+    <link href="https://zhichuwy.cn/Alg-%E6%8E%92%E5%BA%8F/"/>
+    <id>https://zhichuwy.cn/Alg-排序/</id>
+    <published>2019-08-04T16:40:29.000Z</published>
+    <updated>2019-08-04T15:18:11.526Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">排序算法汇总</font></p></div><a id="more"></a><h3 id="1-冒泡排序"><a href="#1-冒泡排序" class="headerlink" title="1.冒泡排序"></a>1.冒泡排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">未优化(某一趟两两比较结束, </span></span><br><span class="line"><span class="comment">未发生元素移动,</span></span><br><span class="line"><span class="comment">则r[0..i]为有序序列，终止程序)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">void BubbleSort(int[] r) &#123;</span></span><br><span class="line"><span class="comment">    // r[0..n-1] </span></span><br><span class="line"><span class="comment">    int n = r.length;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    // n-1 趟</span></span><br><span class="line"><span class="comment">    //   1 . i . n-1</span></span><br><span class="line"><span class="comment">    // 0 1 2 . . n-1</span></span><br><span class="line"><span class="comment">    // 0 . j</span></span><br><span class="line"><span class="comment">    for(int i=n-1; i&gt;=1; i--) &#123;</span></span><br><span class="line"><span class="comment">        for(int j=0; j&lt;i; j++)&#123;</span></span><br><span class="line"><span class="comment">            if(r[j] &gt; r[j+1])</span></span><br><span class="line"><span class="comment">                r[j] &lt;--&gt; r[j+1];</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">// 优化</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">for (int i = n-1, change = true; i &gt;= 1 &amp;&amp; change; i--) &#123;</span></span><br><span class="line"><span class="comment">    change = false;</span></span><br><span class="line"><span class="comment">    for (int j = 0; j &lt; i; j++)&#123;</span></span><br><span class="line"><span class="comment">        if(r[j] &gt; r[j+1]) &#123;</span></span><br><span class="line"><span class="comment">            r[j] &lt;--&gt; r[j+1];</span></span><br><span class="line"><span class="comment">            change = true;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h3 id="2-快速排序"><a href="#2-快速排序" class="headerlink" title="2.快速排序"></a>2.快速排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">void QSort (int[] r, int low, int high)&#123;</span></span><br><span class="line"><span class="comment">    if (low &lt; high) &#123;</span></span><br><span class="line"><span class="comment">        int pivotloc = Partition (r, low, high);</span></span><br><span class="line"><span class="comment">        QSort (r, low, pivotloc-1);</span></span><br><span class="line"><span class="comment">        QSort (r, pivotloc+1, high);</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">int Partition (int[] r, int low, int high) &#123;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    r[0] = r[low];</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    // 1 3 2 #4# 5 6 4</span></span><br><span class="line"><span class="comment">    // 4 1 3 2 4 6 4 </span></span><br><span class="line"><span class="comment">    // 1 3 2 #4# 4 6 4 !!!</span></span><br><span class="line"><span class="comment">    // 4 6 4 return low=high=1;</span></span><br><span class="line"><span class="comment">    // QSort(r,low=1,p-1)退出low=high </span></span><br><span class="line"><span class="comment">    // QSort(r,p+1,high=3) 6 4排序完成</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    while (low &lt; high) &#123;</span></span><br><span class="line"><span class="comment">        // low &lt; high ! </span></span><br><span class="line"><span class="comment">        while (low &lt; high &amp;&amp; r[high] &gt;= r[0]) high--;</span></span><br><span class="line"><span class="comment">        r[low] = r[high];</span></span><br><span class="line"><span class="comment">        </span></span><br><span class="line"><span class="comment">        while (low &lt; high &amp;&amp; r[low] &lt;= r[0]) low++;</span></span><br><span class="line"><span class="comment">        r[high] = r[low];</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    r[low] = r[0];</span></span><br><span class="line"><span class="comment">    return low;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h3 id="3-堆排序"><a href="#3-堆排序" class="headerlink" title="3.堆排序"></a>3.堆排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">以非递减排序为例：</span></span><br><span class="line"><span class="comment">建立大顶堆,调整时堆顶-&gt;h[n--]</span></span><br><span class="line"><span class="comment">数组h[1..n]-&gt;完全二叉树</span></span><br><span class="line"><span class="comment">不同层间元素：整体有序</span></span><br><span class="line"><span class="comment">同一层间元素：先后无序</span></span><br><span class="line"><span class="comment">最后一个非终结结点 i=floor[n/2]</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">新建堆：自底向上 h[1..i]</span></span><br><span class="line"><span class="comment">      i--(i&gt;0)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">调整堆：自上向下 h[1..j-1]</span></span><br><span class="line"><span class="comment">      j=n; (j&gt;1); j--;</span></span><br><span class="line"><span class="comment">      h[1]&lt;--&gt;h[j]</span></span><br><span class="line"><span class="comment">      HeapAdjust(h,1,j-1)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">void HeapAdjust(int[] h, int s, int m) &#123;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    rc = h[s];</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    // 调整 s,自上而下找出大元素</span></span><br><span class="line"><span class="comment">    for (j = s*2; j &lt;= m; j*=2) &#123;</span></span><br><span class="line"><span class="comment">        </span></span><br><span class="line"><span class="comment">        // 求max(左孩子，右孩子)</span></span><br><span class="line"><span class="comment">        // 左右结点相等[!无影响!]</span></span><br><span class="line"><span class="comment">        // j &lt; m !!!</span></span><br><span class="line"><span class="comment">        if (j &lt; m &amp;&amp; h[j] &lt; h[j+1]) j++;</span></span><br><span class="line"><span class="comment">        </span></span><br><span class="line"><span class="comment">        // 堆顶 &amp; max 比较</span></span><br><span class="line"><span class="comment">        // h[s]为最大元素,break;</span></span><br><span class="line"><span class="comment">        // 否则交换元素,下轮比较</span></span><br><span class="line"><span class="comment">        if (h[s] &gt;= h[j]) break;</span></span><br><span class="line"><span class="comment">        </span></span><br><span class="line"><span class="comment">        // 处理方式一：互换元素</span></span><br><span class="line"><span class="comment">        // h[s] &lt;--&gt; h[j];</span></span><br><span class="line"><span class="comment">        // 处理方式二：rc暂存h[s]</span></span><br><span class="line"><span class="comment">        h[s] = h[j];</span></span><br><span class="line"><span class="comment">        </span></span><br><span class="line"><span class="comment">        // 向下深一层</span></span><br><span class="line"><span class="comment">        // 切换堆顶元素,后续比较</span></span><br><span class="line"><span class="comment">        s = j;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    h[s] = rc;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">void HeapSort(int[] h) &#123;</span></span><br><span class="line"><span class="comment">    // 新建堆</span></span><br><span class="line"><span class="comment">    // 每个非终端结点(层层向上)</span></span><br><span class="line"><span class="comment">    // max,即当前层&gt;=all下方元素</span></span><br><span class="line"><span class="comment">    for (int i = h.length / 2; i &gt; 0; i--) &#123;</span></span><br><span class="line"><span class="comment">        HeapAdjust(h,i,h.length);</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    </span></span><br><span class="line"><span class="comment">    // 调整堆</span></span><br><span class="line"><span class="comment">    // 大堆顶移至尾部,</span></span><br><span class="line"><span class="comment">    // 尾部元素移至堆顶,</span></span><br><span class="line"><span class="comment">    // 调整堆找出次大元素</span></span><br><span class="line"><span class="comment">    for (int j = h.length; j&gt;1; j--) &#123;</span></span><br><span class="line"><span class="comment">        h[1] &lt;--&gt; h[j];</span></span><br><span class="line"><span class="comment">        HeapAdjust(h,1,j-1);</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h3 id="4-直接插入排序"><a href="#4-直接插入排序" class="headerlink" title="4.直接插入排序"></a>4.直接插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">void insertSort(int[] r)&#123;</span></span><br><span class="line"><span class="comment">    // n-1 趟</span></span><br><span class="line"><span class="comment">    for (int i = 2; i &lt;= r.length; i++)&#123;</span></span><br><span class="line"><span class="comment">        if (r[i] &lt; r[i-1])&#123;</span></span><br><span class="line"><span class="comment">            r[0] = r[i];</span></span><br><span class="line"><span class="comment">            r[i] = r[i-1];</span></span><br><span class="line"><span class="comment">            </span></span><br><span class="line"><span class="comment">            for (int j = i-2; r[0] &lt; r[j]; --j)&#123;</span></span><br><span class="line"><span class="comment">                r[j+1] = r[j];</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            r[j+1] = r[0];</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">时间复杂度分析(非递增排序)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">比较次数：</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">[i=2..n]∑i (n+2)(n-1)/2</span></span><br><span class="line"><span class="comment">1次 ：r[i] &amp; r[i-1]</span></span><br><span class="line"><span class="comment">i-1次：r[0] &amp; r[1..i-1]</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">移动次数：</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">[i=2..n]∑(i+1) (n+4)(n-1)/2</span></span><br><span class="line"><span class="comment">1次 ：r[i] -&gt; r[0]</span></span><br><span class="line"><span class="comment">i-1次：r[1..i-1] 后移</span></span><br><span class="line"><span class="comment">1次 ：r[0] -&gt; r[j+1]</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h3 id="5-折半插入排序"><a href="#5-折半插入排序" class="headerlink" title="5.折半插入排序"></a>5.折半插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">关于二分查找</span></span><br><span class="line"><span class="comment">适用有序查找</span></span><br><span class="line"><span class="comment">low high最终指向同一个元素</span></span><br><span class="line"><span class="comment">至 high &lt; low 结束</span></span><br><span class="line"><span class="comment">3 4 4 6 7 &amp; 4</span></span><br><span class="line"><span class="comment">4 4 5 6 7</span></span><br><span class="line"><span class="comment">4 5 6 7</span></span><br><span class="line"><span class="comment">4 6 7</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">void BInsertSort(int[] r) &#123;</span></span><br><span class="line"><span class="comment">    for (i = 2; i &lt;= r.length; i++) &#123;</span></span><br><span class="line"><span class="comment">        r[0] = r[i];</span></span><br><span class="line"><span class="comment">        low = 1; high = i-1;</span></span><br><span class="line"><span class="comment">        while (low &lt;= high) &#123;</span></span><br><span class="line"><span class="comment">            m = (low + high) / 2;</span></span><br><span class="line"><span class="comment">            // &lt; &amp; &lt;= &amp; r[high+1]=r[0]区别</span></span><br><span class="line"><span class="comment">            if(r[0] &lt; r[m]) high = m-1;</span></span><br><span class="line"><span class="comment">            else low = m+1;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        /*</span></span><br><span class="line"><span class="comment">        * high=m-1 low ：r[0]&lt;r[m]</span></span><br><span class="line"><span class="comment">        * high low=m+1 ：r[0]&gt;=r[m]</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">for</span> (j = i-<span class="number">1</span>; j &gt;= high+<span class="number">1</span>; j--) </span><br><span class="line">            r[j+<span class="number">1</span>] = r[j];</span><br><span class="line">        r[high+<span class="number">1</span>] = r[<span class="number">0</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">*/</span><br></pre></td></tr></table></figure><h3 id="6-归并排序-2-路归并"><a href="#6-归并排序-2-路归并" class="headerlink" title="6.归并排序(2-路归并)"></a>6.归并排序(2-路归并)</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">思路：SR[] TR[] 辅助空间</span></span><br><span class="line"><span class="comment">void MSort(int s, int t) &#123;</span></span><br><span class="line"><span class="comment">    // s,m,t </span></span><br><span class="line"><span class="comment">    if (s == t) TR[s] = SR[t];</span></span><br><span class="line"><span class="comment">    // 必须有else,s=t时后续不执行</span></span><br><span class="line"><span class="comment">    else &#123;</span></span><br><span class="line"><span class="comment">        m = (s + t) / 2;</span></span><br><span class="line"><span class="comment">        MSort(s, m);</span></span><br><span class="line"><span class="comment">        MSort(m+1, t);</span></span><br><span class="line"><span class="comment">        Merge(s, m, t);</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">void Merge(int i,int m,int n) &#123;</span></span><br><span class="line"><span class="comment">    // 类似链表合并</span></span><br><span class="line"><span class="comment">    // k -&gt; TR[k]</span></span><br><span class="line"><span class="comment">    // i .. m m+1 .. t</span></span><br><span class="line"><span class="comment">    //        j</span></span><br><span class="line"><span class="comment">    for (j = m + 1, k = i; i &lt;= m &amp;&amp; j &lt;= n; k++) &#123;</span></span><br><span class="line"><span class="comment">        if(SR[i] &lt;= TR[j])</span></span><br><span class="line"><span class="comment">            TR[k] = SR[i++];</span></span><br><span class="line"><span class="comment">        else</span></span><br><span class="line"><span class="comment">            TR[k] = SR[j++];</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">    if(i&lt;=m) TR[k..n] = SR[i..m];</span></span><br><span class="line"><span class="comment">    if(j&lt;=n) TR[k..n] = SR[j..n];</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h3 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> 增量问题</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;排序算法汇总&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-算法" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://zhichuwy.cn/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="有道云笔记迁移" scheme="https://zhichuwy.cn/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0%E8%BF%81%E7%A7%BB/"/>
+    
+      <category term="排序" scheme="https://zhichuwy.cn/tags/%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS入门</title>
+    <link href="https://zhichuwy.cn/CSS%E5%85%A5%E9%97%A8/"/>
+    <id>https://zhichuwy.cn/CSS入门/</id>
+    <published>2019-08-04T15:34:29.000Z</published>
+    <updated>2019-08-04T08:16:49.936Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote"><p style="padding-left: 70px;"><font size="5px">外边距 margin :邻接(非包含关系)元素位置关系<br>内边距 padding:内外元素边距<br>span标签 被用来组合文档中的行内元素</font></p></div><a id="more"></a><blockquote><p>这是原始引用样式</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 左侧图片，右侧上下文字 --&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: left; width: 4%; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://Dxoca.cn/image/headPortrait.jpg"</span> <span class="attr">width</span>=<span class="string">"64px"</span> <span class="attr">height</span>=<span class="string">"64px"</span> <span class="attr">alt</span>=<span class="string">"fail"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: right; width: 96%; "</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"padding-left: 5px; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://Dxoca.cn"</span>&gt;</span>Dxoca's blog xxxxx<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>yyyyyy<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// css注释方法为 / *. . .* /</span></span><br><span class="line"><span class="comment">// 不要加script标签</span></span><br></pre></td></tr></table></figure><figure class="highlight css"><figcaption><span>在css中类型连用</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.aclass</span> <span class="selector-class">.bclass</span> &#123;</span><br><span class="line"><span class="attribute">color</span>: <span class="number">#0000ff</span>;</span><br><span class="line">&#125; <span class="comment">/*同时包含ab类型时c,olor被设置为#0000ff*/</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;padding-left: 70px;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;外边距 margin :邻接(非包含关系)元素位置关系&lt;br&gt;内边距 padding:内外元素边距&lt;br&gt;span标签 被用来组合文档中的行内元素&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-前端" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="CSS" scheme="https://zhichuwy.cn/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>meta标签和referrer策略</title>
+    <link href="https://zhichuwy.cn/meta%E6%A0%87%E7%AD%BE%E5%92%8Creferrer%E7%AD%96%E7%95%A5/"/>
+    <id>https://zhichuwy.cn/meta标签和referrer策略/</id>
+    <published>2019-08-04T14:50:19.000Z</published>
+    <updated>2019-08-04T08:16:51.590Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">HTML meta标签 and 图片加载问题</font></p></div><a id="more"></a><p><code>注意：引用&quot;&gt;&quot;,换行后内容仍在此引用内，结束引用需间隔一行</code></p><p><code>myblockquote使用时,所有内容必须(不能手动换行,否则html显示时会多出&lt;br&gt;)</code></p><p><code>&lt;font size=&quot;12px&quot;&gt; &lt;p style=&quot;font-size: 13px;&quot;&gt; p标签内字体大小设置无效</code></p><figure class="highlight html"><figcaption><span>图片加载问题</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 添加上图片加载正常，但是网站底部统计数据无法显示 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"referrer"</span> <span class="attr">content</span>=<span class="string">"no-referrer"</span> /&gt;</span></span><br></pre></td></tr></table></figure><h3 id="meta标签使用"><a href="#meta标签使用" class="headerlink" title="meta标签使用"></a><a href="https://www.w3school.com.cn/tags/tag_meta.asp" target="_blank" rel="noopener">meta标签使用</a></h3><blockquote><p>相关内容：referrer策略和meta标签的问题<br>原文地址：<a href="https://segmentfault.com/a/1190000017896469" target="_blank" rel="noopener">https://segmentfault.com/a/1190000017896469</a><br>参考文章：<a href="https://blog.csdn.net/ccfxue/article/details/53119936" target="_blank" rel="noopener">https://blog.csdn.net/ccfxue/article/details/53119936</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;HTML meta标签 and 图片加载问题&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-前端" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="meta" scheme="https://zhichuwy.cn/tags/meta/"/>
+    
+      <category term="referrer" scheme="https://zhichuwy.cn/tags/referrer/"/>
+    
+  </entry>
   
   <entry>
     <title>Github更多功能</title>
@@ -77,11 +259,11 @@
   </entry>
   
   <entry>
-    <title>Hexo博客历程</title>
-    <link href="https://zhichuwy.cn/Hexo+Next/"/>
-    <id>https://zhichuwy.cn/Hexo+Next/</id>
+    <title>Hexo+Next 博客历程</title>
+    <link href="https://zhichuwy.cn/Hexo+Next%E5%8D%9A%E5%AE%A2%E5%8E%86%E7%A8%8B/"/>
+    <id>https://zhichuwy.cn/Hexo+Next博客历程/</id>
     <published>2019-08-01T18:34:29.000Z</published>
-    <updated>2019-08-04T01:06:11.807Z</updated>
+    <updated>2019-08-04T06:52:40.403Z</updated>
     
     <content type="html"><![CDATA[<p><img src="../images/1.jpg" alt="alt"></p><a id="more"></a><h3 id="Hexo博客搭建"><a href="#Hexo博客搭建" class="headerlink" title="Hexo博客搭建"></a>Hexo博客搭建</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli</span><br><span class="line">...</span><br></pre></td></tr></table></figure><blockquote><p>参考官方文档吧 :D 哈哈 哈 嗝~！</p></blockquote><h3 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h3><blockquote><p>引用样式主要用于文章摘要(图片&amp;文字)<br>引用样式美化方案1</p></blockquote><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.myblockquote</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">"\f10d"</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1rem</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>:-<span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#233</span>;</span><br><span class="line">    font-family: FontAwesome;  //fontello</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.myblockquote</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">'\f10e'</span> <span class="meta">!important</span>;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1rem</span>;</span><br><span class="line">    <span class="attribute">float</span>: right;</span><br><span class="line">    <span class="attribute">top</span>: -<span class="number">1rem</span>;</span><br><span class="line">    <span class="attribute">margin-right</span>:-<span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#233</span>;</span><br><span class="line">    <span class="attribute">font-family</span>: FontAwesome;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>引用样式美化方案2</p></blockquote><figure class="highlight css"><figcaption><span>.css可放至 ~/next/css/_custom/_custom.styl 图片位置放在 ~/source/images目录下即可</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.myblockquote</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">margin-block-start</span>: <span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">margin-block-end</span>: <span class="number">1em</span>;</span><br><span class="line">    <span class="attribute">margin-inline-start</span>: <span class="number">40px</span>;</span><br><span class="line">    <span class="attribute">margin-inline-end</span>: <span class="number">40px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">40px</span> <span class="number">0</span>; <span class="comment">/*距离标题大小*/</span></span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">border-left</span>: none;  <span class="comment">/*原始引用样式左边 竖线边框*/</span></span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.myblockquote</span><span class="selector-pseudo">:before</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">' '</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.2</span>;</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-position</span>: <span class="number">0</span> -<span class="number">6px</span>;</span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">22px</span> <span class="number">22px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">top</span>: -<span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(../images/quote-l.svg);</span><br><span class="line">    <span class="attribute">border-top</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.myblockquote</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">' '</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">24px</span>;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.2</span>;</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-position</span>: <span class="number">100%</span> <span class="number">8px</span>; <span class="comment">/*横向|纵向 调整*/</span></span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">22px</span> <span class="number">22px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="attribute">bottom</span>: -<span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(../images/quote-r.svg);</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 两种样式互不影响</span></span><br><span class="line"><span class="comment">   &lt;div class="myblockquote"&gt;</span></span><br><span class="line"><span class="comment">   自定义引用样式</span></span><br><span class="line"><span class="comment">   &lt;/div&gt;</span></span><br><span class="line"><span class="comment">   &gt;原始引用样式</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure><h3 id="功能添加"><a href="#功能添加" class="headerlink" title="功能添加"></a>功能添加</h3><ol><li>网页标题崩溃搞怪特效</li></ol><ul><li>先创建一个js文件crash_cheat.js,然后把文件放到source文件夹的js文件夹的src里面</li><li>在~hexo\themes\next\layout文件路径找到_layout.swig文件,在body或head之间加入 ~/js/src/crash_cheat.js</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//写作时,非代码部分注意路径书写,标签书写...</span></span><br><span class="line"><span class="comment">//破坏格式(路径前加~, 标签不加&lt;&gt;, 否则会被错误解析成link和不完整的代码导致无法正常显示)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//javascript注释方法为 / / / * * /</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><figcaption><span>注意:js文件中不要加script标签 </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> OriginTitle = <span class="built_in">document</span>.title;</span><br><span class="line"><span class="keyword">var</span> titleTime;</span><br><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">'visibilitychange'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">document</span>.hidden) &#123;</span><br><span class="line">        <span class="built_in">document</span>.title = <span class="string">'╭(°A°`)╮ 页面崩溃啦 ~'</span>;</span><br><span class="line">        clearTimeout(titleTime);</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">document</span>.title = <span class="string">'(ฅ&gt;ω&lt;*ฅ) 噫又好了~'</span> + OriginTitle;</span><br><span class="line">        titleTime = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="built_in">document</span>.title = OriginTitle;</span><br><span class="line">        &#125;, <span class="number">2000</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"> &lt;!--崩溃欺骗(包含图标改变)--&gt;</span><br><span class="line"> <span class="keyword">var</span> OriginTitle = <span class="built_in">document</span>.title;</span><br><span class="line"> <span class="keyword">var</span> titleTime;</span><br><span class="line"> <span class="built_in">document</span>.addEventListener(<span class="string">'visibilitychange'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (<span class="built_in">document</span>.hidden) &#123;</span><br><span class="line">         $(<span class="string">'[rel="icon"]'</span>).attr(<span class="string">'href'</span>, <span class="string">"https://i.loli.net/2018/08/24/5b7fcb00ed9bf.png"</span>);</span><br><span class="line">         <span class="built_in">document</span>.title = <span class="string">'怎么回事╭(°A°`)╮'</span>;</span><br><span class="line">         clearTimeout(titleTime);</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">else</span> &#123;</span><br><span class="line">         $(<span class="string">'[rel="icon"]'</span>).attr(<span class="string">'href'</span>, <span class="string">"https://i.loli.net/2018/09/25/5baa4f21661e7.png"</span>);</span><br><span class="line">         <span class="built_in">document</span>.title = <span class="string">'小老弟(ฅ&gt;ω&lt;*ฅ)'</span>;</span><br><span class="line">         titleTime = setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">             <span class="built_in">document</span>.title = OriginTitle;</span><br><span class="line">             $(<span class="string">'[rel="icon"]'</span>).attr(<span class="string">'href'</span>, <span class="string">"/images/favicon-32x32-next.png"</span>);</span><br><span class="line">         &#125;, <span class="number">2000</span>);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;);</span><br></pre></td></tr></table></figure><h3 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h3><ol><li>TypeError: Cannot set property ‘lastIndex’ of undefined<br> at highlight (D:\hexo\Blog\node_modules\highlight.js\lib\highlight.js:577:35)<br>解决：修改配置文件_config.yml(注意不是主题里面的配置文件！) 把auto_detect设置为false,即可解决</li></ol>]]></content>
     
@@ -105,35 +287,13 @@
   </entry>
   
   <entry>
-    <title>CSS入门</title>
-    <link href="https://zhichuwy.cn/CSS%E5%85%A5%E9%97%A8/"/>
-    <id>https://zhichuwy.cn/CSS入门/</id>
-    <published>2019-08-01T18:34:29.000Z</published>
-    <updated>2019-08-04T00:59:32.581Z</updated>
-    
-    <content type="html"><![CDATA[<div class="myblockquote">外边距 margin :邻接(非包含关系)元素位置关系<br>内边距 padding:内外元素边距<br>span标签 被用来组合文档中的行内元素</div> <a id="more"></a><blockquote><p>这是原始引用样式</p></blockquote><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 左侧图片，右侧上下文字 --&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: left; width: 4%; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://Dxoca.cn/image/headPortrait.jpg"</span> <span class="attr">width</span>=<span class="string">"64px"</span> <span class="attr">height</span>=<span class="string">"64px"</span> <span class="attr">alt</span>=<span class="string">"fail"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"float: right; width: 96%; "</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"padding-left: 5px; "</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://Dxoca.cn"</span>&gt;</span>Dxoca's blog xxxxx<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>yyyyyy<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// css注释方法为 / *. . .* /</span></span><br><span class="line"><span class="comment">// 不要加script标签</span></span><br></pre></td></tr></table></figure><figure class="highlight css"><figcaption><span>在css中类型连用</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.aclass</span> <span class="selector-class">.bclass</span> &#123;</span><br><span class="line"><span class="attribute">color</span>: <span class="number">#0000ff</span>;</span><br><span class="line">&#125; <span class="comment">/*同时包含ab类型时c,olor被设置为#0000ff*/</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;myblockquote&quot;&gt;外边距 margin :邻接(非包含关系)元素位置关系&lt;br&gt;内边距 padding:内外元素边距&lt;br&gt;span标签 被用来组合文档中的行内元素&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
-    
-    
-      <category term="CSS" scheme="https://zhichuwy.cn/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
     <title>all categories</title>
     <link href="https://zhichuwy.cn/all%20categories/"/>
     <id>https://zhichuwy.cn/all categories/</id>
     <published>2019-08-01T06:13:07.000Z</published>
-    <updated>2019-08-03T07:47:50.910Z</updated>
+    <updated>2019-08-04T06:50:34.368Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p><img src="../images/2.jpg" alt="alt"></p><a id="more"></a><h2 id="categories维护"><a href="#categories维护" class="headerlink" title="categories维护"></a>categories维护</h2><blockquote><p>categories</p></blockquote><ul><li>之初-Java基础</li><li>之初-工具使用(ffmpeg)</li><li>之初-框架(Spring …)</li><li>之初-安全认证(OAuth …)</li><li>之初-加密(MD5 SHA SRA …)</li><li>之初-网络 协议…</li><li>之初-数据库</li><li>之初-服务器(Tomcat Nginx …)</li><li>之初-Linux</li><li>之初-算法</li><li>之初-进阶(开发模式 架构 …)</li><li>之初-常用配置文件及方法(.xml .properties…)</li><li>之初-小工具(语音转写 java执行cmd)</li><li>之初-Future(Python Go AI etc…)</li><li>之初-Others积累</li><li>之初-友链</li><li>之初-随笔</li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p><img src="../images/2.jpg" alt="alt"></p><a id="more"></a><h2 id="categories维护"><a href="#categories维护" class="headerlink" title="categories维护"></a>categories维护</h2><blockquote><p>categories</p></blockquote><ul><li>之初-Java基础</li><li>之初-前端</li><li>之初-工具使用(ffmpeg)</li><li>之初-框架(Spring …)</li><li>之初-安全认证(OAuth …)</li><li>之初-加密(MD5 SHA SRA …)</li><li>之初-网络 协议…</li><li>之初-数据库</li><li>之初-服务器(Tomcat Nginx …)</li><li>之初-Linux</li><li>之初-算法</li><li>之初-进阶(开发模式 架构 …)</li><li>之初-常用配置文件及方法(.xml .properties…)</li><li>之初-小工具(语音转写 java执行cmd)</li><li>之初-Future(Python Go AI etc…)</li><li>之初-Others积累</li><li>之初-友链</li><li>之初-随笔</li></ul>]]></content>
     
     <summary type="html">
     
@@ -334,17 +494,17 @@
     <link href="https://zhichuwy.cn/%E7%A7%91%E5%A4%A7%E8%AE%AF%E9%A3%9E-%E8%AF%AD%E9%9F%B3%E8%BD%AC%E5%86%99/"/>
     <id>https://zhichuwy.cn/科大讯飞-语音转写/</id>
     <published>2019-07-25T08:32:00.000Z</published>
-    <updated>2019-07-25T11:03:30.547Z</updated>
+    <updated>2019-08-04T01:09:05.987Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>demo: <a href="https://github.yangzhichu.xxx" target="_blank" rel="noopener">https://github.yangzhichu.xxx</a></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>demo: <a href="https://github.zhichuwy.xxx" target="_blank" rel="noopener">https://github.zhichuwy.xxx</a></p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
         &lt;blockquote&gt;
-&lt;p&gt;demo: &lt;a href=&quot;https://github.yangzhichu.xxx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.yangzhichu.xxx&lt;/a&gt;&lt;/p&gt;
-&lt;/blockqu
+&lt;p&gt;demo: &lt;a href=&quot;https://github.zhichuwy.xxx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.zhichuwy.xxx&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
       
     
     </summary>
@@ -386,184 +546,6 @@
       <category term="Java执行cmd命令" scheme="https://zhichuwy.cn/tags/Java%E6%89%A7%E8%A1%8Ccmd%E5%91%BD%E4%BB%A4/"/>
     
       <category term="Java执行bat脚本" scheme="https://zhichuwy.cn/tags/Java%E6%89%A7%E8%A1%8Cbat%E8%84%9A%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ffmpeg</title>
-    <link href="https://zhichuwy.cn/ffmpeg/"/>
-    <id>https://zhichuwy.cn/ffmpeg/</id>
-    <published>2019-07-21T13:50:09.000Z</published>
-    <updated>2019-07-27T13:33:37.605Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载Build压缩包，解压</li><li>设置环境变量</li></ul><blockquote><p>参考文章：<a href="https://www.jianshu.com/p/ddafe46827b7" target="_blank" rel="noopener">https://www.jianshu.com/p/ddafe46827b7</a></p></blockquote><h3 id="项目导入问题"><a href="#项目导入问题" class="headerlink" title="项目导入问题"></a>项目导入问题</h3><ol><li>26105/26100错误<br>better重建项目</li><li>config.properties<br>store_path(ex：D:/temp/test/)</li><li>src .java中音频文件位置<br>default(“./resource/audio/xxx.wav”)<br>local_file(“D:\path\xxx.m4a”)</li></ol><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p>ffmpeg -i xxx.mp4 -acodec copy -vn output.aac</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;下载Build压缩包，解压&lt;/li&gt;
-&lt;li&gt;设置环境变量&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考文章：&lt;a
-      
-    
-    </summary>
-    
-      <category term="之初-工具使用" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="ffmpeg" scheme="https://zhichuwy.cn/tags/ffmpeg/"/>
-    
-      <category term="视频格式转换" scheme="https://zhichuwy.cn/tags/%E8%A7%86%E9%A2%91%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
-    
-      <category term="音视频分离" scheme="https://zhichuwy.cn/tags/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%88%86%E7%A6%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python</title>
-    <link href="https://zhichuwy.cn/Python/"/>
-    <id>https://zhichuwy.cn/Python/</id>
-    <published>2019-07-20T18:50:09.000Z</published>
-    <updated>2019-07-25T11:06:41.081Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="环境及使用"><a href="#环境及使用" class="headerlink" title="环境及使用"></a>环境及使用</h3><blockquote><p>PyCharm</p></blockquote><blockquote><p>密钥(截至2020.06)</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">K6IXATEF43-eyJsaWNlbnNlSWQiOiJLNklYQVRFRjQzIiwibGljZW5zZWVOYW1lIjoi5o6I5p2D5Luj55CG5ZWGOiBodHRwOi8vaWRlYS5oay5jbiIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwMTktMDYtMDUiLCJwYWlkVXBUbyI6IjIwMjAtMDYtMDQifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDE5LTA2LTA1IiwicGFpZFVwVG8iOiIyMDIwLTA2LTA0In0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjAxOS0wNi0wNSIsInBhaWRVcFRvIjoiMjAyMC0wNi0wNCJ9XSwiaGFzaCI6IjEzMjkyMzI4LzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-KUaQi549fH96M/qU7jTvuMeq2GuedA+WppV3irI0JHlfDuhJlidK2m3yoRxitGNmimPFVUA8Dk38OzXnP29I39QDXH5VAF8VjOP0XrqdfrpaZUKpdhRaYz8r1NAwID75U4LqYCvFbazka1dCMJBFqJ2wum1+CSQhJ1O7CSchAJAbjcCRQjbU2sXOofAA2sPLi7nlJw2wrjOHzH9cOczUn11n24PE9BQ/oYGITHkzsu94i4Q90Z1jQysMtXLgM/HoLSHY2T9rKULLoh+tdMwBp9+m0VLF/R5gdkVDV/dlorrA9OEZIsSOaG+oWSen/AulKH6OXllZJoR+b/T6YYfGWg==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn/72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN/lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D/cXmgpOyW/1SmBz3XjVIi/zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV/bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit/pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow==</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;环境及使用&quot;&gt;&lt;a href=&quot;#环境及使用&quot; class=&quot;headerlink&quot; title=&quot;环境及使用&quot;&gt;&lt;/a&gt;环境及使用&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;PyCharm&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;密钥(
-      
-    
-    </summary>
-    
-      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
-    
-    
-      <category term="Python" scheme="https://zhichuwy.cn/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go</title>
-    <link href="https://zhichuwy.cn/Go/"/>
-    <id>https://zhichuwy.cn/Go/</id>
-    <published>2019-07-20T18:49:09.000Z</published>
-    <updated>2019-07-25T11:05:27.114Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="环境-win10-x64-msi-无需配置PATH"><a href="#环境-win10-x64-msi-无需配置PATH" class="headerlink" title="环境(win10_x64 .msi 无需配置PATH)"></a>环境(win10_x64 .msi 无需配置PATH)</h3><blockquote><p>Download Go: <a href="https://golang.google.cn/dl/" target="_blank" rel="noopener">https://golang.google.cn/dl/</a></p></blockquote><h3 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h3><ol><li>LiteIDE</li></ol><ul><li>安装MinGW</li><li>环境配置参考(win64)</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">工具-&gt;编辑当前环境</span><br><span class="line"></span><br><span class="line"># native compiler windows amd64</span><br><span class="line"></span><br><span class="line">GOROOT=D:\Future\Go</span><br><span class="line">#GOBIN=</span><br><span class="line">GOARCH=amd64</span><br><span class="line">GOOS=windows</span><br><span class="line">CGO_ENABLED=1</span><br><span class="line"></span><br><span class="line">PATH=D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin;%GOROOT%\bin;%PATH%</span><br><span class="line"></span><br><span class="line">#D:\Future\liteide\bin</span><br><span class="line">LITEIDE_GDB=gdb64</span><br><span class="line"></span><br><span class="line">#D:\NewInstall\C_ACM\Dev_Cpp\MinGW64\bin</span><br><span class="line">LITEIDE_MAKE=mingw32-make</span><br><span class="line"></span><br><span class="line">LITEIDE_TERM=%COMSPEC%</span><br><span class="line">LITEIDE_TERMARGS=</span><br><span class="line">LITEIDE_EXEC=%COMSPEC%</span><br><span class="line">LITEIDE_EXECOPT=/C</span><br></pre></td></tr></table></figure><ol start="2"><li>Golang（集成环境，无需配置）</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;环境-win10-x64-msi-无需配置PATH&quot;&gt;&lt;a href=&quot;#环境-win10-x64-msi-无需配置PATH&quot; class=&quot;headerlink&quot; title=&quot;环境(win10_x64 .msi 无需配置PATH)&quot;&gt;&lt;/a&gt;环境(win10_
-      
-    
-    </summary>
-    
-      <category term="之初-Future" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-Future/"/>
-    
-    
-      <category term="Go" scheme="https://zhichuwy.cn/tags/Go/"/>
-    
-      <category term="Go 环境" scheme="https://zhichuwy.cn/tags/Go-%E7%8E%AF%E5%A2%83/"/>
-    
-      <category term="Go IDE" scheme="https://zhichuwy.cn/tags/Go-IDE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Http</title>
-    <link href="https://zhichuwy.cn/Http/"/>
-    <id>https://zhichuwy.cn/Http/</id>
-    <published>2019-07-16T20:01:07.000Z</published>
-    <updated>2019-08-01T00:21:52.093Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Http请求"><a href="#Http请求" class="headerlink" title="Http请求"></a>Http请求</h3><p>GET - 从指定的资源请求数据。<br>POST - 向指定的资源提交要被处理的数据</p><hr><p>GET 方法<br>请注意，查询字符串（名称/值对）是在 GET 请求的 URL 中发送的：</p><p>/test/demo_form.asp?name1=value1&amp;name2=value2<br>有关 GET 请求的其他一些注释：</p><ul><li>GET 请求可被缓存<br>GET 请求保留在浏览器历史记录中<br>GET 请求可被收藏为书签<br>GET 请求不应在处理敏感数据时使用<br>GET 请求有长度限制<br>GET 请求只应当用于取回数据</li></ul><hr><p>POST 方法</p><p>请注意，查询字符串（名称/值对）是在 POST 请求的 HTTP 消息主体中发送的：</p><p>POST /test/demo_form.asp HTTP/1.1<br>Host: w3schools.com<br>name1=value1&amp;name2=value2</p><p>有关 POST 请求的其他一些注释：</p><ul><li>POST 请求不会被缓存<br>POST 请求不会保留在浏览器历史记录中<br>POST 不能被收藏为书签<br>POST 请求对数据长度没有要求</li></ul><hr><table><thead><tr><th style="text-align:left">o_0</th><th style="text-align:left">GET</th><th style="text-align:left">POST</th></tr></thead><tbody><tr><td style="text-align:left">后退按钮/刷新</td><td style="text-align:left">无害</td><td style="text-align:left">数据会被重新提交（浏览器应该告知用户数据会被重新提交）</td></tr><tr><td style="text-align:left">书签</td><td style="text-align:left">可收藏为书签</td><td style="text-align:left">不可收藏为书签</td></tr><tr><td style="text-align:left">缓存</td><td style="text-align:left">能被缓存</td><td style="text-align:left">不能缓存</td></tr><tr><td style="text-align:left">编码类型</td><td style="text-align:left">application/x-www-form-urlencoded</td><td style="text-align:left">application/x-www-form-urlencoded 或 multipart/form-data。为二进制数据使用多重编码</td></tr><tr><td style="text-align:left">历史</td><td style="text-align:left">参数保留在浏览器历史中</td><td style="text-align:left">参数不会保存在浏览器历史中</td></tr><tr><td style="text-align:left">数据长度限制</td><td style="text-align:left">当发送数据时，GET 方法向 URL 添加数据；URL 的长度是受限制的（URL 的最大长度是 2048 个字符）</td><td style="text-align:left">无限制</td></tr><tr><td style="text-align:left">数据类型限制</td><td style="text-align:left">只允许 ASCII 字符</td><td style="text-align:left">没有限制，也允许二进制数据</td></tr><tr><td style="text-align:left">安全性</td><td style="text-align:left">与 POST 相比，GET 的安全性较差，因为所发送的数据是 URL 的一部分。在发送密码或其他敏感信息时绝不要使用 GET ！</td><td style="text-align:left">POST 比 GET 更安全，因为参数不会被保存在浏览器历史或 web 服务器日志中</td></tr><tr><td style="text-align:left">可见性</td><td style="text-align:left">数据在 URL 中对所有人都是可见的</td><td style="text-align:left">数据不会显示在 URL 中</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;Http请求&quot;&gt;&lt;a href=&quot;#Http请求&quot; class=&quot;headerlink&quot; title=&quot;Http请求&quot;&gt;&lt;/a&gt;Http请求&lt;/h3&gt;&lt;p&gt;GET - 从指定的资源请求数据。&lt;br&gt;POST - 向指定的资源提交要被处理的数据&lt;/p&gt;
-&lt;hr&gt;
-&lt;
-      
-    
-    </summary>
-    
-      <category term="之初-网络 协议..." scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%BD%91%E7%BB%9C-%E5%8D%8F%E8%AE%AE/"/>
-    
-    
-      <category term="Http" scheme="https://zhichuwy.cn/tags/Http/"/>
-    
-      <category term="GET" scheme="https://zhichuwy.cn/tags/GET/"/>
-    
-      <category term="POST" scheme="https://zhichuwy.cn/tags/POST/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Eclipse中Tomcat启动Run配置</title>
-    <link href="https://zhichuwy.cn/Eclipse%E4%B8%ADTomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
-    <id>https://zhichuwy.cn/Eclipse中Tomcat启动Run配置/</id>
-    <published>2019-07-16T20:00:07.000Z</published>
-    <updated>2019-07-25T11:04:56.699Z</updated>
-    
-    <content type="html"><![CDATA[<p>clean tomcat7：run 报错<br>Tomcat====服务===手动启动<br>设置Install JRE时候选中JDK的目录，因为jdk下面也有一个jre。<br>为什么这个可以是因为maven的eclipse插件一些功能需要使用JDK，所以使用jdk目录可以解决这个问题。<br><a href="https://blog.csdn.net/u011734144/article/details/51894942" target="_blank" rel="noopener">https://blog.csdn.net/u011734144/article/details/51894942</a><br><a href="https://blog.csdn.net/JQ_AK47/article/details/56675411" target="_blank" rel="noopener">https://blog.csdn.net/JQ_AK47/article/details/56675411</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;clean tomcat7：run 报错&lt;br&gt;Tomcat====服务===手动启动&lt;br&gt;设置Install JRE时候选中JDK的目录，因为jdk下面也有一个jre。&lt;br&gt;为什么这个可以是因为maven的eclipse插件一些功能需要使用JDK，所以使用jdk目录可
-      
-    
-    </summary>
-    
-      <category term="之初-工具使用" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="Eclipse" scheme="https://zhichuwy.cn/tags/Eclipse/"/>
-    
-      <category term="Tomcat启动Run配置" scheme="https://zhichuwy.cn/tags/Tomcat%E5%90%AF%E5%8A%A8Run%E9%85%8D%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OAuth认证</title>
-    <link href="https://zhichuwy.cn/OAuth%E8%AE%A4%E8%AF%81/"/>
-    <id>https://zhichuwy.cn/OAuth认证/</id>
-    <published>2019-07-16T19:56:07.000Z</published>
-    <updated>2019-07-25T11:06:41.049Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>参考文章：http://</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;参考文章：http://&lt;/p&gt;
-&lt;/blockquote&gt;
-
-      
-    
-    </summary>
-    
-      <category term="之初-安全认证" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%AE%89%E5%85%A8%E8%AE%A4%E8%AF%81/"/>
-    
-    
-      <category term="OAuth认证" scheme="https://zhichuwy.cn/tags/OAuth%E8%AE%A4%E8%AF%81/"/>
     
   </entry>
   

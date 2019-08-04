@@ -1966,7 +1966,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aa1bff;
+  background: #ff8aff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3306,6 +3306,15 @@ pre .javascript .function {
   background-image: url("../images/quote-r.svg");
   border-bottom: 1px solid #ccc;
 }
+.highlight figcaption {
+  margin: 0em;
+  padding: 0.5em;
+  background: #eee;
+  border-bottom: 1px solid #e9e9e9;
+}
+.highlight figcaption a {
+  color: #5073b8;
+}
 .highlight {
   position: relative;
 }
@@ -3352,15 +3361,6 @@ pre .javascript .function {
 }
 .with-love {
   color: #ff5050;
-}
-.highlight figcaption {
-  margin: 0em;
-  padding: 0.5em;
-  background: #eee;
-  border-bottom: 1px solid #e9e9e9;
-}
-.highlight figcaption a {
-  color: #5073b8;
 }
 .site-author-image {
   display: block;

@@ -339,20 +339,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Eclipse项目相关踩坑]]></title>
-    <url>%2FEclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91%2F</url>
-    <content type="text"><![CDATA[快捷键 Ctrl+1 回车=&gt;自动补全返回类型 maven Pagehelper maven Pagehelper版本问题：https://blog.csdn.net/qq_36004521/article/details/78578075 war打包错误 war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>Eclipse</tag>
-        <tag>快捷键</tag>
-        <tag>maven Pagehelper</tag>
-        <tag>war打包错误</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[SVN相关]]></title>
     <url>%2FSVN%2F</url>
     <content type="text"><![CDATA[这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的]]></content>
@@ -364,6 +350,20 @@
         <tag>VisualSVN-Server</tag>
         <tag>Subversion</tag>
         <tag>TortoiseSVN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Eclipse项目相关踩坑]]></title>
+    <url>%2FEclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91%2F</url>
+    <content type="text"><![CDATA[快捷键 Ctrl+1 回车=&gt;自动补全返回类型 maven Pagehelper maven Pagehelper版本问题：https://blog.csdn.net/qq_36004521/article/details/78578075 war打包错误 war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>Eclipse</tag>
+        <tag>快捷键</tag>
+        <tag>maven Pagehelper</tag>
+        <tag>war打包错误</tag>
       </tags>
   </entry>
   <entry>

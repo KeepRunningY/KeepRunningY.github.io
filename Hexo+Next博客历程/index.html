@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="之初 Blog">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://zhichuwy.cn/images/1.jpg">
-<meta property="og:updated_time" content="2019-08-05T13:35:58.411Z">
+<meta property="og:updated_time" content="2019-08-05T15:34:06.745Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Next 博客历程">
 <meta name="twitter:image" content="https://zhichuwy.cn/images/1.jpg">
@@ -239,7 +239,7 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
+        <li class="menu-item menu-item-friends">
           <a href="/friends/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-mortar-board"></i> <br>
@@ -259,7 +259,7 @@
         </li>
       
         
-        <li class="menu-item menu-item-friends">
+        <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
@@ -497,7 +497,11 @@
 </blockquote>
 <p>1) css修改<code>css\_common\componments\footer\footer.styl -&gt; color: #D2B48C</code><br>2) 在<code>next\layout\_partials\comments.swig</code>末尾处添加<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  &#123;% elseif theme.valine.appid and theme.valine.appkey %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"comments"</span> <span class="attr">id</span>=<span class="string">"comments"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"comments-warn"</span>&gt;</span>温馨提示：评论系统使用的是Gravatar头像,正确填写邮箱是可以收到评论回复的哦 @( ◕ x ◕ )@</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>3) <font color="#ff0000">VIP: 屏幕尺寸变化(响应式布局)时,评论区样式出错(内容区域宽度大于评论区),反复查找css目录关于.comments样式只找到一处,即2)中<code>\css\_common\components\comments.styl</code>,因此采用用户定义样式覆盖原样式(在浏览器中调节屏幕宽度,从而得出合适参数)</font><br><figure class="highlight css"><figcaption><span>media放在此处不生效</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*原样式*/</span></span><br><span class="line"><span class="selector-class">.comments</span> &#123; <span class="attribute">margin</span>: <span class="number">60px</span> <span class="number">20px</span> <span class="number">0</span>; &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*温馨提示*/</span></span><br><span class="line"><span class="selector-class">.comments-warn</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#00FF7F</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">6px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">自定义覆盖原样式,浏览器调试得出合适参数</span></span><br><span class="line"><span class="comment">.comments之前一定要有缩进,否则报错</span></span><br><span class="line"><span class="comment">ParserError: expected "indent(缩进)", got "."</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">@<span class="keyword">media</span> (max-width: <span class="number">767px</span>)</span><br><span class="line">  .comments &#123;</span><br><span class="line">      margin-top: 10px; // 8 -&gt; 10</span><br><span class="line">      <span class="selector-tag">padding</span>: 0 12<span class="selector-tag">px</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-<p><font color="#ff0000">艾特media放在<code>css\_custom\custom.style</code>下方生效,(自闭了。。。PC端OK,移动端BuG啦 i)</font><br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">media</span> (max-width: <span class="number">767px</span>)</span><br><span class="line">  .comments &#123;</span><br><span class="line">      margin-top: 10px; // 8 -&gt; 10</span><br><span class="line">      <span class="selector-tag">padding</span>: 0 12<span class="selector-tag">px</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<p><font color="#ff0000">艾特media放在<code>css\_custom\custom.style</code>下方生效,(自闭了。。。PC端OK,移动端BuG啦 i)</font></p>
+<blockquote>
+<p>最终完美解决方案：<a href="https://zhichuwy.cn/friends">https://zhichuwy.cn/friends</a></p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">media</span> (max-width: <span class="number">767px</span>)</span><br><span class="line">  .comments &#123;</span><br><span class="line">      margin-top: 10px; // 8 -&gt; 10</span><br><span class="line">      <span class="selector-tag">padding</span>: 0 12<span class="selector-tag">px</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>6.Sidebar运行时长</p>
 </blockquote>

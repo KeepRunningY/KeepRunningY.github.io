@@ -1966,7 +1966,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #525500;
+  background: #2a5eff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3269,7 +3269,7 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .comments {
     padding: 0 12px;
-    margin-right: 10px 20px;
+    margin: 10px 20px;
   }
 }
 .myp {

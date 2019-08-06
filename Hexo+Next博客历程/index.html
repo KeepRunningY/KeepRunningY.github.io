@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="之初 Blog">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://zhichuwy.cn/images/1.jpg">
-<meta property="og:updated_time" content="2019-08-05T15:34:06.745Z">
+<meta property="og:updated_time" content="2019-08-06T14:49:21.836Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Next 博客历程">
 <meta name="twitter:image" content="https://zhichuwy.cn/images/1.jpg">
@@ -438,7 +438,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3.9k 字
+                  4k 字
                 </span>
               
 
@@ -477,7 +477,7 @@
       
         <p><img src="../images/1.jpg" alt="alt"></p>
 <a id="more"></a>
-<h3 id="Gemini持续优化ing…"><a href="#Gemini持续优化ing…" class="headerlink" title="Gemini持续优化ing…"></a>Gemini持续优化ing…</h3><p>01.&nbsp;keyword搜索引擎收录<br>02.&nbsp;图片摘要大小(原始尺寸)<br>03.&nbsp;自定义page页自定义链接(图文链接-友链)<br>04.&nbsp;Valine评论权限和(default)头像<br>05.&nbsp;评论区焦点触发 显示/隐藏 GIF图片<br>06.&nbsp;Gitalk评论系统<br>07.&nbsp;动态背景.js<br>08.&nbsp;背景图片轮换<br>09.&nbsp;浮动小人儿 <a href="https://www.hojun.cn" target="_blank" rel="noopener">https://www.hojun.cn</a><br>10.&nbsp;CDN加速 <a href="https://canye365.cn" target="_blank" rel="noopener">https://canye365.cn</a><br>11.&nbsp;Docsify使用<br>12.&nbsp;CODING托管<br>13.&nbsp;typecho-handsome主题<br>14.&nbsp;Google 广告接入<br>,,,</p>
+<h3 id="Hexo-Next自定义参考文章-https-www-jianshu-com-p-9f0e90cc32c2"><a href="#Hexo-Next自定义参考文章-https-www-jianshu-com-p-9f0e90cc32c2" class="headerlink" title="Hexo-Next自定义参考文章 https://www.jianshu.com/p/9f0e90cc32c2"></a>Hexo-Next自定义参考文章 <a href="https://www.jianshu.com/p/9f0e90cc32c2" target="_blank" rel="noopener">https://www.jianshu.com/p/9f0e90cc32c2</a></h3><h3 id="Gemini持续优化ing…"><a href="#Gemini持续优化ing…" class="headerlink" title="Gemini持续优化ing…"></a>Gemini持续优化ing…</h3><p>00.&nbsp;手机“复制”按钮<br>01.&nbsp;keyword搜索引擎收录<br>02.&nbsp;图片摘要大小(原始尺寸)<br>03.&nbsp;自定义page页自定义链接(图文链接-友链)<br>04.&nbsp;Valine评论权限和(default)头像<br>05.&nbsp;评论区焦点触发 显示/隐藏 GIF图片<br>06.&nbsp;Gitalk评论系统<br>07.&nbsp;动态背景.js<br>08.&nbsp;背景图片轮换<br>09.&nbsp;浮动小人儿 <a href="https://www.hojun.cn" target="_blank" rel="noopener">https://www.hojun.cn</a><br>10.&nbsp;CDN加速 <a href="https://canye365.cn" target="_blank" rel="noopener">https://canye365.cn</a><br>11.&nbsp;Docsify使用<br>12.&nbsp;CODING托管<br>13.&nbsp;typecho-handsome主题<br>14.&nbsp;Google 广告接入<br>,,,</p>
 <hr>
 <h3 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h3><blockquote>
 <p>3.友链page：请求太多,服务器拒绝请求(异步？)</p>
@@ -489,6 +489,14 @@
 <p>1.TypeError: Cannot set property ‘lastIndex’ of undefined<br>at highlight (D:\hexo\Blog\node_modules\highlight.js\lib\highlight.js:577:35)<br>解决：修改配置文件_config.yml(注意不是主题里面的配置文件！) 把auto_detect设置为false,即可解决</p>
 </blockquote>
 <h3 id="功能添加"><a href="#功能添加" class="headerlink" title="功能添加"></a>功能添加</h3><blockquote>
+<p>b2p(back to top) 返回顶部按钮在手机上显示</p>
+</blockquote>
+<blockquote>
+<p>tagcloud渐变色 </p>
+</blockquote>
+<p>修改文件：<code>/themes/next/layout/page.swig</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; &#123; tagcloud(&#123;min_font: 13, max_font: 31, amount: 1000, color: true, start_color: &apos;#e55d87&apos;, end_color: &apos;#5fc3e4&apos;&#125;) &#125; &#125;</span><br></pre></td></tr></table></figure></p>
+<p>修改对应参数值即可，参数说明见<a href="https://hexo.io/zh-cn/docs/helpers.html#tagcloud" target="_blank" rel="noopener">Hexo官方文档</a>，颜色可以参考<a href="https://uigradients.com/" target="_blank" rel="noopener">这个网站</a>。</p>
+<blockquote>
 <p>8.Live-2d模型添加</p>
 </blockquote>
 <p><a href="https://www.zhangxinxu.com/wordpress/2018/05/live2d-web-webgl-js/" target="_blank" rel="noopener">https://www.zhangxinxu.com/wordpress/2018/05/live2d-web-webgl-js/</a><br><a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">https://huaji8.top/post/live2d-plugin-2.0/</a><br><a href="https://blog.csdn.net/appleyuchi/article/details/91882571" target="_blank" rel="noopener">https://blog.csdn.net/appleyuchi/article/details/91882571</a><br><a href="https://www.jianshu.com/p/3a6342e16e57" target="_blank" rel="noopener">https://www.jianshu.com/p/3a6342e16e57</a><br><a href="https://www.jianshu.com/p/4b61d8702cfa" target="_blank" rel="noopener">https://www.jianshu.com/p/4b61d8702cfa</a>  </p>
@@ -933,7 +941,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Gemini持续优化ing…"><span class="nav-number">1.</span> <span class="nav-text">Gemini持续优化ing…</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#错误处理"><span class="nav-number">2.</span> <span class="nav-text">错误处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能添加"><span class="nav-number">3.</span> <span class="nav-text">功能添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#美化"><span class="nav-number">4.</span> <span class="nav-text">美化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo博客环境搭建"><span class="nav-number">5.</span> <span class="nav-text">Hexo博客环境搭建</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo-Next自定义参考文章-https-www-jianshu-com-p-9f0e90cc32c2"><span class="nav-number">1.</span> <span class="nav-text">Hexo-Next自定义参考文章 https://www.jianshu.com/p/9f0e90cc32c2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gemini持续优化ing…"><span class="nav-number">2.</span> <span class="nav-text">Gemini持续优化ing…</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#错误处理"><span class="nav-number">3.</span> <span class="nav-text">错误处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#功能添加"><span class="nav-number">4.</span> <span class="nav-text">功能添加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#美化"><span class="nav-number">5.</span> <span class="nav-text">美化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo博客环境搭建"><span class="nav-number">6.</span> <span class="nav-text">Hexo博客环境搭建</span></a></li></ol></div>
             
 
           </div>

@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Process的输出流和错误流处理(阻塞问题) https://blog.csdn.net/Dancen/article/details/7969328https://blog.csdn.net/stormych/article/details/62037579https://blog.csdn.net/mengxingyuanlove/article/details/50707746  简单使用">
+<meta name="description" content="Java执行cmd命令、bat脚本">
 <meta name="keywords" content="Java执行cmd命令,Java执行bat脚本">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java执行cmd命令">
 <meta property="og:url" content="https://zhichuwy.cn/Java执行cmd命令/index.html">
 <meta property="og:site_name" content="之初 Blog">
-<meta property="og:description" content="Process的输出流和错误流处理(阻塞问题) https://blog.csdn.net/Dancen/article/details/7969328https://blog.csdn.net/stormych/article/details/62037579https://blog.csdn.net/mengxingyuanlove/article/details/50707746  简单使用">
+<meta property="og:description" content="Java执行cmd命令、bat脚本">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-05T04:22:21.496Z">
+<meta property="og:updated_time" content="2019-08-10T17:00:22.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java执行cmd命令">
-<meta name="twitter:description" content="Process的输出流和错误流处理(阻塞问题) https://blog.csdn.net/Dancen/article/details/7969328https://blog.csdn.net/stormych/article/details/62037579https://blog.csdn.net/mengxingyuanlove/article/details/50707746  简单使用">
+<meta name="twitter:description" content="Java执行cmd命令、bat脚本">
 
 
 
@@ -476,7 +476,10 @@
       
 
       
-        <h4 id="Process的输出流和错误流处理-阻塞问题"><a href="#Process的输出流和错误流处理-阻塞问题" class="headerlink" title="Process的输出流和错误流处理(阻塞问题)"></a>Process的输出流和错误流处理(阻塞问题)</h4><blockquote>
+        <div class="myblockquote"><p style="text-align: center;"><font size="5px">Java执行cmd命令、bat脚本</font></p></div>
+
+<a id="more"></a>
+<h4 id="Process的输出流和错误流处理-阻塞问题"><a href="#Process的输出流和错误流处理-阻塞问题" class="headerlink" title="Process的输出流和错误流处理(阻塞问题)"></a>Process的输出流和错误流处理(阻塞问题)</h4><blockquote>
 <p><a href="https://blog.csdn.net/Dancen/article/details/7969328" target="_blank" rel="noopener">https://blog.csdn.net/Dancen/article/details/7969328</a><br><a href="https://blog.csdn.net/stormych/article/details/62037579" target="_blank" rel="noopener">https://blog.csdn.net/stormych/article/details/62037579</a><br><a href="https://blog.csdn.net/mengxingyuanlove/article/details/50707746" target="_blank" rel="noopener">https://blog.csdn.net/mengxingyuanlove/article/details/50707746</a></p>
 </blockquote>
 <h4 id="简单使用方法"><a href="#简单使用方法" class="headerlink" title="简单使用方法"></a>简单使用方法</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 调用命令脚本语言来实现功能</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 1.错误的使用方式 </span></span><br><span class="line">	Runtime.getRuntime().exec(<span class="string">"xxx"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.正确的使用方式:需要指定参数(命令位置;-c表示先执行第一个参数;命令)</span></span><br><span class="line">	Runtime.getRuntime().exec(<span class="keyword">new</span> String[]&#123;<span class="string">"/bin/sh"</span>,<span class="string">"c"</span>,<span class="string">"xxx"</span>&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	String tempCmd = <span class="string">"dexp "</span> + userName + <span class="string">"/"</span> + password + <span class="string">"@"</span> + hostIP + <span class="string">":"</span> + port + </span><br><span class="line">	<span class="string">" FILE="</span> + fileName + <span class="string">" DIRECTORY="</span> + filePath + <span class="string">" FULL=Y"</span>;</span><br><span class="line">	String[] cmds = &#123; <span class="string">"cmd"</span>, <span class="string">"/c"</span>, tempCmd &#125;;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (!System.getProperties().getProperty(<span class="string">"os.name"</span>)</span><br><span class="line">		.toString().toUpperCase().contains(<span class="string">"WIN"</span>)) &#123;</span><br><span class="line">		System.out.println(<span class="string">"not windows"</span>);</span><br><span class="line">		cmds = <span class="keyword">new</span> String[] &#123; <span class="string">"/bin/sh"</span>, <span class="string">"-c"</span>, tempCmd &#125;;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	System.out.println(tempCmd);</span><br><span class="line">	Process process = Runtime.getRuntime().exec(cmds);</span><br><span class="line">	BufferedReader reader = <span class="keyword">new</span> BufferedReader(newInputStreamReader(process.getInputStream()));</span><br><span class="line">	String line;</span><br><span class="line">	<span class="keyword">while</span> ((line = reader.readLine()) != <span class="keyword">null</span>) &#123;</span><br><span class="line">		System.out.println(line);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
@@ -660,7 +663,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">51</span>
+                  <span class="site-state-item-count">53</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -682,7 +685,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">103</span>
+                  <span class="site-state-item-count">110</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

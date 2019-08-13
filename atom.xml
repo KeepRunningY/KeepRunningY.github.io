@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhichuwy.cn/"/>
-  <updated>2019-08-10T16:47:49.340Z</updated>
+  <updated>2019-08-13T14:09:13.381Z</updated>
   <id>https://zhichuwy.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://zhichuwy.cn/log4j/"/>
+    <id>https://zhichuwy.cn/log4j/</id>
+    <published>2019-08-13T14:05:53.226Z</published>
+    <updated>2019-08-13T14:09:13.381Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">log4j.rootLogger=DEBUG, stdout</span><br><span class="line">log4j.appender.stdout=org.apache.log4j.ConsoleAppender</span><br><span class="line">log4j.appender.stdout.layout=org.apache.log4j.PatternLayout</span><br><span class="line">log4j.appender.stdout.layout.ConversionPattern=%5p [%t] - %m%n</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>模板引擎</title>
@@ -145,32 +166,6 @@
   </entry>
   
   <entry>
-    <title>数据库事务</title>
-    <link href="https://zhichuwy.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1/"/>
-    <id>https://zhichuwy.cn/数据库事务/</id>
-    <published>2019-08-08T23:40:33.000Z</published>
-    <updated>2019-08-10T16:22:28.483Z</updated>
-    
-    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">数据库事务并发控制和事务隔离级别</font></p></div><a id="more"></a><blockquote><p>参考文章：<br><a href="https://blog.csdn.net/qq_33290787/article/details/51924963" target="_blank" rel="noopener">https://blog.csdn.net/qq_33290787/article/details/51924963</a><br><a href="https://blog.csdn.net/baidu_37107022/article/details/75578140" target="_blank" rel="noopener">https://blog.csdn.net/baidu_37107022/article/details/75578140</a><br><a href="https://blog.csdn.net/wei_cheng18/article/details/82955068" target="_blank" rel="noopener">https://blog.csdn.net/wei_cheng18/article/details/82955068</a><br><a href="https://blog.csdn.net/weixin_30531261/article/details/79479895" target="_blank" rel="noopener">https://blog.csdn.net/weixin_30531261/article/details/79479895</a></p></blockquote><hr><h3 id="数据库语言类型"><a href="#数据库语言类型" class="headerlink" title="数据库语言类型"></a>数据库语言类型</h3><ol><li>数据查询语言（DQL）select</li><li>数据操作语言（DML） insert，update，delete主要用来对数据库的数据进行操作</li><li>数据库定义语言（DDL）create，alter，drop用在定义或改变表的结果，数据类型，表之间的链接和约束（操作是隐性提交的，不能rollback）</li><li>数据库控制语言（DCL）grant，deny，revoke设置或更改数据库用户或角色权限的语句</li></ol><h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p>概念：满足ACID特性的一组DML操作，可以通过commit提交一个事务，也可以使用rollback进行回滚操作。</p><ol><li>原子性（Atomicity）事务被视为不可分割的最小单元，所有操作要么全部提交成功，要么全部失败回滚。</li><li>一致性（Consistency）事务在执行前后都保持一致性状态，在一致性状态下，所有事务对一个数据的读取结果都是相同的；</li><li>隔离性（Isolation）事务所做的修改在最终提交以前，对其他事务是不可见的；</li><li>持久性（Durability）事务一旦提交则其所做的修改是永久的，即使系统发生崩溃，事务执行的结果也不会丢失。</li></ol><blockquote><p>只有满足一致性，事务的执行结果才是正确的；<br>无并发的情况下，事务串行执行，隔离性一定能满足。此时只要满足原子性，就能满足一致性；<br>在并发情况下，多个事务并行执行，事务不仅要满足原子性，还要满足隔离性，才能满足一致性；<br>事务满足持久性是为了能应对数据库崩溃的情况。事务满足持久性是为了能应对数据库崩溃的情况。</p></blockquote><p>mysql默认采用自动提交模式，也就是说如果不显示的使用start transaction语句来开启一个事务，那么每个查询都会被当做一个事务自动提交。</p><h3 id="并发一致性问题"><a href="#并发一致性问题" class="headerlink" title="并发一致性问题"></a>并发一致性问题</h3><ol><li>丢失修改：事务AB，AB均写入，A写的数据被B覆盖了。</li><li>读脏数据：事务A修改了一个数据，事务B读了数据，事务A撤销了修改，那么B读取的数据是脏数据；一个事务提交之前，人和其他事务不可读取器修改过的值，则可以避免此问题，</li><li>不可重复读：一个事务内，多次读同一数据，结果不一样。（重点在于修改）；如果只有在修改事务完全提交后才可以读取数据，则可以宾冕不可重复读。</li><li>幻读：事务A读取某一范围的数据，事务B插入了新的数据，事务A再次读取这个范围的数据，此时读取的结果和第一次结果不同。（重点在于增加或删除）；在操作事务完成处理数据之前，任何其他事务都不可以添加新数据，则可以避免。</li></ol><h3 id="封锁"><a href="#封锁" class="headerlink" title="封锁"></a>封锁</h3><h4 id="封锁粒度"><a href="#封锁粒度" class="headerlink" title="封锁粒度"></a>封锁粒度</h4><ul><li>行级锁和表级锁</li><li>应该尽量只锁定需要修改的部分数据，而不是所有资源，锁定的数据量越少，发生锁争用的可能就越小，并发程度越高；</li><li>加锁需要消耗资源，锁的各种操作会增加系统开销，因此封锁的粒度越小，系统开销越大，需要在开销和并发程度之间做一个权衡。</li></ul><h4 id="封锁类型"><a href="#封锁类型" class="headerlink" title="封锁类型"></a>封锁类型</h4><ul><li>共享锁：也叫S锁，是一种读锁，当一个事务获得了一条数据的共享锁，其他事务也可以获得该共享锁，但不能获得排他锁，表示其他事务可读，但不可写。</li><li>排他锁：也叫X锁，是一种写锁，当一个事务对临界区加上排他锁，其他事务不能获得该临界区的任何锁（包括共享过和排他锁）表示只能一个人去处理数据，其他人不能读也不能写。</li><li>意向锁：使用意向锁可以更容易地支持多粒度封锁；存在行级锁和表级锁的情况下，事务T想对表A加排他锁，需要先检测是否有其他事务对表A或者表A的任意一行加了锁，那么需要对表A的每一行都检测一次，非常耗时；意向锁在原来的X/S锁上引入了IX/IS锁，都是表锁，用来表示一个事务想要在表中的某个数据行上加X锁或S锁，有以下两个规定：<br>1.一个事务在获得某个数据行对象的S锁之前，必须先获得表的IS锁或者更强的锁；<br>2.一个事务在获得某个数据行对象的X锁之前，必须先获得表的IX锁</li></ul><blockquote><p>引入意向锁，事务T想要对表A加X锁，只需要先检测是否有其他事务对表A加了X/IX/S/IS锁，如果加了就表示有其他的事务正在使用这个表或者表中某一行的锁，因此T加X锁失败。<br>1.任意IS/IX锁之间是兼容的，因为他们只是表示想要对表加锁，而不是真正加锁；<br>2.S锁子与S锁和IS锁兼容，也就是说事务T想要对数据加S锁，其他事务可以获得对表或者表中的行的S锁。</p></blockquote><ul><li><p>乐观锁：乐观锁假设认为数据一般情况下不会造成冲突，所以只会对数据进行提交更新的时候，才会正式对数据的冲突与否进行检测，如果冲突了，则返回用户错误的信息，让用户决定如何去做。实现乐观锁的两种方式：<br>1.使用版本号，为数据增加一个版本标识，读数据时，将version一同读出，数据每更新一次对version加一，当提交更新时，判断数据表对应记录的版本信息与第一次读取出来的version值比对，如果相等，则予以更新，否则，认为是过期数据；<br>2.使用时间戳：增加一个字段，使用时间戳，更新提交时检查当前数据库中数据的时间戳和自己更新前取到的时间戳对比，如果一致则OK，否则就是版本冲突。使用时间戳：增加一个字段，使用时间戳，更新提交时检查当前数据库中数据的时间戳和自己更新前取到的时间戳对比，如果一致则OK，否则就是版本冲突。</p></li><li><p>悲观锁：指的是是对数据被外界（本系统的其他事务，来自外部系统的事务处理）修改持保守的态度。在整个数据处理中，将数据处于锁定的状态；悲观锁的实现，要依靠数据库提供的锁机制。<br>select status from t_items where id=1 for update，另一个事务会阻塞，如果没有for update则不会阻塞</p></li><li>MySQL InnoDB默认Row-Level Lock，只有明确的指定主键或者索引，才会执行Row lock，负责将会执行Table Lock</li><li>共享锁和排他锁都属于悲观锁</li></ul><h4 id="封锁协议"><a href="#封锁协议" class="headerlink" title="封锁协议"></a>封锁协议</h4><p>1.三级封锁协议<br>1)一级封锁协议：事务T要修改数据A时，必须加X锁，知道事务T结束才释放锁；<br>可以解决丢失修改，因为不能同时有两个事务对同一个数据进行修改，那么事务的修改不会被覆盖；<br>2)二级封锁协议：在一级的基础上，要求读取数据A时必须加S锁，读完马上释放S锁；<br>可以解决脏读数据，因为如果一个事务在对数据A进行修改，根据一级等所协议，会加X锁，那么就不能再加S锁了，也就是不会读入数据；<br>3)三级封锁协议：在二级的基础上，要求读取数据A时必须加S锁，直到事务结束才能释放S锁；<br>可以解决不可重复读的问题，因为读A时，其他事务不能对A加X锁，从而避免了在读的期间数据发生改变。</p><p>2.两段锁协议：是指所有事务必须分为两个阶段对数据项加锁和解锁；<br>1)对任何数据进行读写之前，要申请并获得对该数据的封锁；<br>2)每个事务中，所有的封锁请求先于所有的解锁请求。</p><ul><li>可串行化调度是指，通过并发控制，使得并发执行的事务结果与某个串行执行的事务结果相同。事务遵循两段锁协议是保证可串行化调度的充分条件，也就是说：所有事务均遵守两段锁协议，则这些事务的所有交叉调度都是可串行化的；一个可串行化的并发调度的所有事务并不一定都符合两段锁协议。</li><li>遵循两段锁协议可能发生死锁。</li><li>MySQL的InnoDB存储引擎采用两段锁协议，会根据隔离级别在需要的时候自动加锁，并且所有的锁都是在同一时刻被释放，这被称为隐式锁定。</li><li>select … lock in share mode; select … for update为显示锁定。</li><li>一次封锁法：要求事务必须一次性将所有要使用的数据全部加锁，否则就不能继续执行，因此一次封锁法遵守两端封锁协议，但两段封锁协议并不要求事务必须一次性将所有要使用的数据全部加锁。这是遵守两端锁协议仍可能发生死锁的原因所在</li></ul><h3 id="事务的隔离级别"><a href="#事务的隔离级别" class="headerlink" title="事务的隔离级别"></a>事务的隔离级别</h3><ol><li>读未提交：没有解决任何问题，在读取时不会加锁，在更新数据时，对其加行级共享锁（其他事务不能更改，但可以读取，导致脏读），事务结束时释放。</li><li>读已提交：读取的数据是已经提交成功的数据，解决了脏读的问题；给写数据加行级排他锁（写的过程是无法读取的，直到事务处理完毕才释放排他锁）读的数据加行级共享锁，读的时候也是无法写的，但是一旦读完该行就释放共享锁；（事务A负责读，B负责写，A读完数据后释放共享锁，B更新数据，事务还未结束，A在读，两次数据不一样。）</li><li>可重复读：可以重复的读取数据，解决了不可重复读的问题。写的数据加行级排他锁，事务结束释放，读的数据加行级共享锁，事务结束后释放。（事务A负责读，B负责写，A读完数据后等事务结束才释放共享锁，B更新数据，直到事务结束，A再读，两次读到的数据均为A第一次读到的数据，解决了不可重复读。）（事务A负责读，只为读取的数据加行级共享锁，B在A读的过程中向表单中插入数据，A由于处理判断到新的数据，产生幻读。）</li><li>可串行化：可以解决问题。事务一个接着一个执行，代价花费最高，性能最低。（事务读数据则加表级共享锁，事务写数据则加表级排他锁。）</li></ol><h3 id="多版本并发控制（MVCC）"><a href="#多版本并发控制（MVCC）" class="headerlink" title="多版本并发控制（MVCC）"></a>多版本并发控制（MVCC）</h3><p>是MySQL的InnoDB存储引擎实现隔离级别的一种具体方式。用于实现提交度和可重复读这两种隔离解别。（未提交读隔离解别总是读最新的数据行，无需使用MVCC，可串行化隔离级别需要对所有读取的行都加锁，单纯使用MVCC无法实现）。</p><p>版本号：</p><ul><li>系统版本号：一个递增的数字，每开始一个事务，系统版本号就会自动递增；</li><li>事务版本号：事务开始时的系统版本号。<br>隐藏的列：MVCC在每行记录后面都保存着两个隐藏的列，用来存储两个版本号</li></ul><ul><li>创建版本号：指示创建一个数据行的快照时的系统版本号；</li><li>删除版本号：如果该快照的删除版本号大于当前事务版本号表示该快照有效，否则表示该快照已经被删除。</li></ul><p>MVCC使用到的快照存储在Undo日志中，该日志通过回滚指针班一个数据行的所有快照连接起来；</p><h4 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h4><p>当开始一个新的事务时，该事务的版本号肯定会大于当前所有数据行快照的创建版本号；<br>1.select：多个事务必须读取到同一个数据行的快照，并且这个快照是距离现在最近的一个有效快照。但是也有例外，如果一个事务正在修改该数据行，那么它可以读取该事务本身所做的修改，而不用和其他事务的读取结果一致。<br>一个没有对数据行做修改的事务T，它所读取的数据行快照的创建版本号必须小于T的版本号，因为如果大于等于则表示该数据行快照时其他事务的最新修改，因此不能去读取它；除此之外，T索要读取的数据行快照的删除版本号必须大于等于T的版本号，因为如果小于等于则表示该数据行快照是已经被删除的，不应该去读取它。<br>2.insert：将当前系统版本号作为数据行快照的创建版本号；<br>3.delete：将当前系统版本号作为数据行快照的删除版本号；<br>4.update：将当前系统版本号作为更新前的数据行快照的删除版本号，并将当前系统版本号作为更新后的数据行快照的创建版本号。可以理解为先执行delete 后执行insert。</p><h4 id="快照读与当前读"><a href="#快照读与当前读" class="headerlink" title="快照读与当前读"></a>快照读与当前读</h4><p>1.快照读：使用MVCC读取的是快照中的数据，可以减少加锁带来的开销；select * from table…；<br>1)快照读：一致非锁定读，select的时候会生成一个快照；<br>2)生成快照的时机：事务中第一次调用select语句的时候才会生成快照，在此之前事务中执行的uodate, insert, delete操作都不会生成快照；<br>3)READ COMMITED隔离解别下，每次读取都会重新生成一个快照，每次快照都是最新的，因此事务中每次select也可以看到其他已经提交事务所做的更改；REPEATED READ隔离级别下，快照会在事务中第一次select语句执行时生成，只有本事务中对数据进行更改才会更新快照，因此，只有第一次select之前其他已提交事务所做的更改可以看到，但是如果已经执行了seletc，那么其他事务commit数据，select是看不到的。</p><p>2.当前读：读取的是最新的数据，需要加锁；<br>select <em> from table where ? lock in share mode;<br>select </em> from table where ? for update;<br>insert;<br>update;<br>delete;</p><h3 id="InnoDB如何解决幻读问题？"><a href="#InnoDB如何解决幻读问题？" class="headerlink" title="InnoDB如何解决幻读问题？"></a>InnoDB如何解决幻读问题？</h3><p>MVCC、next-key lock、间隙锁</p><ul><li>Record Locks（记录锁）锁定一个记录上的索引，而不是记录本身，如果没有设置索引，InnoDB会自动在主键上创建隐藏的聚簇索引，因此Record Locks依然可以使用；</li><li>Gap Locks（间隙锁）锁定索引之间的间隙，但是不包含索引本身。例如当一个事务执行以下语句，其他事务就不能再t.c中插入15，select c from t where c between 10 and 20 for update;</li><li>Next-key Locks是记录锁和间隙锁的结合，不仅锁定一个记录上的索引，也锁定索引之间的间隙。例如一个索引包含以下值：10,11,13,20，那么就需要锁定以下区间(负无穷, 10], (10, 11], (11, 13], (13, 20], (20, 正无穷)</li></ul><p>InnoDB默认的隔离级别是RR（可重复读），不能解决幻读；MVCC+next-key lock可以解决幻读的问题。（快照读即一般的select靠MVCC解决幻读）（当前读select … for update, select … lock in share mode; insert …; update …; delete …依赖于间隙锁解决）<br>1)间隙锁的主要作用是为了防止出现幻读，会把锁定的方位扩大。控制间隙锁的参数是innodb_locks_unsafe_for_binlog 这个参数的默认值是off，也就是启用间隙锁。<br>2)行锁（record lock）和间隙锁组合起来叫做next-key lock，锁定一个范围，并且锁定记录本身，主要目的是解决幻读的问题。行锁（record lock）和间隙锁组合起来叫做next-key lock，锁定一个范围，并且锁定记录本身，主要目的是解决幻读的问题。</p><blockquote><p>1.间隙锁防止间隙内有数新数据被插入；防止已存在的数据，更新成间隙内的数据；<br>2.InnoDB自动使用间隙锁的条件：必须在RR级别下，检索条件必须有索引。</p></blockquote><p>举一个例子:<br>id(主键)    1 3 6 8 10 13<br>number(二级索引)2 4 5 5  5 11</p><p>mysql&gt; show create table test\G;<br><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong> 1. row <strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong><br>       Table: test<br>Create Table: CREATE TABLE <code>test</code> (<br>  <code>id</code> int(11) NOT NULL,<br>  <code>number</code> int(11) DEFAULT NULL,<br>  PRIMARY KEY (<code>id</code>),<br>  KEY <code>number</code> (<code>number</code>)<br>) ENGINE=InnoDB DEFAULT CHARSET=utf8</p><p>案例：</p><p>session 1:<br>start transaction ;<br>select * from test where number=4 for update;</p><p>session 2:<br>start transaction;<br>insert into test value(0,2);#（执行成功）<br>insert into test value(2,2);#（阻塞）<br>insert into test value(2,4);#（阻塞）<br>insert into test value(2,2);#（阻塞）<br>insert into test value(4,4);#（阻塞）<br>insert into test value(4,5);#（阻塞）<br>insert into test value(7,5);#（执行成功）<br>insert into test value(9,5);#（执行成功）<br>insert into test value(11,5);#（执行成功）</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;数据库事务并发控制和事务隔离级别&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="之初-数据库" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="事务" scheme="https://zhichuwy.cn/tags/%E4%BA%8B%E5%8A%A1/"/>
-    
-      <category term="并发控制" scheme="https://zhichuwy.cn/tags/%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6/"/>
-    
-      <category term="隔离级别" scheme="https://zhichuwy.cn/tags/%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Volatile</title>
     <link href="https://zhichuwy.cn/Volatile/"/>
     <id>https://zhichuwy.cn/Volatile/</id>
@@ -193,6 +188,32 @@
     
     
       <category term="Volatile" scheme="https://zhichuwy.cn/tags/Volatile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库事务</title>
+    <link href="https://zhichuwy.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1/"/>
+    <id>https://zhichuwy.cn/数据库事务/</id>
+    <published>2019-08-08T23:40:33.000Z</published>
+    <updated>2019-08-10T16:22:28.483Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">数据库事务并发控制和事务隔离级别</font></p></div><a id="more"></a><blockquote><p>参考文章：<br><a href="https://blog.csdn.net/qq_33290787/article/details/51924963" target="_blank" rel="noopener">https://blog.csdn.net/qq_33290787/article/details/51924963</a><br><a href="https://blog.csdn.net/baidu_37107022/article/details/75578140" target="_blank" rel="noopener">https://blog.csdn.net/baidu_37107022/article/details/75578140</a><br><a href="https://blog.csdn.net/wei_cheng18/article/details/82955068" target="_blank" rel="noopener">https://blog.csdn.net/wei_cheng18/article/details/82955068</a><br><a href="https://blog.csdn.net/weixin_30531261/article/details/79479895" target="_blank" rel="noopener">https://blog.csdn.net/weixin_30531261/article/details/79479895</a></p></blockquote><hr><h3 id="数据库语言类型"><a href="#数据库语言类型" class="headerlink" title="数据库语言类型"></a>数据库语言类型</h3><ol><li>数据查询语言（DQL）select</li><li>数据操作语言（DML） insert，update，delete主要用来对数据库的数据进行操作</li><li>数据库定义语言（DDL）create，alter，drop用在定义或改变表的结果，数据类型，表之间的链接和约束（操作是隐性提交的，不能rollback）</li><li>数据库控制语言（DCL）grant，deny，revoke设置或更改数据库用户或角色权限的语句</li></ol><h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p>概念：满足ACID特性的一组DML操作，可以通过commit提交一个事务，也可以使用rollback进行回滚操作。</p><ol><li>原子性（Atomicity）事务被视为不可分割的最小单元，所有操作要么全部提交成功，要么全部失败回滚。</li><li>一致性（Consistency）事务在执行前后都保持一致性状态，在一致性状态下，所有事务对一个数据的读取结果都是相同的；</li><li>隔离性（Isolation）事务所做的修改在最终提交以前，对其他事务是不可见的；</li><li>持久性（Durability）事务一旦提交则其所做的修改是永久的，即使系统发生崩溃，事务执行的结果也不会丢失。</li></ol><blockquote><p>只有满足一致性，事务的执行结果才是正确的；<br>无并发的情况下，事务串行执行，隔离性一定能满足。此时只要满足原子性，就能满足一致性；<br>在并发情况下，多个事务并行执行，事务不仅要满足原子性，还要满足隔离性，才能满足一致性；<br>事务满足持久性是为了能应对数据库崩溃的情况。事务满足持久性是为了能应对数据库崩溃的情况。</p></blockquote><p>mysql默认采用自动提交模式，也就是说如果不显示的使用start transaction语句来开启一个事务，那么每个查询都会被当做一个事务自动提交。</p><h3 id="并发一致性问题"><a href="#并发一致性问题" class="headerlink" title="并发一致性问题"></a>并发一致性问题</h3><ol><li>丢失修改：事务AB，AB均写入，A写的数据被B覆盖了。</li><li>读脏数据：事务A修改了一个数据，事务B读了数据，事务A撤销了修改，那么B读取的数据是脏数据；一个事务提交之前，人和其他事务不可读取器修改过的值，则可以避免此问题，</li><li>不可重复读：一个事务内，多次读同一数据，结果不一样。（重点在于修改）；如果只有在修改事务完全提交后才可以读取数据，则可以宾冕不可重复读。</li><li>幻读：事务A读取某一范围的数据，事务B插入了新的数据，事务A再次读取这个范围的数据，此时读取的结果和第一次结果不同。（重点在于增加或删除）；在操作事务完成处理数据之前，任何其他事务都不可以添加新数据，则可以避免。</li></ol><h3 id="封锁"><a href="#封锁" class="headerlink" title="封锁"></a>封锁</h3><h4 id="封锁粒度"><a href="#封锁粒度" class="headerlink" title="封锁粒度"></a>封锁粒度</h4><ul><li>行级锁和表级锁</li><li>应该尽量只锁定需要修改的部分数据，而不是所有资源，锁定的数据量越少，发生锁争用的可能就越小，并发程度越高；</li><li>加锁需要消耗资源，锁的各种操作会增加系统开销，因此封锁的粒度越小，系统开销越大，需要在开销和并发程度之间做一个权衡。</li></ul><h4 id="封锁类型"><a href="#封锁类型" class="headerlink" title="封锁类型"></a>封锁类型</h4><ul><li>共享锁：也叫S锁，是一种读锁，当一个事务获得了一条数据的共享锁，其他事务也可以获得该共享锁，但不能获得排他锁，表示其他事务可读，但不可写。</li><li>排他锁：也叫X锁，是一种写锁，当一个事务对临界区加上排他锁，其他事务不能获得该临界区的任何锁（包括共享过和排他锁）表示只能一个人去处理数据，其他人不能读也不能写。</li><li>意向锁：使用意向锁可以更容易地支持多粒度封锁；存在行级锁和表级锁的情况下，事务T想对表A加排他锁，需要先检测是否有其他事务对表A或者表A的任意一行加了锁，那么需要对表A的每一行都检测一次，非常耗时；意向锁在原来的X/S锁上引入了IX/IS锁，都是表锁，用来表示一个事务想要在表中的某个数据行上加X锁或S锁，有以下两个规定：<br>1.一个事务在获得某个数据行对象的S锁之前，必须先获得表的IS锁或者更强的锁；<br>2.一个事务在获得某个数据行对象的X锁之前，必须先获得表的IX锁</li></ul><blockquote><p>引入意向锁，事务T想要对表A加X锁，只需要先检测是否有其他事务对表A加了X/IX/S/IS锁，如果加了就表示有其他的事务正在使用这个表或者表中某一行的锁，因此T加X锁失败。<br>1.任意IS/IX锁之间是兼容的，因为他们只是表示想要对表加锁，而不是真正加锁；<br>2.S锁子与S锁和IS锁兼容，也就是说事务T想要对数据加S锁，其他事务可以获得对表或者表中的行的S锁。</p></blockquote><ul><li><p>乐观锁：乐观锁假设认为数据一般情况下不会造成冲突，所以只会对数据进行提交更新的时候，才会正式对数据的冲突与否进行检测，如果冲突了，则返回用户错误的信息，让用户决定如何去做。实现乐观锁的两种方式：<br>1.使用版本号，为数据增加一个版本标识，读数据时，将version一同读出，数据每更新一次对version加一，当提交更新时，判断数据表对应记录的版本信息与第一次读取出来的version值比对，如果相等，则予以更新，否则，认为是过期数据；<br>2.使用时间戳：增加一个字段，使用时间戳，更新提交时检查当前数据库中数据的时间戳和自己更新前取到的时间戳对比，如果一致则OK，否则就是版本冲突。使用时间戳：增加一个字段，使用时间戳，更新提交时检查当前数据库中数据的时间戳和自己更新前取到的时间戳对比，如果一致则OK，否则就是版本冲突。</p></li><li><p>悲观锁：指的是是对数据被外界（本系统的其他事务，来自外部系统的事务处理）修改持保守的态度。在整个数据处理中，将数据处于锁定的状态；悲观锁的实现，要依靠数据库提供的锁机制。<br>select status from t_items where id=1 for update，另一个事务会阻塞，如果没有for update则不会阻塞</p></li><li>MySQL InnoDB默认Row-Level Lock，只有明确的指定主键或者索引，才会执行Row lock，负责将会执行Table Lock</li><li>共享锁和排他锁都属于悲观锁</li></ul><h4 id="封锁协议"><a href="#封锁协议" class="headerlink" title="封锁协议"></a>封锁协议</h4><p>1.三级封锁协议<br>1)一级封锁协议：事务T要修改数据A时，必须加X锁，知道事务T结束才释放锁；<br>可以解决丢失修改，因为不能同时有两个事务对同一个数据进行修改，那么事务的修改不会被覆盖；<br>2)二级封锁协议：在一级的基础上，要求读取数据A时必须加S锁，读完马上释放S锁；<br>可以解决脏读数据，因为如果一个事务在对数据A进行修改，根据一级等所协议，会加X锁，那么就不能再加S锁了，也就是不会读入数据；<br>3)三级封锁协议：在二级的基础上，要求读取数据A时必须加S锁，直到事务结束才能释放S锁；<br>可以解决不可重复读的问题，因为读A时，其他事务不能对A加X锁，从而避免了在读的期间数据发生改变。</p><p>2.两段锁协议：是指所有事务必须分为两个阶段对数据项加锁和解锁；<br>1)对任何数据进行读写之前，要申请并获得对该数据的封锁；<br>2)每个事务中，所有的封锁请求先于所有的解锁请求。</p><ul><li>可串行化调度是指，通过并发控制，使得并发执行的事务结果与某个串行执行的事务结果相同。事务遵循两段锁协议是保证可串行化调度的充分条件，也就是说：所有事务均遵守两段锁协议，则这些事务的所有交叉调度都是可串行化的；一个可串行化的并发调度的所有事务并不一定都符合两段锁协议。</li><li>遵循两段锁协议可能发生死锁。</li><li>MySQL的InnoDB存储引擎采用两段锁协议，会根据隔离级别在需要的时候自动加锁，并且所有的锁都是在同一时刻被释放，这被称为隐式锁定。</li><li>select … lock in share mode; select … for update为显示锁定。</li><li>一次封锁法：要求事务必须一次性将所有要使用的数据全部加锁，否则就不能继续执行，因此一次封锁法遵守两端封锁协议，但两段封锁协议并不要求事务必须一次性将所有要使用的数据全部加锁。这是遵守两端锁协议仍可能发生死锁的原因所在</li></ul><h3 id="事务的隔离级别"><a href="#事务的隔离级别" class="headerlink" title="事务的隔离级别"></a>事务的隔离级别</h3><ol><li>读未提交：没有解决任何问题，在读取时不会加锁，在更新数据时，对其加行级共享锁（其他事务不能更改，但可以读取，导致脏读），事务结束时释放。</li><li>读已提交：读取的数据是已经提交成功的数据，解决了脏读的问题；给写数据加行级排他锁（写的过程是无法读取的，直到事务处理完毕才释放排他锁）读的数据加行级共享锁，读的时候也是无法写的，但是一旦读完该行就释放共享锁；（事务A负责读，B负责写，A读完数据后释放共享锁，B更新数据，事务还未结束，A在读，两次数据不一样。）</li><li>可重复读：可以重复的读取数据，解决了不可重复读的问题。写的数据加行级排他锁，事务结束释放，读的数据加行级共享锁，事务结束后释放。（事务A负责读，B负责写，A读完数据后等事务结束才释放共享锁，B更新数据，直到事务结束，A再读，两次读到的数据均为A第一次读到的数据，解决了不可重复读。）（事务A负责读，只为读取的数据加行级共享锁，B在A读的过程中向表单中插入数据，A由于处理判断到新的数据，产生幻读。）</li><li>可串行化：可以解决问题。事务一个接着一个执行，代价花费最高，性能最低。（事务读数据则加表级共享锁，事务写数据则加表级排他锁。）</li></ol><h3 id="多版本并发控制（MVCC）"><a href="#多版本并发控制（MVCC）" class="headerlink" title="多版本并发控制（MVCC）"></a>多版本并发控制（MVCC）</h3><p>是MySQL的InnoDB存储引擎实现隔离级别的一种具体方式。用于实现提交度和可重复读这两种隔离解别。（未提交读隔离解别总是读最新的数据行，无需使用MVCC，可串行化隔离级别需要对所有读取的行都加锁，单纯使用MVCC无法实现）。</p><p>版本号：</p><ul><li>系统版本号：一个递增的数字，每开始一个事务，系统版本号就会自动递增；</li><li>事务版本号：事务开始时的系统版本号。<br>隐藏的列：MVCC在每行记录后面都保存着两个隐藏的列，用来存储两个版本号</li></ul><ul><li>创建版本号：指示创建一个数据行的快照时的系统版本号；</li><li>删除版本号：如果该快照的删除版本号大于当前事务版本号表示该快照有效，否则表示该快照已经被删除。</li></ul><p>MVCC使用到的快照存储在Undo日志中，该日志通过回滚指针班一个数据行的所有快照连接起来；</p><h4 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h4><p>当开始一个新的事务时，该事务的版本号肯定会大于当前所有数据行快照的创建版本号；<br>1.select：多个事务必须读取到同一个数据行的快照，并且这个快照是距离现在最近的一个有效快照。但是也有例外，如果一个事务正在修改该数据行，那么它可以读取该事务本身所做的修改，而不用和其他事务的读取结果一致。<br>一个没有对数据行做修改的事务T，它所读取的数据行快照的创建版本号必须小于T的版本号，因为如果大于等于则表示该数据行快照时其他事务的最新修改，因此不能去读取它；除此之外，T索要读取的数据行快照的删除版本号必须大于等于T的版本号，因为如果小于等于则表示该数据行快照是已经被删除的，不应该去读取它。<br>2.insert：将当前系统版本号作为数据行快照的创建版本号；<br>3.delete：将当前系统版本号作为数据行快照的删除版本号；<br>4.update：将当前系统版本号作为更新前的数据行快照的删除版本号，并将当前系统版本号作为更新后的数据行快照的创建版本号。可以理解为先执行delete 后执行insert。</p><h4 id="快照读与当前读"><a href="#快照读与当前读" class="headerlink" title="快照读与当前读"></a>快照读与当前读</h4><p>1.快照读：使用MVCC读取的是快照中的数据，可以减少加锁带来的开销；select * from table…；<br>1)快照读：一致非锁定读，select的时候会生成一个快照；<br>2)生成快照的时机：事务中第一次调用select语句的时候才会生成快照，在此之前事务中执行的uodate, insert, delete操作都不会生成快照；<br>3)READ COMMITED隔离解别下，每次读取都会重新生成一个快照，每次快照都是最新的，因此事务中每次select也可以看到其他已经提交事务所做的更改；REPEATED READ隔离级别下，快照会在事务中第一次select语句执行时生成，只有本事务中对数据进行更改才会更新快照，因此，只有第一次select之前其他已提交事务所做的更改可以看到，但是如果已经执行了seletc，那么其他事务commit数据，select是看不到的。</p><p>2.当前读：读取的是最新的数据，需要加锁；<br>select <em> from table where ? lock in share mode;<br>select </em> from table where ? for update;<br>insert;<br>update;<br>delete;</p><h3 id="InnoDB如何解决幻读问题？"><a href="#InnoDB如何解决幻读问题？" class="headerlink" title="InnoDB如何解决幻读问题？"></a>InnoDB如何解决幻读问题？</h3><p>MVCC、next-key lock、间隙锁</p><ul><li>Record Locks（记录锁）锁定一个记录上的索引，而不是记录本身，如果没有设置索引，InnoDB会自动在主键上创建隐藏的聚簇索引，因此Record Locks依然可以使用；</li><li>Gap Locks（间隙锁）锁定索引之间的间隙，但是不包含索引本身。例如当一个事务执行以下语句，其他事务就不能再t.c中插入15，select c from t where c between 10 and 20 for update;</li><li>Next-key Locks是记录锁和间隙锁的结合，不仅锁定一个记录上的索引，也锁定索引之间的间隙。例如一个索引包含以下值：10,11,13,20，那么就需要锁定以下区间(负无穷, 10], (10, 11], (11, 13], (13, 20], (20, 正无穷)</li></ul><p>InnoDB默认的隔离级别是RR（可重复读），不能解决幻读；MVCC+next-key lock可以解决幻读的问题。（快照读即一般的select靠MVCC解决幻读）（当前读select … for update, select … lock in share mode; insert …; update …; delete …依赖于间隙锁解决）<br>1)间隙锁的主要作用是为了防止出现幻读，会把锁定的方位扩大。控制间隙锁的参数是innodb_locks_unsafe_for_binlog 这个参数的默认值是off，也就是启用间隙锁。<br>2)行锁（record lock）和间隙锁组合起来叫做next-key lock，锁定一个范围，并且锁定记录本身，主要目的是解决幻读的问题。行锁（record lock）和间隙锁组合起来叫做next-key lock，锁定一个范围，并且锁定记录本身，主要目的是解决幻读的问题。</p><blockquote><p>1.间隙锁防止间隙内有数新数据被插入；防止已存在的数据，更新成间隙内的数据；<br>2.InnoDB自动使用间隙锁的条件：必须在RR级别下，检索条件必须有索引。</p></blockquote><p>举一个例子:<br>id(主键)    1 3 6 8 10 13<br>number(二级索引)2 4 5 5  5 11</p><p>mysql&gt; show create table test\G;<br><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong> 1. row <strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong><br>       Table: test<br>Create Table: CREATE TABLE <code>test</code> (<br>  <code>id</code> int(11) NOT NULL,<br>  <code>number</code> int(11) DEFAULT NULL,<br>  PRIMARY KEY (<code>id</code>),<br>  KEY <code>number</code> (<code>number</code>)<br>) ENGINE=InnoDB DEFAULT CHARSET=utf8</p><p>案例：</p><p>session 1:<br>start transaction ;<br>select * from test where number=4 for update;</p><p>session 2:<br>start transaction;<br>insert into test value(0,2);#（执行成功）<br>insert into test value(2,2);#（阻塞）<br>insert into test value(2,4);#（阻塞）<br>insert into test value(2,2);#（阻塞）<br>insert into test value(4,4);#（阻塞）<br>insert into test value(4,5);#（阻塞）<br>insert into test value(7,5);#（执行成功）<br>insert into test value(9,5);#（执行成功）<br>insert into test value(11,5);#（执行成功）</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;数据库事务并发控制和事务隔离级别&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-数据库" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="事务" scheme="https://zhichuwy.cn/tags/%E4%BA%8B%E5%8A%A1/"/>
+    
+      <category term="并发控制" scheme="https://zhichuwy.cn/tags/%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6/"/>
+    
+      <category term="隔离级别" scheme="https://zhichuwy.cn/tags/%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/"/>
     
   </entry>
   
@@ -508,32 +529,6 @@
       <category term="Wiki" scheme="https://zhichuwy.cn/tags/Wiki/"/>
     
       <category term="etc." scheme="https://zhichuwy.cn/tags/etc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Docsifyjs</title>
-    <link href="https://zhichuwy.cn/docsifyjs%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90/"/>
-    <id>https://zhichuwy.cn/docsifyjs文档生成/</id>
-    <published>2019-08-03T21:24:20.000Z</published>
-    <updated>2019-08-10T16:51:12.161Z</updated>
-    
-    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">文档生成工具-Docsifyjs</font></p></div><a id="more"></a><h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><p>官方文档：A magical documentation site generator. <a href="https://docsify.js.org" target="_blank" rel="noopener">https://docsify.js.org</a><br>docsify项目clone：<a href="https://github.com/docsifyjs/docsify" target="_blank" rel="noopener">https://github.com/docsifyjs/docsify</a><br>托管至CODING： <a href="https://coding.net" target="_blank" rel="noopener">https://coding.net</a>  </p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;文档生成工具-Docsifyjs&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="之初-工具使用" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="Docsifyjs" scheme="https://zhichuwy.cn/tags/Docsifyjs/"/>
-    
-      <category term="docsify" scheme="https://zhichuwy.cn/tags/docsify/"/>
-    
-      <category term="文档生成工具" scheme="https://zhichuwy.cn/tags/%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   

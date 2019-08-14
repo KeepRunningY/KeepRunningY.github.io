@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="使用 1.mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/805327212.插件配置3.generatorConfig.xml &amp;amp;&amp;amp; xxx.properties(数据库连接信息&amp;lt;驱动jar路径？待解决。。。？&amp;gt;)4.run config: (+maven/ mybati">
+<meta name="description" content="使用 1.mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/805327212.插件配置3.generatorConfig.xml &amp;amp;&amp;amp; xxx.properties !!!!!!(数据库连接信息&amp;lt;驱动jar路径？待解决。。。？&amp;gt; =&amp;gt;plugin中添加依赖 mysql">
 <meta name="keywords" content="mybatis,mybatis-generator">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mybatis逆向生成">
 <meta property="og:url" content="https://zhichuwy.cn/MyBatis-Generator/index.html">
 <meta property="og:site_name" content="之初 Blog">
-<meta property="og:description" content="使用 1.mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/805327212.插件配置3.generatorConfig.xml &amp;amp;&amp;amp; xxx.properties(数据库连接信息&amp;lt;驱动jar路径？待解决。。。？&amp;gt;)4.run config: (+maven/ mybati">
+<meta property="og:description" content="使用 1.mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/805327212.插件配置3.generatorConfig.xml &amp;amp;&amp;amp; xxx.properties !!!!!!(数据库连接信息&amp;lt;驱动jar路径？待解决。。。？&amp;gt; =&amp;gt;plugin中添加依赖 mysql">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-13T14:11:48.407Z">
+<meta property="og:updated_time" content="2019-08-14T03:18:57.719Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mybatis逆向生成">
-<meta name="twitter:description" content="使用 1.mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/805327212.插件配置3.generatorConfig.xml &amp;amp;&amp;amp; xxx.properties(数据库连接信息&amp;lt;驱动jar路径？待解决。。。？&amp;gt;)4.run config: (+maven/ mybati">
+<meta name="twitter:description" content="使用 1.mybatis-generator-core：https://blog.csdn.net/qq_33811662/article/details/805327212.插件配置3.generatorConfig.xml &amp;amp;&amp;amp; xxx.properties !!!!!!(数据库连接信息&amp;lt;驱动jar路径？待解决。。。？&amp;gt; =&amp;gt;plugin中添加依赖 mysql">
 
 
 
@@ -363,8 +363,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-17T03:56:07+08:00">
-                2019-07-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-03T03:56:07+08:00">
+                2019-05-02
               </time>
             
 
@@ -439,7 +439,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  749 字
+                  762 字
                 </span>
               
 
@@ -477,8 +477,9 @@
 
       
         <h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><blockquote>
-<p>1.mybatis-generator-core：<a href="https://blog.csdn.net/qq_33811662/article/details/80532721" target="_blank" rel="noopener">https://blog.csdn.net/qq_33811662/article/details/80532721</a><br>2.插件配置<br>3.generatorConfig.xml &amp;&amp; xxx.properties(数据库连接信息&lt;驱动jar路径？待解决。。。？&gt;)<br>4.run config: (+maven/ mybatis-generator:generate -e)<br>5.<code>生成的xxxMapper.xml文件报错： &lt;statement&gt; or DELIMITER expected, got &#39;id&#39;</code><br>SQL dialect（方言） is not configured  //设置中搜索进行设置<br>6.springboot:mybatis-plus…</p>
+<p>1.mybatis-generator-core：<a href="https://blog.csdn.net/qq_33811662/article/details/80532721" target="_blank" rel="noopener">https://blog.csdn.net/qq_33811662/article/details/80532721</a><br>2.插件配置<br>3.generatorConfig.xml &amp;&amp; xxx.properties !!!!!!<br>(数据库连接信息&lt;驱动jar路径？待解决。。。？&gt; =&gt;plugin中添加依赖 mysql-driver-8.0.16.jar)</p>
 </blockquote>
+<p>4.run config: (+maven/ mybatis-generator:generate -e)<br>5.<code>生成的xxxMapper.xml文件报错： &lt;statement&gt; or DELIMITER expected, got &#39;id&#39;</code><br>SQL dialect（方言） is not configured  //设置中搜索进行设置<br>6.springboot:mybatis-plus…</p>
 <hr>
 <figure class="highlight xml"><figcaption><span>mapper</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"</span></span><br><span class="line"><span class="meta">        "http://mybatis.org/dtd/mybatis-3-mapper.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">"com.yang.dao.RedPacketDao"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight xml"><figcaption><span>generatorConfiguration</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE generatorConfiguration</span></span><br><span class="line"><span class="meta">        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"</span></span><br><span class="line"><span class="meta">        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd"&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">generatorConfiguration</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span> <span class="attr">resource</span>=<span class="string">"generator.properties"</span>&gt;</span><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--指定特定数据库的jdbc驱动jar包的位置--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">classPathEntry</span> <span class="attr">location</span>=<span class="string">"$&#123;jdbc.driverLocation&#125;"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--targetRuntime="MyBatis3Simple":生成简单版的CRUD;MyBatis3:豪华版 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context</span> <span class="attr">id</span>=<span class="string">"MyBatisGenerator"</span> <span class="attr">targetRuntime</span>=<span class="string">"MyBatis3"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 生成的实体Bean,将实现Serializable --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span> <span class="attr">type</span>=<span class="string">"org.mybatis.generator.plugins.SerializablePlugin"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">commentGenerator</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 是否去除自动生成的注释 true:是 ; false:否 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"suppressAllComments"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">commentGenerator</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- jdbcConnection:连接数据库 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">jdbcConnection</span></span></span><br><span class="line"><span class="tag">                <span class="attr">driverClass</span>=<span class="string">"$&#123;jdbc.driverClass&#125;"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">connectionURL</span>=<span class="string">"$&#123;jdbc.connectionURL&#125;"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">userId</span>=<span class="string">"$&#123;jdbc.userId&#125;"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">password</span>=<span class="string">"$&#123;jdbc.password&#125;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">jdbcConnection</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 默认false,把JDBC DECIMAL和 NUMERIC 类型解析为 Integer true,</span></span><br><span class="line"><span class="comment">            把JDBC DECIMAL和 NUMERIC类型解析为java.math.BigDecimal --&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">javaTypeResolver</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"forceBigDecimals"</span> <span class="attr">value</span>=<span class="string">"false"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">javaTypeResolver</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 生成model模型所对应的包路径,以及文件存放路径(targetProject);</span></span><br><span class="line"><span class="comment">            targetProject可以指定具体的路径,如./src/main/java,也可以使用“MAVEN”来自动生成,</span></span><br><span class="line"><span class="comment">            这样生成的代码会在target/generatord-source目录下 --&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">javaModelGenerator</span> <span class="attr">targetPackage</span>=<span class="string">"com.generator.model"</span></span></span><br><span class="line"><span class="tag">                            <span class="attr">targetProject</span>=<span class="string">"./src/main/java"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">&lt;!-- 是否允许子包，即targetPackage.schemaName.tableName --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"enableSubPackages"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">&lt;!--从数据库返回的值被清理前后的空格 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"trimStrings"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">&lt;!-- 是否对model添加 构造函数 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"constructorBased"</span> <span class="attr">value</span>=<span class="string">"false"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">&lt;!-- 建立的Model对象是否 不可改变  即生成的Model对象不会有 setter方法，只有构造方法 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"immutable"</span> <span class="attr">value</span>=<span class="string">"false"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">javaModelGenerator</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!--对应的mapper.xml文件 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">sqlMapGenerator</span> <span class="attr">targetPackage</span>=<span class="string">"com.generator.mapper"</span></span></span><br><span class="line"><span class="tag">                         <span class="attr">targetProject</span>=<span class="string">"./src/main/java"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"enableSubPackages"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">sqlMapGenerator</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 对应的Mapper接口类文件--&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码</span></span><br><span class="line"><span class="comment">                type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象</span></span><br><span class="line"><span class="comment">                type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象</span></span><br><span class="line"><span class="comment">                type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口</span></span><br><span class="line"><span class="comment">        --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">javaClientGenerator</span> <span class="attr">type</span>=<span class="string">"XMLMAPPER"</span></span></span><br><span class="line"><span class="tag">                             <span class="attr">targetPackage</span>=<span class="string">"com.generator.dao"</span></span></span><br><span class="line"><span class="tag">                             <span class="attr">targetProject</span>=<span class="string">"./src/main/java"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"enableSubPackages"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">javaClientGenerator</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 数据表与Bean的映射 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">table</span> <span class="attr">tableName</span>=<span class="string">"t_red_packet"</span> <span class="attr">domainObjectName</span>=<span class="string">"RedPacket"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">enableCountByExample</span>=<span class="string">"false"</span> <span class="attr">enableUpdateByExample</span>=<span class="string">"false"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">enableDeleteByExample</span>=<span class="string">"false"</span> <span class="attr">enableSelectByExample</span>=<span class="string">"false"</span></span></span><br><span class="line"><span class="tag">               <span class="attr">selectByExampleQueryId</span>=<span class="string">"false"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">table</span> <span class="attr">tableName</span>=<span class="string">"t_user_red_packet"</span> <span class="attr">domainObjectName</span>=<span class="string">"UserRedPacket"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">context</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">generatorConfiguration</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -566,8 +567,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/MySQL8/" rel="next" title="MySQL 8.0">
-                <i class="fa fa-chevron-left"></i> MySQL 8.0
+              <a href="/Redis-xxx/" rel="next" title="Redis-xxx">
+                <i class="fa fa-chevron-left"></i> Redis-xxx
               </a>
             
           </div>
@@ -576,8 +577,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/OAuth认证/" rel="prev" title="OAuth认证">
-                OAuth认证 <i class="fa fa-chevron-right"></i>
+              <a href="/MyBatis-Plus/" rel="prev" title="MyBatis-Plus">
+                MyBatis-Plus <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -662,7 +663,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-count">59</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -684,7 +685,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">110</span>
+                  <span class="site-state-item-count">120</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -705,15 +706,15 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/zhichuwy" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-                  <span class="links-of-author-item">
                     <a href="https://www.jianshu.com/" target="_blank" title="简  书">
                       
                         <i class="fa fa-fw fa-heartbeat"></i>简  书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zhichuwy" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -726,6 +727,12 @@
                     <a href="mailto:wyang97@163.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://segmentfault.com" target="_blank" title="思  否">
+                      
+                        <i class="fa fa-fw fa-skype"></i>思  否</a>
                   </span>
                 
                   <span class="links-of-author-item">

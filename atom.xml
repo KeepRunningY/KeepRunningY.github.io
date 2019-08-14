@@ -149,6 +149,32 @@
   </entry>
   
   <entry>
+    <title>Alg-杨辉三角</title>
+    <link href="https://zhichuwy.cn/Alg-%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/"/>
+    <id>https://zhichuwy.cn/Alg-杨辉三角/</id>
+    <published>2019-08-09T00:06:19.000Z</published>
+    <updated>2019-08-10T16:46:53.378Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">小Q的歌单(牛客算法-杨辉三角)</font></p></div><a id="more"></a><h3 id="小Q的歌单-牛客算法-杨辉三角"><a href="#小Q的歌单-牛客算法-杨辉三角" class="headerlink" title="小Q的歌单(牛客算法-杨辉三角)"></a>小Q的歌单(牛客算法-杨辉三角)</h3><p>【题目描述】小 Q 有 X 首长度为 A 的不同的歌和 Y 首长度为 B 的不同的歌，现在小 Q 想用这些歌组成一个<br>总长度正好为 K 的歌单，每首歌最多只能在歌单中出现一次，在不考虑歌单内歌曲的先后顺序的情况下，<br>请问有多少种组成歌单的方法。</p><p>输入描述：<br>每个输入包含一个测试用例。<br>每个测试用例的第一行包含一个整数，表示歌单的总长度 K(1&lt;=K&lt;=1000)。<br>接下来的一行包含四个正整数，分别表示歌的第一种长度 A(A&lt;=10)和数量 X(X&lt;=100)以及歌的第二种长度<br>B(B&lt;=10)和数量 Y(Y&lt;=100)。保证 A 不等于 B。</p><p>输出描述：<br>输出一个整数,表示组成歌单的方法取模。因为答案可能会很大,输出对 1000000007 取模的结果。<br>输入示例：<br>5<br>2 3 3 3</p><p>输出示例：<br>9</p><p>解决方案：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> c[<span class="number">105</span>][<span class="number">105</span>];  </span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> mod = <span class="number">1000000007</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">c[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">c[i][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">100</span>; j++)</span><br><span class="line">c[i][j] = (c[i - <span class="number">1</span>][j - <span class="number">1</span>] + c[i - <span class="number">1</span>][j]) % mod;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> k, a, b, x, y;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> ans = <span class="number">0</span>;</span><br><span class="line">init();</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;k);</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;a, &amp;x, &amp;b, &amp;y);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= x; i++) &#123;</span><br><span class="line"><span class="keyword">if</span> (i * a &lt;= k &amp;&amp; (k - a * i) % b == <span class="number">0</span> &amp;&amp; (k - a * i) / b &lt;= y)</span><br><span class="line">ans=(ans + (c[x][i] * c[y][(k - a * i) / b]) % mod) % mod;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>1.分析数学模型(公式，杨辉三角…)<br>2.使用编程语言实现</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;小Q的歌单(牛客算法-杨辉三角)&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-算法" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://zhichuwy.cn/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="杨辉三角" scheme="https://zhichuwy.cn/tags/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/"/>
+    
+      <category term="牛客" scheme="https://zhichuwy.cn/tags/%E7%89%9B%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java 日志</title>
     <link href="https://zhichuwy.cn/Java%20%E6%97%A5%E5%BF%97/"/>
     <id>https://zhichuwy.cn/Java 日志/</id>
@@ -176,32 +202,6 @@
       <category term="log4j" scheme="https://zhichuwy.cn/tags/log4j/"/>
     
       <category term="slfj" scheme="https://zhichuwy.cn/tags/slfj/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Alg-杨辉三角</title>
-    <link href="https://zhichuwy.cn/Alg-%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/"/>
-    <id>https://zhichuwy.cn/Alg-杨辉三角/</id>
-    <published>2019-08-09T00:06:19.000Z</published>
-    <updated>2019-08-10T16:46:53.378Z</updated>
-    
-    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">小Q的歌单(牛客算法-杨辉三角)</font></p></div><a id="more"></a><h3 id="小Q的歌单-牛客算法-杨辉三角"><a href="#小Q的歌单-牛客算法-杨辉三角" class="headerlink" title="小Q的歌单(牛客算法-杨辉三角)"></a>小Q的歌单(牛客算法-杨辉三角)</h3><p>【题目描述】小 Q 有 X 首长度为 A 的不同的歌和 Y 首长度为 B 的不同的歌，现在小 Q 想用这些歌组成一个<br>总长度正好为 K 的歌单，每首歌最多只能在歌单中出现一次，在不考虑歌单内歌曲的先后顺序的情况下，<br>请问有多少种组成歌单的方法。</p><p>输入描述：<br>每个输入包含一个测试用例。<br>每个测试用例的第一行包含一个整数，表示歌单的总长度 K(1&lt;=K&lt;=1000)。<br>接下来的一行包含四个正整数，分别表示歌的第一种长度 A(A&lt;=10)和数量 X(X&lt;=100)以及歌的第二种长度<br>B(B&lt;=10)和数量 Y(Y&lt;=100)。保证 A 不等于 B。</p><p>输出描述：<br>输出一个整数,表示组成歌单的方法取模。因为答案可能会很大,输出对 1000000007 取模的结果。<br>输入示例：<br>5<br>2 3 3 3</p><p>输出示例：<br>9</p><p>解决方案：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> c[<span class="number">105</span>][<span class="number">105</span>];  </span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> mod = <span class="number">1000000007</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">c[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++) &#123;</span><br><span class="line">c[i][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">100</span>; j++)</span><br><span class="line">c[i][j] = (c[i - <span class="number">1</span>][j - <span class="number">1</span>] + c[i - <span class="number">1</span>][j]) % mod;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="keyword">int</span> k, a, b, x, y;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> ans = <span class="number">0</span>;</span><br><span class="line">init();</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;k);</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;a, &amp;x, &amp;b, &amp;y);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= x; i++) &#123;</span><br><span class="line"><span class="keyword">if</span> (i * a &lt;= k &amp;&amp; (k - a * i) % b == <span class="number">0</span> &amp;&amp; (k - a * i) / b &lt;= y)</span><br><span class="line">ans=(ans + (c[x][i] * c[y][(k - a * i) / b]) % mod) % mod;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>1.分析数学模型(公式，杨辉三角…)<br>2.使用编程语言实现</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;小Q的歌单(牛客算法-杨辉三角)&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
-    
-    </summary>
-    
-      <category term="之初-算法" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://zhichuwy.cn/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="杨辉三角" scheme="https://zhichuwy.cn/tags/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/"/>
-    
-      <category term="牛客" scheme="https://zhichuwy.cn/tags/%E7%89%9B%E5%AE%A2/"/>
     
   </entry>
   
@@ -256,32 +256,6 @@
   </entry>
   
   <entry>
-    <title>Volatile</title>
-    <link href="https://zhichuwy.cn/Volatile/"/>
-    <id>https://zhichuwy.cn/Volatile/</id>
-    <published>2019-08-08T23:40:33.000Z</published>
-    <updated>2019-08-08T15:40:46.375Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>参考文章：<br><a href="https://mp.weixin.qq.com/s/kQ498ifh4OUEDd829JIhnQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/kQ498ifh4OUEDd829JIhnQ</a></p></blockquote><h3 id="Volatile"><a href="#Volatile" class="headerlink" title="Volatile"></a>Volatile</h3>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;参考文章：&lt;br&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/kQ498ifh4OUEDd829JIhnQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mp.weixin.qq.com
-      
-    
-    </summary>
-    
-      <category term="之初-数据库" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="Volatile" scheme="https://zhichuwy.cn/tags/Volatile/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据库事务</title>
     <link href="https://zhichuwy.cn/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BA%8B%E5%8A%A1/"/>
     <id>https://zhichuwy.cn/数据库事务/</id>
@@ -304,6 +278,32 @@
       <category term="并发控制" scheme="https://zhichuwy.cn/tags/%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6/"/>
     
       <category term="隔离级别" scheme="https://zhichuwy.cn/tags/%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Volatile</title>
+    <link href="https://zhichuwy.cn/Volatile/"/>
+    <id>https://zhichuwy.cn/Volatile/</id>
+    <published>2019-08-08T23:40:33.000Z</published>
+    <updated>2019-08-08T15:40:46.375Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>参考文章：<br><a href="https://mp.weixin.qq.com/s/kQ498ifh4OUEDd829JIhnQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/kQ498ifh4OUEDd829JIhnQ</a></p></blockquote><h3 id="Volatile"><a href="#Volatile" class="headerlink" title="Volatile"></a>Volatile</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;参考文章：&lt;br&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/kQ498ifh4OUEDd829JIhnQ&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://mp.weixin.qq.com
+      
+    
+    </summary>
+    
+      <category term="之初-数据库" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="Volatile" scheme="https://zhichuwy.cn/tags/Volatile/"/>
     
   </entry>
   

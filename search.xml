@@ -64,19 +64,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Alg-杨辉三角]]></title>
-    <url>%2FAlg-%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%2F</url>
-    <content type="text"><![CDATA[小Q的歌单(牛客算法-杨辉三角) 小Q的歌单(牛客算法-杨辉三角)【题目描述】小 Q 有 X 首长度为 A 的不同的歌和 Y 首长度为 B 的不同的歌，现在小 Q 想用这些歌组成一个总长度正好为 K 的歌单，每首歌最多只能在歌单中出现一次，在不考虑歌单内歌曲的先后顺序的情况下，请问有多少种组成歌单的方法。 输入描述：每个输入包含一个测试用例。每个测试用例的第一行包含一个整数，表示歌单的总长度 K(1&lt;=K&lt;=1000)。接下来的一行包含四个正整数，分别表示歌的第一种长度 A(A&lt;=10)和数量 X(X&lt;=100)以及歌的第二种长度B(B&lt;=10)和数量 Y(Y&lt;=100)。保证 A 不等于 B。 输出描述：输出一个整数,表示组成歌单的方法取模。因为答案可能会很大,输出对 1000000007 取模的结果。输入示例：52 3 3 3 输出示例：9 解决方案：1234567891011121314151617181920212223242526272829//代码#include &lt;bits/stdc++.h&gt;using namespace std;long long c[105][105]; const int mod = 1000000007;void init() &#123; c[0][0] = 1; for (int i = 1; i &lt;= 100; i++) &#123; c[i][0] = 1; for(int j = 1; j &lt;= 100; j++) c[i][j] = (c[i - 1][j - 1] + c[i - 1][j]) % mod; &#125;&#125;int main() &#123; int k, a, b, x, y; long long ans = 0; init(); scanf("%d", &amp;k); scanf("%d%d%d%d", &amp;a, &amp;x, &amp;b, &amp;y); for (int i = 0; i &lt;= x; i++) &#123; if (i * a &lt;= k &amp;&amp; (k - a * i) % b == 0 &amp;&amp; (k - a * i) / b &lt;= y) ans=(ans + (c[x][i] * c[y][(k - a * i) / b]) % mod) % mod; &#125; printf("%lld\n", ans); return 0;&#125; 总结1.分析数学模型(公式，杨辉三角…)2.使用编程语言实现]]></content>
-      <categories>
-        <category>之初-算法</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>杨辉三角</tag>
-        <tag>牛客</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java 日志]]></title>
     <url>%2FJava%20%E6%97%A5%E5%BF%97%2F</url>
     <content type="text"><![CDATA[log4j slfj log4j1234log4j.rootLogger=DEBUG, stdoutlog4j.appender.stdout=org.apache.log4j.ConsoleAppenderlog4j.appender.stdout.layout=org.apache.log4j.PatternLayoutlog4j.appender.stdout.layout.ConversionPattern=%5p [%t] - %m%n slfj]]></content>
@@ -87,6 +74,19 @@
         <tag>日志框架</tag>
         <tag>log4j</tag>
         <tag>slfj</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Alg-杨辉三角]]></title>
+    <url>%2FAlg-%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%2F</url>
+    <content type="text"><![CDATA[小Q的歌单(牛客算法-杨辉三角) 小Q的歌单(牛客算法-杨辉三角)【题目描述】小 Q 有 X 首长度为 A 的不同的歌和 Y 首长度为 B 的不同的歌，现在小 Q 想用这些歌组成一个总长度正好为 K 的歌单，每首歌最多只能在歌单中出现一次，在不考虑歌单内歌曲的先后顺序的情况下，请问有多少种组成歌单的方法。 输入描述：每个输入包含一个测试用例。每个测试用例的第一行包含一个整数，表示歌单的总长度 K(1&lt;=K&lt;=1000)。接下来的一行包含四个正整数，分别表示歌的第一种长度 A(A&lt;=10)和数量 X(X&lt;=100)以及歌的第二种长度B(B&lt;=10)和数量 Y(Y&lt;=100)。保证 A 不等于 B。 输出描述：输出一个整数,表示组成歌单的方法取模。因为答案可能会很大,输出对 1000000007 取模的结果。输入示例：52 3 3 3 输出示例：9 解决方案：1234567891011121314151617181920212223242526272829//代码#include &lt;bits/stdc++.h&gt;using namespace std;long long c[105][105]; const int mod = 1000000007;void init() &#123; c[0][0] = 1; for (int i = 1; i &lt;= 100; i++) &#123; c[i][0] = 1; for(int j = 1; j &lt;= 100; j++) c[i][j] = (c[i - 1][j - 1] + c[i - 1][j]) % mod; &#125;&#125;int main() &#123; int k, a, b, x, y; long long ans = 0; init(); scanf("%d", &amp;k); scanf("%d%d%d%d", &amp;a, &amp;x, &amp;b, &amp;y); for (int i = 0; i &lt;= x; i++) &#123; if (i * a &lt;= k &amp;&amp; (k - a * i) % b == 0 &amp;&amp; (k - a * i) / b &lt;= y) ans=(ans + (c[x][i] * c[y][(k - a * i) / b]) % mod) % mod; &#125; printf("%lld\n", ans); return 0;&#125; 总结1.分析数学模型(公式，杨辉三角…)2.使用编程语言实现]]></content>
+      <categories>
+        <category>之初-算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>杨辉三角</tag>
+        <tag>牛客</tag>
       </tags>
   </entry>
   <entry>
@@ -538,20 +538,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Eclipse项目相关踩坑]]></title>
-    <url>%2FEclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91%2F</url>
-    <content type="text"><![CDATA[快捷键 Ctrl+1 回车=&gt;自动补全返回类型 maven Pagehelper maven Pagehelper版本问题：https://blog.csdn.net/qq_36004521/article/details/78578075 war打包错误 war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub]]></content>
-      <categories>
-        <category>之初-工具使用</category>
-      </categories>
-      <tags>
-        <tag>Eclipse</tag>
-        <tag>快捷键</tag>
-        <tag>maven Pagehelper</tag>
-        <tag>war打包错误</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[SVN相关]]></title>
     <url>%2FSVN%2F</url>
     <content type="text"><![CDATA[这三个软件：VisualSVN-Server Subversion TortoiseSVN 就是版本控制软件 1、其中VisualSVN-Server 和 Subversion 这两个软件都是版本控制中服务器端要使用的软件，简单的理解就是所提交的代码，就会存放到安装这两个软件的电脑上，这两个软件就会自动记录所提交的一些代码另外还会保存你的历史版本以防万一你要查找以前的代码；2、其中这两个软件的功能类似，但是VisualSVN-Server 这个软件将很多配置，如添加服务等直接帮助完成了，比较好用，易上手，而Subversion 需要跟人配置一些东西，个人觉得使用第一个软件就完全可以满足要求了；3、前面那两个软件的作用是配置服务器端， 那么TortoiseSVN 这个软件的作用是什么呢？它就是客户端需要的软件了。 用这个软件就可以很方便的向服务器端提交最新修改的代码。还可以很方便的从服务器端更新最新版本的代码。另外还可以很方便的查看以前提交的代码。总的来说，这三款软件都是在软件项目管理中必须的软件，前两款软件功能类似，只是配置方法不同，而最后那个软件就是与前两款软件中任意一款搭配使用的]]></content>
@@ -563,6 +549,20 @@
         <tag>VisualSVN-Server</tag>
         <tag>Subversion</tag>
         <tag>TortoiseSVN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Eclipse项目相关踩坑]]></title>
+    <url>%2FEclipse%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3%E8%B8%A9%E5%9D%91%2F</url>
+    <content type="text"><![CDATA[快捷键 Ctrl+1 回车=&gt;自动补全返回类型 maven Pagehelper maven Pagehelper版本问题：https://blog.csdn.net/qq_36004521/article/details/78578075 war打包错误 war打包错误（webapp缺少web.xml文件）=&gt;右键项目-&gt;JaveEE Tools-&gt;Generate Deployment Descriptor Stub]]></content>
+      <categories>
+        <category>之初-工具使用</category>
+      </categories>
+      <tags>
+        <tag>Eclipse</tag>
+        <tag>快捷键</tag>
+        <tag>maven Pagehelper</tag>
+        <tag>war打包错误</tag>
       </tags>
   </entry>
   <entry>

@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Git使用rebase merge">
+<meta name="description" content="Git简单应用：部署代码到服务器 https://blog.csdn.net/bencjl/article/details/53699684  rebase merge Git使用start a working area (see also: git help tutorial)   clone      Clone a repository into a new directory   ini">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git">
 <meta property="og:url" content="https://zhichuwy.cn/Git/index.html">
 <meta property="og:site_name" content="之初 Blog">
-<meta property="og:description" content="Git使用rebase merge">
+<meta property="og:description" content="Git简单应用：部署代码到服务器 https://blog.csdn.net/bencjl/article/details/53699684  rebase merge Git使用start a working area (see also: git help tutorial)   clone      Clone a repository into a new directory   ini">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-13T14:04:32.385Z">
+<meta property="og:updated_time" content="2019-08-15T07:04:25.962Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git">
-<meta name="twitter:description" content="Git使用rebase merge">
+<meta name="twitter:description" content="Git简单应用：部署代码到服务器 https://blog.csdn.net/bencjl/article/details/53699684  rebase merge Git使用start a working area (see also: git help tutorial)   clone      Clone a repository into a new directory   ini">
 
 
 
@@ -439,7 +439,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  4 字
+                  2.3k 字
                 </span>
               
 
@@ -455,7 +455,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  9 分钟
                 </span>
               
             </div>
@@ -476,7 +476,44 @@
       
 
       
-        <h3 id="Git使用"><a href="#Git使用" class="headerlink" title="Git使用"></a>Git使用</h3><p>rebase merge</p>
+        <blockquote>
+<p>Git简单应用：部署代码到服务器 <a href="https://blog.csdn.net/bencjl/article/details/53699684" target="_blank" rel="noopener">https://blog.csdn.net/bencjl/article/details/53699684</a></p>
+</blockquote>
+<h3 id="rebase-merge"><a href="#rebase-merge" class="headerlink" title="rebase merge"></a>rebase merge</h3><hr>
+<h3 id="Git使用"><a href="#Git使用" class="headerlink" title="Git使用"></a>Git使用</h3><p>start a working area (see also: git help tutorial)<br>   clone      Clone a repository into a new directory<br>   init       Create an empty Git repository or reinitialize an existing one</p>
+<p>work on the current change (see also: git help everyday)<br>   add        Add file contents to the index<br>   mv         Move or rename a file, a directory, or a symlink<br>   reset      Reset current HEAD to the specified state<br>   rm         Remove files from the working tree and from the index</p>
+<p>examine the history and state (see also: git help revisions)<br>   bisect     Use binary search to find the commit that introduced a bug<br>   grep       Print lines matching a pattern<br>   log        Show commit logs<br>   show       Show various types of objects<br>   status     Show the working tree status</p>
+<p>grow, mark and tweak your common history<br>   branch     List, create, or delete branches<br>   checkout   Switch branches or restore working tree files<br>   commit     Record changes to the repository<br>   diff       Show changes between commits, commit and working tree, etc<br>   merge      Join two or more development histories together<br>   rebase     Reapply commits on top of another base tip<br>   tag        Create, list, delete or verify a tag object signed with GPG</p>
+<p>collaborate (see also: git help workflows)<br>   fetch      Download objects and refs from another repository<br>   pull       Fetch from and integrate with another repository or a local branch<br>   push       Update remote refs along with associated objects</p>
+<blockquote>
+<p>‘git help -a’ and ‘git help -g’ list available subcommands and some concept guides.<br>See ‘git help <command>‘ or ‘git help <concept>‘to read about a specific subcommand or concept.</concept></p>
+</blockquote>
+<p>开始工作区域（另请参阅：git帮助教程）<br>   clone将存储库克隆到新目录中<br>   init创建一个空的Git存储库或重新初始化现有的存储库</p>
+<p>处理当前的变化（另请参阅：git help每天）<br>   add将文件内容添加到索引中<br>   mv移动或重命名文件，目录或符号链接<br>   reset将当前HEAD重置为指定状态<br>   rm从工作树和索引中删除文件</p>
+<p>检查历史和状态（另请参阅：git help revision）<br>   bisect使用二进制搜索来查找引入错误的提交<br>   grep打印与图案匹配的线条<br>   log显示提交日志<br>   show显示各种类型的对象<br>   status显示工作树状态</p>
+<p>成长，标记和调整您的共同历史<br>   branch列出，创建或删除分支<br>   checkout切换分支或恢复工作树文件<br>   commit将更改记录到存储库<br>   diff显示提交，提交和工作树之间的更改等<br>   合并将两个或多个开发历史连接在一起<br>   rebase Reapply在另一个基本提示之上提交<br>   标签创建，列出，删除或验证使用GPG签名的标记对象</p>
+<p>协作（另请参阅：git help workflows）<br>   fetch从另一个存储库下载对象和引用<br>   pull从另一个存储库或本地分支中获取并集成<br>   推送更新远程引用以及关联的对象</p>
+<p>‘git help -a’和’git help -g’列出了可用的子命令和一些<br>概念指南。请参阅’git help <code>&lt;command&gt;</code>‘或’git help<code>&lt;concept&gt;</code>‘<br>阅读有关特定子命令或概念的内容。</p>
+<hr>
+<p>先配置信息<br>1.<code>git config --global user.name &quot;linlianhuao&quot;</code><br>2.<code>git config --global user.email &quot;linlianhuao@qq.com&quot;</code></p>
+<p>创建仓库并提交代码<br>1.<code>git init</code><br>2.<code>git remote add origin git@gitlab.***.com:linlianhuao/**.git</code><br>3.<code>git add -A</code><br>4.<code>git commit -m</code> 建立项目<br>5.<code>git push -u origin master</code></p>
+<p>拉取远程代码<br>1.<code>git clone git@gitlab.***.com:linlianhuao/**.git</code><br>2.<code>cd **</code><br>3.<code>git add -A</code><br>4.<code>git commit -m</code> 提交信息<br>5.<code>git push -u origin master</code></p>
+<hr>
+<h3 id="为什么要先commit，然后pull，最后再push？而不是commit然后直接push？"><a href="#为什么要先commit，然后pull，最后再push？而不是commit然后直接push？" class="headerlink" title="为什么要先commit，然后pull，最后再push？而不是commit然后直接push？"></a>为什么要先commit，然后pull，最后再push？而不是commit然后直接push？</h3><p>现在远程有一个仓库，分支就一个，是master。本地的仓库是从远程的master上clone下来的，再在自己本地改好，再commit → pull → push。</p>
+<p>1，那我本地这个也算是个分支？还是就是一个本地仓库？<br>本地和远程的关系相当于两个分支,你感觉一样是因为你git pull 的时候已经自动给绑定好对应关系了</p>
+<p>2，如果我在远程新建了个分支，然后我pull了下来，那我本地到底有分支这个说法吗？我本地的分支是不是就是那个远程新建的分支？<br>你远程新建了一个分支拉到本地的道理是一样的,属于复制了一份,但是本地分支和远程分支已经是两个东西了</p>
+<p>3，本地仓库和本地分支有什么区别？<br>本地分支属于本地仓库里,是包含关系,一个仓库里可以有很多分支, 如果是 tag 的话可以分离出独立的仓库</p>
+<p>4，commit是提交到本地仓库，然后push，这个push是把所有代码推到远程仓库，还是只是把commit的地方推到远程仓库？<br>肯定不会全量推送到远程的,是通过对比 commit 的记录,如果本地高于远程就直接把多出来的commit 给怼上去,如果本地的这几个 commit 和远程的 commit 有冲突的部分就merge,然后根据提交时间排序再新建一个merge 的 commit 记录再怼上去</p>
+<p>5，那为什么要先commit，然后pull，然后再push，我pull了，岂不是把自己改的代码都给覆盖掉了嘛，因为远程没有我改的代码，我pull，岂不是覆盖了我本地的改动好的地方了？那我还怎么push？<br>这个先 commit 再 pull 再 push 的情况就是为了应对多人合并开发的情况：<br>1)commit 是为了告诉 git 我这次提交改了哪些东西,不然你只是改了但是 git 不知道你改了,也就无从判断比较;<br>2)pull是为了本地 commit 和远程commit 的对比记录,git 是按照文件的行数操作进行对比的,如果同时操作了某文件的同一行那么就会产生冲突,git 也会把这个冲突给标记出来,这个时候就需要先把和你冲突的那个人拉过来问问保留谁的代码,然后在 git add &amp;&amp; git commit &amp;&amp; git pull 这三连,再次 pull 一次是为了防止再你们协商的时候另一个人给又提交了一版东西,如果真发生了那流程重复一遍,通常没有冲突的时候就直接给你合并了,不会把你的代码给覆盖掉<br>3)出现代码覆盖或者丢失的情况:比如A B两人的代码pull 时候的版本都是1,A在本地提交了2,3并且推送到远程了,B 进行修改的时候没有commit 操作,他先自己写了东西,然后 git pull 这个时候 B 本地版本已经到3了,B 在本地版本3的时候改了 A 写过的代码,再进行了git commit &amp;&amp; git push 那么在远程版本中就是4,而且 A 的代码被覆盖了,所以说所有人都要先 commit 再 pull,不然真的会覆盖代码的</p>
+<p>6，两个分支，A和B，A合并B和B合并A，有区别吗？<br>两个互相合并的唯一区别就是 A-&gt;B 的时候 B 分支上会产生一个 merge_commit 的信息,这个时候 B 是合并状态而 A 未合并状态,如果现在没有发生任何改动执行 B-&gt;A 就直接切换过去了,连 merge_commit 都不会生成了</p>
+<hr>
+<h3 id="如何在一个电脑上分别向公司git服务器和自己的github上传代码（两个不同的ssh-key的配置方法）"><a href="#如何在一个电脑上分别向公司git服务器和自己的github上传代码（两个不同的ssh-key的配置方法）" class="headerlink" title="如何在一个电脑上分别向公司git服务器和自己的github上传代码（两个不同的ssh-key的配置方法）"></a>如何在一个电脑上分别向公司git服务器和自己的github上传代码（两个不同的ssh-key的配置方法）</h3><p>本文链接：<a href="https://blog.csdn.net/xct841990555/article/details/80300900" target="_blank" rel="noopener">https://blog.csdn.net/xct841990555/article/details/80300900</a> </p>
+<p>最近有过这样一个需求：因为我工作和学习都是用的一台电脑，在工作中有时候需要在本地向公司的服务器上传提交代码。闲暇自己学习动手写demo时，需要向github上上传代码。这个时候又不想用同一个邮箱和同一套秘钥（我倒这样没试过。应该不可行吧）。于是就自己生成了两份不同的秘钥。以下是配置的方法：</p>
+<p>配置方法<br>先进入到C:\Users\用户名.ssh目录下<br>先生成用于访问github的密钥对<br><code>ssh-keygen -t rsa -C &#39;你的邮箱&#39;</code></p>
+<p>再生成访问自己公司的秘钥对（注意重新命名，否则会覆盖掉上面刚生成的秘钥）<br><code>ssh-keygen -t rsa -C &#39;你在公司的邮箱&#39; -f id_rsa_xxx</code></p>
+<p>分别将生成的两个公钥<code>id_rsa.pub</code>和<code>id_rsa_xxx.pub</code>添加到<code>github</code>中和<code>你公司的gerrit</code>的setting中</p>
+<p>重点: 在C:\Users\用户名.ssh下创建config文件，此文件用于配置私钥对应的服务器。<br>内容如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">#公司的秘钥配置</span></span><br><span class="line"><span class="comment">Host 公司的git的访问ip</span></span><br><span class="line"><span class="comment">HostName 公司的git的访问ip</span></span><br><span class="line"><span class="comment">Port 公司的git的访问ip端口</span></span><br><span class="line"><span class="comment">PreferredAuthentications publickey</span></span><br><span class="line"><span class="comment">IdentityFile C:\Users\用户名\.ssh\id_rsa_xxx</span></span><br><span class="line"><span class="comment">#github的秘钥配置</span></span><br><span class="line"><span class="comment">Host github.com</span></span><br><span class="line"><span class="comment">HostName ssh.github.com</span></span><br><span class="line"><span class="comment">User 你的邮箱</span></span><br><span class="line"><span class="comment">Port 443</span></span><br><span class="line"><span class="comment">PreferredAuthentications publickey</span></span><br><span class="line"><span class="comment">IdentityFile C:\Users\用户名\.ssh\id_rsa</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"># 配置文件参数</span></span><br><span class="line"><span class="comment"># Host : Host可以看作是一个你要识别的模式，对识别的模式，进行配置对应的的主机名和ssh文件，建议最好和HostName一致都为ip</span></span><br><span class="line"><span class="comment"># HostName : 要登录主机的主机名</span></span><br><span class="line"><span class="comment"># User : 登录名即邮箱</span></span><br><span class="line"><span class="comment"># Port  主机名后的端口（github是 443 ）</span></span><br><span class="line"><span class="comment"># IdentityFile : 指明上面User对应的identityFile路径</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></p>
+<p>关于以上github的 Port 之前我这是的22，但是不知道为什么不行。然后443就是好的。<br>然后就是用git命令去测试了，尝试去服务器拉一份代码下来。如果成功的话，则会在.ssh目录下生成known_hosts文件，并将账户信息自动加进去。</p>
 
       
     </div>
@@ -820,7 +857,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git使用"><span class="nav-number">1.</span> <span class="nav-text">Git使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#rebase-merge"><span class="nav-number">1.</span> <span class="nav-text">rebase merge</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Git使用"><span class="nav-number">2.</span> <span class="nav-text">Git使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要先commit，然后pull，最后再push？而不是commit然后直接push？"><span class="nav-number">3.</span> <span class="nav-text">为什么要先commit，然后pull，最后再push？而不是commit然后直接push？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在一个电脑上分别向公司git服务器和自己的github上传代码（两个不同的ssh-key的配置方法）"><span class="nav-number">4.</span> <span class="nav-text">如何在一个电脑上分别向公司git服务器和自己的github上传代码（两个不同的ssh-key的配置方法）</span></a></li></ol></div>
             
 
           </div>

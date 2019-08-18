@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhichuwy.cn/"/>
-  <updated>2019-08-17T14:38:09.451Z</updated>
+  <updated>2019-08-18T17:01:56.712Z</updated>
   <id>https://zhichuwy.cn/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>抢红包</title>
+    <link href="https://zhichuwy.cn/%E6%8A%A2%E7%BA%A2%E5%8C%85/"/>
+    <id>https://zhichuwy.cn/抢红包/</id>
+    <published>2019-08-19T22:14:47.000Z</published>
+    <updated>2019-08-18T17:01:56.712Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">基于SSM(全注解+Ajax异步模拟高并发)实现抢红包<br>通过数据库事务隔离级别+乐观锁重入机制提高并发<br>采用Redis提高并发</font></p></div><a id="more"></a><blockquote><p>截图分析！！！</p></blockquote><h3 id="SSM-低并发"><a href="#SSM-低并发" class="headerlink" title="SSM-低并发"></a>SSM-低并发</h3><hr><h3 id="SSM-乐观锁重入"><a href="#SSM-乐观锁重入" class="headerlink" title="SSM-乐观锁重入"></a>SSM-乐观锁重入</h3><hr><h3 id="Redis-基于内存"><a href="#Redis-基于内存" class="headerlink" title="Redis-基于内存"></a>Redis-基于内存</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;基于SSM(全注解+Ajax异步模拟高并发)实现抢红包&lt;br&gt;通过数据库事务隔离级别+乐观锁重入机制提高并发&lt;br&gt;采用Redis提高并发&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-进阶" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E8%BF%9B%E9%98%B6/"/>
+    
+    
+      <category term="SSM抢红包" scheme="https://zhichuwy.cn/tags/SSM%E6%8A%A2%E7%BA%A2%E5%8C%85/"/>
+    
+      <category term="Redis抢红包" scheme="https://zhichuwy.cn/tags/Redis%E6%8A%A2%E7%BA%A2%E5%8C%85/"/>
+    
+      <category term="全注解" scheme="https://zhichuwy.cn/tags/%E5%85%A8%E6%B3%A8%E8%A7%A3/"/>
+    
+      <category term="抢红包" scheme="https://zhichuwy.cn/tags/%E6%8A%A2%E7%BA%A2%E5%8C%85/"/>
+    
+      <category term="锁" scheme="https://zhichuwy.cn/tags/%E9%94%81/"/>
+    
+      <category term="事务" scheme="https://zhichuwy.cn/tags/%E4%BA%8B%E5%8A%A1/"/>
+    
+      <category term="高并发" scheme="https://zhichuwy.cn/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Web项目编译后文件路径</title>
+    <link href="https://zhichuwy.cn/Web%E9%A1%B9%E7%9B%AE%E7%BC%96%E8%AF%91%E5%90%8E%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84/"/>
+    <id>https://zhichuwy.cn/Web项目编译后文件路径/</id>
+    <published>2019-08-19T00:31:29.000Z</published>
+    <updated>2019-08-18T16:38:27.005Z</updated>
+    
+    <content type="html"><![CDATA[<div class="myblockquote"><p style="text-align: center;"><font size="5px">Web项目 classPath .class resources路径</font></p></div><a id="more"></a><h3 id="IDEA环境以SSM项目名为例"><a href="#IDEA环境以SSM项目名为例" class="headerlink" title="IDEA环境以SSM项目名为例"></a>IDEA环境以SSM项目名为例</h3><p>编译后.class文件以及资源文件路径问题</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE configuration</span></span><br><span class="line"><span class="meta">        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"</span></span><br><span class="line"><span class="meta">        "http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">"/RedPacket.xml"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">"/UserRedPacket.xml"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">关于编译后资源文件路径问题</span></span><br><span class="line"><span class="comment">编译后.class文件和资源文件位置：</span></span><br><span class="line"><span class="comment">./项目(SSM)/target/classes(即:classPath)</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">com.yang.*;                 .class文件按包结构组织</span></span><br><span class="line"><span class="comment">resource文件（可能多层目录）   与com文件夹处于同一层次</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">1）Spring方式获取</span></span><br><span class="line"><span class="comment">//配置MyBatis配置文件</span></span><br><span class="line"><span class="comment">Resource resource = new ClassPathResource("/mybatis/mybatis-config.xml");</span></span><br><span class="line"><span class="comment">sqlSessionFactory.setConfigLocation(resource);</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">2）Java方式获取-几种读取配置文件的方式比较</span></span><br><span class="line"><span class="comment">调用 getResourceAsStream 方法 可以直接拿到目标文件的输入流。</span></span><br><span class="line"><span class="comment">(代码在src/main/java目录下，资源文件在src/main/resources/目录下)：</span></span><br><span class="line"><span class="comment">假设test.xml直接位于classPath下</span></span><br><span class="line"><span class="comment">InputStream is = this.getClass().getResourceAsStream(test.xml);  //拿不到资源</span></span><br><span class="line"><span class="comment">InputStream is = this.getClass().getResourceAsStream("/" +test.xml); // 拿到资源</span></span><br><span class="line"><span class="comment">InputStream is = this.getClass().getClassLoader().getResourceAsStream(test.xml); //拿到资源</span></span><br><span class="line"><span class="comment">第一种方式会从当前类的目录下去找，这个文件如果不和该类在一个目录下，就找不到。</span></span><br><span class="line"><span class="comment">第二种方式会从编译后的整个classes目录下去找，maven也会把资源文件打包进classes文件夹，所以可以找到。</span></span><br><span class="line"><span class="comment">第三种方式中ClassLoader就是从整个classes目录找的，所以前面无需再加/。</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;myblockquote&quot;&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;font size=&quot;5px&quot;&gt;Web项目 classPath .class resources路径&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;
+    
+    </summary>
+    
+      <category term="之初-配置" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E9%85%8D%E7%BD%AE/"/>
+    
+    
+      <category term="web项目" scheme="https://zhichuwy.cn/tags/web%E9%A1%B9%E7%9B%AE/"/>
+    
+      <category term="classPath" scheme="https://zhichuwy.cn/tags/classPath/"/>
+    
+      <category term="resources路径" scheme="https://zhichuwy.cn/tags/resources%E8%B7%AF%E5%BE%84/"/>
+    
+  </entry>
   
   <entry>
     <title>向优秀大佬学习</title>
@@ -175,9 +235,9 @@
     <link href="https://zhichuwy.cn/%E5%89%8D%E7%AB%AF%E6%B6%89%E7%8C%8E/"/>
     <id>https://zhichuwy.cn/前端涉猎/</id>
     <published>2019-08-10T20:13:34.000Z</published>
-    <updated>2019-08-17T13:57:06.609Z</updated>
+    <updated>2019-08-18T16:42:32.663Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Ajax-ElementUI"><a href="#Ajax-ElementUI" class="headerlink" title="Ajax+ElementUI"></a>Ajax+ElementUI</h3><h3 id="Vue-axios"><a href="#Vue-axios" class="headerlink" title="Vue+axios"></a>Vue+axios</h3>]]></content>
+    <content type="html"><![CDATA[<h3 id="Ajax-ElementUI"><a href="#Ajax-ElementUI" class="headerlink" title="Ajax+ElementUI"></a>Ajax+ElementUI</h3><h3 id="Vue-axios"><a href="#Vue-axios" class="headerlink" title="Vue+axios"></a>Vue+axios</h3><h3 id="html-5-4t-4s"><a href="#html-5-4t-4s" class="headerlink" title="html 5, 4t, 4s"></a>html 5, 4t, 4s</h3>]]></content>
     
     <summary type="html">
     
@@ -490,62 +550,6 @@
       <category term="算法" scheme="https://zhichuwy.cn/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="洗牌算法优化" scheme="https://zhichuwy.cn/tags/%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nginx</title>
-    <link href="https://zhichuwy.cn/Nginx/"/>
-    <id>https://zhichuwy.cn/Nginx/</id>
-    <published>2019-08-04T20:10:47.000Z</published>
-    <updated>2019-08-04T15:01:01.764Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Nginx配置 (待补充：e^3)</p></blockquote><ul><li>端口</li><li>IP</li><li>分布式</li></ul><a id="more"></a><figure class="highlight java"><figcaption><span>Nginx配置示例</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">worker_processes  1;</span></span><br><span class="line"><span class="comment">events &#123;</span></span><br><span class="line"><span class="comment">    worker_connections  1024;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">http &#123;</span></span><br><span class="line"><span class="comment">    include             mime.types;</span></span><br><span class="line"><span class="comment">    default_type        application/octet-stream;  </span></span><br><span class="line"><span class="comment">    sendfile            on;    </span></span><br><span class="line"><span class="comment">    keepalive_timeout   65;</span></span><br><span class="line"><span class="comment">    #gzip  on;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    server &#123;</span></span><br><span class="line"><span class="comment">        listen          9090;</span></span><br><span class="line"><span class="comment">        server_name     localhost;</span></span><br><span class="line"><span class="comment">        location / &#123;</span></span><br><span class="line"><span class="comment">            root        html;</span></span><br><span class="line"><span class="comment">            index       index.html index.htm;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        error_page      500 502 503 504  /50x.html;</span></span><br><span class="line"><span class="comment">        location = /50x.html &#123;</span></span><br><span class="line"><span class="comment">            root   html;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    upstream jml&#123;</span></span><br><span class="line"><span class="comment">        server 192.168.139.1:8180;</span></span><br><span class="line"><span class="comment">server 192.168.139.1:8280;</span></span><br><span class="line"><span class="comment">server 192.168.139.1:8380;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    server &#123;</span></span><br><span class="line"><span class="comment">        listen          8080;</span></span><br><span class="line"><span class="comment">        server_name     localhost;</span></span><br><span class="line"><span class="comment">        location / &#123;</span></span><br><span class="line"><span class="comment">            proxy_pass  http://192.168.139.1:8180;</span></span><br><span class="line"><span class="comment">            index       index.jsp index.html index.htm;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125; */</span></span><br></pre></td></tr></table></figure><figure class="highlight java"><figcaption><span>反射去除null字段</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReflectUtils</span> </span>&#123;</span><br><span class="line">    <span class="comment">/*获取类的字段*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getField</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">        Field[] fields = o.getClass().getDeclaredFields();</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        <span class="keyword">for</span> (Field f : fields ) &#123;</span><br><span class="line">            <span class="comment">//允许操作属性</span></span><br><span class="line">            f.setAccessible(<span class="keyword">true</span>);</span><br><span class="line">            sb.append(f.getName() + <span class="string">","</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sb.substring(<span class="number">0</span>,sb.length()-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*去除没有值的字段*/</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Map <span class="title">filterEmptyValue</span><span class="params">(Object o)</span></span>&#123;</span><br><span class="line">        Map map = <span class="keyword">new</span> HashMap();</span><br><span class="line">        Field[] fields = o.getClass().getDeclaredFields();</span><br><span class="line">        StringBuffer sb = <span class="keyword">new</span> StringBuffer();</span><br><span class="line">        <span class="keyword">for</span> (Field f : fields ) &#123;</span><br><span class="line">            <span class="comment">//允许操作属性</span></span><br><span class="line">            f.setAccessible(<span class="keyword">true</span>);</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (f.get(o) != <span class="keyword">null</span>)&#123;</span><br><span class="line">                    Object value = f.get(o);</span><br><span class="line">                    <span class="keyword">if</span> (!StringUtils.isNullOrEmpty(value.toString()))&#123;</span><br><span class="line">                        map.put(f.getName(),value);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> map;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        User user = <span class="keyword">new</span> User();</span><br><span class="line">        user.setAge(<span class="number">18</span>);</span><br><span class="line">        System.out.println(ReflectUtils.getField(user));</span><br><span class="line">        System.out.println(ReflectUtils.filterEmptyValue(user));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;Nginx配置 (待补充：e^3)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;端口&lt;/li&gt;
-&lt;li&gt;IP&lt;/li&gt;
-&lt;li&gt;分布式&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="之初-服务器" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    
-      <category term="Nginx" scheme="https://zhichuwy.cn/tags/Nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>A-学习清单</title>
-    <link href="https://zhichuwy.cn/A-%E5%AD%A6%E4%B9%A0%E6%B8%85%E5%8D%95/"/>
-    <id>https://zhichuwy.cn/A-学习清单/</id>
-    <published>2019-08-04T19:52:19.000Z</published>
-    <updated>2019-08-04T11:53:04.646Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h3>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;计划&quot;&gt;&lt;a href=&quot;#计划&quot; class=&quot;headerlink&quot; title=&quot;计划&quot;&gt;&lt;/a&gt;计划&lt;/h3&gt;
-      
-    
-    </summary>
-    
-      <category term="之初-进阶" scheme="https://zhichuwy.cn/categories/%E4%B9%8B%E5%88%9D-%E8%BF%9B%E9%98%B6/"/>
-    
-    
-      <category term="Java" scheme="https://zhichuwy.cn/tags/Java/"/>
-    
-      <category term="清单" scheme="https://zhichuwy.cn/tags/%E6%B8%85%E5%8D%95/"/>
     
   </entry>
   

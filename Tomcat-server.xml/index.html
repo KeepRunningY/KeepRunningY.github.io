@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html">
+<meta name="description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段： 123 这个代码片段是设置HTTP请求的配置，其中可以看到8080和8443两个端口，8080就是HTTP的端口。 那么redirectPort属性的作用是什么呢？">
 <meta name="keywords" content="Tomcat,server.xml">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tomcat server.xml 配置详解">
 <meta property="og:url" content="https://zhichuwy.cn/Tomcat-server.xml/index.html">
 <meta property="og:site_name" content="之初 Blog">
-<meta property="og:description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html">
+<meta property="og:description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段： 123 这个代码片段是设置HTTP请求的配置，其中可以看到8080和8443两个端口，8080就是HTTP的端口。 那么redirectPort属性的作用是什么呢？">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-10T16:53:52.339Z">
+<meta property="og:updated_time" content="2019-08-21T09:23:05.664Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tomcat server.xml 配置详解">
-<meta name="twitter:description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html">
+<meta name="twitter:description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段： 123 这个代码片段是设置HTTP请求的配置，其中可以看到8080和8443两个端口，8080就是HTTP的端口。 那么redirectPort属性的作用是什么呢？">
 
 
 
@@ -439,7 +439,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  11 字
+                  138 字
                 </span>
               
 
@@ -479,6 +479,10 @@
         <blockquote>
 <p>Tomcat server.xml <a href="https://www.cnblogs.com/kismetv/p/7228274.html" target="_blank" rel="noopener">https://www.cnblogs.com/kismetv/p/7228274.html</a></p>
 </blockquote>
+<h3 id="在Tomcat配置文件Server-xml中redirectPort的作用说明："><a href="#在Tomcat配置文件Server-xml中redirectPort的作用说明：" class="headerlink" title="在Tomcat配置文件Server.xml中redirectPort的作用说明："></a>在Tomcat配置文件Server.xml中redirectPort的作用说明：</h3><p>配置文件源代码片段：</p>
+<p><connector port="8080" protocol="HTTP/1.1" connectiontimeout="20000" redirectport="8443" uriencoding="UTF-8">123</connector></p>
+<p>这个代码片段是设置HTTP请求的配置，其中可以看到8080和8443两个端口，8080就是HTTP的端口。</p>
+<p>那么redirectPort属性的作用是什么呢？<br>当用户用http请求某个资源，而该资源本身又被设置了必须要https方式访问，此时Tomcat会自动重定向到这个redirectPort设置的https端口<br>原文链接：<a href="https://blog.csdn.net/catoop/article/details/79510414" target="_blank" rel="noopener">https://blog.csdn.net/catoop/article/details/79510414</a></p>
 
       
     </div>
@@ -558,8 +562,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/IDEA安装及使用/" rel="next" title="IDEA安装及使用">
-                <i class="fa fa-chevron-left"></i> IDEA安装及使用
+              <a href="/IDEA导入项目(Maven Gradle)/" rel="next" title="IDEA导入项目(Maven Gradle)">
+                <i class="fa fa-chevron-left"></i> IDEA导入项目(Maven Gradle)
               </a>
             
           </div>
@@ -627,8 +631,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -805,6 +818,22 @@ show_date_time();
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在Tomcat配置文件Server-xml中redirectPort的作用说明："><span class="nav-number">1.</span> <span class="nav-text">在Tomcat配置文件Server.xml中redirectPort的作用说明：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

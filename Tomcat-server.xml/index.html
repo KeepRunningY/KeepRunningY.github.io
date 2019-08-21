@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段： 123 这个代码片段是设置HTTP请求的配置，其中可以看到8080和8443两个端口，8080就是HTTP的端口。 那么redirectPort属性的作用是什么呢？">
+<meta name="description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段：12&amp;lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot;     redir">
 <meta name="keywords" content="Tomcat,server.xml">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Tomcat server.xml 配置详解">
 <meta property="og:url" content="https://zhichuwy.cn/Tomcat-server.xml/index.html">
 <meta property="og:site_name" content="之初 Blog">
-<meta property="og:description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段： 123 这个代码片段是设置HTTP请求的配置，其中可以看到8080和8443两个端口，8080就是HTTP的端口。 那么redirectPort属性的作用是什么呢？">
+<meta property="og:description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段：12&amp;lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot;     redir">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-21T09:23:05.664Z">
+<meta property="og:updated_time" content="2019-08-21T13:18:25.573Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tomcat server.xml 配置详解">
-<meta name="twitter:description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段： 123 这个代码片段是设置HTTP请求的配置，其中可以看到8080和8443两个端口，8080就是HTTP的端口。 那么redirectPort属性的作用是什么呢？">
+<meta name="twitter:description" content="Tomcat server.xml https://www.cnblogs.com/kismetv/p/7228274.html  在Tomcat配置文件Server.xml中redirectPort的作用说明：配置文件源代码片段：12&amp;lt;Connector port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; connectionTimeout=&quot;20000&quot;     redir">
 
 
 
@@ -439,7 +439,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  138 字
+                  154 字
                 </span>
               
 
@@ -479,8 +479,7 @@
         <blockquote>
 <p>Tomcat server.xml <a href="https://www.cnblogs.com/kismetv/p/7228274.html" target="_blank" rel="noopener">https://www.cnblogs.com/kismetv/p/7228274.html</a></p>
 </blockquote>
-<h3 id="在Tomcat配置文件Server-xml中redirectPort的作用说明："><a href="#在Tomcat配置文件Server-xml中redirectPort的作用说明：" class="headerlink" title="在Tomcat配置文件Server.xml中redirectPort的作用说明："></a>在Tomcat配置文件Server.xml中redirectPort的作用说明：</h3><p>配置文件源代码片段：</p>
-<p><connector port="8080" protocol="HTTP/1.1" connectiontimeout="20000" redirectport="8443" uriencoding="UTF-8">123</connector></p>
+<h3 id="在Tomcat配置文件Server-xml中redirectPort的作用说明："><a href="#在Tomcat配置文件Server-xml中redirectPort的作用说明：" class="headerlink" title="在Tomcat配置文件Server.xml中redirectPort的作用说明："></a>在Tomcat配置文件Server.xml中redirectPort的作用说明：</h3><p>配置文件源代码片段：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">port</span>=<span class="string">"8080"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span> <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">redirectPort</span>=<span class="string">"8443"</span> <span class="attr">URIEncoding</span>=<span class="string">"UTF-8"</span>/&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>这个代码片段是设置HTTP请求的配置，其中可以看到8080和8443两个端口，8080就是HTTP的端口。</p>
 <p>那么redirectPort属性的作用是什么呢？<br>当用户用http请求某个资源，而该资源本身又被设置了必须要https方式访问，此时Tomcat会自动重定向到这个redirectPort设置的https端口<br>原文链接：<a href="https://blog.csdn.net/catoop/article/details/79510414" target="_blank" rel="noopener">https://blog.csdn.net/catoop/article/details/79510414</a></p>
 

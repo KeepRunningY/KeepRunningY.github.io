@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="事务,并发控制,隔离级别,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="之初 Blog" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="数据库事务并发控制和事务隔离级别">
+<meta name="keywords" content="事务,并发控制,隔离级别">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库事务">
+<meta property="og:url" content="https://zhichuwy.cn/DB-数据库事务/index.html">
+<meta property="og:site_name" content="之初 Blog">
+<meta property="og:description" content="数据库事务并发控制和事务隔离级别">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-08-10T16:22:28.483Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="数据库事务">
+<meta name="twitter:description" content="数据库事务并发控制和事务隔离级别">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://zhichuwy.cn/DB-数据库事务/">
+
+
+
+
+
+  <title>数据库事务 | 之初 Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband">
+      <a href="https://github.com/zhichuwy" class="github-corner" aria-label="View source on GitHub">
+        <svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
+          <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
+          <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
+        </svg>
+      </a>
+      <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+    </style>
+  </div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">之初 Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">The harder, the more fortunate</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-friends">
+          <a href="/friends/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-mortar-board"></i> <br>
+            
+            友链
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-informal">
+          <a href="/informal/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-leaf"></i> <br>
+            
+            随笔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhichuwy.cn/DB-数据库事务/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="之初">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/head.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="之初 Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">数据库事务</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-09T07:40:33+08:00">
+                2019-08-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/之初-数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">之初-数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                  评论数：
+                </span>
+                <a href="/DB-数据库事务/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/DB-数据库事务/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/DB-数据库事务/" class="leancloud_visitors" data-flag-title="数据库事务">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4.5k 字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  16 分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div class="myblockquote"><p style="text-align: center;"><font size="5px">数据库事务并发控制和事务隔离级别</font></p></div>
+
+<a id="more"></a>
+<blockquote>
+<p>参考文章：<br><a href="https://blog.csdn.net/qq_33290787/article/details/51924963" target="_blank" rel="noopener">https://blog.csdn.net/qq_33290787/article/details/51924963</a><br><a href="https://blog.csdn.net/baidu_37107022/article/details/75578140" target="_blank" rel="noopener">https://blog.csdn.net/baidu_37107022/article/details/75578140</a><br><a href="https://blog.csdn.net/wei_cheng18/article/details/82955068" target="_blank" rel="noopener">https://blog.csdn.net/wei_cheng18/article/details/82955068</a><br><a href="https://blog.csdn.net/weixin_30531261/article/details/79479895" target="_blank" rel="noopener">https://blog.csdn.net/weixin_30531261/article/details/79479895</a></p>
+</blockquote>
+<hr>
+<h3 id="数据库语言类型"><a href="#数据库语言类型" class="headerlink" title="数据库语言类型"></a>数据库语言类型</h3><ol>
+<li>数据查询语言（DQL）select</li>
+<li>数据操作语言（DML） insert，update，delete主要用来对数据库的数据进行操作</li>
+<li>数据库定义语言（DDL）create，alter，drop用在定义或改变表的结果，数据类型，表之间的链接和约束（操作是隐性提交的，不能rollback）</li>
+<li>数据库控制语言（DCL）grant，deny，revoke设置或更改数据库用户或角色权限的语句</li>
+</ol>
+<h3 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h3><p>概念：满足ACID特性的一组DML操作，可以通过commit提交一个事务，也可以使用rollback进行回滚操作。</p>
+<ol>
+<li>原子性（Atomicity）事务被视为不可分割的最小单元，所有操作要么全部提交成功，要么全部失败回滚。</li>
+<li>一致性（Consistency）事务在执行前后都保持一致性状态，在一致性状态下，所有事务对一个数据的读取结果都是相同的；</li>
+<li>隔离性（Isolation）事务所做的修改在最终提交以前，对其他事务是不可见的；</li>
+<li>持久性（Durability）事务一旦提交则其所做的修改是永久的，即使系统发生崩溃，事务执行的结果也不会丢失。</li>
+</ol>
+<blockquote>
+<p>只有满足一致性，事务的执行结果才是正确的；<br>无并发的情况下，事务串行执行，隔离性一定能满足。此时只要满足原子性，就能满足一致性；<br>在并发情况下，多个事务并行执行，事务不仅要满足原子性，还要满足隔离性，才能满足一致性；<br>事务满足持久性是为了能应对数据库崩溃的情况。事务满足持久性是为了能应对数据库崩溃的情况。</p>
+</blockquote>
+<p>mysql默认采用自动提交模式，也就是说如果不显示的使用start transaction语句来开启一个事务，那么每个查询都会被当做一个事务自动提交。</p>
+<h3 id="并发一致性问题"><a href="#并发一致性问题" class="headerlink" title="并发一致性问题"></a>并发一致性问题</h3><ol>
+<li>丢失修改：事务AB，AB均写入，A写的数据被B覆盖了。</li>
+<li>读脏数据：事务A修改了一个数据，事务B读了数据，事务A撤销了修改，那么B读取的数据是脏数据；一个事务提交之前，人和其他事务不可读取器修改过的值，则可以避免此问题，</li>
+<li>不可重复读：一个事务内，多次读同一数据，结果不一样。（重点在于修改）；如果只有在修改事务完全提交后才可以读取数据，则可以宾冕不可重复读。</li>
+<li>幻读：事务A读取某一范围的数据，事务B插入了新的数据，事务A再次读取这个范围的数据，此时读取的结果和第一次结果不同。（重点在于增加或删除）；在操作事务完成处理数据之前，任何其他事务都不可以添加新数据，则可以避免。</li>
+</ol>
+<h3 id="封锁"><a href="#封锁" class="headerlink" title="封锁"></a>封锁</h3><h4 id="封锁粒度"><a href="#封锁粒度" class="headerlink" title="封锁粒度"></a>封锁粒度</h4><ul>
+<li>行级锁和表级锁</li>
+<li>应该尽量只锁定需要修改的部分数据，而不是所有资源，锁定的数据量越少，发生锁争用的可能就越小，并发程度越高；</li>
+<li>加锁需要消耗资源，锁的各种操作会增加系统开销，因此封锁的粒度越小，系统开销越大，需要在开销和并发程度之间做一个权衡。</li>
+</ul>
+<h4 id="封锁类型"><a href="#封锁类型" class="headerlink" title="封锁类型"></a>封锁类型</h4><ul>
+<li>共享锁：也叫S锁，是一种读锁，当一个事务获得了一条数据的共享锁，其他事务也可以获得该共享锁，但不能获得排他锁，表示其他事务可读，但不可写。</li>
+<li>排他锁：也叫X锁，是一种写锁，当一个事务对临界区加上排他锁，其他事务不能获得该临界区的任何锁（包括共享过和排他锁）表示只能一个人去处理数据，其他人不能读也不能写。</li>
+<li>意向锁：使用意向锁可以更容易地支持多粒度封锁；存在行级锁和表级锁的情况下，事务T想对表A加排他锁，需要先检测是否有其他事务对表A或者表A的任意一行加了锁，那么需要对表A的每一行都检测一次，非常耗时；意向锁在原来的X/S锁上引入了IX/IS锁，都是表锁，用来表示一个事务想要在表中的某个数据行上加X锁或S锁，有以下两个规定：<br>1.一个事务在获得某个数据行对象的S锁之前，必须先获得表的IS锁或者更强的锁；<br>2.一个事务在获得某个数据行对象的X锁之前，必须先获得表的IX锁</li>
+</ul>
+<blockquote>
+<p>引入意向锁，事务T想要对表A加X锁，只需要先检测是否有其他事务对表A加了X/IX/S/IS锁，如果加了就表示有其他的事务正在使用这个表或者表中某一行的锁，因此T加X锁失败。<br>1.任意IS/IX锁之间是兼容的，因为他们只是表示想要对表加锁，而不是真正加锁；<br>2.S锁子与S锁和IS锁兼容，也就是说事务T想要对数据加S锁，其他事务可以获得对表或者表中的行的S锁。</p>
+</blockquote>
+<ul>
+<li><p>乐观锁：乐观锁假设认为数据一般情况下不会造成冲突，所以只会对数据进行提交更新的时候，才会正式对数据的冲突与否进行检测，如果冲突了，则返回用户错误的信息，让用户决定如何去做。实现乐观锁的两种方式：<br>1.使用版本号，为数据增加一个版本标识，读数据时，将version一同读出，数据每更新一次对version加一，当提交更新时，判断数据表对应记录的版本信息与第一次读取出来的version值比对，如果相等，则予以更新，否则，认为是过期数据；<br>2.使用时间戳：增加一个字段，使用时间戳，更新提交时检查当前数据库中数据的时间戳和自己更新前取到的时间戳对比，如果一致则OK，否则就是版本冲突。使用时间戳：增加一个字段，使用时间戳，更新提交时检查当前数据库中数据的时间戳和自己更新前取到的时间戳对比，如果一致则OK，否则就是版本冲突。</p>
+</li>
+<li><p>悲观锁：指的是是对数据被外界（本系统的其他事务，来自外部系统的事务处理）修改持保守的态度。在整个数据处理中，将数据处于锁定的状态；悲观锁的实现，要依靠数据库提供的锁机制。<br>select status from t_items where id=1 for update，另一个事务会阻塞，如果没有for update则不会阻塞</p>
+</li>
+<li>MySQL InnoDB默认Row-Level Lock，只有明确的指定主键或者索引，才会执行Row lock，负责将会执行Table Lock</li>
+<li>共享锁和排他锁都属于悲观锁</li>
+</ul>
+<h4 id="封锁协议"><a href="#封锁协议" class="headerlink" title="封锁协议"></a>封锁协议</h4><p>1.三级封锁协议<br>1)一级封锁协议：事务T要修改数据A时，必须加X锁，知道事务T结束才释放锁；<br>可以解决丢失修改，因为不能同时有两个事务对同一个数据进行修改，那么事务的修改不会被覆盖；<br>2)二级封锁协议：在一级的基础上，要求读取数据A时必须加S锁，读完马上释放S锁；<br>可以解决脏读数据，因为如果一个事务在对数据A进行修改，根据一级等所协议，会加X锁，那么就不能再加S锁了，也就是不会读入数据；<br>3)三级封锁协议：在二级的基础上，要求读取数据A时必须加S锁，直到事务结束才能释放S锁；<br>可以解决不可重复读的问题，因为读A时，其他事务不能对A加X锁，从而避免了在读的期间数据发生改变。</p>
+<p>2.两段锁协议：是指所有事务必须分为两个阶段对数据项加锁和解锁；<br>1)对任何数据进行读写之前，要申请并获得对该数据的封锁；<br>2)每个事务中，所有的封锁请求先于所有的解锁请求。</p>
+<ul>
+<li>可串行化调度是指，通过并发控制，使得并发执行的事务结果与某个串行执行的事务结果相同。事务遵循两段锁协议是保证可串行化调度的充分条件，也就是说：所有事务均遵守两段锁协议，则这些事务的所有交叉调度都是可串行化的；一个可串行化的并发调度的所有事务并不一定都符合两段锁协议。</li>
+<li>遵循两段锁协议可能发生死锁。</li>
+<li>MySQL的InnoDB存储引擎采用两段锁协议，会根据隔离级别在需要的时候自动加锁，并且所有的锁都是在同一时刻被释放，这被称为隐式锁定。</li>
+<li>select … lock in share mode; select … for update为显示锁定。</li>
+<li>一次封锁法：要求事务必须一次性将所有要使用的数据全部加锁，否则就不能继续执行，因此一次封锁法遵守两端封锁协议，但两段封锁协议并不要求事务必须一次性将所有要使用的数据全部加锁。这是遵守两端锁协议仍可能发生死锁的原因所在</li>
+</ul>
+<h3 id="事务的隔离级别"><a href="#事务的隔离级别" class="headerlink" title="事务的隔离级别"></a>事务的隔离级别</h3><ol>
+<li>读未提交：没有解决任何问题，在读取时不会加锁，在更新数据时，对其加行级共享锁（其他事务不能更改，但可以读取，导致脏读），事务结束时释放。</li>
+<li>读已提交：读取的数据是已经提交成功的数据，解决了脏读的问题；给写数据加行级排他锁（写的过程是无法读取的，直到事务处理完毕才释放排他锁）读的数据加行级共享锁，读的时候也是无法写的，但是一旦读完该行就释放共享锁；（事务A负责读，B负责写，A读完数据后释放共享锁，B更新数据，事务还未结束，A在读，两次数据不一样。）</li>
+<li>可重复读：可以重复的读取数据，解决了不可重复读的问题。写的数据加行级排他锁，事务结束释放，读的数据加行级共享锁，事务结束后释放。（事务A负责读，B负责写，A读完数据后等事务结束才释放共享锁，B更新数据，直到事务结束，A再读，两次读到的数据均为A第一次读到的数据，解决了不可重复读。）（事务A负责读，只为读取的数据加行级共享锁，B在A读的过程中向表单中插入数据，A由于处理判断到新的数据，产生幻读。）</li>
+<li>可串行化：可以解决问题。事务一个接着一个执行，代价花费最高，性能最低。（事务读数据则加表级共享锁，事务写数据则加表级排他锁。）</li>
+</ol>
+<h3 id="多版本并发控制（MVCC）"><a href="#多版本并发控制（MVCC）" class="headerlink" title="多版本并发控制（MVCC）"></a>多版本并发控制（MVCC）</h3><p>是MySQL的InnoDB存储引擎实现隔离级别的一种具体方式。用于实现提交度和可重复读这两种隔离解别。（未提交读隔离解别总是读最新的数据行，无需使用MVCC，可串行化隔离级别需要对所有读取的行都加锁，单纯使用MVCC无法实现）。</p>
+<p>版本号：</p>
+<ul>
+<li>系统版本号：一个递增的数字，每开始一个事务，系统版本号就会自动递增；</li>
+<li>事务版本号：事务开始时的系统版本号。<br>隐藏的列：MVCC在每行记录后面都保存着两个隐藏的列，用来存储两个版本号</li>
+</ul>
+<ul>
+<li>创建版本号：指示创建一个数据行的快照时的系统版本号；</li>
+<li>删除版本号：如果该快照的删除版本号大于当前事务版本号表示该快照有效，否则表示该快照已经被删除。</li>
+</ul>
+<p>MVCC使用到的快照存储在Undo日志中，该日志通过回滚指针班一个数据行的所有快照连接起来；</p>
+<h4 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h4><p>当开始一个新的事务时，该事务的版本号肯定会大于当前所有数据行快照的创建版本号；<br>1.select：多个事务必须读取到同一个数据行的快照，并且这个快照是距离现在最近的一个有效快照。但是也有例外，如果一个事务正在修改该数据行，那么它可以读取该事务本身所做的修改，而不用和其他事务的读取结果一致。<br>一个没有对数据行做修改的事务T，它所读取的数据行快照的创建版本号必须小于T的版本号，因为如果大于等于则表示该数据行快照时其他事务的最新修改，因此不能去读取它；除此之外，T索要读取的数据行快照的删除版本号必须大于等于T的版本号，因为如果小于等于则表示该数据行快照是已经被删除的，不应该去读取它。<br>2.insert：将当前系统版本号作为数据行快照的创建版本号；<br>3.delete：将当前系统版本号作为数据行快照的删除版本号；<br>4.update：将当前系统版本号作为更新前的数据行快照的删除版本号，并将当前系统版本号作为更新后的数据行快照的创建版本号。可以理解为先执行delete 后执行insert。</p>
+<h4 id="快照读与当前读"><a href="#快照读与当前读" class="headerlink" title="快照读与当前读"></a>快照读与当前读</h4><p>1.快照读：使用MVCC读取的是快照中的数据，可以减少加锁带来的开销；select * from table…；<br>1)快照读：一致非锁定读，select的时候会生成一个快照；<br>2)生成快照的时机：事务中第一次调用select语句的时候才会生成快照，在此之前事务中执行的uodate, insert, delete操作都不会生成快照；<br>3)READ COMMITED隔离解别下，每次读取都会重新生成一个快照，每次快照都是最新的，因此事务中每次select也可以看到其他已经提交事务所做的更改；REPEATED READ隔离级别下，快照会在事务中第一次select语句执行时生成，只有本事务中对数据进行更改才会更新快照，因此，只有第一次select之前其他已提交事务所做的更改可以看到，但是如果已经执行了seletc，那么其他事务commit数据，select是看不到的。</p>
+<p>2.当前读：读取的是最新的数据，需要加锁；<br>select <em> from table where ? lock in share mode;<br>select </em> from table where ? for update;<br>insert;<br>update;<br>delete;</p>
+<h3 id="InnoDB如何解决幻读问题？"><a href="#InnoDB如何解决幻读问题？" class="headerlink" title="InnoDB如何解决幻读问题？"></a>InnoDB如何解决幻读问题？</h3><p>MVCC、next-key lock、间隙锁</p>
+<ul>
+<li>Record Locks（记录锁）锁定一个记录上的索引，而不是记录本身，如果没有设置索引，InnoDB会自动在主键上创建隐藏的聚簇索引，因此Record Locks依然可以使用；</li>
+<li>Gap Locks（间隙锁）锁定索引之间的间隙，但是不包含索引本身。例如当一个事务执行以下语句，其他事务就不能再t.c中插入15，select c from t where c between 10 and 20 for update;</li>
+<li>Next-key Locks是记录锁和间隙锁的结合，不仅锁定一个记录上的索引，也锁定索引之间的间隙。例如一个索引包含以下值：10,11,13,20，那么就需要锁定以下区间(负无穷, 10], (10, 11], (11, 13], (13, 20], (20, 正无穷)</li>
+</ul>
+<p>InnoDB默认的隔离级别是RR（可重复读），不能解决幻读；MVCC+next-key lock可以解决幻读的问题。（快照读即一般的select靠MVCC解决幻读）（当前读select … for update, select … lock in share mode; insert …; update …; delete …依赖于间隙锁解决）<br>1)间隙锁的主要作用是为了防止出现幻读，会把锁定的方位扩大。控制间隙锁的参数是innodb_locks_unsafe_for_binlog 这个参数的默认值是off，也就是启用间隙锁。<br>2)行锁（record lock）和间隙锁组合起来叫做next-key lock，锁定一个范围，并且锁定记录本身，主要目的是解决幻读的问题。行锁（record lock）和间隙锁组合起来叫做next-key lock，锁定一个范围，并且锁定记录本身，主要目的是解决幻读的问题。</p>
+<blockquote>
+<p>1.间隙锁防止间隙内有数新数据被插入；防止已存在的数据，更新成间隙内的数据；<br>2.InnoDB自动使用间隙锁的条件：必须在RR级别下，检索条件必须有索引。</p>
+</blockquote>
+<p>举一个例子:<br>id(主键)    1 3 6 8 10 13<br>number(二级索引)2 4 5 5  5 11</p>
+<p>mysql&gt; show create table test\G;<br><strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong> 1. row <strong><strong><strong><strong><strong><strong>***</strong></strong></strong></strong></strong></strong><br>       Table: test<br>Create Table: CREATE TABLE <code>test</code> (<br>  <code>id</code> int(11) NOT NULL,<br>  <code>number</code> int(11) DEFAULT NULL,<br>  PRIMARY KEY (<code>id</code>),<br>  KEY <code>number</code> (<code>number</code>)<br>) ENGINE=InnoDB DEFAULT CHARSET=utf8</p>
+<p>案例：</p>
+<p>session 1:<br>start transaction ;<br>select * from test where number=4 for update;</p>
+<p>session 2:<br>start transaction;<br>insert into test value(0,2);#（执行成功）<br>insert into test value(2,2);#（阻塞）<br>insert into test value(2,4);#（阻塞）<br>insert into test value(2,2);#（阻塞）<br>insert into test value(4,4);#（阻塞）<br>insert into test value(4,5);#（阻塞）<br>insert into test value(7,5);#（执行成功）<br>insert into test value(9,5);#（执行成功）<br>insert into test value(11,5);#（执行成功）</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="之初 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="之初 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    之初
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://zhichuwy.cn/DB-数据库事务/" title="数据库事务">https://zhichuwy.cn/DB-数据库事务/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/事务/" rel="tag"><i class="fa fa-tag"></i>事务</a>
+          
+            <a href="/tags/并发控制/" rel="tag"><i class="fa fa-tag"></i>并发控制</a>
+          
+            <a href="/tags/隔离级别/" rel="tag"><i class="fa fa-tag"></i>隔离级别</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Volatile/" rel="next" title="Volatile">
+                <i class="fa fa-chevron-left"></i> Volatile
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Jetty/" rel="prev" title="Jetty">
+                Jetty <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+    <div class="comments-warn">温馨提示：评论系统使用的是Gravatar头像,正确填写邮箱是可以收到评论回复的哦 @( ◕ x ◕ )@
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/head.png" alt="之初">
+            
+              <p class="site-author-name" itemprop="name">之初</p>
+              <p class="site-description motion-element" itemprop="description">越努力越幸运！</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">73</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">154</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/" target="_blank" title="简  书">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>简  书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/zhichuwy" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/" target="_blank" title="掘  金">
+                      
+                        <i class="fa fa-fw fa-spinner"></i>掘  金</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:wyang97@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://segmentfault.com" target="_blank" title="思  否">
+                      
+                        <i class="fa fa-fw fa-skype"></i>思  否</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://music.163.com/#/user/home?id=407931218" target="_blank" title="我的网易云音乐,haha">
+                      
+                        <i class="fa fa-fw fa-music"></i>我的网易云音乐,haha</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-paper-plane-o"></i>
+                快速访问
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.runoob.com/" title="RUNOOB-菜鸟教程" target="_blank">RUNOOB-菜鸟教程</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.codesheep.cn/" title="CodeSheep-安利一下" target="_blank">CodeSheep-安利一下</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://cn.bing.com/" title="Bing搜索-爱上首页" target="_blank">Bing搜索-爱上首页</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.baidu.com/" title="百度一下,你就知道" target="_blank">百度一下,你就知道</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://gitee.com/" title="Gitee-此码云非彼马云" target="_blank">Gitee-此码云非彼马云</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://mvnrepository.com/" title="Maven Repository" target="_blank">Maven Repository</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          <div id="days"></div>
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000*3600); 
+    BirthDay=new Date("03/06/2019 08:21:07");
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+
+    document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时";
+
+    
+    
+
+    
+
+    
+}
+function setzero(i) {
+    if (i<10) {
+        i="0" + i
+    };
+    return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库语言类型"><span class="nav-number">1.</span> <span class="nav-text">数据库语言类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务"><span class="nav-number">2.</span> <span class="nav-text">事务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#并发一致性问题"><span class="nav-number">3.</span> <span class="nav-text">并发一致性问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封锁"><span class="nav-number">4.</span> <span class="nav-text">封锁</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#封锁粒度"><span class="nav-number">4.1.</span> <span class="nav-text">封锁粒度</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#封锁类型"><span class="nav-number">4.2.</span> <span class="nav-text">封锁类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#封锁协议"><span class="nav-number">4.3.</span> <span class="nav-text">封锁协议</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事务的隔离级别"><span class="nav-number">5.</span> <span class="nav-text">事务的隔离级别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多版本并发控制（MVCC）"><span class="nav-number">6.</span> <span class="nav-text">多版本并发控制（MVCC）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#实现过程"><span class="nav-number">6.1.</span> <span class="nav-text">实现过程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#快照读与当前读"><span class="nav-number">6.2.</span> <span class="nav-text">快照读与当前读</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#InnoDB如何解决幻读问题？"><span class="nav-number">7.</span> <span class="nav-text">InnoDB如何解决幻读问题？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="heart">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">之初</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      位访客
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次访问
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'wKLlagOoqYM9GwSBKvNeOcsh-gzGzoHsz',
+        appKey: 'yh8FfFr8kDrV4TuDupB6YhyH',
+        placeholder: '说点什么...',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'6' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("wKLlagOoqYM9GwSBKvNeOcsh-gzGzoHsz", "yh8FfFr8kDrV4TuDupB6YhyH");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+
+  <!-- 代码块复制功能 -->
+ <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+ <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
+ <!-- 网页标题崩溃搞怪特效 -->
+ <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+
+</body>
+</html>

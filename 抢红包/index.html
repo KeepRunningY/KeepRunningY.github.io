@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="之初 Blog">
 <meta property="og:description" content="基于SSM(全注解+Ajax异步模拟高并发)实现抢红包通过数据库事务隔离级别+乐观锁重入机制提高并发采用Redis提高并发">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-18T17:01:56.712Z">
+<meta property="og:updated_time" content="2019-08-22T15:48:12.233Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="抢红包">
 <meta name="twitter:description" content="基于SSM(全注解+Ajax异步模拟高并发)实现抢红包通过数据库事务隔离级别+乐观锁重入机制提高并发采用Redis提高并发">
@@ -439,7 +439,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  67 字
+                  397 字
                 </span>
               
 
@@ -479,12 +479,20 @@
         <div class="myblockquote"><p style="text-align: center;"><font size="5px">基于SSM(全注解+Ajax异步模拟高并发)实现抢红包<br>通过数据库事务隔离级别+乐观锁重入机制提高并发<br>采用Redis提高并发</font></p></div>
 
 <a id="more"></a>
-<blockquote>
-<p>截图分析！！！</p>
-</blockquote>
-<h3 id="SSM-低并发"><a href="#SSM-低并发" class="headerlink" title="SSM-低并发"></a>SSM-低并发</h3><hr>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>环境搭建问题：<br>ideaIU-2019.2 + MySQL 8.0 均为最新版本  折腾不止,哈哈嗝~<br>1.MySQL8.0 数据库链接URL  <a href="https://mysql8.md" target="_blank" rel="noopener">详见文章</a><br>2.项目中读取资源文件路径问题  <a href="https://Web项目编译后文件路径.md" target="_blank" rel="noopener">详见文章</a><br>3.mybatis-generator配置</p>
+<ul>
+<li>.properties文件连接MySQL8.0 还有坑！</li>
+<li>pom配置<code>mybatis-generator-maven-plugin</code></li>
+<li><code>mysql-connector-java</code>jar包放置位置<br><a href="https://mybatis-generator.md" target="_blank" rel="noopener">详见文章</a>  ps:IDEA中有<code>mybatis-generator</code>插件可供下载！<br>4.项目远程推送  <a href="https://mysql8.md" target="_blank" rel="noopener">详见文章</a></li>
+</ul>
+<hr>
+<h3 id="SSM-低并发"><a href="#SSM-低并发" class="headerlink" title="SSM-低并发"></a>SSM-低并发</h3><p>Github <a href="https://github.com/zhichuwy/SSM" target="_blank" rel="noopener">https://github.com/zhichuwy/SSM</a> master</p>
+<hr>
 <h3 id="SSM-乐观锁重入"><a href="#SSM-乐观锁重入" class="headerlink" title="SSM-乐观锁重入"></a>SSM-乐观锁重入</h3><hr>
-<h3 id="Redis-基于内存"><a href="#Redis-基于内存" class="headerlink" title="Redis-基于内存"></a>Redis-基于内存</h3>
+<h3 id="Redis-基于内存"><a href="#Redis-基于内存" class="headerlink" title="Redis-基于内存"></a>Redis-基于内存</h3><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>论备份的重要性！精准检查可能出错位置！<br>归根结底：经验积累！<br>某次不知怎的了，项目运行数据库方面一直bug，顾此失彼。。。</p>
+<p>-SSL还未了解 (useSSL=false)<br>-serverTimezone=UTC<br>-MySQL 8.0 Public Key Retrieval is not allowed(allowPublicKeyRetrieval=true)<br>-Failed to load resource: the server responded with a status of 500 ()<br>-Access denied for user ‘root‘@’localhost’ (using password: YES)<br> 博客上说是：密码太弱的原因(总有些不负责任得去抄袭…)，其实是：账户名/密码/DB不匹配<br>-js异步模拟并发  修改数据库隔离级别 Default<br>还是不行哇，</p>
+<p>心想，有些坑留给DB去踩吧，我只是个小开发呀！<br>(老老实实用MySQL5.7吧…)<br>最后恍然大悟(发现自己真脑残)：<br>IDEA中DataBase工具设置的数据源 和 项目中的DataSource设置的properties根本就不是一回事！！！</p>
+
       
     </div>
     
@@ -583,7 +591,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/随笔-Windows10重装之旅/" rel="prev" title="Windows10重装之旅">
+              <a href="/随笔-关于Windows10/" rel="prev" title="Windows10重装之旅">
                 Windows10重装之旅 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -669,7 +677,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">65</span>
+                  <span class="site-state-item-count">73</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -691,7 +699,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">141</span>
+                  <span class="site-state-item-count">154</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -839,7 +847,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#SSM-低并发"><span class="nav-number">1.</span> <span class="nav-text">SSM-低并发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSM-乐观锁重入"><span class="nav-number">2.</span> <span class="nav-text">SSM-乐观锁重入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-基于内存"><span class="nav-number">3.</span> <span class="nav-text">Redis-基于内存</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSM-低并发"><span class="nav-number">2.</span> <span class="nav-text">SSM-低并发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSM-乐观锁重入"><span class="nav-number">3.</span> <span class="nav-text">SSM-乐观锁重入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-基于内存"><span class="nav-number">4.</span> <span class="nav-text">Redis-基于内存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后记"><span class="nav-number">5.</span> <span class="nav-text">后记</span></a></li></ol></div>
             
 
           </div>

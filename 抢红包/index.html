@@ -96,10 +96,31 @@
 <meta property="og:site_name" content="之初 Blog">
 <meta property="og:description" content="基于SSM(全注解+Ajax异步模拟高并发)实现抢红包通过数据库事务隔离级别+乐观锁重入机制提高并发采用Redis提高并发">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-22T15:48:12.233Z">
+<meta property="og:image" content="https://zhichuwy.cn/images/v1/2w.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v1/t1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v1/t2-1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v1/t2-2.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v2/2w.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v2/t1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v2/t2-1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v2/t2-2.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v3/v3-noTry/2w.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v3/v3-noTry/t1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v3/v3-noTry/t2-1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v3/v3-noTry/t2-2.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v3/v3-reTry/2w.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v3/v3-reTry/t1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v3/v3-reTry/t2-1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v3/v3-reTry/t2-2.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v4/redis-init.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v4/2w.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v4/t2-1.png">
+<meta property="og:image" content="https://zhichuwy.cn/images/v4/t2-2.png">
+<meta property="og:updated_time" content="2019-08-29T16:43:27.940Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="抢红包">
 <meta name="twitter:description" content="基于SSM(全注解+Ajax异步模拟高并发)实现抢红包通过数据库事务隔离级别+乐观锁重入机制提高并发采用Redis提高并发">
+<meta name="twitter:image" content="https://zhichuwy.cn/images/v1/2w.png">
 
 
 
@@ -439,7 +460,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  397 字
+                  1.1k 字
                 </span>
               
 
@@ -455,7 +476,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  4 分钟
                 </span>
               
             </div>
@@ -479,17 +500,50 @@
         <div class="myblockquote"><p style="text-align: center;"><font size="5px">基于SSM(全注解+Ajax异步模拟高并发)实现抢红包<br>通过数据库事务隔离级别+乐观锁重入机制提高并发<br>采用Redis提高并发</font></p></div>
 
 <a id="more"></a>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>环境搭建问题：<br>ideaIU-2019.2 + MySQL 8.0 均为最新版本  折腾不止,哈哈嗝~<br>1.MySQL8.0 数据库链接URL  <a href="https://mysql8.md" target="_blank" rel="noopener">详见文章</a><br>2.项目中读取资源文件路径问题  <a href="https://Web项目编译后文件路径.md" target="_blank" rel="noopener">详见文章</a><br>3.mybatis-generator配置</p>
-<ul>
-<li>.properties文件连接MySQL8.0 还有坑！</li>
-<li>pom配置<code>mybatis-generator-maven-plugin</code></li>
-<li><code>mysql-connector-java</code>jar包放置位置<br><a href="https://mybatis-generator.md" target="_blank" rel="noopener">详见文章</a>  ps:IDEA中有<code>mybatis-generator</code>插件可供下载！<br>4.项目远程推送  <a href="https://mysql8.md" target="_blank" rel="noopener">详见文章</a></li>
-</ul>
+<blockquote>
+<p>项目源码 Github <a href="https://github.com/zhichuwy/SSM" target="_blank" rel="noopener">https://github.com/zhichuwy/SSM</a></p>
+</blockquote>
+<h3 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h3><p>环境搭建问题：<br>ideaIU-2019.2 + MySQL 8.0 均为最新版本  生命不息，折腾不止 哈哈嗝~<br>1.MySQL8.0 数据库链接URL  <a href="https://zhichuwy.cn/DB-MySQL8.0+">【详见文章】</a><br>2.项目中读取资源文件路径问题  <a href="https://zhichuwy.cn/Web项目编译后文件路径">【详见文章】</a><br>3.mybatis-generator配置  <a href="https://zhichuwy.cn/MyBatis-Generator">【详见文章】</a><br>3.1 .properties文件连接MySQL8.0 还有坑！<br>3.2 pom配置<code>mybatis-generator-maven-plugin</code><br>3.3 <code>mysql-connector-java</code>jar包放置位置<br>ps:IDEA中有<code>mybatis-generator</code>插件可供下载！<br>4.项目远程推送  <a href="https://zhichuwy.cn/IDEA安装及使用">【详见文章】</a><br>5.浏览器推荐 FireFox &gt; Chrome<br>6.项目中事务配置<br>Spring注解MySQL事务隔离级别：Read Committed<br>Spring事务传播行为：PROPAGATION_REQUIRED<br>7.模拟并发量：2W  红包数量：1K</p>
 <hr>
-<h3 id="SSM-低并发"><a href="#SSM-低并发" class="headerlink" title="SSM-低并发"></a>SSM-低并发</h3><p>Github <a href="https://github.com/zhichuwy/SSM" target="_blank" rel="noopener">https://github.com/zhichuwy/SSM</a> master</p>
+<h3 id="二、Version1-DB事务控制"><a href="#二、Version1-DB事务控制" class="headerlink" title="二、Version1(DB事务控制)"></a>二、Version1(DB事务控制)</h3><p>1.异步模拟2w并发请求<br><img src="/images/v1/2w.png" alt="图片走丢啦~"></p>
+<p>2.红包最终库存<br><img src="/images/v1/t1.png" alt="图片走丢啦~"></p>
+<p>3.抢红包记录-start<br><img src="/images/v1/t2-1.png" alt="图片走丢啦~"></p>
+<p>4.抢红包记录-end<br><img src="/images/v1/t2-2.png" alt="图片走丢啦~"></p>
+<p>5.分析<br>总耗时：44s<br>由于笔记本性能有限且Chrome过多请求会丢失，因此模拟并发量取20000<br>快结束的时候（比如剩余1个红包时）多个线程读取库存，全部事务处理完毕导致库存结果为负</p>
 <hr>
-<h3 id="SSM-乐观锁重入"><a href="#SSM-乐观锁重入" class="headerlink" title="SSM-乐观锁重入"></a>SSM-乐观锁重入</h3><hr>
-<h3 id="Redis-基于内存"><a href="#Redis-基于内存" class="headerlink" title="Redis-基于内存"></a>Redis-基于内存</h3><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>论备份的重要性！精准检查可能出错位置！<br>归根结底：经验积累！<br>某次不知怎的了，项目运行数据库方面一直bug，顾此失彼。。。</p>
+<h3 id="三、Version2-悲观锁机制"><a href="#三、Version2-悲观锁机制" class="headerlink" title="三、Version2(悲观锁机制)"></a>三、Version2(悲观锁机制)</h3><p>1.异步模拟2w并发请求<br><img src="/images/v2/2w.png" alt="图片走丢啦~"></p>
+<p>2.红包最终库存<br><img src="/images/v2/t1.png" alt="图片走丢啦~"></p>
+<p>3.抢红包记录-start<br><img src="/images/v2/t2-1.png" alt="图片走丢啦~"></p>
+<p>4.抢红包记录-end<br><img src="/images/v2/t2-2.png" alt="图片走丢啦~"></p>
+<p>5.分析<br>总耗时：51s<br>悲观锁控制，for update(行更新锁)<br>解决了超发，业务逻辑及结果正确，但性能不佳</p>
+<hr>
+<h3 id="四、Version3-乐观锁机制"><a href="#四、Version3-乐观锁机制" class="headerlink" title="四、Version3(乐观锁机制)"></a>四、Version3(乐观锁机制)</h3><blockquote>
+<p>非重入机制</p>
+</blockquote>
+<p>1.异步模拟2w并发请求<br><img src="/images/v3/v3-noTry/2w.png" alt="图片走丢啦~"></p>
+<p>2.红包最终库存<br><img src="/images/v3/v3-noTry/t1.png" alt="图片走丢啦~"></p>
+<p>3.抢红包记录-start<br><img src="/images/v3/v3-noTry/t2-1.png" alt="图片走丢啦~"></p>
+<p>4.抢红包记录-end<br><img src="/images/v3/v3-noTry/t2-2.png" alt="图片走丢啦~"></p>
+<p>5.分析<br>总耗时：95s 约为悲观锁机制耗时的2倍 (Version判断)<br>悲观锁 能保证1000个红包全部抢完，同时红包抢完后事务很快退出；<br>乐观锁 未重入，红包未抢完 未阻塞其他线程<br>相比悲观锁处理了2000条请求，但失败较多 且每次抢红包sql语句执行数目比悲观锁机制多<br>因此事务并发处理时间大于悲观锁机制</p>
+<hr>
+<blockquote>
+<p>重入机制</p>
+</blockquote>
+<p>1.异步模拟2w并发请求<br><img src="/images/v3/v3-reTry/2w.png" alt="图片走丢啦~"></p>
+<p>2.红包最终库存<br><img src="/images/v3/v3-reTry/t1.png" alt="图片走丢啦~"></p>
+<p>3.抢红包记录-start<br><img src="/images/v3/v3-reTry/t2-1.png" alt="图片走丢啦~"></p>
+<p>4.抢红包记录-end<br><img src="/images/v3/v3-reTry/t2-2.png" alt="图片走丢啦~"></p>
+<p>5.分析<br>总耗时：54s<br>采用限制次数(项目限制3次)的方式实现重入<br>比非重入机制耗时减少近半，且保证并发数据准确一致<br>也可以采用时间戳，效果不佳，未测试</p>
+<hr>
+<h3 id="五、Version4-Redis"><a href="#五、Version4-Redis" class="headerlink" title="五、Version4(Redis)"></a>五、Version4(Redis)</h3><p>1.初始化Redis数据<br><img src="/images/v4/redis-init.png" alt="图片走丢啦~"></p>
+<p>2.异步模拟2w并发请求<br><img src="/images/v4/2w.png" alt="图片走丢啦~"></p>
+<p>3.抢红包记录-start<br><img src="/images/v4/t2-1.png" alt="图片走丢啦~"></p>
+<p>4.抢红包记录-end<br><img src="/images/v4/t2-2.png" alt="图片走丢啦~"></p>
+<p>5.分析<br>总耗时：2.994s<br>优点：应对并发效果好<br>缺点：Redis事务较差，需要通过代码严格控制</p>
+<p>6.Lua脚本</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--hset red_packet_5 stock 1000</span></span><br><span class="line"><span class="comment">--hset red_packet_5 unit_amount 10</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--缓存抢红包信息列表的key</span></span><br><span class="line"><span class="comment">local listKey = 'red_packet_list_'..KEYS[1]</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--当前被抢红包key</span></span><br><span class="line"><span class="comment">local redPacket = 'red_packet_'..KEYS[1]</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--获取当前红包库存</span></span><br><span class="line"><span class="comment">local stock = tonumber(redis.call('hget',redPacket,'stock'))</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--没有库存，返回0</span></span><br><span class="line"><span class="comment">if stock &lt;= 0 then return 0 end</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--库存减1</span></span><br><span class="line"><span class="comment">stock = stock - 1</span></span><br><span class="line"><span class="comment">--保存当前库存</span></span><br><span class="line"><span class="comment">redis.call('hset',redPacket,'stock',tostring(stock))</span></span><br><span class="line"><span class="comment">--往链表加入当前红包信息</span></span><br><span class="line"><span class="comment">redis.call('rpush',listKey,ARGV[1])</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--最后一个红包，返回2 抢红包结束 将列表中的数据保存到数据库</span></span><br><span class="line"><span class="comment">if stock == 0 then return 2 end</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">--非最后一个红包 返回1 抢红包成功</span></span><br><span class="line"><span class="comment">return 1</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="六、后记"><a href="#六、后记" class="headerlink" title="六、后记"></a>六、后记</h3><p>论备份的重要性！精准检查可能出错位置！<br>归根结底：经验积累！<br>某次不知怎的了，项目运行数据库方面一直bug，顾此失彼。。。</p>
 <p>-SSL还未了解 (useSSL=false)<br>-serverTimezone=UTC<br>-MySQL 8.0 Public Key Retrieval is not allowed(allowPublicKeyRetrieval=true)<br>-Failed to load resource: the server responded with a status of 500 ()<br>-Access denied for user ‘root‘@’localhost’ (using password: YES)<br> 博客上说是：密码太弱的原因(总有些不负责任得去抄袭…)，其实是：账户名/密码/DB不匹配<br>-js异步模拟并发  修改数据库隔离级别 Default<br>还是不行哇，</p>
 <p>心想，有些坑留给DB去踩吧，我只是个小开发呀！<br>(老老实实用MySQL5.7吧…)<br>最后恍然大悟(发现自己真脑残)：<br>IDEA中DataBase工具设置的数据源 和 项目中的DataSource设置的properties根本就不是一回事！！！</p>
 
@@ -847,7 +901,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSM-低并发"><span class="nav-number">2.</span> <span class="nav-text">SSM-低并发</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSM-乐观锁重入"><span class="nav-number">3.</span> <span class="nav-text">SSM-乐观锁重入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Redis-基于内存"><span class="nav-number">4.</span> <span class="nav-text">Redis-基于内存</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后记"><span class="nav-number">5.</span> <span class="nav-text">后记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、前言"><span class="nav-number">1.</span> <span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、Version1-DB事务控制"><span class="nav-number">2.</span> <span class="nav-text">二、Version1(DB事务控制)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、Version2-悲观锁机制"><span class="nav-number">3.</span> <span class="nav-text">三、Version2(悲观锁机制)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、Version3-乐观锁机制"><span class="nav-number">4.</span> <span class="nav-text">四、Version3(乐观锁机制)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五、Version4-Redis"><span class="nav-number">5.</span> <span class="nav-text">五、Version4(Redis)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六、后记"><span class="nav-number">6.</span> <span class="nav-text">六、后记</span></a></li></ol></div>
             
 
           </div>
